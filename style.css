@@ -6,23 +6,24 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 18px;
     line-height: 1.5em;
+
 }
 
 nav,
 footer {
 /*    padding: 0.5% 0;*/
-    background-color: #483C46;
-    font-family: 'Poppins', sans-serif;
-    color: #F4743B;
+    background-color: #ffffff;
+    font-family: 'Karla', sans-serif;
+    color: #a68148;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 
@@ -34,7 +35,7 @@ h2 {
 h3 {
     padding-bottom: 5%;
     font-size: 1.8rem;
-    color: #F4743B;
+    color: #a68148;
 }
 
 p {
@@ -61,15 +62,20 @@ nav > .content {
 
 div#nav-logo {
     display: inline-block;
-    width: 20px;
-    margin-top: 15px;
-    font-size: 1.6rem;
+    margin: 15px auto;
     line-height: 1.2rem;
+
 }
 
 div#nav-logo a {
     text-decoration: none;
-    color: #F4743B;
+    color: #a68148;
+    font-size: 1rem;
+}
+
+div#nav-logo img {
+    width: 40px;
+    display: inline-block;
 }
 
 ul#nav-links {
@@ -88,13 +94,13 @@ ul#nav-links li{
 
 ul#nav-links li a{
     text-decoration: none;
-    color: #F4743B;
+    color: #a68148;
     font-size: 1rem;
     padding: 0 14px;
 }
 
 ul#nav-links li a:hover {
-    color: #fbcbb7;
+    color: #d5a860;
 }
 
 span.mobile-btn {
@@ -118,22 +124,30 @@ ul#nav-links li.close:hover {
 
 /*HEADER*/
 header {
-    font-family: 'Poppins', sans-serif;
+/*
+    background-image: url(images/header-blot@3x.png);
+    background-attachment: fixed;
+*/
+    font-family: 'Karla', sans-serif;
     padding: 12% 0;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
 div#header-title {
-    width: 90%;
+    width: 45%;
+    margin-left: 25%;
 }
 
-div#header-title img {
-    margin-top: 0;
-    max-width: 100%;
+div#header-image {
+    margin: auto;
+    max-width: 20px;
+    display: inline-block;
+    float: left;
 }
 
 p.header-description {
+    display: inline-block;
     font-size: 1.2rem;
     line-height: 2rem;
     color: #483C46;
@@ -141,8 +155,8 @@ p.header-description {
 }
 
 
-span.bold {
-    font-weight: bold;
+span.welcome {
+   font-size: 3rem;
 }
 
 section {
@@ -154,28 +168,29 @@ section {
 
 p.section-header {
     font-size: 2.8rem;
-    color: #F4743B;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
+    color: #4c4045;
     margin-left: 50px;
 }
 
-div.header-highlight{
+/*div.header-highlight{
     margin-bottom: 10px;
     height: 50px;
     padding-top: 10px;
     width: 100%;
     background: -webkit-linear-gradient(right, rgba(217, 147, 81, 0.1), rgba(217, 147, 81, 0.2));
     /*Safari 5.1-6*/
-    background: -o-linear-gradient(left, rgba(217, 147, 81, 0.1), rgba(217, 147, 81, 0.2));
+/*    background: -o-linear-gradient(left, rgba(217, 147, 81, 0.1), rgba(217, 147, 81, 0.2));*/
     /*Opera 11.1-12*/
-    background: -moz-linear-gradient(left, rgba(217, 147, 81, 0.1), rgba(217, 147, 81, 0.2));
+/*    background: -moz-linear-gradient(left, rgba(217, 147, 81, 0.1), rgba(217, 147, 81, 0.2));*/
     /*Fx 3.6-15*/
-    background: linear-gradient(to left, rgba(217, 147, 81, 0.1), rgba(217, 147, 81, 0.2));
+/*    background: linear-gradient(to left, rgba(217, 147, 81, 0.1), rgba(217, 147, 81, 0.2));*/
     /*Standard*/
-}
+}*/
 
 /*About me section*/
 
+/*
 section#about-me-section {
     padding: 80px 0;
     padding-bottom: 9%;
@@ -187,8 +202,8 @@ section#about-me-section {
 
 p#am-section-header {
     font-size: 2.8rem;
-    color: #F4743B;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
+    color: #a68148;
     margin-left: 10px;
     padding-bottom: 10px;
 }
@@ -212,6 +227,7 @@ p.about-me {
     color: #fff;
     font-size: 1rem;
 }
+*/
 
 
 /*skills section. WILL ADD LATER*/
@@ -232,11 +248,12 @@ section#project-section {
     background-image: url(images/ContourBackground.png);
     background-attachment: fixed;
     background-color: #fff;
-    color: #3C6E71;
+    color: #4c4045;
 }
 
-div#upbeat-atlas-app {
+div#bus-spot-app {
     margin-top: 40px;
+    margin: 15px auto;
 }
 #sustain-app,
 #commute-calculator-app {
@@ -247,16 +264,19 @@ div.project-img {
     width: 52%;
     display: inline-block;
     margin-top: 30px;
-
 }
 
 img.project-screenshot{
-    max-width: 95%;
+    display: inline-block;
+    max-width: 50%;
+/*
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
+*/
 }
 
 div.project-info {
+    margin: 15px 0;
     width: 40%;
     display: inline-block;
     vertical-align: top;
@@ -264,7 +284,7 @@ div.project-info {
 
 div.project-info p {
     vertical-align: top;
-    color: #3C6E71;
+    color: #4c4045;
     font-size: 1rem;
 }
 
@@ -273,7 +293,7 @@ div.tech-image img {
 }
 
 button.project-links {
-    width: 10%;
+    width: 20%;
     padding: 1%;
     margin-top: 1%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -399,7 +419,7 @@ img.social-button {
     }
 
     div.project-img {
-        width: 50%;
+        width: 30%;
     }
 
     div.project-info p {

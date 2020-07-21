@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <title>Leah Michalson's mindblowing Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -27,13 +27,16 @@
     <!--       nav bar with collapsible button. Overlay that appears is below the projects section-->
     <nav role="navigation">
         <div class="content">
-            <div id="nav-logo"><a href="#">leah borns</a></div>
+            <div id="nav-logo"><a href="#"> <img src="images/logo@3x.png" alt="logo">Leah Michalson</a>
+
+            </div>
             <ul id="nav-links">
                 <li class="close">&times;</li>
-                <li class="mobile-hover"><a href="#about-me-section" class="jumper">about</a></li>
+                <li class="mobile-hover"><a href="#about-me-section" class="jumper">Projects</a></li>
                 <!--                    <li><a href="#skills-section">Skills</a></li>-->
-                <li class="mobile-hover"><a href="#project-section" class="jumper">projects</a></li>
-                <li class="mobile-hover"><a href="#contact-section" class="jumper">connect</a></li>
+                <li class="mobile-hover"><a href="#project-section" class="jumper">About</a></li>
+                <li class="mobile-hover"><a href="#project-section" class="jumper">Code</a></li>
+                <li class="mobile-hover"><a href="#contact-section" class="jumper">Connect</a></li>
             </ul>
             <span class="mobile-btn">☰</span>
         </div>
@@ -41,16 +44,16 @@
     <main role="main">
 
         <header role="banner">
+            <div id="header-image"> <img src="images/header-blot@3x.png" alt="header slogan"></div>
             <div id="header-title">
-                <img src="images/header-slogan.png" alt="header slogan">
-                <p class="header-description">full <span class="bold">stack</span> developer
-                    <p class="header-description">sustainability <span class="bold">enabler</span> </p>
-                    <p class="header-description">fresh <span class="bold">water</span> lover</p>
+                <p class="header-description"><span class="welcome">Hi, I'm Leah</span></p>
+                <p class="header-description">A UX Designer with front end aptitude seeking ways to use design for positive change. Welcome to my website.</p>
             </div>
 
 
         </header>
 
+<!--
         <section id="about-me-section">
             <p id="am-section-header">this is leah</p>
             <div id="about-me-group">
@@ -70,6 +73,7 @@
                 </p>
             </div>
         </section>
+-->
 
         <!-- WILL ADD SKILLS SECTION LATER
             <section id="skills-section">
@@ -83,37 +87,31 @@
 -->
 
         <section id="project-section">
-            <div class="header-highlight">
+<!--            <div class="header-highlight">-->
                 <p class="section-header">leah made these</p>
-            </div>
-            <!--                UPBEAT ATLAS-->
-            <div id="upbeat-atlas-app">
+<!--            </div>-->
+            <!--                Bus Spot-->
+            <div id="bus-spot-app">
 
 
                 <div class="project-info">
-                    <h3>upbeat atlas</h3>
+                    <h3>Bus Spot</h3>
                     <div class="tech-image">
                         <img src="images/html-5.png" alt="html5">
                         <img src="images/css-3.png" alt="css">
                         <img src="images/javascript.png" alt="Javascript">
                     </div>
-                    <p>Finding upcoming shows is as easy as a click of a search button, but getting to a show can be a
-                        nightmare. Not only is parking impossible, but it puts so many cars on the road and increases
-                        carbon emissions. With Upbeat Atlas, I wanted to create an easy way for event goers to locate
-                        their next show with a Google map to easily find directions along with a gentle nudge to
-                        consider taking a more sustainable way.
+                    <p>Bus Spot is a transit scheduling app makes it easy for riders to visually locate their bus and reduce unexpected runs to the bus stop.
                     </p>
+                    <button class="project-links"><a target="_blank"
+                                                     href="https://leahborns.github.io/upbeat-atlas-artist-finder-songkick-api-capstone/index.html">Case Study</a></button>
                 </div>
                 <div class="project-img">
-                    <img class="project-screenshot" src="images/upbeat-atlas-screenshot.png"
-                        alt="upbeat atlas screenshot">
+                    <img class="project-screenshot" src="images/bus-stop-main-screen.png"
+                        alt="bus spot screenshot">
                 </div>
             </div>
-            <button class="project-links"><a target="_blank"
-                    href="https://leahborns.github.io/upbeat-atlas-artist-finder-songkick-api-capstone/index.html">Live
-                    app</a></button>
-            <button class="project-links"><a target="_blank"
-                    href="https://github.com/LeahBorns/upbeat-atlas-artist-finder-songkick-api-capstone">Repo</a></button>
+
 
             <!--                SUSTAIN-->
             <div id="sustain-app">
