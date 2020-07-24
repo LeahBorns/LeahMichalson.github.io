@@ -1,14 +1,14 @@
 //animates the scroll to go smoothly to each section
 
-$(".jumper").on("click", function( e ) {
+// $(".jumper").on("click", function( e ) {
 
-    e.preventDefault();
+//     e.preventDefault();
 
-    $("body, html").animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 600);
+//     $("body, html").animate({
+//         scrollTop: $( $(this).attr('href') ).offset().top
+//     }, 600);
 
-});
+// });
 
 
 var mobileBtn = document.querySelector('.mobile-btn');
