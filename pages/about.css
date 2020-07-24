@@ -64,7 +64,7 @@ div#nav-logo {
     margin: 15px auto;
     line-height: 1.2rem;
     position: relative;
-    width: 50%;
+    width: 40%;
 }
 
 div#nav-logo h3 {
@@ -72,6 +72,7 @@ div#nav-logo h3 {
     position: absolute;
     top: 50%;
     transform: translate(10%,-50%);
+    font-size: 1.5rem;
 }
 
 div#nav-logo img {
@@ -96,7 +97,7 @@ ul#nav-links li{
 ul#nav-links li a{
     text-decoration: none;
     color: #a68148;
-    font-size: 1.5rem;
+    font-size: 1.rem;
     padding: 0 14px;
 }
 
@@ -130,13 +131,18 @@ section#bio-section {
     width: 80%;
     margin: auto;
     display: flex;
-
-    height: 100vh;
+    flex-direction: row-reverse;
+    height: 150vh;
+    align-content: center;
 }
 
 div.bio {
     width: 40%;
     margin: auto;
+}
+
+p#color {
+    color: lightgray;
 }
 
 div.bio-picture {

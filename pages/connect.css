@@ -65,7 +65,7 @@ div#nav-logo {
     margin: 15px auto;
     line-height: 1.2rem;
     position: relative;
-    width: 50%;
+    width: 40%;
 }
 
 div#nav-logo h3 {
@@ -74,6 +74,7 @@ div#nav-logo h3 {
     top: 50%;
     transform: translate(10%,-50%);
     color: #a68148;
+    font-size: 1.5rem;
 }
 
 div#nav-logo img {
@@ -97,7 +98,7 @@ ul#nav-links li{
 ul#nav-links li a{
     text-decoration: none;
     color: #a68148;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0 14px;
 }
 
@@ -131,8 +132,8 @@ section#form-section {
     width: 80%;
     margin: auto;
     display: flex;
-    height: 90vh;
-    align-items: center;
+    height: 120vh;
+    align-items: flex-start;
 }
 
 div#form-picture {
@@ -160,6 +161,10 @@ form {
     font-family: 'Karla', sans-serif;
 }
 
+form label {
+    font-size: 1.2rem
+}
+
 form input[type=text]  {
     background-color: lightgray;
     width: 100%;
@@ -167,6 +172,7 @@ form input[type=text]  {
     border-radius: 5px;
     padding: 20px;
     font-family: 'Karla', sans-serif;
+    margin-bottom: 20px;
 }
 
 form input[type=email]  {
@@ -176,11 +182,10 @@ form input[type=email]  {
     border-radius: 5px;
     padding: 20px;
     font-family: 'Karla', sans-serif;
+    margin-bottom: 20px;
 }
 
-form label {
-    margin-bottom: 50px;
-}
+
 form textarea {
     background-color: lightgray;
     width: 100%;

@@ -67,7 +67,7 @@ div#nav-logo {
     margin: 15px auto;
     line-height: 1.2rem;
     position: relative;
-    width: 50%;
+    width: 40%;
 }
 
 div#nav-logo h3 {
@@ -75,6 +75,7 @@ display: inline-block;
 position: absolute;
 top: 50%;
 transform: translate(10%,-50%);
+font-size: 1.5rem;
 }
 
 div#nav-logo img {
@@ -99,7 +100,7 @@ ul#nav-links li {
 ul#nav-links li a {
     text-decoration: none;
     color: #a68148;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0 14px;
 }
 
