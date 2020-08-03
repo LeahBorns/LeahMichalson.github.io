@@ -1,0 +1,917 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+nav,footer {
+    background-color: #fff;
+    font-family: 'Karla', sans-serif;
+    color: #a68148;
+}
+
+h1,h2{
+    font-family: 'Merriweather', serif;
+}
+
+h3,h4 {
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: #a68148;
+}
+
+h3 {
+    font-size: 1.3em;
+    padding-bottom: 5%;
+    color: #d48b47;
+    padding: 20px 0;
+}
+
+h4 {
+    font-size: 1em;
+    color: #d24e45;
+    padding: 20px 0;
+}
+
+p {
+    text-align: left;
+}
+/*NAV*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    line-height: 65px;
+    height: 100px;
+}
+
+nav > .content {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+}
+
+div.content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Nav logo and name*/
+div#nav-logo {
+    margin: auto 0;
+    /*
+    line-height: 1.2rem;
+    position: relative;
+    */
+    width: 30%;
+}
+
+div#nav-logo h3 {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translate(10%,-50%);
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
+    color: #a68148;
+}
+
+div#nav-logo img {
+    width: 60px;
+}
+
+ul#nav-links {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #d5a860;
+    /*    border-bottom-left-radius: 10px;*/
+    /*    border-bottom-right-radius: 10px;*/
+    z-index: 3;
+    width: 100%;
+    transform: translateY(-400px);
+    transition: all 300ms ease-in-out;
+}
+
+ul#nav-links li{
+    display: block;
+    margin-left: 32px;
+}
+
+ul#nav-links li a {
+    text-decoration: none;
+    color: #4c4045;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 0 14px;
+}
+
+ul#nav-links li a:hover {
+    color: #d5a860;
+}
+
+
+li.mobile-hover:hover {
+    background-color: #6f5d6c;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+/*mobile hamburger menu*/
+
+span.mobile-btn {
+    display: inline-block;
+    float: right;
+    font-size: 1.5rem;
+}
+
+span.mobile-btn:hover {
+    cursor: pointer;
+}
+
+ul#nav-links li.close {
+    color: #4c4045;
+    font-size: 2rem;
+    text-align: right;
+    display: block;
+    padding-right: 10px;
+}
+
+ul#nav-links li.close:hover {
+    cursor: pointer;
+}
+
+div.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+    opacity: 0;
+    z-index: -1;
+    transform: opacity 300ms linear;
+}
+
+.overlay.open {
+    z-index: 1;
+    opacity: 1;
+}
+
+ul#nav-links.open{
+    transform: translateX(0);
+}
+
+
+/*GREENER HEADER*/
+
+header {
+    width: 80%;
+    margin: 25% auto 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.case-study-name {
+    color: #4C4045;
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+}
+
+div.case-study-image {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+div.case-study-image img {
+    margin: auto;
+    width: 80%;
+}
+
+div.case-study-title {
+    width: 100%;
+    margin: auto;
+}
+
+div#prototype-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div#prototype-button button {
+    background-color: #4c4045;
+    width: 150px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div#prototype-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+/*Problem Section*/
+
+section#problem {
+    width: 100%;
+    margin: auto;
+    background-color: #F2BAAC;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div.problem-container h2 {
+    color: #4c4045;
+    margin-left: 10%;
+}
+
+div#statement {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4c4045;
+}
+
+div#statement p {
+    width: 80%;
+}
+
+/*Users Rolls and Scopes row with 3 sections*/
+
+section#users-roles-scope {
+    width: 100%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#users {
+    padding: 15px 0;
+}
+
+div#scope  {
+    padding: 15px 0;
+}
+
+
+div#roles {
+    padding: 15px 0;
+}
+
+/*The Solution Section*/
+
+section#solution {
+    width: 100%;
+    margin: auto;
+    background-color: #d5a860;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.solution-container h2 {
+    color: #4c4045;
+    margin-left: 10%;
+}
+
+div#solution-statement {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#solution-statement img {
+    margin: auto;
+    width: 100%;
+}
+/*The Process section*/
+
+section#process {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+/*MAPPING FLOW AND HMW*/
+div.mapping-hmw {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div.mapping-hmw img {
+    width: 100%;
+    margin: 20px auto;
+}
+
+/*LIGHTNING DEMOS*/
+
+div#lightning-intro p span {
+    font-weight: bold;
+}
+
+div.lightning-app {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.lightning-app img {
+    width: 100%;
+}
+
+/*JOURNEY AND EMPATHY MAPS*/
+
+div.journey-empathy-map {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.journey-empathy-map img {
+    width: 100%;
+}
+
+/*PERSONAS*/
+
+div#personas {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#personas img {
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+/*Information architecture*/
+
+/*STORYBOARD*/
+section.information-architecture {
+    width: 100%;
+    margin: auto;
+    background-color: #f2baac;
+    padding: 30px 0;
+}
+
+section.information-architecture h3 {
+    margin-left: 10%;
+}
+
+section.information-architecture h4 {
+    margin-left: 10%;
+}
+
+div.user-stories {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.user-stories img {
+    width: 100%;
+    margin: auto;
+}
+
+/*WIREFRAME SKETCHES*/
+
+
+div.wireframe-sketch {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+div.wireframe-sketch img {
+    padding-top: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+div.digital-wireframes {
+    width: 80%;
+    margin: auto;
+}
+
+/*VISUAL DEISGN*/
+
+section.visual-design {
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+section.visual-design h3 {
+    margin-left: 10%;
+}
+
+/*COLOR AND TYPE*/
+
+div.color-type {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.topography {
+    width: 100%;
+}
+
+div.color-type-image {
+    width: 80%;
+    margin: auto;
+}
+
+div.color-type-image img {
+    width: 100%;
+    margin: auto;
+}
+
+/*LOGOS AND NAME*/
+
+div.logo-container {
+    width: 80%;
+    margin: auto;
+}
+
+div.logo {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.logo img {
+    width: 100%;
+}
+
+/*Iterations*/
+div.iterations-container {
+    width: 80%;
+    margin: auto;
+}
+
+/*PROTOTYPING AND TESTING*/
+section.prototype-test {
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+section.prototype-test h3 {
+    margin-left: 10%;
+}
+
+section.prototype-test h4 {
+    margin-left: 10%;
+}
+
+/*Usability Test*/
+
+div.usability-test-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.usability-test ul {
+    margin: 20px auto;
+    padding: 20px;
+    /*    margin-left: 40px;*/
+    font-size: 1em;
+    line-height: 1.2em;
+    list-style-position: inside;
+    background-color: #f2baac;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+span.stat {
+    font-size: 4em;
+    line-height: 1;
+    color: #d48b47;
+}
+
+div.usability-test ol {
+    padding: 20px;
+    margin-left: 40px;
+    font-size: 1em;
+    line-height: 1.2em;
+    list-style-position: inside;
+}
+
+div.usability-test-image {
+    width: 100%;
+}
+
+div.usability-test-image img {
+    width: 100%;
+}
+
+/*PREFERENCE TESTING*/
+
+div.preference-test-container {
+    width: 80%;
+    margin: auto;
+}
+
+div.preference-test-container h4 {
+    margin-left: initial;
+}
+
+div.preference-test-1 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.preference-test-1 img{
+    width: 100%;
+}
+
+div.preference-test-2 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.preference-test-2 img{
+    width: 100%;
+}
+
+/*FINAL PROTOTYPE*/
+div.final-prototype-container {
+    width: 80%;
+    margin: auto;
+}
+
+
+div.final-prototype {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.app-gif {
+    width: 60%;
+    margin: 0;
+}
+
+div.app-gif img {
+    padding-top: 20px;
+    width: 90%;
+}
+
+/*CONCLUSION*/
+
+section.conclusion {
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+section.conclusion h3 {
+    margin-left: 20%;
+}
+
+div.learnings-container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/*MAIN FOOTER*/
+
+footer {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2baac;
+    min-height: 20vh;
+}
+
+footer h2 {
+    padding: 20px 0;
+    color: #4c4045;
+}
+div#social-img {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+img.social-button {
+    background-color: #d5a860;
+    width: 50%;
+    margin:auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media only screen and (min-width: 900px) {
+
+    /*    OVERALL*/
+
+    div#nav-logo h3 {
+        font-size: 1.5rem;
+    }
+
+    div#nav-logo img {
+        width: 80px;
+    }
+
+    /*Nav links*/
+
+    ul#nav-links {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 10px 16px;
+        float: right;
+        width: initial;
+        transform: none;
+        transition: none;
+        background-color: initial;
+        position: initial;
+        z-index: initial;
+    }
+
+    li.mobile-hover:hover {
+        background-color: initial;
+        width: initial;
+        margin: initial;
+        padding: initial;
+        border-top-right-radius: initial;
+        border-bottom-right-radius: initial;
+        border-bottom-left-radius: initial;
+        border-top-left-radius: initial;
+    }
+
+    ul#nav-links li {
+        display: inline-block;
+    }
+
+    ul#nav-links li a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: #a68148;
+    }
+
+    ul#nav-links li a:active {
+        color: #d5a860;
+        text-decoration: underline;
+    }
+
+    /*mobile hamburger menu*/
+    span.mobile-btn {
+        display: none;
+    }
+
+    ul#nav-links li.close {
+        display: none;
+    }
+
+
+    /*    HEADER*/
+
+    header {
+        width: 80%;
+        margin: 15% auto 5% auto;
+        flex-direction: row;
+    }
+
+    div#prototype-button {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    div#prototype-button button:hover {
+        background-color: #a68148;
+    }
+
+    /*    problem*/
+
+    div.problem-container h2 {
+        margin-left: 20%;
+    }
+
+    div#statement p {
+        width: 60%;
+    }
+
+    /*        USERS ROLES AND SCOPE*/
+
+    div.container {
+        width: 60%;
+    }
+
+    /*    THE SOLUTION*/
+
+    section#solution {
+        padding-top: 30px;
+    }
+
+    div#solution-statement {
+        width: 60%;
+    }
+
+    div.solution-container h2 {
+        color: #4c4045;
+        margin-left: 20%;
+    }
+
+    section#process {
+        width: 60%;
+        margin: auto;
+        padding-top: 30px;
+    }
+
+    /*LIGHTNING DEMOS*/
+
+    div.lightning-app img {
+        width: 60%;
+    }
+
+    /*    INFORMATION ARCHITECTURE*/
+
+    /*STORYBOARD*/
+    section.information-architecture h3 {
+        margin-left: 20%;
+    }
+
+    section.information-architecture h4 {
+        margin-left: 20%;
+    }
+
+    div.user-stories {
+        width: 60%;
+    }
+
+    /*WIREFRAME SKETCHES*/
+
+
+    div.wireframe-sketch {
+        width: 60%;
+    }
+
+    div.digital-wireframes {
+        width: 60%;
+    }
+
+    /*VISUAL DEISGN*/
+
+    section.visual-design h3 {
+        margin-left: 20%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-type {
+        width: 60%;
+    }
+
+    div.color-type-image {
+        width: 60%;
+        margin: auto;
+        padding: 30px 0;
+    }
+
+    /*LOGOS AND NAME*/
+
+    div.logo-container {
+        width: 60%;
+        margin: auto;
+    }
+
+    /*Iterations*/
+    div.iterations-container {
+        width: 60%;
+        margin: auto;
+    }
+
+    /*PROTOTYPING AND TESTING*/
+
+    section.prototype-test h3 {
+        margin-left: 20%;
+    }
+
+    section.prototype-test h4 {
+        margin-left: 20%;
+    }
+
+    /*Usability Test*/
+
+    div.usability-test-container {
+        width: 60%;
+    }
+
+    div.usability-test-image img {
+        padding: 30px 0;
+    }
+
+    /*PREFERENCE TESTING*/
+
+    div.preference-test-container {
+        width: 60%;
+    }
+
+    div.preference-test-container h4 {
+        margin-left: initial;
+    }
+
+    div.preference-test-1 img{
+        padding: 30px 0;
+    }
+
+    /*    final prtotype*/
+
+    div.final-prototype-container {
+        width: 60%;
+    }
+
+    div.app-gif {
+        width: 50%;
+    }
+
+    /*    conclusion*/
+
+    div.learnings-container{
+        width: 60%;
+    }
+}
+

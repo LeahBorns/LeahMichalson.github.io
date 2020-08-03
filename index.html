@@ -18,12 +18,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <title>Leah Michalson's mindblowing Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+    <body data-aos="fade-left">
     <!--       nav bar with collapsible button. Overlay that appears is below the projects section-->
     <nav role="navigation">
         <div class="content">
@@ -32,7 +33,7 @@
             </div>
             <ul id="nav-links">
                 <li class="close">&times;</li>
-                <li class="mobile-hover"><a href="#about-me-section" class="jumper">Projects</a></li>
+                <li class="mobile-hover"><a href="#bus-spot-app" class="jumper">Projects</a></li>
                 <!--                    <li><a href="#skills-section">Skills</a></li>-->
                 <li class="mobile-hover"><a href="./pages/about.html" class="jumper">About</a></li>
                 <li class="mobile-hover"><a href="#project-section" class="jumper">Code</a></li>
@@ -43,77 +44,40 @@
     </nav>
     <main role="main">
 
-        <header role="banner">
-<!--            <div id="header-image"> <img src="images/header-blot@3x.png" alt="header slogan"></div>-->
-            <div id="header-title">
+        <header role="banner" class="section bg-static">
+            <div id="header-title" >
                 <p class="header-description"><span class="welcome">Hi, I'm Leah</span></p>
                 <p class="header-description">A UX Designer with front end aptitude seeking ways to use design for positive change. Welcome to my website.</p>
             </div>
-
-
+            <div class="bg-move"></div>
         </header>
 
-<!--
-        <section id="about-me-section">
-            <p id="am-section-header">this is leah</p>
-            <div id="about-me-group">
-
-                <div id="profile-img">
-                    <img id="profile-pic" src="images/profile-pic" alt="profile picture">
-                </div>
-                <p class="about-me">I consider myself a bit of a polymath as I've become adept at a diverse combination
-                    of skills through a breadth of experiences. For example: I have surveyed 100's of miles of river for
-                    invasive plant species; mixed ideas with other innovative minds while pursuing a certificate in
-                    sustainable business; and most recently, I finished a full stack program at Thinkful.</p>
-                <p class="about-me"> For me, coding has been the perfect fusion of analytical and creative thinking. I
-                    love that it promotes the use of both sides of my brain while requiring continuous education as
-                    languages and frameworks keep evolving.</p>
-                <p class="about-me">When I’m not coding you can find me immersed in nature identifying plants, biking,
-                    hiking, brewing beer, and strumming my uke.
-                </p>
-            </div>
-        </section>
--->
-
-        <!-- WILL ADD SKILLS SECTION LATER
-            <section id="skills-section">
-                <h2>SKILLS</h2>
-                <div id="skills-img">
-                    <img src="images/html-5.png" alt="html">
-                    <img src="images/css-3.png" alt="css img">
-                    <img src="images/javascript.png" alt="js img">
-                </div>
-            </section>
--->
+        <p class="section-header">Check this out</p>
 
         <section id="project-section">
-<!--            <div class="header-highlight">-->
-                <p class="section-header">i made these</p>
-<!--            </div>-->
+
             <!--                Bus Spot-->
-            <div id="bus-spot-app">
-
-
+            <div id="bus-spot-app" data-aos="fade-down">
                 <div class="project-info">
                     <h3>Bus Spot</h3>
                     <div class="tech-image">
                         <img src="images/adobe-xd.png" alt="adobe xd">
                         <img src="images/figma.png" alt="figma">
                     </div>
-                    <p>Bus Spot is a transit scheduling app makes it easy for riders to visually locate their bus and reduce unexpected runs to the bus stop.
+                    <p>Bus Spot is a transit scheduling app that makes it easy for riders to visually locate their bus and reduce unexpected runs to the bus stop.
                     </p>
                     <button class="project-links"><a target="_blank"
-                                                     href="https://leahborns.github.io/upbeat-atlas-artist-finder-songkick-api-capstone/index.html">Case Study</a></button>
+                                                     href="./pages/bus-spot.html">Case Study</a></button>
                 </div>
                 <div class="project-img">
-                    <img class="project-screenshot" src="images/bus-stop-main-screen.png"
+                    <img class="project-screenshot" src="images/bus-stop-main-screen-clear.png"
                         alt="bus spot screenshot">
                 </div>
             </div>
 
 
             <!--                greener-->
-            <div id="greener-app">
+            <div id="greener-app" data-aos="fade-down" >
                 <div class="project-img">
                     <img class="project-screenshot" src="images/greener-screenshots.png" alt="sustain screenshot">
                 </div>
@@ -125,7 +89,7 @@
                     </div>
                     <p>Greener makes sustainable practices fun by earning points and getting rewards for incorporating responsible habits into your life.
                     </p>
-                    <button class="project-links"><a target="_blank" href="./pages/greener.html">Case Study</a></button>
+                    <button class="project-links"><a href="./pages/greener.html">Case Study</a></button>
                 </div>
             </div>
 
@@ -189,6 +153,10 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
