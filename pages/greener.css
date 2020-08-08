@@ -452,6 +452,12 @@ div.digital-wireframes {
     margin: auto;
 }
 
+div.digital-wireframes img {
+    width: 100%;
+    margin: auto;
+}
+
+
 /*VISUAL DEISGN*/
 
 section.visual-design {
@@ -540,9 +546,10 @@ div.usability-test-container {
 
 div.usability-test ul {
     margin: 20px auto;
+    min-height: 40vh;
     padding: 20px;
 /*    margin-left: 40px;*/
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.2em;
     list-style-position: inside;
     background-color: #f2baac;
@@ -550,9 +557,10 @@ div.usability-test ul {
 }
 
 span.stat {
-    font-size: 4em;
+    font-size: 1.1em;
     line-height: 1;
     color: #d48b47;
+    font-weight: 600;
 }
 
 div.usability-test ol {
@@ -666,6 +674,12 @@ footer h2 {
     padding: 20px 0;
     color: #4c4045;
 }
+
+p.footer-credit {
+    color: #4c4045;
+    margin: 20px auto;
+}
+
 div#social-img {
     width: 30%;
     margin: auto;
@@ -804,8 +818,9 @@ img.social-button {
     /*LIGHTNING DEMOS*/
 
     div.lightning-app img {
-        width: 60%;
+        width: 100%;
     }
+
 
 /*    INFORMATION ARCHITECTURE*/
 
@@ -823,6 +838,7 @@ img.social-button {
     }
 
     /*WIREFRAME SKETCHES*/
+
 
 
     div.wireframe-sketch {
@@ -883,6 +899,12 @@ img.social-button {
         div.usability-test-image img {
         padding: 30px 0;
 }
+
+    div.usability-test ul {
+        padding: 60px 20px;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
 
     /*PREFERENCE TESTING*/
 

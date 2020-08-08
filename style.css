@@ -228,7 +228,7 @@ header {
 
 .section .bg-move {
     position: absolute;
-    top: 0;
+    top: 50px;
     bottom: 0;
     right: auto;
     width: 60%;
@@ -379,6 +379,12 @@ footer h2 {
     padding: 20px 0;
     color: #4c4045;
 }
+
+p.footer-credit {
+    color: #4c4045;
+    margin: 20px auto;
+}
+
 div#social-img {
     width: 50%;
     margin: auto;
@@ -400,6 +406,7 @@ img.social-button {
     .section .bg-move {
         width: 40%;
         height: 80%;
+        top: 55px;
     }
 
 /*    social images*/
@@ -484,12 +491,20 @@ img.social-button {
 /*Projects*/
     div#bus-spot-app {
         flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 50px;
+
     }
 
     div#greener-app {
         flex-direction: row;
         align-items: center;
         padding-bottom: 30px;
+        justify-content: space-around;
+    }
+
+    div.project-info {
+        padding-left: 30px;
     }
 
     div.project-img {
@@ -512,7 +527,23 @@ img.social-button {
 
     .section .bg-move {
         width: 30%;
+        top: 55px;
     }
+/*
+    .section .bg-move {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: auto;
+        width: 60%;
+        height: 90%;
+        background-image: url(images/dad-me-balloon-2.png);
+        background-size: cover;
+        background-position: center;
+        z-index: 3;
+    }
+*/
+
 
 }
 

@@ -293,6 +293,12 @@ footer h2 {
     padding: 20px 0;
     color: #4c4045;
 }
+
+p.footer-credit {
+    color: #4c4045;
+    margin: 20px auto;
+}
+
 div#social-img {
     width: 50%;
     margin: auto;
@@ -386,10 +392,20 @@ img.social-button {
         width: 80%;
         margin: 15% auto;
         flex-direction: row;
+        align-items: flex-start;
     }
 
     div#form-picture {
-        width: 80%;
+        width: 70%;
+        margin-right: 30px;
+    }
+
+    div.form-picture img {
+        width: 100%;
+    }
+
+    div.form {
+        width: 30%;
         margin: auto;
     }
 

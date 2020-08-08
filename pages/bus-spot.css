@@ -61,13 +61,13 @@ nav {
 }
 
 nav > .content {
-    width: 80%;
+    width: 90%;
     height: 100px;
     margin: auto;
 }
 
 div.content {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -189,7 +189,7 @@ ul#nav-links.open{
 /*GREENER HEADER*/
 
 header {
-    width: 80%;
+    width: 90%;
     margin: 25% auto 5% auto;
     display: flex;
     flex-direction: column;
@@ -211,7 +211,7 @@ div.case-study-image {
 
 div.case-study-image img {
     margin: auto;
-    width: 80%;
+    width: 90%;
 }
 
 div.case-study-title {
@@ -219,14 +219,14 @@ div.case-study-title {
     margin: auto;
 }
 
-div#prototype-button {
+div#prototype-button-header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-div#prototype-button button {
+div#prototype-button-header button {
     background-color: #4c4045;
     width: 150px;
     padding: 20px;
@@ -235,7 +235,7 @@ div#prototype-button button {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-div#prototype-button button a {
+div#prototype-button-header button a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
@@ -255,7 +255,7 @@ section#problem {
 
 div.problem-container h2 {
     color: #4c4045;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 div#statement {
@@ -268,7 +268,7 @@ div#statement {
 }
 
 div#statement p {
-    width: 80%;
+    width: 90%;
 }
 
 /*Users Rolls and Scopes row with 3 sections*/
@@ -281,7 +281,7 @@ section#users-roles-scope {
 }
 
 div.container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -314,11 +314,11 @@ section#solution {
 
 div.solution-container h2 {
     color: #4c4045;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 div#solution-statement {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -332,31 +332,27 @@ div#solution-statement img {
 /*The Process section*/
 
 section#process {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding-top: 30px;
 }
 
-/*MAPPING FLOW AND HMW*/
-div.mapping-hmw {
+/*COMPETITIVE ANALYSIS*/
+div.competitive-analysis {
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
-div.mapping-hmw img {
+div.competitive-analysis img {
     width: 100%;
     margin: 20px auto;
 }
 
-/*LIGHTNING DEMOS*/
+/*USABILITY SURVEY*/
 
-div#lightning-intro p span {
-    font-weight: bold;
-}
-
-div.lightning-app {
+div.user-survey {
     width: 100%;
     margin: auto;
     display: flex;
@@ -364,21 +360,7 @@ div.lightning-app {
     align-items: center;
 }
 
-div.lightning-app img {
-    width: 100%;
-}
-
-/*JOURNEY AND EMPATHY MAPS*/
-
-div.journey-empathy-map {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div.journey-empathy-map img {
+div.user-survey img {
     width: 100%;
 }
 
@@ -400,7 +382,7 @@ div#personas img {
 
 /*Information architecture*/
 
-/*STORYBOARD*/
+/*User Story*/
 section.information-architecture {
     width: 100%;
     margin: auto;
@@ -409,15 +391,15 @@ section.information-architecture {
 }
 
 section.information-architecture h3 {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 section.information-architecture h4 {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 div.user-stories {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -429,11 +411,21 @@ div.user-stories img {
     margin: auto;
 }
 
+/*USER FLOWS*/
+div.user-flow {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /*WIREFRAME SKETCHES*/
 
 
 div.wireframe-sketch {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -448,7 +440,24 @@ div.wireframe-sketch img {
 }
 
 div.digital-wireframes {
-    width: 80%;
+    width: 90%;
+    margin: auto;
+}
+
+/*USABILITY TEST*/
+
+div.usability-test-round-1 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+div.usability-test-round-1 img {
+    padding-top: 10px;
+    width: 100%;
     margin: auto;
 }
 
@@ -461,13 +470,32 @@ section.visual-design {
 }
 
 section.visual-design h3 {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
+
+/*BRANDING*/
+div.branding {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div.branding-description {
+    width: 90%;
+    margin: auto;
+}
+
+div.branding-description span {
+    font-family: 'Merriweather', serif;
+    color: #d5a860;
+
+}
 /*COLOR AND TYPE*/
 
 div.color-type {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -479,7 +507,7 @@ div.topography {
 }
 
 div.color-type-image {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -491,7 +519,7 @@ div.color-type-image img {
 /*LOGOS AND NAME*/
 
 div.logo-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -509,8 +537,12 @@ div.logo img {
 
 /*Iterations*/
 div.iterations-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
+}
+
+div.iterations-container img {
+    width: 100%;
 }
 
 /*PROTOTYPING AND TESTING*/
@@ -521,28 +553,34 @@ section.prototype-test {
 }
 
 section.prototype-test h3 {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 section.prototype-test h4 {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
-/*Usability Test*/
+/*Prototype Usability Test*/
 
 div.usability-test-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-div.usability-test ul {
+div.usability-test-round-2 {
+    width: 100%;
+    margin: auto;
+}
+
+div.usability-test-round-2 ul {
     margin: 20px auto;
+    min-height: 40vh;
     padding: 20px;
     /*    margin-left: 40px;*/
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.2em;
     list-style-position: inside;
     background-color: #f2baac;
@@ -571,44 +609,20 @@ div.usability-test-image img {
     width: 100%;
 }
 
-/*PREFERENCE TESTING*/
-
-div.preference-test-container {
-    width: 80%;
-    margin: auto;
-}
-
-div.preference-test-container h4 {
-    margin-left: initial;
-}
-
-div.preference-test-1 {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div.preference-test-1 img{
+div.usability-test-results {
     width: 100%;
 }
 
-div.preference-test-2 {
+
+div.usability-test-results img {
     width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-div.preference-test-2 img{
-    width: 100%;
-}
+
 
 /*FINAL PROTOTYPE*/
 div.final-prototype-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -623,12 +637,36 @@ div.final-prototype {
 
 div.app-gif {
     width: 60%;
-    margin: 0;
+    margin: auto;
+    padding: 20px; 0 0 20px;
 }
 
 div.app-gif img {
     padding-top: 20px;
     width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div#prototype-button-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div#prototype-button-final button {
+    background-color: #4c4045;
+    width: 150px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div#prototype-button-final button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
 }
 
 /*CONCLUSION*/
@@ -640,11 +678,11 @@ section.conclusion {
 }
 
 section.conclusion h3 {
-    margin-left: 20%;
+    margin-left: 5%;
 }
 
 div.learnings-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -666,8 +704,14 @@ footer h2 {
     padding: 20px 0;
     color: #4c4045;
 }
+
+p.footer-credit {
+    color: #4c4045;
+    margin: 20px auto;
+}
+
 div#social-img {
-    width: 30%;
+    width: 60%;
     margin: auto;
     display: flex;
     text-align: center;
@@ -675,94 +719,211 @@ div#social-img {
 
 img.social-button {
     background-color: #d5a860;
-    width: 50%;
+    width: 60%;
     margin:auto;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
-@media only screen and (min-width: 900px) {
-
-    /*    OVERALL*/
-
-    div#nav-logo h3 {
-        font-size: 1.5rem;
-    }
-
-    div#nav-logo img {
-        width: 80px;
-    }
-
-    /*Nav links*/
-
-    ul#nav-links {
-        display: flex;
-        justify-content: flex-end;
-        list-style: none;
-        padding: 10px 16px;
-        float: right;
-        width: initial;
-        transform: none;
-        transition: none;
-        background-color: initial;
-        position: initial;
-        z-index: initial;
-    }
-
-    li.mobile-hover:hover {
-        background-color: initial;
-        width: initial;
-        margin: initial;
-        padding: initial;
-        border-top-right-radius: initial;
-        border-bottom-right-radius: initial;
-        border-bottom-left-radius: initial;
-        border-top-left-radius: initial;
-    }
-
-    ul#nav-links li {
-        display: inline-block;
-    }
-
-    ul#nav-links li a {
-        text-decoration: none;
-        font-size: 1rem;
-        color: #a68148;
-    }
-
-    ul#nav-links li a:active {
-        color: #d5a860;
-        text-decoration: underline;
-    }
-
-    /*mobile hamburger menu*/
-    span.mobile-btn {
-        display: none;
-    }
-
-    ul#nav-links li.close {
-        display: none;
-    }
-
+@media only screen and (min-width: 600px) {
 
     /*    HEADER*/
 
     header {
         width: 80%;
+        margin: 12% auto 5% auto;
+    }
+
+    div#prototype-button-header button:hover {
+        background-color: #a68148;
+    }
+
+    /*    problem*/
+
+    div.problem-container h2 {
+        margin-left: 10%;
+    }
+
+    div#statement p {
+        width: 80%;
+    }
+
+    /*        USERS ROLES AND SCOPE*/
+
+    div.container {
+        width: 80%;
+    }
+
+    /*    THE SOLUTION*/
+
+    section#solution {
+        padding-top: 30px;
+    }
+
+    div#solution-statement {
+        width: 80%;
+    }
+
+    div.solution-container h2 {
+        color: #4c4045;
+        margin-left: 10%;
+    }
+
+    /*  /*The Process section*/
+
+    section#process {
+        width: 80%;
+    }
+
+    /*Information architecture*/
+
+    /*User Story*/
+
+    section.information-architecture h3 {
+        margin-left: 10%;
+    }
+
+    section.information-architecture h4 {
+        margin-left: 10%;
+    }
+
+    div.user-stories {
+        width: 80%;
+    }
+
+    div.user-stories img {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    /*USER FLOWS*/
+    div.user-flow {
+        width: 80%;
+    }
+
+    /*WIREFRAME SKETCHES*/
+    div.wireframe-sketch {
+        width: 80%;
+    }
+
+    div.digital-wireframes {
+        width: 80%;
+    }
+
+    /*USABILITY TEST*/
+
+    div.usability-test-round-1 {
+        width: 80%;
+    }
+
+    /*VISUAL DEISGN*/
+
+    section.visual-design h3 {
+        margin-left: 10%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-type {
+        width: 80%;
+    }
+
+    div.color-type-image {
+        width: 80%;
+        margin: auto;
+        padding: 30px 0;
+    }
+
+    /*LOGOS AND NAME*/
+
+    div.logo-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    /*Iterations*/
+    div.iterations-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    div.iterations-container img {
+        width: 100%;
+    }
+
+
+    /*PROTOTYPING AND TESTING*/
+
+    section.prototype-test h3 {
+        margin-left: 10%;
+    }
+
+    section.prototype-test h4 {
+        margin-left: 10%;
+    }
+
+    /*Usability Test*/
+
+    div.usability-test-container {
+        width: 80%;
+    }
+
+    div.usability-test-image img {
+        padding: 30px 0;
+    }
+
+    div.usability-test-round-2 ul {
+        padding: 60px 20px;
+        font-size: 1em;
+    }
+
+
+    /*    final prtotype*/
+
+    div.final-prototype-container {
+        width: 80%;
+    }
+
+    div.app-gif {
+        width: 50%;
+    }
+
+    div#prototype-button-final {
+      flex-direction: row;
+    }
+
+    div#prototype-button-final button:hover {
+        background-color: #a68148;
+    }
+
+
+    /*    conclusion*/
+
+    section.conclusion h3 {
+        margin-left: 10%;
+    }
+
+    div.learnings-container{
+        width: 80%;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+
+    /*    HEADER*/
+
+    header {
         margin: 15% auto 5% auto;
         flex-direction: row;
     }
 
-    div#prototype-button {
-        display: flex;
+    div#prototype-button-header {
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
     }
 
-    div#prototype-button button:hover {
-        background-color: #a68148;
-    }
 
     /*    problem*/
 
@@ -809,7 +970,7 @@ img.social-button {
 
     /*    INFORMATION ARCHITECTURE*/
 
-    /*STORYBOARD*/
+    /*User stories*/
     section.information-architecture h3 {
         margin-left: 20%;
     }
@@ -822,6 +983,13 @@ img.social-button {
         width: 60%;
     }
 
+    /*USER FLOWS*/
+    div.user-flow {
+        width: 60%;
+    }
+
+
+
     /*WIREFRAME SKETCHES*/
 
 
@@ -829,7 +997,16 @@ img.social-button {
         width: 60%;
     }
 
+    div.wireframe-sketch img {
+        padding-top: 20px;
+    }
+
     div.digital-wireframes {
+        width: 60%;
+    }
+
+    /*    Usability Test round 1*/
+    div.usability-test-round-1 {
         width: 60%;
     }
 
@@ -847,8 +1024,6 @@ img.social-button {
 
     div.color-type-image {
         width: 60%;
-        margin: auto;
-        padding: 30px 0;
     }
 
     /*LOGOS AND NAME*/
@@ -910,8 +1085,100 @@ img.social-button {
 
     /*    conclusion*/
 
+    section.conclusion h3 {
+        margin-left: 20%;
+    }
+
+
     div.learnings-container{
         width: 60%;
     }
+
+/*    FOOTER*/
+    div#social-img {
+        width: 40%;
+    }
+
 }
+
+@media only screen and (min-width: 900px) {
+
+    /*    OVERALL*/
+
+    div#nav-logo h3 {
+        font-size: 1.5rem;
+    }
+
+    div#nav-logo img {
+        width: 80px;
+    }
+
+    /*Nav links*/
+    nav > .content {
+        width: 80%;
+    }
+
+    div.content {
+        width: 80%;
+    }
+
+    ul#nav-links {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 10px 16px;
+        float: right;
+        width: initial;
+        transform: none;
+        transition: none;
+        background-color: initial;
+        position: initial;
+        z-index: initial;
+    }
+
+    li.mobile-hover:hover {
+        background-color: initial;
+        width: initial;
+        margin: initial;
+        padding: initial;
+        border-top-right-radius: initial;
+        border-bottom-right-radius: initial;
+        border-bottom-left-radius: initial;
+        border-top-left-radius: initial;
+    }
+
+    ul#nav-links li {
+        display: inline-block;
+    }
+
+    ul#nav-links li a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: #a68148;
+    }
+
+    ul#nav-links li a:active {
+        color: #d5a860;
+        text-decoration: underline;
+    }
+
+    /*mobile hamburger menu*/
+    span.mobile-btn {
+        display: none;
+    }
+
+    ul#nav-links li.close {
+        display: none;
+    }
+
+
+/*    FOOTER*/
+    /*    FOOTER*/
+    div#social-img {
+        width: 30%;
+    }
+
+}
+
+
 

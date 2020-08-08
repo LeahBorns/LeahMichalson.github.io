@@ -233,6 +233,12 @@ footer h2 {
     padding: 20px 0;
     color: #4c4045;
 }
+
+p.footer-credit {
+    color: #4c4045;
+    margin: 20px auto;
+}
+
 div#social-img {
     width: 50%;
     margin: auto;
@@ -247,6 +253,8 @@ img.social-button {
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
 
 @media only screen and (min-width: 600px) {
     /*Bio Section*/
@@ -347,14 +355,22 @@ img.social-button {
 
 
     section#bio-section {
-        margin: 15% auto;
+        margin: 12% auto;
         flex-direction: row-reverse;
         align-items: flex-start;
     }
 
-    div.bio-picture {
-        width: 100%;
+    div.bio {
+        width: 60%;
         margin: auto;
+    }
+    div.bio-picture {
+        width: 40%;
+        margin: 0 30px;
+    }
+
+    div.bio-picture img {
+        width: 100%;
     }
     /*    footer*/
     div#social-img {

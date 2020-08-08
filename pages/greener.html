@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla&family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="greener.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -24,7 +25,8 @@
                 <li class="mobile-hover"><a href="../index.html">Projects</a></li>
                 <!--                    <li><a href="#skills-section">Skills</a></li>-->
                 <li class="mobile-hover"><a href="about.html">About</a></li>
-                <li class="mobile-hover"><a href="#project-section">Code</a></li>
+                <!--                WILL ADD CODE PROJECTS LATER-->
+                <!--                <li class="mobile-hover"><a href="#project-section">Code</a></li>-->
                 <li class="mobile-hover"><a href="connect.html">Connect</a></li>
             </ul>
             <span class="mobile-btn">☰</span>
@@ -33,7 +35,7 @@
     <main role="main">
 
         <!--header for Bus Spot. Image, overview and button for live prototype-->
-        <header role="banner">
+        <header role="banner" data-aos="fade-left">
             <div class="case-study-image"> <img src="../images/greener-casestudy-header.png" alt="screenshot of Bus Spot"></div>
             <div class="case-study-title">
                 <h1 class="case-study-name">greener</h1>
@@ -43,13 +45,11 @@
                     <button><a target="_blank" href="https://bit.ly/3frqmGV">Live Prototype</a></button>
                 </div>
             </div>
-
-
         </header>
 
 
         <!--           Problem statement for bus-spot-->
-        <section id="problem">
+        <section id="problem" data-aos="fade-down">
             <div class="problem-container">
                 <h2>The Problem</h2>
             </div>
@@ -59,7 +59,7 @@
             </div>
         </section>
 
-        <section id="users-roles-scope">
+        <section id="users-roles-scope" data-aos="fade-down">
             <div class="container">
                 <div id="users">
                     <h2>Users &#38; Audience</h2>
@@ -77,7 +77,7 @@
             </div>
         </section>
 
-        <section id="solution">
+        <section id="solution" data-aos="fade-down">
             <div class="solution-container">
                 <h2>The Solution</h2>
                 <div id="solution-statement">
@@ -86,7 +86,7 @@
             </div>
         </section>
 
-        <section id="process">
+        <section id="process" data-aos="fade-down">
             <!--           Section header-->
             <h2>The Process</h2>
 
@@ -94,45 +94,36 @@
             <h3>Discovery &#38; Research</h3>
 
             <h4>Mapping out the problem.</h4>
-            <div class="mapping-hmw">
+            <div class="mapping-hmw" data-aos="fade-down">
                 <p>Greener started as a big concept with many moving parts. To narrow in on the focus of this project I started the sprint by mapping out the problem and creating a flow chart. I wanted the app to focus on two users, sustainability newbies and those who already practice but need an extra push. The ultimate goal of the app would be to make sustainable practices more easy and interesting. The inital flow of the app was broken up into 5 different sections from the home screen. The app would need challenges and a recording screen to get users to do sustainable practices. It also needed an interactive aspect such as a leaderboard, profile and feed to keep users motivated through social influence.</p>
                 <img src="../images/greener-map-n-flow.png" alt="greener map and flow">
             </div>
 
-<!--            lightning demos-->
-            <div id="lightning-intro">
+            <!--            lightning demos-->
+            <div id="lightning-intro" data-aos="fade-down">
                 <h4>Lightning Demos</h4>
                 <p>As part of the sprint I performed lightning demos to research and start brainstorming ideas for the app. I found that <span>Strava</span>, <span>DuoLingo</span>, and <span>Love to Ride</span> were all great examples of apps that encompass gamification.</p>
                 <br>
             </div>
-            <div id="lightning-demos">
+            <div id="lightning-demos" data-aos="fade-down">
                 <div class="lightning-app">
                     <p>Strava's feed is easy to navigate to quickly see what others have been up to. Users can choose from a variety of challenges. Each challenge had a list and a short description of each challenge which reduced an extra click on the challenge for additional information The profile allows users to see their stats from all of their activities as well as see who they are following and who is following them.</p>
-                    <img src="../images/lightning-demos-strava.png" alt="strava app">
-                </div>
-                <div class="lightning-app">
+                    <br>
                     <p>Duolingo is the epitome of gamifying apps. It has badges, levels, points, you name it. You can immediately start challenges on the opening screen. The information is simple and requires some assumptions of what each challenge is and what level you are on. More information would be helpful. The profile is clean with all of the users stats in an easily digestible way. The leaderboard is only accessible if you complete challenges for that day which is a great way to encourage users to do challenges. Duolingo also has daily notifications to remind you to ‘practice’. This feature is nice but it also gets annoying.</p>
-                    <img src="../images/lightning-demos-duolingo.png" alt="Duolingo app">
-                </div>
-                <div class="lightning-app">
+                    <br>
                     <p>Love to Ride is a web platform that teams up companies to encourage their employees to ride their bikes to work. The profile has badges and overall stats of all rides. It’s very easy to navigate and the icons make it fun. There is a full history of your activity to compare from years past as well. Recording is really easy, especially since it’s linked up with Strava and the leaderboard is broken into different sections such as Top Commuters, Riders, Men, Woman and Kids so there can be more than one leader. The interface is very clean and easy to navigate.</p>
-                    <img src="../images/lightning-demos-lovetoride.png" alt="Love to ride app">
+                    <img src="../images/greener-lightning-demo.png" alt="greener lightning demos">
                 </div>
-                <!--
 
-                <div class="lightning-image">
-                    <img src="../images/lightning-demos-strava.png" alt="strava app">
-                    <img src="../images/lightning-demos-duolingo.png" alt="strava app">
-                    <img src="../images/lightning-demos-lovetoride.png" alt="strava app">
-                </div>
--->
             </div>
+            <!--
             <h4>Journey &#38; Empathy</h4>
             <div class="journey-empathy-map">
                 <p>To get into the headspace of our users and answer the <em>how</em> of the user experience I created a journey and empathy map. Targeting the users and goals from the mapping exercise users want an easy and fun way to learn sustainable practices that are often mundane tasks. <br><br> The users journey starts by opening the app to the challenges screen where they can see what level they are on and complete challenges for points. By recording their challenges the user can see their accomplishments, including badges, challenges history and total amount of co2 reduced, on their profile. Users can see what their friends are doing on the feed where they can interact with their posts by liking, commenting or sharing as well as see where they stand on the leaderboard for some friendly socially influenced competition.</p>
                 <img src="../images/greener-journey-empathy-maps.png" alt="greener journey and empathy maps">
             </div>
-            <div class="persona-container">
+-->
+            <div class="persona-container" data-aos="fade-down">
                 <h4>Personas</h4>
                 <div id="personas">
                     <p>Through Journey Mapping and Empathy Maps I developed the target audience for Greener. From this I came up with two personas. One user is a busy Mom who wants to be more sustainable but isn’t sure how. She’s become much more aware of sustainable practices and wants to be a good example for her kids. While one kid is taking a nap and the other is off at school she has some downtime to learn but ideally she just wants to be told what to do. She uses apps like DuoLingo and Candy Crush. The other user grew up recycling, eating vegetarian, and doing other sustainable practices regularly. As life has gotten more busy he’s started to be less strict on his sustainable behaviors. Partially laziness and also convenience. He’s expressed this to friends, and they have been doing the same thing. He wishes there was something to encourage him to do more. He uses Strava to track his rides and is a big Pokemon GO fan.
@@ -141,38 +132,43 @@
                 </div>
             </div>
         </section>
-            <!--        Information Architecture Subheader    -->
-           <section class="information-architecture">
-             <h3>Information Architecture</h3>
-                <h4>Storyboarding</h4>
-                <div class="user-stories">
-                    <p>To better understand and empathize with the user I created a storyboard to visualize how the user would flow through the app. This version of the story highlights the persona like Lazy Larry.
-                    </p>
-                    <img src="../images/greener-storyboard.png" alt="greener storyboard">
-                </div>
+        <!--        Information Architecture Subheader    -->
+        <section class="information-architecture" data-aos="fade-down">
+            <h3>Information Architecture</h3>
+            <h4>Storyboarding</h4>
+            <div class="user-stories">
+                <p>To better understand and empathize with the user I created a storyboard to visualize how the user would flow through the app. This version of the story highlights the persona like Lazy Larry.
+                </p>
+                <img src="../images/greener-storyboard.png" alt="greener storyboard">
+            </div>
 
             <div class="wireframe-sketch-container">
                 <h4>Wireframe Sketches</h4>
                 <div class="wireframe-sketch">
-                    <p>With personas and a storyboard developed I began sketching the first iteration of Greener. I split the screens up into 4 sections: Challenges, Recording, Profile and, Feed/Leaderboard and created 4-up sketches for each with a final solution sketch. Since gamification features went hand in hand with creating a habit I remixed features on Duo Lingo and Strava to start creating the concepts.
-                        <br><br> I wanted the challenges screen to show what level the user was on, a progress bar and a way to list each challenge out without increasing cognitive load. The two overarching concepts had the challenges listed as either buttons with less information, similar to Duo Lingo or a list with more comprehensive information similar to Strava. I decided to move forward with the DuoLingo-esque features.
-                        <br><br> The recording sketches began as one recording screen however also due to reducing cognitive load I broke it down into 3 screens. Screen 1 records specific challenges selected, Screen 2 allows users to gain extra points for adding pictures or comments, and finally a submit screen that summarizes points earned, CO2 reduced and an option to share for extra points.
-                        <br><br> Similar to the challenges screen I knew I wanted the profile screen to have user stats, progress bars, badges, and an activity feed. The 4-up sketches all had the same features, just different arrangements of information. DuoLingo was also a big influence for the layout.
-                        <br><br> Finally, the Feed and Leaderboard provided social influences through interacting with friends posts as well as see where they stand overall. The 4-up sketches started with influence from Instagram. The Feed of friends posts with the leaders displayed similar to instagram stories. In effort to reduce cognitive overload another version had the Leaderboard and Feed as tabbed features on one screen.
+                    <p>With personas and a storyboard developed I began sketching the first iteration of Greener. I split the screens up into 4 sections: Challenges, Recording, Profile and, Feed/Leaderboard and created 4-up sketches for each with a final solution sketch. Since gamification features went hand in hand with creating a habit I remixed features on Duo Lingo and Strava to start creating the concepts.</p>
+                    <br>
+                    <p>I wanted the challenges screen to show what level the user was on, a progress bar and a way to list each challenge out without increasing cognitive load. The two overarching concepts had the challenges listed as either buttons with less information, similar to Duo Lingo or a list with more comprehensive information similar to Strava. I decided to move forward with the DuoLingo-esque features.</p>
+                    <br>
+                    <p>The recording sketches began as one recording screen however also due to reducing cognitive load I broke it down into 3 screens. Screen 1 records specific challenges selected, Screen 2 allows users to gain extra points for adding pictures or comments, and finally a submit screen that summarizes points earned, CO2 reduced and an option to share for extra points.</p>
+                    <br>
+                    <p>Similar to the challenges screen I knew I wanted the profile screen to have user stats, progress bars, badges, and an activity feed. The 4-up sketches all had the same features, just different arrangements of information. DuoLingo was also a big influence for the layout.</p>
+                    <br>
+                    <p>Finally, the Feed and Leaderboard provided social influences through interacting with friends posts as well as see where they stand overall. The 4-up sketches started with influence from Instagram. The Feed of friends posts with the leaders displayed similar to instagram stories. In effort to reduce cognitive overload another version had the Leaderboard and Feed as tabbed features on one screen.
                     </p>
                     <img src="../images/greener-wireframes-sketch.png" alt="greener wireframe sketch">
-                    <img src="../images/greener-digital-wireframes.png" alt="greener wireframe sketch">
+
                 </div>
             </div>
-               <h4>Digital Wireframes</h4>
+            <h4>Digital Wireframes</h4>
             <div class="digital-wireframes">
                 <p>The digital wireframes were created using the solution sketches and further detailed using paper prototypes. No major changes were made at this time.
                 </p>
+                <img src="../images/greener-digital-wireframes.png" alt="greener wireframe sketch">
             </div>
-            </section>
-            <!--        Visual Design Subheader    -->
-            <section class="visual-design">
-            <div class="color-type-container">
+        </section>
+        <!--        Visual Design Subheader    -->
+        <section class="visual-design" data-aos="fade-down">
+            <div class="color-type-container" >
                 <h3>Visual Design</h3>
                 <div class="color-type">
                     <div class="color-palette">
@@ -185,10 +181,10 @@
                     </div>
                 </div>
                 <div class="color-type-image">
-                <img src="../images/greener-colors-type.png" alt="greener colors and typography">
+                    <img src="../images/greener-colors-type.png" alt="greener colors and typography">
                 </div>
             </div>
-            <div class="logo-container">
+            <div class="logo-container" data-aos="fade-down">
                 <h4>Logo Design and Proess</h4>
                 <div class="logo">
                     <p>I started developing the name by coming up with a list of names related to games as well as sustainability. It turned out that most names with “Eco” were already used, as well as other sustainability related words including Virid. I also came across Greenie, which is someone who campaigns to protect the environment. I thought maybe this could have a negative connotation with some users. It did however remind me of conversations I’ve had in the past where people expressed wanting to be “More Green” or “Greener”. After an app store search, there were no search results for greener so I move ahead with that name.
@@ -197,7 +193,7 @@
                     <img src="../images/greener-logos.png" alt="greener logos">
                 </div>
             </div>
-            <div class="iterations-container">
+            <div class="iterations-container" data-aos="fade-down">
                 <h4>Iterations</h4>
                 <div class="iterations">
                     <p>Prior to usability testing the visual design went through a couple bigger changes. The first iterations color palette clashed and there was no dominant color for clickable items. Some of the alignment and drop shadows also needed to be adjusted for better flow.
@@ -206,8 +202,8 @@
                 </div>
             </div>
         </section>
-            <!--        Prototype/Testing Subheader    -->
-            <section class="prototype-test">
+        <!--        Prototype/Testing Subheader    -->
+        <section class="prototype-test" data-aos="fade-down">
             <h3>Prototyping &#38; Testing </h3>
             <h4>Usability Test</h4>
             <div class="usability-test-container">
@@ -222,7 +218,7 @@
                     </ul>
 
                     <p>After testing, the users averaged an <span class="stat">84%</span> success rate.</p><br>
-                    <p>There were three things that stood out.</p>
+                    <p>There were three things that stood out:</p>
 
                     <p><span class="stat">1</span> user skipped the onboarding walk through and wasn’t sure where to start once in the game.</p>
                     <p> <span class="stat">1</span> user didn’t notice the segmented tabs on the recording screen, and another clicked around before finding the tabs.</p>
@@ -245,12 +241,12 @@
                     <img src="../images/greener-preference-tests-2.png" alt="filler">
                 </div>
             </div>
-                <h4>Final Prototype</h4>
+            <h4>Final Prototype</h4>
             <div class="final-prototype-container">
                 <div class="final-prototype">
                     <p>Through many iterations greener provides a way for users to learn about sustainability in a fun and engaging way. Through gamification features such as leaderboards and badges as well as social influence by way of the feed users can develop sustainable habits through the cue of the challenges and a reward for completing those challenges. From here I want to do further preference testing on features to see what users find more engaging, as well as find easier ways for users to record.</p>
                     <div class="app-gif">
-                    <img src="../images/greener.gif" alt="gif of greener">
+                        <img src="../images/greener.gif" alt="gif of greener">
                     </div>
                     <div id="prototype-button">
                         <button><a target="_blank" href="https://bit.ly/3frqmGV">Live Prototype</a></button>
@@ -258,8 +254,8 @@
                 </div>
             </div>
         </section>
-            <!--        Conclustion Subheader    -->
-            <section class="conclusion">
+        <!--        Conclustion Subheader    -->
+        <section class="conclusion" data-aos="fade-down">
             <h3>Conclusion </h3>
             <div class="learnings-container">
                 <h4>Growth and Outcomes</h4>
@@ -279,6 +275,7 @@
             <a href="https://www.instagram.com/leahmichalsondesigns/" target="_blank"><img class="social-button" src="../images/social-insta.png" alt="Instagram logo"></a>
             <a href="mailto:leah.borns@gmail.com" target="_blank"><img class="social-button" src="../images/social-mail.png" alt="mail image"></a>
         </div>
+        <p class="footer-credit">Designed and Coded by Leah M.</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../script.js" type="text/javascript"></script>

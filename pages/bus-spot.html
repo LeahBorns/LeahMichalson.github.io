@@ -1,297 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!--        google site tag? Add from index.html-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-        <title>Bus Spot Case Study</title>
-        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Merriweather&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-        <link rel="stylesheet" type="text/css" href="bus-spot.css">
-    </head>
+<head>
+    <!--        google site tag? Add from index.html-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <title>Bus Spot Case Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="bus-spot.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
 
-    <body>
-        <!--       nav bar with collapsible button. Overlay that appears is below the projects section-->
-        <nav role="navigation">
-            <div class="content">
-                <div id="nav-logo"><a href="../index.html"> <img src="../images/logo@3x.png" alt="logo"></a>
-                    <h3>Leah Michalson</h3>
-                </div>
-                <ul id="nav-links">
-                    <li class="close">&times;</li>
-                    <li class="mobile-hover"><a href="../index.html">Projects</a></li>
-                    <!--                    <li><a href="#skills-section">Skills</a></li>-->
-                    <li class="mobile-hover"><a href="about.html">About</a></li>
-                    <li class="mobile-hover"><a href="#project-section">Code</a></li>
-                    <li class="mobile-hover"><a href="connect.html">Connect</a></li>
-                </ul>
-                <span class="mobile-btn">☰</span>
+<body>
+    <!--       nav bar with collapsible button. Overlay that appears is below the projects section-->
+    <nav role="navigation">
+        <div class="content">
+            <div id="nav-logo"><a href="../index.html"> <img src="../images/logo@3x.png" alt="logo"></a>
+                <h3>Leah Michalson</h3>
             </div>
-        </nav>
-        <main role="main">
+            <ul id="nav-links">
+                <li class="close">&times;</li>
+                <li class="mobile-hover"><a href="../index.html">Projects</a></li>
+                <li class="mobile-hover"><a href="about.html">About</a></li>
+                <!--                WILL ADD CODE PROJECTS LATER-->
+                <!--                <li class="mobile-hover"><a href="#project-section">Code</a></li>-->
+                <li class="mobile-hover"><a href="connect.html">Connect</a></li>
+            </ul>
+            <span class="mobile-btn">☰</span>
+        </div>
+    </nav>
+    <main role="main">
 
-            <!--header for Bus Spot. Image, overview and button for live prototype-->
-            <header role="banner">
-                <div class="case-study-image"> <img src="../images/bus-stop-main-screen-clear.png" alt="screenshot of Bus Spot"></div>
-                <div class="case-study-title">
-                    <h1 class="case-study-name">Bus Spot</h1>
-                    <h2>Overview</h2>
-                    <p class="case-study-description">Transit officials recently identified their riders need for clearer scheduling as bus lines expand to single bus stops. Through the design process, I developed an app called the Bus Spot, a scheduling app that allows users to visually locate their bus and set arrival/departure alerts to prevent riders running for the wrong bus.</p>
-                    <div id="prototype-button">
+        <!--header for Bus Spot. Image, overview and button for live prototype-->
+        <header role="banner" data-aos="fade-left">
+            <div class="case-study-image"> <img src="../images/bus-spot-header-image.png" alt="screenshot of Bus Spot"></div>
+            <div class="case-study-title">
+                <h1 class="case-study-name">Bus Spot</h1>
+                <h2>Overview</h2>
+                <p class="case-study-description">Transit officials recently identified their riders need for clearer scheduling as bus lines expand to single bus stops. Through the design process, I developed an app called the Bus Spot, a scheduling app that allows users to visually locate their bus and set arrival/departure alerts to prevent riders running for the wrong bus.</p>
+                <div id="prototype-button-header">
+                    <button><a target="_blank" href="https://adobe.ly/3iZPaaV">Live Prototype</a></button>
+                </div>
+            </div>
+
+
+        </header>
+
+
+        <!--           Problem statement for bus-spot-->
+        <section id="problem" data-aos="fade-down">
+            <div class="problem-container">
+                <h2>The Problem</h2>
+            </div>
+            <div id="statement">
+                <p>The problem here is twofold for the riders and the transit agency. Multiple bus routes have been added to a single stop and riders are getting frustrated as it’s become too hard to figure out what bus is coming. Many riders rush to the bus stop only to find it’s not their bus. The city has also recently developed a way to know how far each bus is from a stop. However, they haven’t found a way to share that information with their riders. </p>
+            </div>
+        </section>
+
+        <section id="users-roles-scope" data-aos="fade-down">
+            <div class="container">
+                <div id="users">
+                    <h2>Users &#38; Audience</h2>
+                    <p>This app is for users who have experienced an increase in the number of bus lines to their bus stops and have found it difficult to know when their bus is coming. Riders are tired of running to the bus stop only to find it’s the wrong bus.</p>
+                </div>
+                <div id="roles">
+                    <h2>Roles </h2>
+                    <p>I was the User Experience Designer. I conducted user research, created the personas, user flows, wireframes, prototypes and final user testing. I also collaborated with my mentor Becky for assistance along the way. She provided me with feedback from the Discover to the Deliver phases.
+                    </p>
+                </div>
+                <div id="scope">
+                    <h2>Scope &#38; Constraints</h2>
+                    <p>We will use the Transit Agency’s data from tracking the bus distance from the stops with a live visual of where the bus is on a map. We will also provide the option for users to turn on alerts for when the bus is arriving and leaving a bus stop.
+                        <br> The bus stop at Washington &#38; State has been having the most complaints from riders. We will only focus on that stop. We will also only focus on improving the scheduling part of the app as the trip planning functionality is working efficiently for most users.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" data-aos="fade-down">
+            <div class="solution-container">
+                <h2>The Solution</h2>
+                <div id="solution-statement">
+                    <p>I have developed the Bus Spot, a scheduling app that allows users to track their bus with a live bus locator and an option to set arrival/departure alerts. User research showed that these features were highly desirable and could help solve the pain points in the current bus scheduling system. The transit agencies data would provide the back end functionality to make the live bus locator and real time bus alerts come to life. This in turn will give riders the information they need to make sure they are catching the right bus.
+                    </p>
+                    <img src="../images/bus-spot-solution.png" alt="greener solution"></div>
+            </div>
+        </section>
+
+        <section id="process" data-aos="fade-down">
+            <!--           Section header-->
+            <h2>The Process</h2>
+
+            <!--            Discovery and Research Sub Header-->
+            <h3>Discovery &#38; Research</h3>
+
+            <!--                competitive analysis-->
+
+            <h4>Competitive Analysis</h4>
+            <div class="competitive-analysis">
+                <p>Three of the most common transit apps are Moovit, Transit App and Google Maps. Moovit and Transit App are both specifically for trip planning and scheduling for modes of transportation other than driving alone. Google Maps is the big name in trip planning and has defined the features that are found in most trip planning and scheduling apps. To get a better understanding where Bus Spot could shine I did a competitive analysis of these three companies.</p>
+                <img src="../images/bus-spot-swot.png" alt="bus spot swot analysis">
+                <p>Moovit sets itself apart with an option to look at the bus stops and bus lines and the ability to see all the bus’s coming to one stop. This would be helpful for riders paired with the real time bus times however if the bus times are off it’s no longer helpful to the user. Moovit also lets users set an alarm to know when to get off the bus, but no alarms or alerts before they get on the bus.</p><br>
+                <p>Transit app also has a real time schedule as well as bus tracking. The bus tracking doesn’t update regularly and jumps new locations when it updates making it unreliable to know where the bus actually is. There are options to set alerts however only when the user's trip has started and it acts more like a reminder for when the user should leave their house. Finally the buttons on the Transit app aren’t intuitive. It requires a higher cognitive load to figure out how to ‘X’ out of a screen or go back.</p><br>
+                <p>Google maps is the big name in trip planning and what most riders use (according to the user survey). Like Moovit and Transit app it has real time bus scheduling and the interface is very familiar to most users. Since Google Maps is used for trip planning across many forms of transportation Bus scheduling isn’t the highest priority on the app. There is the ability to start an alarm without starting a trip however it’s hard to find and if the bus scheduling is off, so is the alarm.</p>
+            </div>
+
+            <!--            User Survey-->
+            <div id="user-survey-intro">
+                <h4>User Survey</h4>
+                <p>To get a better understanding of the riders I sent out a survey. My goal was to determine what riders need in a bus scheduling app to make sure they were catching the bus. I reached out to friends, family and previous coworkers from a Transit App company I worked for. I received a total of 43 responses, 15 specifically bus riders, all with very similar needs.</p>
+                <br>
+            </div>
+            <div id="usability-survey-container">
+                <div class="user-survey">
+                    <p>Most bus riders rode between 2 to 5+ times per week and used Google Maps as their app of choice. When asked why they might have taken another form of transportation over the bus 53% of the riders said it was because the live bus scheduling was off and they didn’t know where their next bus was. Most also paired not knowing where their bus was with running late.
+                    </p><br>
+                    <p>I found that 67% of riders use transit apps for scheduling, even over trip planning. This seems pretty big and the potential for a bigger problem if that many people are experiencing the same thing.
+                    </p><br>
+                    <p>
+                        Seeing what some of the other transit apps lacked after the competitive analysis, I was curious if users might find some ideas I had useful. I suggested a live bus locator, similar to Lyft, arrival/departure alerts, and bus capacity. I also allowed users to add their own suggestions. Out of these ideas 93% of users said they would want a Live Bus Locator, while 73% said they would want bus alerts. The results made it quite clear what needed to be built in the Bus Spot.
+                    </p>
+                    <img src="../images/bus-spot-usability-test.png" alt="usability test bar graphs">
+                </div>
+                <div class="user-survey">
+                    <p>Finally 66% of riders said they would ride more if these features were added to transit apps. This could not only be a great opportunity for the Bus Spot app but also for transit agencies to increase their ridership and ROI. In turn giving them the ability to improve their infrastructure and improve rider happiness.</p>
+                    <img src="../images/bus-spot-usability-test-2.png" alt="Usability test circle graph">
+                </div>
+            </div>
+            <div class="persona-container">
+                <h4>Personas</h4>
+                <div id="personas">
+                    <p>After conducting the survey and getting a better idea of the users needs, I created two personas to represent the average bus riders. One rider is a Project Manager who rides 5+ times a week, the other is a Software Engineer that rides 2-4 times per week. They are both frustrated with the live bus schedule being off. As detailed below both users are frustrated with the live bus schedule being off and having to sprint to the bus stop. The software engineer would also like an alert since she doesn’t ride frequently and needs a reminder.
+                    </p>
+                    <img src="../images/bus-spot-personas.png" alt="Persona Images ">
+                </div>
+            </div>
+        </section>
+        <!--        Information Architecture Subheader    -->
+        <section class="information-architecture" data-aos="fade-down">
+            <h3>Define</h3>
+            <h4>User Stories</h4>
+            <div class="user-stories">
+                <p>After gaining a better understanding of our users, I eventually broke the users needs into 4 user stories. The biggest pain point for the user was that they wanted to have a better tool to figure out where their bus was and an alert to help them get there on time. From this I developed the following stories, 3 high priority and 1 medium priority.
+                </p>
+                <img src="../images/bus-spot-user-story-flows.png" alt="greener storyboard">
+            </div>
+            <h4>User Flow</h4>
+            <div class="user-flow">
+                <p>Once my user stories were in place I began building the user flow. This process took many iterations. I had a lot of scope creep in this phase. I was thinking that scheduling was also part of trip planning. With a few iterations I found a way to eliminate the creep and still be able to fulfill my user stories that were just focused on scheduling.</p>
+                <p>
+                    In a much more succinct flow the user can see bus details or set an alert for their bus directly from their home screen. The alerts complete with a pop up window letting the user know if their bus is arriving soon or leaving the bus stop. This feature will need to be configured from the back end with the Transit Agency’s data.
+
+                </p>
+            </div>
+
+            <div class="wireframe-sketch-container">
+                <h4>Wireframe Sketches</h4>
+                <div class="wireframe-sketch">
+                    <p>With the flow in motion I began sketching the first iteration of the Bus Spot. My first wireframe sketches had a lot of similarities to the Moovit and Transit app. The concept also wasn’t just for scheduling, it was for trip planning too. The opening screen had the option to find your destination but also had a screen for a live map and bus stops. The bus stops screen could be selected to find more bus stops near the user as well as the bus schedule. These first sketches had the normal trip planning walk through. “Choose your destination, add favorites, choose the best route, and a trip overview. As part of the scheduling the user could find more information from a link in the trip details where they could see other bus times and turn on arrival and departure alerts. All very complicated and a lot of scope creep.</p><br>
+                       <p>
+                         I unfortunately didn’t realize the amount of scope creep in my initial layout so I developed these screens digitally with more details and used them for my first usability test.
+                    </p>
+                    <img src="../images/bus-spot-wireframes.png" alt="bus spot wireframes v1">
+                </div>
+            </div>
+            <h4>Digital Wireframes</h4>
+            <div class="digital-wireframes">
+                <p>The digital wireframes were created using the solution sketches and further detailed using paper prototypes. No major changes were made at this time.
+                </p>
+            </div>
+            <h4>Usability Test Round 1</h4>
+            <div class="usability-test-round-1">
+                <p>The first round of usability testing was very helpful. Watching users interact with the wireframes helped me to see what I had was much more than what the transit agency was asking for. The same information could be found in multiple places and a lot of it wasn’t necessary for the scope of the project. </p>
+<br>
+                <p>The tasks were created for scheduling through trip planning. The users needed to find their bus schedule, find the bus route with the quickest time (out of scope), set an alert for busses arriving and leaving the bus stop, and start your trip (out of scope.)</p>
+<br>
+                <p>All of the users described the opening screen very thoroughly. However when it came to finding the bus stop details a few of the users clicked around before clicking on the bus stops in the nav bar. I wasn’t sure if this was due to everything being black and white or if it was poor instruction on my part.  Some of the labels were way too small and didn’t have any indicating colors making it difficult for users to complete the tasks. All of the participants completed all of the tasks eventually.</p>
+<br>
+                <p>Next steps for improving the app resulted in removing the trip planning screens, making the labels larger and renaming some of the headers. Through those changes I also realized I never created a pop up for the bus arrival and departure alert.</p>
+                <img src="../images/usability-test-1-wireframes.png" alt="usability test results">
+            </div>
+        </section>
+        <!--        Visual Design Subheader    -->
+        <section class="visual-design" data-aos="fade-down">
+            <div class="color-type-container">
+                <h3>Visual Design</h3>
+                <div class="color-type">
+                    <div class="branding">
+                        <h4>Branding</h4>
+                        <p>To develop the brand I put Moovit, Transit App and Google Maps through the competitive analysis ringer again, but this time looking at their visual design. All of the apps use primary colors usually with a combo of either orange or green. The layout of the apps were all very similar to Google Maps with the exception of the Transit App. Transit Apps exit buttons were not in the usual spot and therefore increasing the cognitive load.</p>
+<br>
+                            <p>After digging into what the competition has done and looking at the goals of our app I decided I want the brand to have characteristics of conviviality, reliability and trustworthiness.
+                        </p>
+<br>
+                        <div class="branding-description">
+                            <span>Convivial</span> - Like the bus, The Bus Spot provides a friendly, enjoyable experience for their riders.
+                            <br><br><span>Reliable</span> - Riders can rely on The Bus Spot to know where their bus is
+                            <br><br><span>Trustworthy</span> - The Bus Spot can be trusted to have accurate information to get riders to their destination.
+                        </div>
+                    </div>
+                    <div class="color-palette">
+                        <h4>Color Palette</h4>
+                        <p>Like the competitors I also wanted to stick with the primary colors with an accent of green. These colors give the app a familiar and friendly feel.
+                        </p>
+                    </div>
+                    <div class="topography">
+                        <h4>Topography</h4>
+                        <p>For Typography I chose Proxima Nova. It is a web safe font so it will be guaranteed to be available for all users across many devices. The single font also keeps everything simple and consistent.</p>
+                    </div>
+                </div>
+                <div class="color-type-image">
+                    <img src="../images/bus-spot-colors-type.png" alt="bus spot colors and typography">
+                </div>
+            </div>
+            <div class="logo-container">
+                <h4>Logo Design and Process</h4>
+                <div class="logo">
+                    <p>The Bus Spot was brainstormed around a list of synonyms related to transit, alert, schedule and locate. I ended on three names that I felt were appropriate for this app and weren’t available in the app store. Those three were Buspy, Where’s the Bus App and Bus Spot. </p>
+                        <p>Busby was a combination of Bus and Espy, meaning catch sight of. The logo would have been a bus viewed through binoculars or a spyglass. With the correct pronunciation of Espy it would have sounded more like “Best Buy”. Not the best option when trying to differentiate a new brand.</p>
+                        <p>The next option was Where’s the bus App, a funny play on words for “Where’s the bus at?”. The logo would have been a bus with its side mirrors looking like a shrug. In the end I think it was a little too silly and there was a bus game already on the app store called Where’s the Bus.
+                    </p>
+                    <img src="../images/bus-spot-logo-design.png" alt="bus spot logos">
+                </div>
+            </div>
+            <div class="iterations-container">
+                <h4>High-Fi Mockup Iterations</h4>
+                <div class="iterations">
+                    <p>I split the High-Fi mockups into three different sections to make sure the flow of each was being accomplished; onboarding, turning on the alarm and finding the bus schedule. </p>
+                      <br>
+                    <p>I added an onboarding flow that started with the option to create an account or sign up. After the user creates an account they are brought to a carousel of app tips before getting to the home screen. The onboarding instructions were added to help users understand what features the app had, specifically the bus alert toggle. I used color to show whether the bus is running on time, a similar feature to what Google Maps has.</p>
+<br>
+                    <p>On the home screen, I changed the verbiage to “Arrival and Departure Alerts” to make it more clear what the toggles were for below.  I updated the icons and added the brand colors as well as the new logo. I grayed out bus 10’s information since the gray busses are supposed to indicate a bus that’s out of service. I also made the circles on the busses bigger so the numbers were more legible.</p>
+<br>
+                    <p>The bus information on the bus stops screen was redundant to the home screen so I changed the leave times layout to make it clearer what the numbers were for and also added arrows to show that there was additional information available. </p>
+<br>
+                       <p>On the bus details screen, I updated the header to make it clear what bus the schedule was for. I also changed the schedule screen to show details for each individual bus unlike before where it had multiple bus schedules on one. This simplified the screen and made the information much easier to understand.
+                    </p>
+                    <img src="../images/bus-spot-high-fi-mockups.png" alt="bus spot high-fi mockups">
+                </div>
+            </div>
+        </section>
+        <!--        Prototype/Testing Subheader    -->
+        <section class="prototype-test" data-aos="fade-down">
+            <h3>Prototyping &#38; Testing </h3>
+            <h4>Usability Test</h4>
+            <div class="usability-test-container">
+                <div class="usability-test-round-2">
+                    <p>For the final round of testing, I wanted to see:</p>
+
+                    <ul>
+                        <li>If the users found the onboarding information helpful.</li><br>
+                        <li>If they understood the toggle alert or found it useful.</li><br>
+                        <li>If they could find the bus schedule for their bus.</li>
+                    </ul>
+
+                    <p>The results were interesting and led to a very clear understanding of where fixes needed to be done. I asked the users to walk me through the onboarding process, how they might use the app to make sure they don’t miss their bus (with the alert) and to find the bus schedule to get more info about their bus. I tested 4 users. All four users got through the onboarding and toggled on the alert with ease. Finding the schedule proved to be difficult for 3 of the 4 participants. Overall the success rate was about 63%.
+                    </p>
+                </div>
+                <div class="usability-test-image">
+                    <img src="../images/bus-spot-prototype-usability-test.png" alt="prorotype usability test results">
+                </div>
+                <div class="usability-test-results">
+                    <p>I realized that the location of the bus stops on the nav bar was not intuitive to find the bus schedule. I probably should have taken note of this more after the first usability test, but the second round really confirmed it.  It was also very clear that users wanted to click on the bus information on the home screen to find more information. One user said that that was how he accessed more bus information on other apps. Through this I realized that the bus stops nav was unnecessary for this project. It was out of scope for the project since we were just focusing on one bus stop, and didn’t help the user. The users found the toggle alarm helpful and understood what it was for.</p>
+<br>
+                    <p>After usability testing, I removed the nav bar at the bottom and added a settings button on the map screen. If the transit agency wanted to provide their riders with more information about other bus stops later on, an icon could be added above the setting icon for the bus stops screen.</p>
+<br>
+                    <p>The bus schedule is now directly accessible from the home screen. I added the leave times that were previously on the bus stops screen along with an arrow to show there is more information available. </p>
+<br>
+                    <p>Finally I changed the toggle to be on the right of the screen, separate from the bus number. Just in case any bus numbers happen to be longer than 3 digits. On the bus schedules screen I updated the language to make it clear that it was the full bus schedule for that particular bus.</p>
+                    <img src="../images/bus-spot-usability-test-fixes.png" alt="fixes from usability test results">
+                </div>
+            </div>
+            <h4>Final Prototype</h4>
+            <div class="final-prototype-container">
+                <div class="final-prototype">
+                    <p>Through a very iterative process the bus spot provides a solution for the riders and the transit agency.  The live bus tracking and the bus arrival/departure alerts provides riders with more information to get to their bus stop on time. No more guessing if the next bus is theirs or when the next bus might be arriving. The alerts can also give riders more time if they already know they missed their bus and lets them quickly make a decision if they should wait for the next bus or not.</p>
+<br>
+                      <p>In addition to the riders the transit agency now also has a vehicle (pun intended) to get bus tracking information to their users. With this information it will provide some really cool backend features for live bus tracking and accurate pop up alerts with updated bus info from the database. In the end if this app does increase ridership as the survey suggested, transit agencies could increase their ROI.
+                    </p>
+                    <div class="app-gif">
+                        <img src="../images/bus-spot.gif" alt="gif of bus spot">
+                    </div>
+                    <div id="prototype-button-final">
                         <button><a target="_blank" href="https://adobe.ly/3iZPaaV">Live Prototype</a></button>
                     </div>
                 </div>
-
-
-            </header>
-
-
-            <!--           Problem statement for bus-spot-->
-            <section id="problem">
-                <div class="problem-container">
-                    <h2>The Problem</h2>
-                </div>
-                <div id="statement">
-                    <p>The problem here is twofold for the riders and the transit agency. Multiple bus routes have been added to a single stop and riders are getting frustrated as it’s become too hard to figure out what bus is coming. Many riders rush to the bus stop only to find it’s not their bus. The city has also recently developed a way to know how far each bus is from a stop. However, they haven’t found a way to share that information with their riders. </p>
-                </div>
-            </section>
-
-            <section id="users-roles-scope">
-                <div class="container">
-                    <div id="users">
-                        <h2>Users &#38; Audience</h2>
-                        <p>This app is for users who have experienced an increase in the number of bus lines to their bus stops and have found it difficult to know when their bus is coming. Riders are tired of running to the bus stop only to find it’s the wrong bus.</p>
-                    </div>
-                    <div id="roles">
-                        <h2>Roles </h2>
-                        <p>I was the User Experience Designer. I conducted user research, created the personas, user flows, wireframes, prototypes and final user testing. I also collaborated with my mentor Becky for assistance along the way. She provided me with  feedback from the Discover to the Deliver phases.
-                        </p>
-                    </div>
-                    <div id="scope">
-                        <h2>Scope &#38; Constraints</h2>
-                        <p>We will use the Transit Agency’s data from tracking the bus distance from the stops with a live visual of where the bus is on a map. We will also provide the option for users to turn on alerts for when the bus is arriving and leaving a bus stop.
-<br>
-                            The bus stop at Washington &#38; State has been having the most complaints from riders. We will only focus on that stop. We will also only focus on improving the scheduling part of the app as the trip planning functionality is working efficiently for most users.
-
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="solution">
-                <div class="solution-container">
-                    <h2>The Solution</h2>
-                    <div id="solution-statement">
-                        <p>I have developed the Bus Spot, a scheduling app that allows users to track their bus with a live bus locator and an option to set arrival/departure alerts. User research showed that these features were highly desirable and could help solve the pain points in the current bus scheduling system. The transit agencies data would provide the back end functionality to make the live bus locator and real time bus alerts come to life. This in turn will give riders the information they need to make sure they are catching the right bus.
-                        </p>
-                        <img src="../images/greener-screenshots.png" alt="greener solution"></div>
-                </div>
-            </section>
-
-            <section id="process">
-                <!--           Section header-->
-                <h2>The Process</h2>
-
-                <!--            Discovery and Research Sub Header-->
-                <h3>Discovery &#38; Research</h3>
-
-<!--                competitive analysis-->
-
-                <h4>Competitive Analysis</h4>
-                <div class="mapping-hmw">
-                    <p>Greener started as a big concept with many moving parts. To narrow in on the focus of this project I started the sprint by mapping out the problem and creating a flow chart. I wanted the app to focus on two users, sustainability newbies and those who already practice but need an extra push. The ultimate goal of the app would be to make sustainable practices more easy and interesting. The inital flow of the app was broken up into 5 different sections from the home screen. The app would need challenges and a recording screen to get users to do sustainable practices. It also needed an interactive aspect such as a leaderboard, profile and feed to keep users motivated through social influence.</p>
-                    <img src="../images/greener-map-n-flow.png" alt="greener map and flow">
-                </div>
-
-                <!--            User Survey-->
-                <div id="lightning-intro">
-                    <h4>User Survey</h4>
-                    <p>As part of the sprint I performed lightning demos to research and start brainstorming ideas for the app. I found that <span>Strava</span>, <span>DuoLingo</span>, and <span>Love to Ride</span> were all great examples of apps that encompass gamification.</p>
-                    <br>
-                </div>
-                <div id="lightning-demos">
-                    <div class="lightning-app">
-                        <p>Strava's feed is easy to navigate to quickly see what others have been up to. Users can choose from a variety of challenges. Each challenge had a list and a short description of each challenge which reduced an extra click on the challenge for additional information The profile allows users to see their stats from all of their activities as well as see who they are following and who is following them.</p>
-                        <img src="../images/lightning-demos-strava.png" alt="strava app">
-                    </div>
-                    <div class="lightning-app">
-                        <p>Duolingo is the epitome of gamifying apps. It has badges, levels, points, you name it. You can immediately start challenges on the opening screen. The information is simple and requires some assumptions of what each challenge is and what level you are on. More information would be helpful. The profile is clean with all of the users stats in an easily digestible way. The leaderboard is only accessible if you complete challenges for that day which is a great way to encourage users to do challenges. Duolingo also has daily notifications to remind you to ‘practice’. This feature is nice but it also gets annoying.</p>
-                        <img src="../images/lightning-demos-duolingo.png" alt="Duolingo app">
-                    </div>
-                    <div class="lightning-app">
-                        <p>Love to Ride is a web platform that teams up companies to encourage their employees to ride their bikes to work. The profile has badges and overall stats of all rides. It’s very easy to navigate and the icons make it fun. There is a full history of your activity to compare from years past as well. Recording is really easy, especially since it’s linked up with Strava and the leaderboard is broken into different sections such as Top Commuters, Riders, Men, Woman and Kids so there can be more than one leader. The interface is very clean and easy to navigate.</p>
-                        <img src="../images/lightning-demos-lovetoride.png" alt="Love to ride app">
-                    </div>
-                </div>
-                <h4>Journey &#38; Empathy</h4>
-                <div class="journey-empathy-map">
-                    <p>To get into the headspace of our users and answer the <em>how</em> of the user experience I created a journey and empathy map. Targeting the users and goals from the mapping exercise users want an easy and fun way to learn sustainable practices that are often mundane tasks. <br><br> The users journey starts by opening the app to the challenges screen where they can see what level they are on and complete challenges for points. By recording their challenges the user can see their accomplishments, including badges, challenges history and total amount of co2 reduced, on their profile. Users can see what their friends are doing on the feed where they can interact with their posts by liking, commenting or sharing as well as see where they stand on the leaderboard for some friendly socially influenced competition.</p>
-                    <img src="../images/greener-journey-empathy-maps.png" alt="greener journey and empathy maps">
-                </div>
-                <div class="persona-container">
-                    <h4>Personas</h4>
-                    <div id="personas">
-                        <p>Through Journey Mapping and Empathy Maps I developed the target audience for Greener. From this I came up with two personas. One user is a busy Mom who wants to be more sustainable but isn’t sure how. She’s become much more aware of sustainable practices and wants to be a good example for her kids. While one kid is taking a nap and the other is off at school she has some downtime to learn but ideally she just wants to be told what to do. She uses apps like DuoLingo and Candy Crush. The other user grew up recycling, eating vegetarian, and doing other sustainable practices regularly. As life has gotten more busy he’s started to be less strict on his sustainable behaviors. Partially laziness and also convenience. He’s expressed this to friends, and they have been doing the same thing. He wishes there was something to encourage him to do more. He uses Strava to track his rides and is a big Pokemon GO fan.
-                        </p>
-                        <img src="../images/greener-personas.png" alt="Persona Images ">
-                    </div>
-                </div>
-            </section>
-            <!--        Information Architecture Subheader    -->
-            <section class="information-architecture">
-                <h3>Define</h3>
-                <h4>User Stories</h4>
-                <div class="user-stories">
-                    <p>After gaining a better understanding of our users, I eventually broke the users needs into 4 user stories. The biggest pain point for the user was that they wanted to have a better tool to figure out where their bus was and an alert to help them get there on time. From this I developed the following stories, 3 high priority and 1 medium priority.
-                    </p>
-                    <img src="../images/greener-storyboard.png" alt="greener storyboard">
-                </div>
-                <h4>User Flow</h4>
-                <div class="user-flow">
-                    <p>Once my user stories were in place I began building the user flow. This process took many iterations. I had a lot of scope creep in this phase. I was thinking that scheduling was also part of trip planning. With a few iterations I found a way to eliminate the creep and still be able to fulfill my user stories that were just focused on scheduling.
-<br>
-                        In a much more succinct flow the user can see bus details or set an alert for their bus directly from their home screen. The alerts complete with a pop up window letting the user know if their bus is arriving soon or leaving the bus stop. This feature will need to be configured from the back end with the Transit Agency’s data.
-
-                    </p>
-                    <img src="../images/greener-storyboard.png" alt="greener storyboard">
-                </div>
-
-                <div class="wireframe-sketch-container">
-                    <h4>Wireframe Sketches</h4>
-                    <div class="wireframe-sketch">
-                        <p>With the flow in motion I began sketching the first iteration of the Bus Spot. My first wireframe sketches had a lot of similarities to the Moovit and Transit app. The concept also wasn’t just for scheduling, it was for trip planning too. The opening screen had the option to find your destination but also had a screen for a live map and bus stops. The bus stops screen could be selected to find more bus stops near the user as well as the bus schedule. These first sketches had the normal trip planning walk through. “Choose your destination, add favorites, choose the best route, and a trip overview. As part of the scheduling the user could find more information from a link in the trip details where they could see other bus times and turn on arrival and departure alerts. All very complicated and a lot of scope creep.
-<br>
-                            I unfortunately didn’t realize the amount of scope creep in my initial layout so I developed these screens digitally with more details and used them for my first usability test.
-
-                        </p>
-                        <img src="../images/greener-wireframes-sketch.png" alt="greener wireframe sketch">
-                        <img src="../images/greener-digital-wireframes.png" alt="greener wireframe sketch">
-                    </div>
-                </div>
-                <h4>Digital Wireframes</h4>
-                <div class="digital-wireframes">
-                    <p>The digital wireframes were created using the solution sketches and further detailed using paper prototypes. No major changes were made at this time.
-                    </p>
-                </div>
-            </section>
-            <!--        Visual Design Subheader    -->
-            <section class="visual-design">
-                <div class="color-type-container">
-                    <h3>Visual Design</h3>
-                    <div class="color-type">
-                        <div class="color-palette">
-                            <h4>Color Palette</h4>
-                            <p>I wanted the color palette to feel fun, natural, and simple to reflect the aspects of the game and sustainability. The first round of colors included a sea foam green and darker blue however after implementing them into the design I realized that the colors clashed. Still focusing on the greens and blues I came up with another color palette with more complementary colors. The body of the app had a mix of a lighter and darker blue with a lighter and darker green for accents and buttons. This color palette also had a high contrast for those whose experience color blindness.</p>
-                        </div>
-                        <div class="topography">
-                            <h4>Topography</h4>
-                            <p>Similar to the color palette I wanted a simple font type that was also a web safe font. I first chose Ariel however after the first iteration changed it to Proxima Nova. I felt it was more simple and fit well with the images and icons in the app. </p>
-                        </div>
-                    </div>
-                    <div class="color-type-image">
-                        <img src="../images/greener-colors-type.png" alt="greener colors and typography">
-                    </div>
-                </div>
-                <div class="logo-container">
-                    <h4>Logo Design and Proess</h4>
-                    <div class="logo">
-                        <p>I started developing the name by coming up with a list of names related to games as well as sustainability. It turned out that most names with “Eco” were already used, as well as other sustainability related words including Virid. I also came across Greenie, which is someone who campaigns to protect the environment. I thought maybe this could have a negative connotation with some users. It did however remind me of conversations I’ve had in the past where people expressed wanting to be “More Green” or “Greener”. After an app store search, there were no search results for greener so I move ahead with that name.
-                            <br><br> With a name like “Greener”, the logo should probably be green. I played around with the two greens I used in the app as well as with simple shapes to match the images and icons in the app itself. After a few iterations I landed on a tree made of three arrows pointing up to signify leveling up.
-                        </p>
-                        <img src="../images/greener-logos.png" alt="greener logos">
-                    </div>
-                </div>
-                <div class="iterations-container">
-                    <h4>Iterations</h4>
-                    <div class="iterations">
-                        <p>Prior to usability testing the visual design went through a couple bigger changes. The first iterations color palette clashed and there was no dominant color for clickable items. Some of the alignment and drop shadows also needed to be adjusted for better flow.
-                            <br><br> On the challenges screen I changed the layout to list form, similar to strava challenges to provide more information to the user. The recording screens first iteration included drop down menus, but I added segmented controls to prevent scrolling and it provided a cool visual. Finally due to confusion of where to start once users were in the app I added onboarding walk through screens so users knew what to do once in the app. I also started calling the Feed/Leaderboard the Feederboard for simplicity and users understood the screen more.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!--        Prototype/Testing Subheader    -->
-            <section class="prototype-test">
-                <h3>Prototyping &#38; Testing </h3>
-                <h4>Usability Test</h4>
-                <div class="usability-test-container">
-                    <div class="usability-test">
-                        <p>After making the above adjustments I tested usability with 3 participants. Similar to the screens I broke the tasks up into 4 parts. I wanted to see: </p>
-
-                        <ul>
-                            <li>If it was intuitive for a user to pick a challenge</li>
-                            <li>What steps the users took to Record</li>
-                            <li>How users interact with the Profile</li>
-                            <li>How users interact and navigate the Feederboard</li>
-                        </ul>
-
-                        <p>After testing, the users averaged an <span class="stat">84%</span> success rate.</p><br>
-                        <p>There were three things that stood out.</p>
-
-                        <p><span class="stat">1</span> user skipped the onboarding walk through and wasn’t sure where to start once in the game.</p>
-                        <p> <span class="stat">1</span> user didn’t notice the segmented tabs on the recording screen, and another clicked around before finding the tabs.</p>
-                        <p> <span class="stat">1</span> user didn’t notice the Leaders tab on the feederboard </p>
-
-                    </div>
-                    <div class="usability-test-image">
-                        <img src="../images/greener-usability-test-results.png" alt="usability test results">
-                    </div>
-                </div>
-                <div class="preference-test-container">
-                    <h4>Preference Tests</h4>
-                    <div class="preference-test-1">
-                        <p>After testing I created two preference tests. The first was for the onboarding walk through screens and the second was a more tabbed version of the recording screen. Since one user skipped the onboarding walk through and also had trouble starting I created an overlay tutorial as an alternative. All users liked the overlay better with one user commenting “I’m more prone to skip tutorials like ‘A’”. In the overlay tutorial I also highlighted the tabs on the Feederboard screen to assist any other users who might not notice the tabs.
-                        </p>
-                        <img src="../images/greener-preference-tests.png" alt="greener preference tests">
-                    </div>
-                    <div class="preference-test-2">
-                        <p>During testing, one user suggested a clearer connection between the information on the tabs and the tabs themselves. For the second preference test I updated the connection of the tabs. All users found ‘B’ to be much clearer.</p>
-                        <img src="../images/greener-preference-tests-2.png" alt="filler">
-                    </div>
-                </div>
-                <h4>Final Prototype</h4>
-                <div class="final-prototype-container">
-                    <div class="final-prototype">
-                        <p>Through many iterations greener provides a way for users to learn about sustainability in a fun and engaging way. Through gamification features such as leaderboards and badges as well as social influence by way of the feed users can develop sustainable habits through the cue of the challenges and a reward for completing those challenges. From here I want to do further preference testing on features to see what users find more engaging, as well as find easier ways for users to record.</p>
-                        <div class="app-gif">
-                            <img src="../images/greener.gif" alt="gif of greener">
-                        </div>
-                        <div id="prototype-button">
-                            <button><a target="_blank" href="https://bit.ly/3frqmGV">Live Prototype</a></button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--        Conclustion Subheader    -->
-            <section class="conclusion">
-                <h3>Conclusion </h3>
-                <div class="learnings-container">
-                    <h4>Growth and Outcomes</h4>
-                    <div class="learnings">
-                        <p>Greener has been an idea since 2015, so it’s been really cool to see this app come to life. It was a fun and interesting exercise to build the app as a sprint. As my first sprint it was a learning curve to walk through each step. I enjoyed the fast pace of getting ideas out however I would find myself getting stuck in the weeds as I navigated most of this project solo. Initial research and lightning demos helped me understand the concepts of gamification better. It’s a pretty cool learning tool. As a solo sprinter I wish I would have gotten more feedback earlier on and done more preference testing. With a bigger concept in mind I experienced scope creep which caused unnecessary work along the way. With a clearer vision of the app I’m excited to keep working and testing this concept.
-                        </p>
-                    </div>
-                </div>
-                <div class="overlay"></div>
-            </section>
-        </main>
-        <footer role="contentinfo">
-            <h2 class="section-header">Let's Connect!</h2>
-            <div id="social-img">
-                <a href="https://github.com/LeahBorns" target="_blank"><img class="social-button" src="../images/social-github.png" alt="github logo"></a>
-                <a href="https://www.linkedin.com/in/leahborns/" target="_blank"><img class="social-button" src="../images/social-linkedin.png" alt="linkedIn logo"></a>
-                <a href="https://www.instagram.com/leahmichalsondesigns/" target="_blank"><img class="social-button" src="../images/social-insta.png" alt="Instagram logo"></a>
-                <a href="mailto:leah.borns@gmail.com" target="_blank"><img class="social-button" src="../images/social-mail.png" alt="mail image"></a>
             </div>
-        </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="../script.js" type="text/javascript"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
+        </section>
+        <!--        Conclustion Subheader    -->
+        <section class="conclusion" data-aos="fade-down">
+            <h3>Conclusion </h3>
+            <div class="learnings-container">
+                <h4>Growth and Outcomes</h4>
+                <div class="learnings">
+                    <p>After many iterations and many hours later the Bus Spot was born. Through this I learned that project creep is easy to get lost in. After the first usability test it became very clear the app needed to be scaled back quite a bit. Fortunately that was a quick adjustment and the scope became much clearer. After making and adjusting the high-fi mockups and developing the visual design it also made it easier to see what worked and what didn’t. The last usability test really helped tie everything together. I removed the lingering scope creep of the bus stops screens and changed the features to get the users to the schedule with the fewest amount of clicks.
+
+                    </p>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <h2 class="section-header">Let's Connect!</h2>
+        <div id="social-img">
+            <a href="https://github.com/LeahBorns" target="_blank"><img class="social-button" src="../images/social-github.png" alt="github logo"></a>
+            <a href="https://www.linkedin.com/in/leahborns/" target="_blank"><img class="social-button" src="../images/social-linkedin.png" alt="linkedIn logo"></a>
+            <a href="https://www.instagram.com/leahmichalsondesigns/" target="_blank"><img class="social-button" src="../images/social-insta.png" alt="Instagram logo"></a>
+            <a href="mailto:leah.borns@gmail.com" target="_blank"><img class="social-button" src="../images/social-mail.png" alt="mail image"></a>
+        </div>
+        <p class="footer-credit">Designed and Coded by Leah M.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../script.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
 
 </html>
