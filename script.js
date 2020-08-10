@@ -1,5 +1,35 @@
-//animates the scroll to go smoothly to each section
-"use strict";
+//$(document).ready(function() {
+//    // get current URL path and assign 'active' class
+////    var pathname = window.location.pathname;
+////    $('#nav-links > li > a[href="../'+pathname+'"]').parent().addClass('active');
+////})
+//
+//});
+//
+$(document).ready(function () {
+
+    // get current URL path and assign 'active' class
+//    var pathname = window.location.pathname;
+    $('.nav-links > li > a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active')
+
+//    $(function() {
+//        $('#nav.links > li > a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+    });
+
+//     nav sticks once scrolling
+    $(function () {
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 50) {
+                $("#nav_links").addClass("active");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+                $("#nav_links").removeClass("active");
+            }
+        });
+    });
+
+
+
 
 // $(".jumper").on("click", function( e ) {
 //
@@ -11,6 +41,10 @@
 //
 // });
 
+
+// get current URL path and assign 'active' class
+//var pathname = window.location.pathname;
+//$('.nav-links > li > a[href="'+pathname+'"]').parent().addClass('active');
 
 var mobileBtn = document.querySelector('.mobile-btn');
 var menu = document.querySelector('ul#nav-links');

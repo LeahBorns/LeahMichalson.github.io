@@ -51,7 +51,8 @@ p {
 /*NAV*/
 
 nav {
-    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -67,7 +68,7 @@ nav > .content {
 }
 
 div.content {
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,10 +77,6 @@ div.content {
 /*Nav logo and name*/
 div#nav-logo {
     margin: auto 0;
-    /*
-    line-height: 1.2rem;
-    position: relative;
-    */
     width: 30%;
 }
 
@@ -115,6 +112,12 @@ ul#nav-links li{
     display: block;
     margin-left: 32px;
 }
+
+ul#nav-links li.active {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
 
 ul#nav-links li a {
     text-decoration: none;
@@ -188,7 +191,7 @@ ul#nav-links.open{
 /*HEADER*/
 header {
     font-family: 'Karla', sans-serif;
-    padding: 12% 0;
+/*    padding: 12% 0;*/
     width: 100%;
     height: 768px;
     margin: auto;
@@ -205,6 +208,7 @@ header {
 }
 
 .section.bg-static {
+    padding: 0;
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -228,11 +232,11 @@ header {
 
 .section .bg-move {
     position: absolute;
-    top: 50px;
+    top: -10px;
     bottom: 0;
     right: auto;
-    width: 60%;
-    height: 90%;
+    width: 80%;
+    height: 100%;
     background-image: url(images/dad-me-balloon-2.png);
     background-size: cover;
     background-position: center;
@@ -240,20 +244,15 @@ header {
 }
 
 div#header-title {
-    width: 50%;
+    width: 70%;
     margin: auto;
     z-index: 0;
 }
 
-div#header-image {
-    margin: auto;
-    max-width: 20px;
-    display: inline-block;
-    float: left;
-}
 
 p.header-description {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     font-size: 1.2rem;
     line-height: 2rem;
     color: #483C46;
@@ -276,7 +275,7 @@ section#project-section {
 */
 /*    background-color: #fff;*/
     color: #4c4045;
-    width: 60%;
+    width: 85%;
     margin: auto;
     z-index: -1
 }
@@ -294,7 +293,7 @@ section#project-section::after{
 }
 
 p.section-header {
-    width: 60%;
+    width: 85%;
     margin: 20px auto;
     font-size: 2rem;
     color: #4c4045;
@@ -318,6 +317,7 @@ div#greener-app {
 }
 
 div.project-img {
+    padding-top: 30px;
     width: 100%;
 }
 
@@ -386,7 +386,7 @@ p.footer-credit {
 }
 
 div#social-img {
-    width: 50%;
+    width: 60%;
     margin: auto;
     display: flex;
     text-align: center;
@@ -400,18 +400,28 @@ img.social-button {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media only screen and (min-width: 600px) {
+
+    .section .bg-move {
+        width: 70%;
+        height: 90%;
+    }
+
+    /*    social images*/
+    div#social-img {
+        width: 40%;
+    }
+
+}
+
+
 @media only screen and (min-width: 768px) {
 
 /*    balloon girl image*/
     .section .bg-move {
-        width: 40%;
-        height: 80%;
-        top: 55px;
-    }
+        width: 50%;
+        height: 90%;
 
-/*    social images*/
-    div#social-img {
-        width: 40%;
     }
 
 }
@@ -427,6 +437,11 @@ img.social-button {
     div#nav-logo img {
         width: 80px;
     }
+
+    div.content {
+        width: 80%;
+    }
+
 
     /*Nav links*/
 
@@ -483,10 +498,6 @@ img.social-button {
 
     /*moving section on body*/
 
-    .section .bg-move {
-        width: 50%;
-        height: 90%;
-    }
 
 /*Projects*/
     div#bus-spot-app {
@@ -524,27 +535,37 @@ img.social-button {
 
 
 @media only screen and (min-width: 1024px) {
-
     .section .bg-move {
-        width: 30%;
-        top: 55px;
-    }
-/*
-    .section .bg-move {
-        position: absolute;
+        width: 50%;
+        height: 100%;
         top: 0;
-        bottom: 0;
-        right: auto;
-        width: 60%;
-        height: 90%;
-        background-image: url(images/dad-me-balloon-2.png);
-        background-size: cover;
-        background-position: center;
-        z-index: 3;
     }
-*/
+
+    div#header-title {
+        width: 40%;
+    }
+
+    div#social-img {
+        width: 30%;
+    }
+
 
 
 }
 
+@media only screen and (min-width: 1200px) {
+    .section .bg-move {
+        width: 30%;
+        height: 100%;
+        top: 20px;
+    }
 
+    div#header-title {
+        width: 30%;
+    }
+
+    div#social-img {
+        width: 20%;
+    }
+
+}

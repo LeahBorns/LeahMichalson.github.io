@@ -67,7 +67,7 @@ nav > .content {
 }
 
 div.content {
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,6 +115,12 @@ ul#nav-links li{
     display: block;
     margin-left: 32px;
 }
+
+li.active {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
 
 ul#nav-links li a {
     text-decoration: none;
@@ -189,7 +195,7 @@ ul#nav-links.open{
 /*Form*/
 
 section#form-section {
-    width: 90%;
+    width: 100%;
     margin: 25% auto;
     display: flex;
     flex-direction: column;
@@ -198,10 +204,12 @@ section#form-section {
 
 div#form-picture {
     width: 90%;
-    margin: auto;
+    margin: 10px auto;
     font-size: 1.5rem;
     color: #4c4045;
 }
+
+
 
 
 div#form-picture img {
@@ -300,7 +308,7 @@ p.footer-credit {
 }
 
 div#social-img {
-    width: 50%;
+    width: 60%;
     margin: auto;
     display: flex;
     text-align: center;
@@ -332,6 +340,11 @@ img.social-button {
     div#nav-logo img {
         width: 80px;
     }
+
+    div.content {
+        width: 80%;
+    }
+
 
     /*Nav links*/
 

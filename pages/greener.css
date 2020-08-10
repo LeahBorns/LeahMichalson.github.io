@@ -67,7 +67,7 @@ nav > .content {
 }
 
 div.content {
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,6 +115,12 @@ ul#nav-links li{
     display: block;
     margin-left: 32px;
 }
+
+li.active {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
 
 ul#nav-links li a {
     text-decoration: none;
@@ -189,7 +195,7 @@ ul#nav-links.open{
 /*GREENER HEADER*/
 
 header {
-    width: 80%;
+    width: 85%;
     margin: 25% auto 5% auto;
     display: flex;
     flex-direction: column;
@@ -281,7 +287,7 @@ section#users-roles-scope {
 }
 
 div.container {
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -314,11 +320,11 @@ section#solution {
 
 div.solution-container h2 {
     color: #4c4045;
-    margin-left: 10%;
+    margin-left: 7.5%;
 }
 
 div#solution-statement {
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -332,7 +338,7 @@ div#solution-statement img {
 /*The Process section*/
 
 section#process {
-    width: 80%;
+    width: 85%;
     margin: auto;
     padding-top: 30px;
 }
@@ -409,15 +415,15 @@ section.information-architecture {
 }
 
 section.information-architecture h3 {
-    margin-left: 10%;
+    margin-left: 7.5%;
 }
 
 section.information-architecture h4 {
-    margin-left: 10%;
+    margin-left: 7.5%;
 }
 
 div.user-stories {
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -433,7 +439,7 @@ div.user-stories img {
 
 
 div.wireframe-sketch {
-width: 80%;
+width: 85%;
 margin: auto;
 display: flex;
 flex-direction: column;
@@ -448,7 +454,7 @@ div.wireframe-sketch img {
 }
 
 div.digital-wireframes {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -467,13 +473,13 @@ section.visual-design {
 }
 
 section.visual-design h3 {
-    margin-left: 10%;
+    margin-left: 7.5%;
 }
 
 /*COLOR AND TYPE*/
 
 div.color-type {
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -485,7 +491,7 @@ div.topography {
 }
 
 div.color-type-image {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -497,7 +503,7 @@ div.color-type-image img {
 /*LOGOS AND NAME*/
 
 div.logo-container {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -515,7 +521,7 @@ div.logo img {
 
 /*Iterations*/
 div.iterations-container {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -527,17 +533,17 @@ section.prototype-test {
 }
 
 section.prototype-test h3 {
-    margin-left: 10%;
+    margin-left: 7.5%;
 }
 
 section.prototype-test h4 {
-    margin-left: 10%;
+    margin-left: 7.5%;
 }
 
 /*Usability Test*/
 
 div.usability-test-container {
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -582,7 +588,7 @@ div.usability-test-image img {
 /*PREFERENCE TESTING*/
 
 div.preference-test-container {
- width: 80%;
+ width: 85%;
 margin: auto;
 }
 
@@ -616,7 +622,7 @@ div.preference-test-2 img{
 
 /*FINAL PROTOTYPE*/
 div.final-prototype-container {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -648,11 +654,11 @@ section.conclusion {
     }
 
     section.conclusion h3 {
-    margin-left: 20%;
+    margin-left: 7.5%;
     }
 
    div.learnings-container {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -681,7 +687,7 @@ p.footer-credit {
 }
 
 div#social-img {
-    width: 30%;
+    width: 60%;
     margin: auto;
     display: flex;
     text-align: center;
@@ -707,6 +713,11 @@ img.social-button {
     div#nav-logo img {
         width: 80px;
     }
+
+    div.content {
+        width: 80%;
+    }
+
 
     /*Nav links*/
 
@@ -934,6 +945,10 @@ img.social-button {
 
     div.learnings-container{
     width: 60%;
+    }
+
+    div#social-img {
+        width: 30%;
     }
 }
 

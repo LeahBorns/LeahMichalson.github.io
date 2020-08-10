@@ -67,7 +67,7 @@ nav > .content {
 }
 
 div.content {
-    width: 90%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,10 +76,6 @@ div.content {
 /*Nav logo and name*/
 div#nav-logo {
     margin: auto 0;
-    /*
-    line-height: 1.2rem;
-    position: relative;
-    */
     width: 30%;
 }
 
@@ -115,6 +111,12 @@ ul#nav-links li{
     display: block;
     margin-left: 32px;
 }
+
+li.active {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
 
 ul#nav-links li a {
     text-decoration: none;
@@ -1173,7 +1175,6 @@ img.social-button {
 
 
 /*    FOOTER*/
-    /*    FOOTER*/
     div#social-img {
         width: 30%;
     }
