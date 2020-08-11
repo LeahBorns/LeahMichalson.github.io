@@ -52,7 +52,6 @@ p {
 
 nav {
     position: sticky;
-    position: -webkit-sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -133,7 +132,7 @@ ul#nav-links li a:hover {
 
 
 li.mobile-hover:hover {
-    background-color: #6f5d6c;
+    background-color: #4c4045;
     width: 100%;
     margin: auto;
     padding: 0;
@@ -176,7 +175,6 @@ div.overlay {
     background-color: rgba(0,0,0,.4);
     opacity: 0;
     z-index: -1;
-    transform: opacity 300ms linear;
 }
 
 .overlay.open {
@@ -342,24 +340,24 @@ div.tech-image img {
 }
 
 
-button.project-links {
+a.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     padding: 20px;
-    margin-top: 5%;
+    margin: 20px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     background-color: #4c4045;
-}
-
-button.project-links:hover {
-    background-color: #cdb6d4;
-}
-
-button.project-links a {
     text-decoration: none;
-    color: black;
     font-size: 1rem;
     color: #fff;
+}
+
+a.project-links:hover {
+    background-color: #cdb6d4;
 }
 
 

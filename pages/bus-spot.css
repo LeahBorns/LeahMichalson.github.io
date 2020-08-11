@@ -112,12 +112,6 @@ ul#nav-links li{
     margin-left: 32px;
 }
 
-li.active {
-    text-decoration: underline;
-    font-weight: 500;
-}
-
-
 ul#nav-links li a {
     text-decoration: none;
     color: #4c4045;
@@ -175,7 +169,6 @@ div.overlay {
     background-color: rgba(0,0,0,.4);
     opacity: 0;
     z-index: -1;
-    transform: opacity 300ms linear;
 }
 
 .overlay.open {
@@ -221,28 +214,21 @@ div.case-study-title {
     margin: auto;
 }
 
-div#prototype-button-header {
+
+a#prototype-button-header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-div#prototype-button-header button {
     background-color: #4c4045;
     width: 150px;
     padding: 20px;
     border-radius: 5px;
     margin-top: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-div#prototype-button-header button a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
 }
-
 
 
 /*Problem Section*/
@@ -649,27 +635,21 @@ div.app-gif img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-div#prototype-button-final {
+a#prototype-button-final {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-div#prototype-button-final button {
     background-color: #4c4045;
     width: 150px;
     padding: 20px;
     border-radius: 5px;
     margin-top: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-div#prototype-button-final button a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
 }
+
 
 /*CONCLUSION*/
 
@@ -879,6 +859,8 @@ img.social-button {
     div.usability-test-round-2 ul {
         padding: 60px 20px;
         font-size: 1em;
+        display: flex;
+        flex-flow: wrap;
     }
 
 

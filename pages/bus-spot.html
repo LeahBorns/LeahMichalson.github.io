@@ -15,14 +15,14 @@
 
 <body>
     <!--       nav bar with collapsible button. Overlay that appears is below the projects section-->
-    <nav role="navigation">
+    <nav>
         <div class="content">
             <div id="nav-logo"><a href="../index.html"> <img src="../images/logo@3x.png" alt="logo"></a>
                 <h3>Leah Michalson</h3>
             </div>
             <ul id="nav-links">
                 <li class="close">&times;</li>
-                <li class="active" class="mobile-hover"><a href="../index.html">Projects</a></li>
+                <li class="mobile-hover"><a href="../index.html">Projects</a></li>
                 <li class="mobile-hover"><a href="about.html">About</a></li>
                 <!--                WILL ADD CODE PROJECTS LATER-->
                 <!--                <li class="mobile-hover"><a href="#project-section">Code</a></li>-->
@@ -31,18 +31,18 @@
             <span class="mobile-btn">☰</span>
         </div>
     </nav>
-    <main role="main">
+    <main>
 
         <!--header for Bus Spot. Image, overview and button for live prototype-->
-        <header role="banner" data-aos="fade-left">
+        <header data-aos="fade-left">
             <div class="case-study-image"> <img src="../images/bus-spot-header-image.png" alt="screenshot of Bus Spot"></div>
             <div class="case-study-title">
                 <h1 class="case-study-name">Bus Spot</h1>
                 <h2>Overview</h2>
                 <p class="case-study-description">Transit officials recently identified their riders need for clearer scheduling as bus lines expand to single bus stops. Through the design process, I developed an app called the Bus Spot, a scheduling app that allows users to visually locate their bus and set arrival/departure alerts to prevent riders running for the wrong bus.</p>
-                <div id="prototype-button-header">
-                    <button><a target="_blank" href="https://adobe.ly/3iZPaaV">Live Prototype</a></button>
-                </div>
+
+                   <a id="prototype-button-header" target="_blank" href="https://adobe.ly/3iZPaaV">Live Prototype</a>
+
             </div>
 
 
@@ -86,7 +86,7 @@
                 <div id="solution-statement">
                     <p>I have developed the Bus Spot, a scheduling app that allows users to track their bus with a live bus locator and an option to set arrival/departure alerts. User research showed that these features were highly desirable and could help solve the pain points in the current bus scheduling system. The transit agencies data would provide the back end functionality to make the live bus locator and real time bus alerts come to life. This in turn will give riders the information they need to make sure they are catching the right bus.
                     </p>
-                    <img src="../images/bus-spot-solution.png" alt="greener solution"></div>
+                    <img src="../images/bus-spot-solution.png" alt="bus spot solution"></div>
             </div>
         </section>
 
@@ -135,7 +135,7 @@
                 <div id="personas">
                     <p>After conducting the survey and getting a better idea of the users needs, I created two personas to represent the average bus riders. One rider is a Project Manager who rides 5+ times a week, the other is a Software Engineer that rides 2-4 times per week. They are both frustrated with the live bus schedule being off. As detailed below both users are frustrated with the live bus schedule being off and having to sprint to the bus stop. The software engineer would also like an alert since she doesn’t ride frequently and needs a reminder.
                     </p>
-                    <img src="../images/bus-spot-personas.png" alt="Persona Images ">
+                    <img src="../images/bus-spot-personas.png" alt="Bus Spot Persona Images ">
                 </div>
             </div>
         </section>
@@ -146,7 +146,7 @@
             <div class="user-stories">
                 <p>After gaining a better understanding of our users, I eventually broke the users needs into 4 user stories. The biggest pain point for the user was that they wanted to have a better tool to figure out where their bus was and an alert to help them get there on time. From this I developed the following stories, 3 high priority and 1 medium priority.
                 </p>
-                <img src="../images/bus-spot-user-story-flows.png" alt="greener storyboard">
+                <img src="../images/bus-spot-user-story-flows.png" alt="bus spot user stories">
             </div>
             <h4>User Flow</h4>
             <div class="user-flow">
@@ -181,7 +181,7 @@
                 <p>All of the users described the opening screen very thoroughly. However when it came to finding the bus stop details a few of the users clicked around before clicking on the bus stops in the nav bar. I wasn’t sure if this was due to everything being black and white or if it was poor instruction on my part.  Some of the labels were way too small and didn’t have any indicating colors making it difficult for users to complete the tasks. All of the participants completed all of the tasks eventually.</p>
 <br>
                 <p>Next steps for improving the app resulted in removing the trip planning screens, making the labels larger and renaming some of the headers. Through those changes I also realized I never created a pop up for the bus arrival and departure alert.</p>
-                <img src="../images/usability-test-1-wireframes.png" alt="usability test results">
+                <img src="../images/usability-test-1-wireframes.png" alt="bus spot usability test results">
             </div>
         </section>
         <!--        Visual Design Subheader    -->
@@ -252,8 +252,8 @@
                     <p>For the final round of testing, I wanted to see:</p>
 
                     <ul>
-                        <li>If the users found the onboarding information helpful.</li><br>
-                        <li>If they understood the toggle alert or found it useful.</li><br>
+                        <li>If the users found the onboarding information helpful.</li>
+                        <li>If they understood the toggle alert or found it useful.</li>
                         <li>If they could find the bus schedule for their bus.</li>
                     </ul>
 
@@ -261,7 +261,7 @@
                     </p>
                 </div>
                 <div class="usability-test-image">
-                    <img src="../images/bus-spot-prototype-usability-test.png" alt="prorotype usability test results">
+                    <img src="../images/bus-spot-prototype-usability-test.png" alt="prototype usability test results">
                 </div>
                 <div class="usability-test-results">
                     <p>I realized that the location of the bus stops on the nav bar was not intuitive to find the bus schedule. I probably should have taken note of this more after the first usability test, but the second round really confirmed it.  It was also very clear that users wanted to click on the bus information on the home screen to find more information. One user said that that was how he accessed more bus information on other apps. Through this I realized that the bus stops nav was unnecessary for this project. It was out of scope for the project since we were just focusing on one bus stop, and didn’t help the user. The users found the toggle alarm helpful and understood what it was for.</p>
@@ -284,9 +284,9 @@
                     <div class="app-gif">
                         <img src="../images/bus-spot.gif" alt="gif of bus spot">
                     </div>
-                    <div id="prototype-button-final">
-                        <button><a target="_blank" href="https://adobe.ly/3iZPaaV">Live Prototype</a></button>
-                    </div>
+
+                      <a id="prototype-button-final" target="_blank" href="https://adobe.ly/3iZPaaV">Live Prototype</a>
+
                 </div>
             </div>
         </section>
@@ -304,7 +304,7 @@
             <div class="overlay"></div>
         </section>
     </main>
-    <footer role="contentinfo">
+    <footer>
         <h2 class="section-header">Let's Connect!</h2>
         <div id="social-img">
             <a href="https://github.com/LeahBorns" target="_blank"><img class="social-button" src="../images/social-github.png" alt="github logo"></a>

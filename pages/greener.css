@@ -11,17 +11,20 @@ body {
     line-height: 1.5em;
 }
 
-nav,footer {
+nav,
+footer {
     background-color: #fff;
     font-family: 'Karla', sans-serif;
     color: #a68148;
 }
 
-h1,h2{
+h1,
+h2 {
     font-family: 'Merriweather', serif;
 }
 
-h3,h4 {
+h3,
+h4 {
     font-family: 'Merriweather', serif;
 }
 
@@ -48,6 +51,7 @@ h4 {
 p {
     text-align: left;
 }
+
 /*NAV*/
 
 nav {
@@ -74,9 +78,10 @@ div.content {
 }
 
 /*Nav logo and name*/
+
 div#nav-logo {
     margin: auto 0;
-/*
+    /*
     line-height: 1.2rem;
     position: relative;
 */
@@ -87,7 +92,7 @@ div#nav-logo h3 {
     display: inline-block;
     position: absolute;
     top: 50%;
-    transform: translate(10%,-50%);
+    transform: translate(10%, -50%);
     font-size: 1em;
     font-family: 'Merriweather', serif;
     color: #a68148;
@@ -103,24 +108,18 @@ ul#nav-links {
     top: 0;
     right: 0;
     background-color: #d5a860;
-/*    border-bottom-left-radius: 10px;*/
-/*    border-bottom-right-radius: 10px;*/
+    /*    border-bottom-left-radius: 10px;*/
+    /*    border-bottom-right-radius: 10px;*/
     z-index: 3;
     width: 100%;
     transform: translateY(-400px);
     transition: all 300ms ease-in-out;
 }
 
-ul#nav-links li{
+ul#nav-links li {
     display: block;
     margin-left: 32px;
 }
-
-li.active {
-    text-decoration: underline;
-    font-weight: 500;
-}
-
 
 ul#nav-links li a {
     text-decoration: none;
@@ -151,7 +150,7 @@ li.mobile-hover:hover {
 span.mobile-btn {
     display: inline-block;
     float: right;
-   font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 span.mobile-btn:hover {
@@ -176,10 +175,9 @@ div.overlay {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
     opacity: 0;
     z-index: -1;
-    transform: opacity 300ms linear;
 }
 
 .overlay.open {
@@ -187,7 +185,7 @@ div.overlay {
     opacity: 1;
 }
 
-ul#nav-links.open{
+ul#nav-links.open {
     transform: translateX(0);
 }
 
@@ -225,29 +223,21 @@ div.case-study-title {
     margin: auto;
 }
 
-div#prototype-button {
+a#prototype-button-header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-div#prototype-button button {
+    display: flex;
     background-color: #4c4045;
     width: 150px;
     padding: 20px;
     border-radius: 5px;
     margin-top: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-div#prototype-button button a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
 }
-
-
 
 /*Problem Section*/
 
@@ -299,7 +289,7 @@ div#users {
     padding: 15px 0;
 }
 
-div#scope  {
+div#scope {
     padding: 15px 0;
 }
 
@@ -335,6 +325,7 @@ div#solution-statement img {
     margin: auto;
     width: 100%;
 }
+
 /*The Process section*/
 
 section#process {
@@ -344,6 +335,7 @@ section#process {
 }
 
 /*MAPPING FLOW AND HMW*/
+
 div.mapping-hmw {
     width: 100%;
     margin: auto;
@@ -407,6 +399,7 @@ div#personas img {
 /*Information architecture*/
 
 /*STORYBOARD*/
+
 section.information-architecture {
     width: 100%;
     margin: auto;
@@ -437,13 +430,12 @@ div.user-stories img {
 
 /*WIREFRAME SKETCHES*/
 
-
 div.wireframe-sketch {
-width: 85%;
-margin: auto;
-display: flex;
-flex-direction: column;
-align-items: center;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -520,12 +512,14 @@ div.logo img {
 }
 
 /*Iterations*/
+
 div.iterations-container {
     width: 85%;
     margin: auto;
 }
 
 /*PROTOTYPING AND TESTING*/
+
 section.prototype-test {
     width: 100%;
     margin: auto;
@@ -551,10 +545,12 @@ div.usability-test-container {
 }
 
 div.usability-test ul {
+    display: flex;
+    flex-flow: wrap;
     margin: 20px auto;
     min-height: 40vh;
     padding: 20px;
-/*    margin-left: 40px;*/
+    /*    margin-left: 40px;*/
     font-size: 1.1em;
     line-height: 1.2em;
     list-style-position: inside;
@@ -588,12 +584,12 @@ div.usability-test-image img {
 /*PREFERENCE TESTING*/
 
 div.preference-test-container {
- width: 85%;
-margin: auto;
+    width: 85%;
+    margin: auto;
 }
 
 div.preference-test-container h4 {
-margin-left: initial;
+    margin-left: initial;
 }
 
 div.preference-test-1 {
@@ -604,8 +600,8 @@ div.preference-test-1 {
     align-items: center;
 }
 
-div.preference-test-1 img{
-width: 100%;
+div.preference-test-1 img {
+    width: 100%;
 }
 
 div.preference-test-2 {
@@ -616,11 +612,12 @@ div.preference-test-2 {
     align-items: center;
 }
 
-div.preference-test-2 img{
+div.preference-test-2 img {
     width: 100%;
 }
 
 /*FINAL PROTOTYPE*/
+
 div.final-prototype-container {
     width: 85%;
     margin: auto;
@@ -645,19 +642,34 @@ div.app-gif img {
     width: 90%;
 }
 
+a#prototype-button-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4c4045;
+    width: 150px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
 /*CONCLUSION*/
 
 section.conclusion {
-        width: 100%;
-        margin: auto;
-        padding: 30px 0;
-    }
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+}
 
-    section.conclusion h3 {
+section.conclusion h3 {
     margin-left: 7.5%;
-    }
+}
 
-   div.learnings-container {
+div.learnings-container {
     width: 85%;
     margin: auto;
 }
@@ -696,7 +708,7 @@ div#social-img {
 img.social-button {
     background-color: #d5a860;
     width: 50%;
-    margin:auto;
+    margin: auto;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -705,7 +717,6 @@ img.social-button {
 @media only screen and (min-width: 900px) {
 
     /*    OVERALL*/
-
     div#nav-logo h3 {
         font-size: 1.5rem;
     }
@@ -720,7 +731,6 @@ img.social-button {
 
 
     /*Nav links*/
-
     ul#nav-links {
         display: flex;
         justify-content: flex-end;
@@ -772,25 +782,23 @@ img.social-button {
 
 
     /*    HEADER*/
-
     header {
         width: 80%;
         margin: 15% auto 5% auto;
         flex-direction: row;
     }
 
-    div#prototype-button {
+    a#prototype-button-header {
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
 
-    div#prototype-button button:hover {
-    background-color: #a68148;
-}
+    a#prototype-button-header:hover {
+        background-color: #a68148;
+    }
 
-/*    problem*/
-
+    /*    problem*/
     div.problem-container h2 {
         margin-left: 20%;
     }
@@ -799,14 +807,12 @@ img.social-button {
         width: 60%;
     }
 
-/*        USERS ROLES AND SCOPE*/
-
+    /*        USERS ROLES AND SCOPE*/
     div.container {
         width: 60%;
     }
 
-/*    THE SOLUTION*/
-
+    /*    THE SOLUTION*/
     section#solution {
         padding-top: 30px;
     }
@@ -827,15 +833,13 @@ img.social-button {
     }
 
     /*LIGHTNING DEMOS*/
-
     div.lightning-app img {
         width: 100%;
     }
 
 
-/*    INFORMATION ARCHITECTURE*/
-
-/*STORYBOARD*/
+    /*    INFORMATION ARCHITECTURE*/
+    /*STORYBOARD*/
     section.information-architecture h3 {
         margin-left: 20%;
     }
@@ -849,9 +853,6 @@ img.social-button {
     }
 
     /*WIREFRAME SKETCHES*/
-
-
-
     div.wireframe-sketch {
         width: 60%;
     }
@@ -861,13 +862,11 @@ img.social-button {
     }
 
     /*VISUAL DEISGN*/
-
     section.visual-design h3 {
         margin-left: 20%;
     }
 
     /*COLOR AND TYPE*/
-
     div.color-type {
         width: 60%;
     }
@@ -879,7 +878,6 @@ img.social-button {
     }
 
     /*LOGOS AND NAME*/
-
     div.logo-container {
         width: 60%;
         margin: auto;
@@ -892,7 +890,6 @@ img.social-button {
     }
 
     /*PROTOTYPING AND TESTING*/
-
     section.prototype-test h3 {
         margin-left: 20%;
     }
@@ -902,14 +899,13 @@ img.social-button {
     }
 
     /*Usability Test*/
-
     div.usability-test-container {
         width: 60%;
     }
 
-        div.usability-test-image img {
+    div.usability-test-image img {
         padding: 30px 0;
-}
+    }
 
     div.usability-test ul {
         padding: 60px 20px;
@@ -918,7 +914,6 @@ img.social-button {
     }
 
     /*PREFERENCE TESTING*/
-
     div.preference-test-container {
         width: 60%;
     }
@@ -927,28 +922,33 @@ img.social-button {
         margin-left: initial;
     }
 
-    div.preference-test-1 img{
-    padding: 30px 0;
+    div.preference-test-1 img {
+        padding: 30px 0;
     }
 
-/*    final prtotype*/
-
-  div.final-prototype-container {
-    width: 60%;
-}
+    /*    final prtotype*/
+    div.final-prototype-container {
+        width: 60%;
+    }
 
     div.app-gif {
-    width: 50%;
-}
+        width: 50%;
+    }
 
-/*    conclusion*/
+    a#prototype-button-final {
+        flex-direction: row;
+    }
 
-    div.learnings-container{
-    width: 60%;
+    a#prototype-button-final:hover {
+        background-color: #a68148;
+    }
+
+    /*    conclusion*/
+    div.learnings-container {
+        width: 60%;
     }
 
     div#social-img {
         width: 30%;
     }
 }
-

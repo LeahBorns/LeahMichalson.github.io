@@ -11,17 +11,20 @@ body {
     line-height: 1.5em;
 }
 
-nav,footer {
+nav,
+footer {
     background-color: #fff;
     font-family: 'Karla', sans-serif;
     color: #a68148;
 }
 
-h1,h2{
+h1,
+h2 {
     font-family: 'Merriweather', serif;
 }
 
-h3,h4 {
+h3,
+h4 {
     font-family: 'Merriweather', serif;
 }
 
@@ -48,6 +51,7 @@ h4 {
 p {
     text-align: left;
 }
+
 /*NAV*/
 
 nav {
@@ -74,6 +78,7 @@ div.content {
 }
 
 /*Nav logo and name*/
+
 div#nav-logo {
     margin: auto 0;
     /*
@@ -87,7 +92,7 @@ div#nav-logo h3 {
     display: inline-block;
     position: absolute;
     top: 50%;
-    transform: translate(10%,-50%);
+    transform: translate(10%, -50%);
     font-size: 1em;
     font-family: 'Merriweather', serif;
     color: #a68148;
@@ -111,7 +116,7 @@ ul#nav-links {
     transition: all 300ms ease-in-out;
 }
 
-ul#nav-links li{
+ul#nav-links li {
     display: block;
     margin-left: 32px;
 }
@@ -176,10 +181,9 @@ div.overlay {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
     opacity: 0;
     z-index: -1;
-    transform: opacity 300ms linear;
 }
 
 .overlay.open {
@@ -187,7 +191,7 @@ div.overlay {
     opacity: 1;
 }
 
-ul#nav-links.open{
+ul#nav-links.open {
     transform: translateX(0);
 }
 
@@ -227,7 +231,7 @@ div#form {
 
 form {
     margin: auto;
-    width: 100;
+    width: 100%;
     font-family: 'Karla', sans-serif;
 }
 
@@ -235,7 +239,7 @@ form label {
     font-size: 1.2rem
 }
 
-form input[type=text]  {
+form input[type=text] {
     background-color: lightgray;
     width: 100%;
     height: 50px;
@@ -245,7 +249,7 @@ form input[type=text]  {
     margin-bottom: 20px;
 }
 
-form input[type=email]  {
+form input[type=email] {
     background-color: lightgray;
     width: 100%;
     height: 50px;
@@ -276,7 +280,7 @@ form input[type=submit] {
     border-radius: 5px;
     background-color: #4c4045;
     color: #fff;
-    border-color: none;
+    border-color: transparent;
     font-size: 1rem;
 }
 
@@ -317,22 +321,21 @@ div#social-img {
 img.social-button {
     background-color: #d5a860;
     width: 50%;
-    margin:auto;
+    margin: auto;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
     /*Form*/
-
     section#form-section {
         margin: 15% auto;
+    }
 }
 
 @media only screen and (min-width: 900px) {
 
     /*    OVERALL*/
-
     div#nav-logo h3 {
         font-size: 1.5rem;
     }
@@ -347,7 +350,6 @@ img.social-button {
 
 
     /*Nav links*/
-
     ul#nav-links {
         display: flex;
         justify-content: flex-end;
@@ -397,10 +399,8 @@ img.social-button {
         display: none;
     }
 
-/*    FORM*/
-
+    /*    FORM*/
     /*Form*/
-
     section#form-section {
         width: 80%;
         margin: 15% auto;
@@ -426,6 +426,4 @@ img.social-button {
     div#social-img {
         width: 30%;
     }
-
-
 }
