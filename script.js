@@ -1,22 +1,9 @@
 'use strict';
 
-$(document).ready(function () {
+//$(document).ready(function () {
 
-    //sideways scrolling effect
 
-    $(window).on('load resize scroll', function () {
-        $('.bg-static').each(function () {
-            var windowTop = $(window).scrollTop();
-            var elementTop = $(this).offset().top;
-            var leftPosition = windowTop - elementTop;
-            $(this)
-                .find('.bg-move')
-                .css({
-                    left: leftPosition
-                });
-        });
-    });
-});
+//});
 
 
 
@@ -49,4 +36,19 @@ window.addEventListener('click', function (event) {
         menu.className += 'menu';
         overlay.className = 'overlay';
     }
+});
+
+//sideways scrolling effect
+
+$(window).on('load resize scroll', function () {
+    $('.bg-static').each(function () {
+        var windowTop = $(window).scrollTop();
+        var elementTop = $(this).offset().top;
+        var leftPosition = windowTop - elementTop;
+        $(this)
+            .find('.bg-move')
+            .css({
+            left: leftPosition
+        });
+    });
 });
