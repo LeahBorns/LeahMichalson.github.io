@@ -57,27 +57,18 @@ gtag('config', 'UA-159590346-1');
             </div>
 
             <div id="form">
-                <form action="?" method="POST" encType="multipart/form-data">
-
+                <form action="https://mailthis.to/leah.borns@gmail.com" method="POST" encType="multipart/form-data">
                     <label for="name">Name
                         <input id="name" type="text" name="name" placeholder="Your name"></label>
                     <label for="email">Email
                         <input id="email" type="email" name="_replyto" placeholder="Your email"></label>
                     <label for="message">Message
                         <textarea id="message" name="message" placeholder="Enter your message here"></textarea></label><br>
-<!--
                     <input type="hidden" name="_subject" value="Contact form submitted">
                     <input type="hidden" name="_after" value="https://www.leahmichalson.com/">
                     <input type="hidden" name="_honeypot" value="">
                     <input type="hidden" name="_confirmation" value="">
--->
-                    <div class="form-group">
-                        <div class="g-recaptcha" data-sitekey="6LeyKL4ZAAAAAKGc8cMx-Ds5dkXfBn7c0A-0jIyM" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-                        <div class="help-block with-errors"></div>
-                    </div>
                     <input type="submit" value="Send">
-
                 </form>
 
             </div>
@@ -103,7 +94,6 @@ gtag('config', 'UA-159590346-1');
     <script>
         AOS.init();
     </script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>
