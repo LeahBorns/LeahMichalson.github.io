@@ -24,6 +24,8 @@ gtag('config', 'UA-159590346-1');
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="connect.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -46,6 +48,63 @@ gtag('config', 'UA-159590346-1');
         </div>
     </nav>
     <main>
+        <!-- ajax contact form -->
+        <section id="form-section">
+            <div id="form-picture">
+                <h2>Want to Collab?</h2>
+                <h2>Any Questions?</h2>
+                <p>Let's connect!</p>
+                <img data-aos="fade-right" src="../images/connect-image@3x.png" alt="lazer cat">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="card p-3 mb-2 border border-white ">
+                            <div class="card-body">
+                                <form class="contact__form" method="post" action="mail.php">
+
+                                    <!-- form message -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="contact__msg" style="display: none">
+                                                <p>Your message was sent successfully.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end message -->
+
+                                    <!-- form element -->
+                                    <div class="row">
+                                        <div class="col-md-12 form-group">
+                                            <input name="name" type="text" class="form-control" placeholder="Name" required>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <input name="email" type="email" class="form-control" placeholder="Email" required>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <div class="g-recaptcha" data-sitekey="6LeyKL4ZAAAAAKGc8cMx-Ds5dkXfBn7c0A-0jIyM">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <input name="submit" type="submit" class="btn btn-success" value="Send Message">
+                                        </div>
+                                    </div>
+                                    <!-- end form element -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </section>
+<!--
         <section id="form-section">
 
             <div id="form-picture">
@@ -64,12 +123,10 @@ gtag('config', 'UA-159590346-1');
                         <input id="email" type="email" name="_replyto" placeholder="Your email"></label>
                     <label for="message">Message
                         <textarea id="message" name="message" placeholder="Enter your message here"></textarea></label><br>
-<!--
                     <input type="hidden" name="_subject" value="Contact form submitted">
                     <input type="hidden" name="_after" value="https://www.leahmichalson.com/">
                     <input type="hidden" name="_honeypot" value="">
                     <input type="hidden" name="_confirmation" value="">
--->
                     <input type="submit" value="Send">
                 </form>
 
@@ -77,6 +134,7 @@ gtag('config', 'UA-159590346-1');
 
             <div class="overlay"></div>
         </section>
+-->
 
     </main>
 
@@ -96,6 +154,8 @@ gtag('config', 'UA-159590346-1');
     <script>
         AOS.init();
     </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="mail.js"></script>
 </body>
 
 </html>
