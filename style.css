@@ -51,9 +51,7 @@ p {
 /*NAV*/
 
 nav {
-    width: 100%;
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -101,8 +99,6 @@ ul#nav-links {
     top: 0;
     right: 0;
     background-color: #d5a860;
-    /*    border-bottom-left-radius: 10px;*/
-    /*    border-bottom-right-radius: 10px;*/
     z-index: 3;
     width: 100%;
     transform: translateY(-400px);
@@ -191,18 +187,18 @@ ul#nav-links.open{
 /*HEADER*/
 header {
     font-family: 'Karla', sans-serif;
-/*    padding: 12% 0;*/
     width: 100%;
-    height: 768px;
     margin: auto;
-    display: flex;
 }
 
 /*moving section on body*/
 .section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
     width: 100%;
-    min-height: 75vh;
+    min-height: 100vh;
     margin: auto;
     color: #ffffff;
 }
@@ -232,23 +228,29 @@ header {
 
 .section .bg-move {
     position: absolute;
-    top: -10px;
+    top: 40px;
     bottom: 0;
     right: auto;
-    width: 80%;
+    width: 50%;
     height: 100%;
-    background-image: url(images/dad-me-balloon-2.png);
+    background-image: url(images/balloon-swing-leah.gif);
     background-size: cover;
     background-position: center;
     z-index: 3;
+    opacity: 0.9;
 }
 
 div#header-title {
     width: 70%;
     margin: auto;
-    z-index: 0;
+    z-index: 4;
 }
 
+
+div#header-title::after {
+background-color: #fff;
+opacity: 0.5;
+}
 
 p.header-description {
     display: flex;
@@ -330,10 +332,17 @@ div.project-info {
     width: 100%;
 }
 
+div.project-info h3 {
+    font-family: 'Merriweather', serif;
+    color: #d48b47;
+}
+
 div.project-info p {
     vertical-align: top;
     color: #4c4045;
     font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+    padding: 20px 0;
 }
 
 
@@ -372,17 +381,20 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: #f2baac;
-    min-height: 20vh;
+    min-height: 30vh;
 }
 
 footer h2 {
     padding: 20px 0;
     color: #4c4045;
+    text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 p.footer-credit {
     color: #4c4045;
     margin: 20px auto;
+    text-align: center;
 }
 
 div#social-img {
@@ -403,8 +415,8 @@ img.social-button {
 @media only screen and (min-width: 600px) {
 
     .section .bg-move {
-        width: 70%;
-        height: 90%;
+        width: 40%;
+        height: 100%;
     }
 
     /*    social images*/
@@ -419,8 +431,8 @@ img.social-button {
 
 /*    balloon girl image*/
     .section .bg-move {
-        width: 50%;
-        height: 90%;
+        width: 30%;
+        height: 100%;
 
     }
 
@@ -536,7 +548,7 @@ img.social-button {
 
 @media only screen and (min-width: 1024px) {
     .section .bg-move {
-        width: 50%;
+        width: 20%;
         height: 100%;
         top: 0;
     }
@@ -555,7 +567,7 @@ img.social-button {
 
 @media only screen and (min-width: 1200px) {
     .section .bg-move {
-        width: 30%;
+        width: 20%;
         height: 100%;
         top: 20px;
     }
