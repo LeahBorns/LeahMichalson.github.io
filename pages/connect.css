@@ -208,14 +208,21 @@ section#form-section {
 
 div#form-picture {
     width: 90%;
-    margin: 10px auto;
-    font-size: 1.5rem;
-    color: #4c4045;
+    margin: auto;
 }
 
 div#form-picture h2 {
     font-family: 'Merriweather', serif;
     color: #a68148;
+    font-size: 2.8em;
+    text-align: center;
+}
+
+div#form-picture p {
+    font-family: 'Karla', sans-serif;
+    color: #4c4045;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 
@@ -335,6 +342,8 @@ img.social-button {
     }
 }
 
+
+
 @media only screen and (min-width: 900px) {
 
     /*    OVERALL*/
@@ -407,12 +416,25 @@ img.social-button {
         width: 80%;
         margin: 15% auto;
         flex-direction: row;
+        justify-content: space-between;
         align-items: flex-start;
     }
 
     div#form-picture {
-        width: 70%;
+        width: 90%;
         margin-right: 30px;
+    }
+
+    div#form-picture {
+        width: 100%;
+    }
+
+    div#form-picture h2 {
+        text-align: initial;
+    }
+
+    div#form-picture p {
+        text-align: initial;
     }
 
     div.form-picture img {

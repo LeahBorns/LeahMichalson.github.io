@@ -381,20 +381,17 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: #f2baac;
-    min-height: 30vh;
+    min-height: 20vh;
 }
 
 footer h2 {
     padding: 20px 0;
     color: #4c4045;
-    text-align: center;
-    font-family: 'Merriweather', serif;
 }
 
 p.footer-credit {
     color: #4c4045;
     margin: 20px auto;
-    text-align: center;
 }
 
 div#social-img {
@@ -407,7 +404,7 @@ div#social-img {
 img.social-button {
     background-color: #d5a860;
     width: 50%;
-    margin:auto;
+    margin: auto;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
