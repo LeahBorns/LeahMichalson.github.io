@@ -265,6 +265,7 @@ div#social-img {
     margin: auto;
     display: flex;
     text-align: center;
+    justify-content: center;
 }
 
 img.social-button {
