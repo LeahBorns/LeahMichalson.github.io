@@ -18,27 +18,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <title>Leah Michalson's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
 </head>
 
     <body data-aos="fade-left">
     <!--       nav bar with collapsible button. Overlay that appears is below the projects section-->
+
+
         <nav class="navbar">
+
         <div class="content">
-            <div id="nav-logo"><a href="#"> <img src="images/logo@3x.png" alt="logo"></a>
+            <div id="nav-logo"><a href="#"> <img src="images/logo-v2-2.svg" alt="logo"></a>
                 <h3>Leah Michalson</h3>
             </div>
             <ul id="nav-links">
                 <li class="close">&times;</li>
                 <li class="active mobile-hover"><a href="#project-section" class="jumper">Projects</a></li>
-                <!--                    <li><a href="#skills-section">Skills</a></li>-->
+
                 <li class="mobile-hover"><a href="./pages/about.html" class="jumper">About</a></li>
-<!--                WILL ADD CODING PROJECTS LATER-->
-<!--                <li class="mobile-hover"><a href="#project-section" class="jumper">Code</a></li>-->
                 <li class="mobile-hover"><a href="./pages/connect.html" class="jumper">Connect</a></li>
             </ul>
             <span class="mobile-btn">☰</span>
@@ -49,14 +52,17 @@
         <header>
             <div class="section bg-static">
             <div id="header-title" >
-                <p class="header-description"><span class="welcome">Hi, I'm Leah</span></p>
+                <h2 class="welcome">Hi, I'm Leah</h2>
                 <p class="header-description">A UX Designer with front end aptitude seeking ways to use design for positive change. Welcome to my website.</p>
             </div>
-            <div class="bg-move"></div>
+                <div class="bg-move">
+                    <div id="bm"></div>
+                </div>
+            <div ></div>
             </div>
         </header>
 
-        <p class="section-header">Check this out</p>
+        <h2 class="section-header">Check these out</h2>
 
         <section id="project-section">
 
@@ -65,16 +71,19 @@
                 <div class="project-info">
                     <h3>Bus Spot&trade;</h3>
                     <div class="tech-image">
-                        <img src="images/adobe-xd.png" alt="adobe xd">
-                        <img src="images/figma.png" alt="figma">
+                        <img src="images/adobexd.svg" alt="adobe xd">
+                        <img src="images/figma.svg" alt="figma">
                     </div>
                     <p>Bus Spot is a transit scheduling app that makes it easy for riders to visually locate their bus and reduce unexpected runs to the bus stop.
                     </p>
-                   <a class="project-links" href="./pages/bus-spot.html">Case Study</a>
+                   <a class="project-links" href="./pages/bus-spot.html">View Case Study</a>
                 </div>
                 <div class="project-img">
-                    <img class="project-screenshot" src="images/bus-spot-solution.png"
-                        alt="bus spot screenshot">
+                    <img class="project-screenshot" src="images/bus-spot-project-small.png"
+                         srcset="images/bus-spot-project-small.png 1x,
+                         images/bus-spot-project-big.png 2x"
+                        alt="bus spot screenshot"
+                        style="max-width: 500px">
                 </div>
             </div>
 
@@ -82,34 +91,40 @@
             <!--                greener-->
             <div id="greener-app" data-aos="fade-down" >
                 <div class="project-img">
-                    <img class="project-screenshot" src="images/greener-screenshots.png" alt="sustain screenshot">
+                    <img class="project-screenshot" src="images/greener-project-small.png"
+                         srcset="images/greener-project-small.png 1x,
+                                 images/greener-project-big.png 2x"
+                         style="max-width: 500px"
+                         alt="bus spot screenshot">
                 </div>
                 <div class="project-info">
                     <h3>greener&trade;</h3>
                     <div class="tech-image">
-                        <img src="images/invision.png" alt="invision">
-                        <img src="images/figma.png" alt="figma">
+                        <img src="images/invision.svg" alt="invision">
+                        <img src="images/figma.svg" alt="figma">
                     </div>
                     <p>Greener makes sustainable practices fun by earning points and getting rewards for incorporating responsible habits into your life.
                     </p>
-                   <a class="project-links" href="./pages/greener.html">Case Study</a>
+                   <a class="project-links" href="./pages/greener.html">View Case Study</a>
                 </div>
             </div>
-            <div class="overlay"></div>
         </section>
+        <div class="overlay"></div>
     </main>
 
     <footer>
         <h2 class="section-header">Let’s Connect!</h2>
         <div id="social-img">
-            <a href="https://github.com/LeahBorns" target="_blank"><img class="social-button" src="../images/social-github.png" alt="github logo"></a>
-            <a href="https://www.linkedin.com/in/leahborns/" target="_blank"><img class="social-button" src="../images/social-linkedin.png" alt="linkedIn logo"></a>
-            <a href="https://www.instagram.com/leahmichalsondesigns/" target="_blank"><img class="social-button" src="../images/social-insta.png" alt="Instagram logo"></a>
-            <a href="./pages/connect.html"><img class="social-button" src="../images/social-mail.png" alt="mail image"></a>
+            <a href="https://github.com/LeahBorns" target="_blank"><img class="social-button" src="../images/github.svg" alt="github logo"></a>
+            <a href="https://www.linkedin.com/in/leahborns/" target="_blank"><img class="social-button" src="../images/linkedin.svg" alt="linkedIn logo"></a>
+            <a href="https://www.instagram.com/leahmichalsondesigns/" target="_blank"><img class="social-button" src="../images/instagram.svg" alt="Instagram logo"></a>
+<!--            <a href="./pages/connect.html"><img class="social-button" src="../images/social-mail.png" alt="mail image"></a>-->
         </div>
         <p class="footer-credit">Designed and Coded by Leah M.</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bodymovin.js"></script>
+    <script src="js/home-animation.js"></script>
     <script src="script.js" type="text/javascript"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

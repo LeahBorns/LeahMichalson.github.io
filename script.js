@@ -8,6 +8,7 @@ var closeBtn = document.querySelector('.close');
 var overlay = document.querySelector('.overlay');
 
 
+
 //opens the menu when click on hamburger icon
 
 mobileBtn.addEventListener('click', function () {
