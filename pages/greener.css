@@ -272,7 +272,7 @@ a#prototype-button-header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 24px;
+    padding: 16px;
     margin-top: 32px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
@@ -864,7 +864,7 @@ div.preference-test-2 {
 
 div.preference-test-2 img {
     width: 100%;
-    margin: 32px auto;
+    margin: 24px auto;
     display: block;
 }
 
@@ -873,40 +873,48 @@ div.preference-test-2 img {
 div.final-prototype-container {
     width: 85%;
     margin: auto;
+    padding-bottom: 48px;
+/*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+*/
 }
 
 
 div.final-prototype {
     width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 div.app-gif {
+    padding-top: 20px;
     width: 60%;
-    margin: 0;
+    margin: auto;
+
 }
 
 div.app-gif img {
-    padding-top: 20px;
-    width: 90%;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 a#prototype-button-final {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: #4c4045;
-    width: 150px;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 10%;
+    justify-content: center;
+    width: 100%;
+    padding: 16px;
+    margin-top: 32px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    background-color:#382F5A;
     text-decoration: none;
-    color: #fff;
     font-size: 1rem;
+    color: #fff;
 }
 
 /*CONCLUSION*/
@@ -914,7 +922,7 @@ a#prototype-button-final {
 section.conclusion {
     width: 100%;
     margin: auto;
-    padding: 30px 0;
+    padding: 48px 0;
 }
 
 section.conclusion h3 {
@@ -926,43 +934,50 @@ div.learnings-container {
     margin: auto;
 }
 
+div.learnings-container h4 {
+    margin-left: 0;
+    padding: 16px 0;
+    color: #A1700C;
+}
+
 
 /*MAIN FOOTER*/
 
 footer {
     width: 100%;
-    height: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f2baac;
-    min-height: 20vh;
+    margin-top: 48px;
 }
 
-footer h2 {
-    padding: 20px 0;
-    color: #4c4045;
+footer h2.section-header {
+    color: #fff;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding: 48px 0;
+    line-height: 1em;
 }
 
 p.footer-credit {
-    color: #4c4045;
-    margin: 20px auto;
+    color: #fff;
+    margin: 32px auto;
+    text-align: center;
 }
 
 div#social-img {
-    width: 60%;
+    width: 70%;
     margin: auto;
     display: flex;
     text-align: center;
 }
 
 img.social-button {
-    background-color: #d5a860;
+    background-color: #fff;
+    padding: 5px;
     width: 50%;
     margin: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    /*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 

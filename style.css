@@ -74,7 +74,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 10000;
 /*    line-height: 65px;*/
     height: 100px;
 }
@@ -230,11 +230,11 @@ header {
 
 #bm {
     overflow: hidden;
-    width: 70%;
+    width: 75%;
     height: 100%;
     position: absolute;
     top: 32px;
-    left: -110px;
+    left: -115px;
 }
 
 /*moving section on body*/
@@ -251,9 +251,11 @@ header {
 
 .section.bg-static {
     background-size: cover;
-    background-position: left;
     background-repeat: no-repeat;
     background-image: url(images/triangle-background.svg);
+    background-attachment: fixed;
+    position: absolute;
+    top: 20px;
 
 }
 
@@ -307,11 +309,16 @@ opacity: 0.5;
 */
 
 h2.welcome {
+    width: 90%;
+    margin: auto;
     z-index: 10;
     color: #382F5A;
+    line-height: 1em;
 }
 
 p.header-description {
+    width: 90%;
+    margin: auto;
     font-size: 1.25em;
     line-height: 2rem;
     color: #382F5A;
@@ -319,21 +326,14 @@ p.header-description {
 }
 
 
-
-
-
 /*Projects section*/
 section#project-section {
-/*
-    background-image: url(images/room-1@3x.png);
-    background-attachment: fixed;
-*/
-/*    background-color: #fff;*/
     width: 85%;
     margin: auto;
     z-index: -1
 }
 
+/*
 section#project-section::after{
     content: "";
     background-color: #fff;
@@ -345,12 +345,14 @@ section#project-section::after{
     position: absolute;
     z-index: -1
 }
+*/
 
 h2.section-header {
     width: 85%;
     margin: 32px auto;
     color: #392F5A;
     z-index: 0;
+    line-height: 1em;
 }
 
 div#bus-spot-app {
@@ -405,7 +407,7 @@ a.project-links {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 24px;
+    padding: 16px;
     margin: 16px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
@@ -434,6 +436,7 @@ footer h2.section-header {
     margin: auto;
     text-align: center;
     padding: 48px 0;
+    line-height: 1em;
 }
 
 p.footer-credit {
@@ -460,14 +463,37 @@ img.social-button {
 
 @media only screen and (min-width: 600px) {
 
-    .section .bg-move {
-        width: 40%;
-        height: 100%;
+/*    HEADER*/
+    #bm {
+        width: 75%;
+        top: 32px;
+        left: -175px;
     }
+
+    div#header-title {
+        width: 70%;
+        margin: auto;
+        z-index: 4;
+    }
+
+/*    PROJECTS SECTION*/
+    section#project-section {
+        width: 75%;
+    }
+
+    h2.section-header {
+        width: 75%;
+        margin: 32px auto;
+        color: #392F5A;
+        z-index: 0;
+        line-height: 1em;
+    }
+
+/*    FOOTER*/
 
     /*    social images*/
     div#social-img {
-        width: 40%;
+        width: 50%;
     }
 
 }
