@@ -269,10 +269,6 @@ div.card-body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.contact__msg {
-    font-size: 1.25em;
-    color: #382F5A;
-}
 
 div#form {
     margin: auto;

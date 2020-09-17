@@ -238,6 +238,17 @@ header {
 }
 
 /*moving section on body*/
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 500px solid transparent;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid rgba(244,208,111,0.5);
+    position: absolute;
+    z-index: -3;
+
+}
 .section {
     display: flex;
     justify-content: space-around;
@@ -259,9 +270,11 @@ header {
 */
     top: 20px;
 
+
 }
 
 
+/*
 .section.bg-static::after {
     content: "";
     background-repeat: no-repeat;
@@ -277,14 +290,15 @@ header {
     position: absolute;
     z-index: -1;
 }
+*/
 
 
 .section .bg-move {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 100px;
+    right: auto;
     z-index: 3;
     width: 100%;
 /*    opacity: 0.9;*/
@@ -450,14 +464,13 @@ div#social-img {
     width: 70%;
     margin: auto;
     display: flex;
-    text-align: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 img.social-button {
     background-color: #fff;
     padding: 5px;
-    width: 50%;
-    margin: auto;
     border-radius: 8px;
 /*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
@@ -712,3 +725,4 @@ img.social-button {
     }
 
 }
+
