@@ -60,7 +60,8 @@ h3 {
 
 h4 {
     font-size: 1.25em;
-    padding: 16px 8px;
+    padding-top: 16px;
+    padding-bottom: 8px;
 }
 
 p {
@@ -284,8 +285,6 @@ a.resume-button:hover {
 
 
 
-
-
 /*MAIN FOOTER*/
 
 
@@ -329,94 +328,105 @@ img.social-button {
 
 
 @media only screen and (min-width: 600px) {
+
+    /*    NAV*/
+    div.content {
+        width: 75%;
+    }
+
+    ul#nav-links li{
+        width: 75%;
+    }
+
     /*Bio Section*/
 
-
     section#bio-section {
+        width: 75%;
         margin: 15% auto;
+    }
+
+    div.bio-picture {
+        width: 80%;
+        margin: auto;
+    }
+
+    a.resume-button {
+        width: 60%;
+        margin: 32px auto;
+    }
+
+/*    FOOTER*/
+    div#social-img {
+        width: 50%;
     }
 
 }
 
 @media only screen and (min-width: 768px) {
+
+    /*    NAV*/
+    div.content {
+        width: 70%;
+    }
+
+    ul#nav-links li{
+        width: 70%;
+    }
+
     /*Bio Section*/
 
     section#bio-section {
-        margin: 10% auto;
-    }
-
-    div.bio {
-        width: 70%;
-
+        width: 65%;
+        margin: 15% auto;
     }
 
     div.bio-picture {
         width: 70%;
+        margin: auto;
     }
 
-    div.bio-picture img {
-        width: 100%;
+    a.resume-button {
+        width: 60%;
+        margin: 32px auto;
     }
 
+    /*    FOOTER*/
+    div#social-img {
+        width: 40%;
+    }
 }
 
 @media only screen and (min-width: 900px) {
 
-    /*    OVERALL*/
-
-    div#nav-logo h3 {
-        font-size: 1.5rem;
-    }
-
-    div#nav-logo img {
-        width: 80px;
-    }
+    /*  NAV*/
 
     div.content {
-        width: 80%;
+        width: 75%;
     }
-
 
     /*Nav links*/
 
     ul#nav-links {
         display: flex;
+        flex-direction: row;
         justify-content: flex-end;
-        list-style: none;
-        padding: 10px 16px;
-        float: right;
-        width: initial;
-        transform: none;
-        transition: none;
-        background-color: initial;
+        align-items: center;
         position: initial;
-        z-index: initial;
+        transition: none;
+        transform: none;
+        width: 50%;
+
     }
 
-    li.mobile-hover:hover {
-        background-color: initial;
-        width: initial;
-        margin: initial;
-        padding: initial;
-        border-top-right-radius: initial;
-        border-bottom-right-radius: initial;
-        border-bottom-left-radius: initial;
-        border-top-left-radius: initial;
-    }
-
-    ul#nav-links li {
-        display: inline-block;
+    ul#nav-links li{
+        width: 85%;
+        text-align: center;
     }
 
     ul#nav-links li a {
-        text-decoration: none;
-        font-size: 1rem;
-        color: #a68148;
-    }
-
-    ul#nav-links li a:active {
-        color: #d5a860;
-        text-decoration: underline;
+        color: #392F5A;
+        font-size: 1em;
+        padding: 32px 0;
     }
 
     /*mobile hamburger menu*/
@@ -428,12 +438,14 @@ img.social-button {
         display: none;
     }
 
+
     /*Bio Section*/
 
 
     section#bio-section {
+        width: 75%;
         margin: 12% auto;
-        flex-direction: row-reverse;
+        flex-direction: row;
         align-items: flex-start;
     }
 
@@ -449,9 +461,38 @@ img.social-button {
     div.bio-picture img {
         width: 100%;
     }
-    /*    footer*/
+    /*    FOOTER*/
     div#social-img {
         width: 30%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    div#social-img {
+        width: 25%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    section#bio-section {
+        margin: 10% auto;
+    }
+
+    div.bio {
+        width: 50%;
+        margin: auto;
+    }
+    div.bio-picture {
+        width: 35%;
+        margin: 0 30px;
+    }
+
+    div#social-img {
+        width: 20%;
     }
 
 }

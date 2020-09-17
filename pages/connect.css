@@ -60,7 +60,8 @@ h3 {
 
 h4 {
     font-size: 1.25em;
-    padding: 16px 8px;
+    padding-top: 16px;
+    padding-bottom: 8px;
 }
 
 p {
@@ -234,7 +235,8 @@ section#form-section {
     margin: 25% auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 div#form-picture {
@@ -314,12 +316,10 @@ form textarea[placeholder] {
     font-family: 'Open Sans', sans-serif;
 }
 
-/*
 div.g-recaptcha {
     transform:scale(0.85);
     transform-origin:0 0;
 }
-*/
 
 
 form input[type=submit] {
@@ -380,73 +380,96 @@ img.social-button {
     width: 50%;
     margin: auto;
     border-radius: 8px;
-    /*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 @media only screen and (min-width: 600px) {
+
+    /*    NAV*/
+    div.content {
+        width: 75%;
+    }
+
+    ul#nav-links li{
+        width: 75%;
+    }
+
     /*Form*/
     section#form-section {
+        width: 75%;
         margin: 15% auto;
     }
+
+    div#form-picture {
+        width: 80%;
+        margin: auto;
+    }
+
+    div#social-img {
+        width: 50%;
+    }
+
 }
 
+@media only screen and (min-width: 768px) {
+
+    /*    NAV*/
+    div.content {
+        width: 70%;
+    }
+
+    ul#nav-links li{
+        width: 70%;
+    }
+
+    /*Form*/
+    section#form-section {
+        width: 60%;
+        margin: 15% auto;
+    }
+
+    div#form-picture {
+        width: 80%;
+        margin: auto;
+    }
+
+    div#social-img {
+        width: 40%;
+    }
+
+}
 
 
 @media only screen and (min-width: 900px) {
 
-    /*    OVERALL*/
-    div#nav-logo h3 {
-        font-size: 1.5rem;
-    }
-
-    div#nav-logo img {
-        width: 80px;
-    }
+    /*  NAV*/
 
     div.content {
-        width: 80%;
+        width: 75%;
     }
-
 
     /*Nav links*/
+
     ul#nav-links {
         display: flex;
+        flex-direction: row;
         justify-content: flex-end;
-        list-style: none;
-        padding: 10px 16px;
-        float: right;
-        width: initial;
-        transform: none;
-        transition: none;
-        background-color: initial;
+        align-items: center;
         position: initial;
-        z-index: initial;
+        transition: none;
+        transform: none;
+        width: 50%;
+
     }
 
-    li.mobile-hover:hover {
-        background-color: initial;
-        width: initial;
-        margin: initial;
-        padding: initial;
-        border-top-right-radius: initial;
-        border-bottom-right-radius: initial;
-        border-bottom-left-radius: initial;
-        border-top-left-radius: initial;
-    }
-
-    ul#nav-links li {
-        display: inline-block;
+    ul#nav-links li{
+        width: 85%;
+        text-align: center;
     }
 
     ul#nav-links li a {
-        text-decoration: none;
-        font-size: 1rem;
-        color: #a68148;
-    }
-
-    ul#nav-links li a:active {
-        color: #d5a860;
-        text-decoration: underline;
+        color: #392F5A;
+        font-size: 1em;
+        padding: 32px 0;
     }
 
     /*mobile hamburger menu*/
@@ -461,7 +484,7 @@ img.social-button {
     /*    FORM*/
     /*Form*/
     section#form-section {
-        width: 80%;
+        width: 75%;
         margin: 15% auto;
         flex-direction: row;
         justify-content: space-between;
@@ -469,21 +492,22 @@ img.social-button {
     }
 
     div#form-picture {
-        width: 90%;
-        margin-right: 30px;
-    }
-
-    div#form-picture {
         width: 100%;
+        margin: 0 auto;
     }
 
     div#form-picture h2 {
-        text-align: initial;
+        margin-top: 0;
+        padding-top: 0;
+        line-height: 1.2;
     }
 
-    div#form-picture p {
-        text-align: initial;
+    div.card-body{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
     }
+
 
     div.form-picture img {
         width: 100%;
@@ -498,4 +522,30 @@ img.social-button {
     div#social-img {
         width: 30%;
     }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    div#form-picture {
+        width: 90%;
+    }
+
+    div#social-img {
+        width: 25%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    div#form-picture {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+
+    div#social-img {
+        width: 20%;
+    }
+
 }
