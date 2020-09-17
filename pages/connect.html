@@ -58,14 +58,38 @@ gtag('config', 'UA-159590346-1');
 
 
                 <div class="card-body">
+
+                    <form id="my-form"
+                          action="https://formspree.io/mnqgrlno"
+                          method="POST"
+                          >
+                        <p id="my-form-status"></p>
+                        <input name="name" type="text"  placeholder="Name" required>
+
+
+                        <input name="email" type="email" placeholder="Email" required>
+
+
+                        <input name="subject" type="text"  placeholder="Subject" required>
+
+
+                        <textarea name="message"placeholder="Message" required></textarea>
+
+
+                        <div class="g-recaptcha" data-sitekey="6LeyKL4ZAAAAAKGc8cMx-Ds5dkXfBn7c0A-0jIyM">
+                        </div>
+                        <input id="my-form-button" name="submit" type="submit" value="Send Message">
+
+                    </form>
+<!--
                     <form class="contact__form" action="https://formspree.io/mnqgrlno" method="POST">
-                        <!-- form message -->
+                         form message
                         <div class="contact__msg" style="display: none">
                             <p>Your message was sent successfully.</p>
                         </div>
-                        <!-- end message -->
+                         end message
 
-                        <!-- form element -->
+                         form element
 
 
                         <input name="name" type="text" class="form-control" placeholder="Name" required>
@@ -84,11 +108,13 @@ gtag('config', 'UA-159590346-1');
                         </div>
 
 
-                        <input name="submit" type="submit" class="btn btn-success" value="Send Message">
+                        <input name="submit" type="submit" value="Send Message">
 
 
-                        <!-- end form element -->
+
+                         end form element
                     </form>
+-->
                 </div>
 
 
@@ -108,9 +134,9 @@ gtag('config', 'UA-159590346-1');
         </div>
         <p class="footer-credit">Designed and Coded by Leah M.</p>
     </footer>
-
+    <script src="../js/connect-form.js" type="text/javascript">
     <script src="../script.js" type="text/javascript"></script>
-    <script src="../js/connect-form.js" type="text/javascript"></script>
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
