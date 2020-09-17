@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html SameSite=None Secure>
 <html lang='en'>
 
 <head>
@@ -63,6 +63,7 @@ gtag('config', 'UA-159590346-1');
                           action="https://formspree.io/mnqgrlno"
                           method="POST"
                           >
+
                         <p id="my-form-status"></p>
                         <input name="name" type="text"  placeholder="Name" required>
 
@@ -76,45 +77,12 @@ gtag('config', 'UA-159590346-1');
                         <textarea name="message"placeholder="Message" required></textarea>
 
 
-                        <div class="g-recaptcha" data-sitekey="6LeyKL4ZAAAAAKGc8cMx-Ds5dkXfBn7c0A-0jIyM">
+                        <div class="g-recaptcha" id="recaptcha" data-sitekey="6LeyKL4ZAAAAAKGc8cMx-Ds5dkXfBn7c0A-0jIyM">
                         </div>
                         <input id="my-form-button" name="submit" type="submit" value="Send Message">
 
                     </form>
-<!--
-                    <form class="contact__form" action="https://formspree.io/mnqgrlno" method="POST">
-                         form message
-                        <div class="contact__msg" style="display: none">
-                            <p>Your message was sent successfully.</p>
-                        </div>
-                         end message
 
-                         form element
-
-
-                        <input name="name" type="text" class="form-control" placeholder="Name" required>
-
-
-                        <input name="email" type="email" class="form-control" placeholder="Email" required>
-
-
-                        <input name="subject" type="text" class="form-control" placeholder="Subject" required>
-
-
-                        <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
-
-
-                        <div class="g-recaptcha" data-sitekey="6LeyKL4ZAAAAAKGc8cMx-Ds5dkXfBn7c0A-0jIyM">
-                        </div>
-
-
-                        <input name="submit" type="submit" value="Send Message">
-
-
-
-                         end form element
-                    </form>
--->
                 </div>
 
 
