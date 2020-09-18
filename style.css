@@ -687,6 +687,11 @@ img.social-button {
         margin: auto;
     }
 
+    div.project-info {
+        width: 35%;
+        margin: auto;
+    }
+
     div#social-img {
         width: 20%;
     }
