@@ -226,6 +226,7 @@ header {
     width: 100%;
     margin: auto;
     min-height: 100vh;
+    text-align: center;
 }
 
 #bm {
@@ -234,21 +235,25 @@ header {
     height: 100%;
     position: absolute;
     top: 32px;
-    left: -115px;
+    left: -135px;
 }
 
 /*moving section on body*/
 
 .triangle {
-    width: 0;
-    height: 0;
-    border-top: 500px solid transparent;
-    border-bottom: 500px solid transparent;
-    border-left: 500px solid rgba(244,208,111,0.5);
-    position: absolute;
-    z-index: -3;
 
+    width: 90vw;
+    height: 90vh;
+/*    background: linear-gradient(to right bottom, #fff 0%, #fff 50%, #F4D06F 25%, #F4D06F 50%);*/
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.50;
+    transform: rotate(-5deg);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: #F4D06F;
 }
+
 .section {
     display: flex;
     justify-content: space-around;
@@ -258,39 +263,12 @@ header {
     min-height: 100vh;
     margin: auto;
     color: #ffffff;
+    overflow: hidden;
 }
 
 .section.bg-static {
-/*
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(images/triangle-background.svg);
-    background-attachment: fixed;
-    position: absolute;
-*/
     top: 20px;
-
-
 }
-
-
-/*
-.section.bg-static::after {
-    content: "";
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url(images/triangle-background.svg);
-    opacity: 0.7;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-}
-*/
 
 
 .section .bg-move {
@@ -308,35 +286,27 @@ div#header-title {
     width: 70%;
     margin: auto;
     z-index: 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
 }
 
-
-/*
-div#header-title::after {
-background-color: #fff;
-opacity: 0.5;
-}
-*/
 
 h2.welcome {
-    width: 90%;
+    width: 100%;
     margin: auto;
     z-index: 10;
     color: #382F5A;
     line-height: 1em;
+    text-align: left;
+/*    text-shadow: 1px 1px #fafafa;*/
 }
 
 p.header-description {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    font-size: 1.25em;
+    font-size: 1.563em;
     line-height: 2rem;
     color: #382F5A;
     padding-top: 16px;
+/*    text-shadow: 1px 1px #fafafa;*/
 }
 
 
@@ -499,18 +469,11 @@ img.social-button {
         left: -175px;
     }
 
+
     div#header-title {
-        width: 60%;
+        width: 55%;
     }
 
-        h2.welcome {
-        width: 70%;
-
-    }
-
-    p.header-description {
-        width: 70%;
-    }
 
 /*    PROJECTS SECTION*/
     section#project-section {
@@ -548,6 +511,12 @@ img.social-button {
     }
 
     /*    HEADER*/
+
+    .triangle {
+        transform: rotate(-5deg) translate(25px);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
     #bm {
         width: 85%;
         left: -250px;
@@ -557,14 +526,6 @@ img.social-button {
         width: 50%;
     }
 
-    h2.welcome {
-        width: 70%;
-
-    }
-
-    p.header-description {
-        width: 70%;
-    }
 
     /*    PROJECTS SECTION*/
     section#project-section {
@@ -636,16 +597,9 @@ img.social-button {
     }
 
     div#header-title {
-        width: 50%;
+        width: 40%;
     }
 
-    h2.welcome {
-        width: 60%;
-    }
-
-    p.header-description {
-        width: 60%;
-    }
 
     /*    PROJECTS SECTION*/
     section#project-section {
@@ -708,6 +662,11 @@ img.social-button {
 
 @media only screen and (min-width: 1024px) {
 
+    div#header-title {
+        width: 35%;
+    }
+
+
     div#social-img {
         width: 25%;
     }
@@ -722,7 +681,7 @@ img.social-button {
     }
 
     div#header-title {
-        width: 35%;
+        width: 30%;
         margin: auto;
     }
 
@@ -731,4 +690,4 @@ img.social-button {
     }
 
 }
-div>
+

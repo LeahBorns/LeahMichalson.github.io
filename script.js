@@ -35,16 +35,20 @@ window.addEventListener('click', function (event) {
 
 //sideways scrolling effect on home screen
 
+
 $(window).on('load resize scroll', function () {
     $('.bg-static').each(function () {
         var windowTop = $(window).scrollTop();
-        var elementTop = $(this).offset().top;
+//        console.log(windowTop)
+        var elementTop = $(this).position().left
+//        console.log($(this).position().left);
         var leftPosition = windowTop - elementTop;
-
+//        console.log(leftPosition)
         $(this)
             .find('.bg-move')
             .css({
             left: leftPosition
+
         });
     });
 });
