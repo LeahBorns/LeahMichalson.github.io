@@ -452,7 +452,8 @@ div.chart-container2:before {
     position: absolute;
     top: 0;
     right:0;
-    background-color: rgba(32, 163, 158, .2);
+    background-image: url('../images/tape.png');
+/*    background-color: rgba(32, 163, 158, .2);*/
     transform: translateX(30%) translateY(10%) rotate(45deg);
 }
 
@@ -636,7 +637,8 @@ div.color-type-image:before {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(32, 163, 158, .2);
+    background-image: url('../images/tape.png');
+/*    background-color: rgba(32, 163, 158, .2);*/
     transform: translateX(-30%) translateY(10%) rotate(-45deg);
 }
 
@@ -820,7 +822,8 @@ div.chart-container:before {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(32, 163, 158, .2);
+    background-image: url('../images/tape.png');
+/*    background-color: rgba(32, 163, 158, .2);*/
     transform: translateX(-30%) translateY(10%) rotate(-45deg);
 }
 
