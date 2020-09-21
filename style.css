@@ -243,7 +243,6 @@ header {
 /*moving section on body*/
 
 .triangle {
-
     width: 90vw;
     height: 90vh;
 /*    background: linear-gradient(to right bottom, #fff 0%, #fff 50%, #F4D06F 25%, #F4D06F 50%);*/
@@ -285,9 +284,10 @@ header {
 }
 
 div#header-title {
-    width: 70%;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
     z-index: 4;
+    display: block;
 }
 
 
@@ -334,7 +334,7 @@ section#project-section::after{
 */
 
 h2.section-header {
-    width: 85%;
+    width: 90%;
     margin: 32px auto;
     color: #392F5A;
     z-index: 0;
