@@ -354,6 +354,12 @@ div#greener-app {
   margin: auto;
 }
 
+div#gromm-app {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+}
+
 div.project-img {
     padding-top: 16px;
     width: 100%;
@@ -399,6 +405,22 @@ a.project-links {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     background-color:#382F5A;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+
+div.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px;
+    margin: 16px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    background-color:gray;
     text-decoration: none;
     font-size: 1rem;
     color: #fff;
@@ -630,6 +652,15 @@ img.social-button {
         align-items: center;
     }
 
+    div#gromm-app {
+        width: 100%;
+        margin: 56px auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
     div.project-info {
         width: 50%;
         margin: auto;
@@ -643,6 +674,11 @@ img.social-button {
     div.greener-img {
         width: 60%;
         margin-right: 32px;
+    }
+
+    div.gromm-img {
+        width: 60%;
+        margin-left: 32px;
     }
 
 
