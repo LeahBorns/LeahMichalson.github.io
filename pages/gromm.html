@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178390206-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-178390206-1');
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
+    <title>Gromm Case Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/cow2exc.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="gromm.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!--       nav bar with collapsible button. Overlay that appears is below the projects section-->
+    <nav class="navbar">
+
+        <div class="content">
+            <div id="nav-logo"><a href="../index.html#project-section"> <img src="../images/logo-v2-2.svg" alt="logo"></a>
+                <h3>Leah Michalson</h3>
+            </div>
+            <ul id="nav-links">
+                <li class="close">&times;</li>
+                <li class="mobile-hover"><a href="../index.html#project-section" class="jumper">Projects</a></li>
+
+                <li class="mobile-hover"><a href="about.html" class="jumper">About</a></li>
+                <li class="mobile-hover"><a href="connect.html" class="jumper">Connect</a></li>
+            </ul>
+            <span class="mobile-btn">☰</span>
+        </div>
+    </nav>
+    <main>
+
+        <!--header for Bus Spot. Image, overview and button for live prototype-->
+        <header data-aos="fade-left">
+            <div class="case-study-image">
+                <img src="../images/gromm-case-study.svg" alt="gromm screenshot and logo">
+            </div>
+            <div class="case-study-title">
+                <h2 class="case-study-name">Gromm&trade;</h2>
+                <h3 class="section-title">Overview</h3>
+                <p class="case-study-description">Left Coast Bicycles (LCB) is a mobile bike repair company. They primarily have events at office buildings where they offer bike safety checks and bike repair to large groups. LCB currently uses 3 different platforms to schedule and remind customers of their upcoming consultation and repair. The owner really wishes there was a way to streamline his scheduling process. Through the design process, we created Gromm, an app that combines scheduling, reminders, and payment all in one app.</p>
+                <div>
+                    <a id="prototype-button-header" target="_blank" href="https://xd.adobe.com/view/bedc5ca1-2e6d-45d0-8b98-778539adb467-eb8f/?fullscreen">See Live Prototype</a>
+                </div>
+            </div>
+        </header>
+
+
+        <!--           Problem statement for bus-spot-->
+        <section id="problem" data-aos="fade-down">
+            <div class="problem-container">
+                <h3>The Problem</h3>
+            </div>
+            <div id="statement">
+                <p>LCB currently uses google sheets to schedule events in real-time, Gmail to send reminders (manually with templates), and square for payment processing. While there are many scheduling apps available, none offer real-time scheduling for discrete events which is what LCB needs.</p><br> <p>We want to figure out<span class="bold"> how we might create a more streamlined process to schedule clients bike consultations and repairs for discrete events.</span></p>
+
+            </div>
+        </section>
+
+        <section id="users-roles-scope" data-aos="fade-down">
+            <div class="container">
+                <div id="users">
+                    <h3>Users &#38; Audience</h3>
+                    <p>This app is for bike commuters who's offices provide mobile bike repair benefits.</p>
+                </div>
+                <div id="roles">
+                    <h3>Roles </h3>
+                    <p>I was the User Experience Designer. I conducted user research, created the personas, user flows, wireframes, prototypes, and final user testing. I also collaborated with my mentor Becky for assistance along the way. She provided me with feedback from the Discover to the Deliver phases. I used Figma, Illustrator, and Adobe XD.
+                    </p>
+                </div>
+                <div id="scope">
+                    <h3>Scope &#38; Constraints</h3>
+                    <p>The scope of the project is to create a working prototype of a client facing bike repair scheduling app. Due to time constraints, the mechanic side will be created another time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" data-aos="fade-down">
+            <div class="solution-container">
+                <h3>The Solution</h3>
+                <div id="solution-statement">
+                    <p>The solution is a bike repair scheduling app called, Gromm. Clients can schedule, receive reminders and alerts, and pay all in one place.</p><br>
+                    <p>The current prototype is the client facing part of the app. Users can schedule a 15-minute consultation with the onsite mechanic, see their upcoming and past appointments, receive reminders before their appointment, and a reminder and final summary of when their bike is done. This will provide faster service for the client and a more streamlined system for the mechanic.</p>
+                </div>
+                <div class="image-box"><img  src="../images/gromm-solution.svg" alt="bus spot solution screenshot">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="process" data-aos="fade-down">
+            <!--            Discovery and Research Sub Header-->
+
+            <div class="competitive-analysis" data-aos="fade-down">
+                <h3>Discovery &#38; Research</h3>
+
+                <h4>Competitive Analysis</h4>
+                <p>For the competitive analysis, I wanted to dig into other scheduling apps and mobile bike repair companies to see how they schedule their clients.
+                </p><br>
+                <p>I landed on Velofix and Beeline for mobile bike repair and SimplyBook.me for just scheduling. </p>
+            </div>
+            <div class="image-box2"><img src="../images/gromm-swot.svg" alt="bus spot swot"></div>
+            <div class="competitive-analysis" data-aos="fade-down">
+                <p>The biggest takeaways were: </p><br>
+                <p><span class="bold">Velofix</span> uses Vonigo, a third party service management api to schedule and manage their mobile bike repair fleet. Through the Velofix platform, you can schedule, get reminders, and pay. While everything is in one place there isn't a mobile platform, the layout is busy and discrete events can't be scheduled.
+                </p><br>
+                <p><span class="bold">Beeline</span> is a unique company that offers a scheduling platform for the bike industry. Their software allows users and mechanics to schedule repairs, and organize inventory all in one place. They do offer scheduling for discrete events however it's for a time range vs specific intervals. Beeline also doesn't have a mobile platform.
+                </p><br>
+                <p><span class="bold">SimplyBook.me</span> Simplybook.me is a popular scheduling platform that is easy to navigate, it updates in real time and sends notifications. Like the other scheduling apps they also don't support scheduling for discrete events.</p>
+            </div>
+
+            <!--            user survey-->
+            <div id="user-survey" data-aos="fade-down">
+                <h4>User Survey</h4>
+                <p>To get a better idea of the users I sent out a survey to LCB's clients get a better understanding of their goals and frustrations with the current system.</p><br>
+                <p>Out of <span class="bold">19 participants</span>, I found that while most users like real time scheduling many users desired more communication and integrated features. Some of these included <span class="bold"> email confirmation, the ability to add an event to their calendar, and pay for service in the app.</span></p><br>
+                <p>I was surprised to find that more people wanted a clearer way to reschedule as well as a summary alert once their bike repair was complete compared to getting event reminders. </p>
+
+                <div class="chart-container2"><canvas id="userSurveyChart1" height="300"></canvas></div>
+                <div class="chart-container"><canvas id="userSurveyChart2" height="300"></canvas></div>
+                <div class="chart-container2"><canvas id="userSurveyChart3" height="300"></canvas></div>
+
+            </div>
+            <div class="persona-container" data-aos="fade-down">
+
+                <div id="personas">
+                    <h4>Personas</h4>
+                    <p>After getting a better idea of current user's goals, frustrations and motivations I was able to create 2 personas. </p><br>
+
+                    <p>The first is a busy working professional who is always looking for ways to optimize her day. </p>
+                </div>
+
+                <div class="image-box2">
+                    <img src="../images/gromm-persona-brenda.svg" alt="gromm personas">
+                </div>
+                <div id="personas">
+                    <p>The second is a mechanic at a local mobile bike repair company who has a very busy day performing bike consultations for 20+ clients and planning his week to complete the needed repairs.
+                    </p>
+                </div>
+                <div class="image-box3">
+                    <img src="../images/gromm-persona-grant.svg" alt="gromm personas">
+                </div>
+            </div>
+        </section>
+        <!--        Information Architecture Subheader    -->
+        <section class="information-architecture" data-aos="fade-down">
+            <div class="user-stories">
+                <h3>Define</h3>
+                <h4>User Stories &#38; User Flows</h4>
+                <p>From the user survey and personas, I found that there were <span class="bold">4 high priority</span> and <span class="bold">3 medium priority </span> stories for the user. </p><br>
+
+<!--
+                <p><span class="red">As a user I would like to see the most updated times available for a service </span><br>
+                    <span class="red">As a user I would like to get a confirmation once I schedule the service</span> <br><br>
+                    <span class="red">As a user I'd like to sync the service with my calendar</span><br><br>
+                    <span class="red">As a user I'd like to have the option to reschedule or cancel my appointment </span><br><br>
+                    <span class="yellow">As a user I'd like reminders before the service</span>  <br><br>
+                    <span class="yellow">As a user, I'd like to get an alert when my bike is complete with a summary of my repairs.</span> <br><br>
+                    <span class="yellow">As a user I'd like to pay in the app</span>
+                </p><br>
+-->
+<!--
+                <ol>
+                    <li>Confirmation after scheduling</li>
+                    <li>To sync events with their calendar</li>
+                    <li>An option to reschedule or cancel the event</li>
+                </ol>
+-->
+                <p>I broke the user flows up into 3 different parts. The second and third flows get a little more complicated as it's dependent on the mechanic's input. To keep everything in scope each flow includes additional details where the mechanic is involved as well as the user stories it helps answer.</p>
+                <br>
+                <p>The first flow is for scheduling an appointment which is more straightforward, all steps are completed by the client. This flow has solutions for all 4 high priority user stories.</p>
+            </div><br>
+
+
+            <div class="image-box2">
+                <img src="../images/gromm-user-flow-1.svg" alt="gromm user flow 1"></div>
+            <div class="user-stories">
+                <p>The second is for after the appointment is scheduled, specifically right before and after the client's appointment. This flow answers one high and one medium priority user story.</p>
+            </div>
+            <div class="image-box3"> <img src="../images/gromm-user-flow-2.svg" alt="gromm user flow 2"></div>
+            <div class="user-stories">
+                <p>Finally the third is after the mechanic has completed the repairs. This flow covers two of the medium priority user stories.</p>
+            </div>
+
+            <div class="image-box2"><img src="../images/gromm-user-flow-3.svg" alt="gromm user flow 3"></div>
+
+
+            <div class="wireframe-sketch-container">
+
+                <div class="wireframe-sketch">
+                    <h4>Wireframe Sketches to Digital Wireframes</h4>
+                    <p>From sketches to digital wireframes the app required a few small iterations.</p><br>
+                    <p>I had initially misunderstood LCB's business model and had laid it out similar to Velofix, which offers a variety of services at many different times.</p><br>
+                    <p>I updated the digital wireframes to reflect LCB's schedule system which includes one or two specific dates and a set of times at 15 minute intervals.</p>
+                </div>
+                <div class="image-box2">
+                    <img src="../images/gromm-wireframe-sketches.svg" alt="gromm wireframes">
+                </div>
+                <div class="wireframe-sketch">
+                    <p>Another small adjustment included updating the app header. I couldn't decide if I wanted the designs to be in app or mobile first web format.</p>
+                </div>
+                <div class="image-box">
+                    <img src="../images/gromm-digital-wireframes.svg" alt="gromm wireframes">
+                </div>
+            </div>
+        </section>
+        <!--        Visual Design Subheader    -->
+        <section class="visual-design" data-aos="fade-down">
+            <div class="color-type-container">
+
+                <div class="logo-container" data-aos="fade-down">
+                    <div class="logo">
+                        <h3>Visual Design</h3>
+                        <h4>Logo Design &#38; Process</h4>
+                        <p>The original plan was to redesign Left Coast Bicycles logo and stick with the same color palette. Through the design process, I decided to focus on the scheduling platform as its own thing and to revisit the LCB redesign later. </p><br>
+                        <p>After discussing design preferences with the owner we decided we wanted the app to feel simple, friendly, and bike related.</p> <br>
+                        <p>We initially came up with a list of words related to bikes, mobile, and repair. I landed on Gromm, which in the bike industry is a young inspired biker who hangs out around bike shops. The name was shorter, it wasn't taken in the app store or as a website, and invited the creation of a cute, cuddly Gromm character as the mascot.</p><br>
+                        <p>For the logo, I wanted to incorporate a bike part. After a few iterations, I liked the way that Gromm fit into a chain link.</p>
+                    </div>
+                </div>
+                <div class="image-box3"><img src="../images/gromm-branding.svg" alt="gromm logos"></div>
+                <div class="color-type">
+                    <div class="color-palette">
+                        <h4>Color Palette</h4>
+                        <p>The owner of LCB had expressed interest in blues and greens as an alternate color and after some bike industry research, I found that orange and gray were commonly used (which were the same colors that LCB was currently using). The blues and greens also provided a more playful look and went well with Gromm.
+                        </p>
+                        <br>
+                        <p>The colors also had high contrast when used together for users who experience color blindness.</p><br>
+                    </div>
+                    <div class="topography">
+                        <h4>Topography</h4>
+                        <p>For the typography, I initally chose Stozel, however after adding it to the low-fi prototype I found, while it was a nice clean font it didn't fit with the look of the app. I ended up going with Proxima Nova, a websafe font that's simple and doesn't draw attention to itself.</p><br>
+                        <p>I also followed apple's accessibility guidelines when choosing the font size and weight.</p>
+                    </div>
+                </div>
+                <div class="color-type-image">
+                    <div class="colors-group-1">
+                        <div id="color1">
+                            <div></div>
+                            <p class="label">Bicycle Blue <br>#1C5D99 </p>
+                        </div>
+                        <div id="color2">
+                            <div></div>
+                            <p class="label">Handlebar Green <br> #B0E298</p>
+                        </div>
+                    </div>
+                    <div class="colors-group-2">
+                        <div id="color3">
+                            <div></div>
+                            <p class="label">Warning Yellow <br>#F1D302 </p>
+                        </div>
+                        <div id="color4">
+                            <div></div>
+                            <p class="label">Error Red <br>#E55934 </p>
+                        </div>
+                    </div>
+
+                    <div class="typography-group">
+                        <p>Header 1 is 32px Proxima Nova Semibold</p>
+                        <p>Header 2 is 24px Proxima Nova Semibold</p>
+                        <p>Header 3 is 18px Proxima Nova Medium</p>
+                        <p>Body is 16px Proxima Nova Regular</p>
+                        <p>Caption is 14px Proxima Nova Regular</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="iterations-container" data-aos="fade-down">
+                <div class="iterations">
+                    <h4>High-Fi Mockup Iterations</h4>
+                    <p>Once I finalized my style guide I started adding color and type to the wireframes. The design went through a couple of iterations after getting feedback from LCB's owner and completing a preference test.</p></div>
+
+                <div class="image-box">
+                    <img src="../images/gromm-hifi-mockups_1.svg" alt="gromm high fi mockups">
+                </div>
+                <div class="iterations">
+                    <p>While creating the initial layout I did a preference test using UsabilityHub for the scheduling layout. The results ended up being pretty even with option 'B' more preferred. Testers liked more white space and thought it was easier to read.
+                    </p>
+                </div>
+                <div class="image-box">
+                    <img src="../images/gromm-preference-test.svg" alt="gromm preference test">
+                </div>
+
+            </div>
+        </section>
+        <!--        Prototype/Testing Subheader              -->
+        <section class="prototype-test" data-aos="fade-down">
+            <h3>Prototyping &#38; Testing </h3>
+            <h4>Usability Test</h4>
+            <div class="usability-test-container">
+                <div class="usability-test">
+                    <p>After initial feedback, I created a clickable Hi-fi prototype and tested 4 users both in person and over Zoom.</p>
+                </div><br>
+                <div class="usability-facts">
+                    <p><span>94.3%</span><br> Success rate</p><br>
+                </div>
+                <div class="usability-test">
+                <p>I asked users to complete the following Tasks:</p>
+
+                <ul>
+                    <li>Walk through the onboarding process
+                    </li>
+                    <li> Schedule a Safety check &#38; repair consultation</li>
+                    <li>Find the details for their upcoming appointment</li>
+                    <li>Find their final repair summary and pay for their repairs</li>
+                </ul>
+                <div class="chart-container"><canvas id="usabilityTest" height="175"></canvas></div>
+                <p>My biggest takeaways were:</p><br>
+                    <ul>
+                        <li>2 users found the onboarding skip button confusing and suggested a continue with account button.
+                        </li>
+                        <li> Everyone thought the scheduling was easy, one user suggested numbering each section to show it was steps instead of options.</li>
+                        <li>One user suggested adding bike details and notes to the appointment summary so they could look back at what they told the mechanic.</li>
+                        <li>3 of the 4 users clicked around before they saw the upcoming/past segmented tabs to find their summary and upcoming details.</li>
+                        <li>2 users suggested incorporating the Gromm logo or link shape throughout the app.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="usability-test-container">
+                <h4>Usability Test Iterations</h4>
+                <div class="usability-test-iterations">
+                    <p>After testing and additional feedback from users, designers, and the LCB owner I revised my designs to be more simple and coherent.</p><br>
+                    <p>I removed the skip button from the upper right corner, rearranged the sign-up and create account buttons, and added a continue without account option. I also made the onboarding a carousel and added the Gromm mascot to walk everyone through.</p>
+                </div>
+<div class="image-box">
+    <img src="../images/gromm-testing-iterations-1.svg" alt="gromm skip button iterations">
+</div>
+                <div class="usability-test-iterations">
+                    <p>I added the Gromm link to the background of the app and changed the background to blue with the blocks of information in White. I also added numbers to the scheduling screen to make it more clear that each section was a step.</p>
+                </div>
+                <div class="image-box">
+                    <img src="../images/gromm-testing-iterations-2.svg" alt="gromm skip button iterations">
+                </div>
+                <div class="usability-test-iterations">
+                    <p>I added a segmented tab to the appointment details screen with the type of bike and notes the user added during scheduling.</p>
+                </div>
+                <div class="image-box">
+                    <img src="../images/gromm-testing-iterations-3.svg" alt="gromm skip button iterations">
+                </div>
+                <div class="usability-test-iterations">
+                    <p>Finally, I added a link to the consultation summary to the new event summary as well as made the past events look different than upcoming</p>
+                </div><br>
+            </div>
+            <h4>Final Prototype</h4>
+            <div class="final-prototype-container">
+                <div class="final-prototype">
+                    <p>Through a very iterative process, Gromm provides users a way to schedule a bike consultation, add events to their calendar, get alerts, and pay all in one place. </p> <br>
+                    <p>It also lets user's link their appointment up to their calendar, get a confirmation after scheduling, and reschedule or cancel their event.</p><br>
+                    <div class="app-gif">
+                        <img src="../images/gromm.gif" alt="gif of gromm">
+                    </div>
+                    <a id="prototype-button-final" target="_blank" href="https://xd.adobe.com/view/bedc5ca1-2e6d-45d0-8b98-778539adb467-eb8f/?fullscreen">See Live Prototype</a>
+                </div>
+            </div>
+        </section>
+        <!--        Conclustion Subheader    -->
+        <section class="conclusion" data-aos="fade-down">
+            <h3>Conclusion </h3>
+            <div class="learnings-container">
+                <h4>Growth and Outcomes</h4>
+                <div class="learnings">
+                    <p>Starting this project I had to make sure my goals were very clear. This is just the client facing part of the app, the mechanic side will come later. I knew it would be easy to get out of scope.  </p><br>
+                    <p>I was also skeptical if a white-label platform like this might already exist. After some initial research, there was nothing that stood out that had all the features that Left Coast Bicycles needed.</p><br>
+                    <p>After building the app I realized that while the app could work, I think this platform would be better as integration into LCB's website.</p><br>
+                    <p>Going forward I want to go through the design process again for the Mechanic side and build this out as a web interface instead of a mobile application.</p>
+                </div>
+            </div>
+        </section>
+        <div class="overlay"></div>
+    </main>
+    <footer>
+        <h2 class="section-header">Let’s Connect!</h2>
+        <div id="social-img">
+            <a href="https://github.com/LeahBorns" target="_blank"><img class="social-button" src="../images/github.svg" alt="github logo"></a>
+            <a href="https://www.linkedin.com/in/leahborns/" target="_blank"><img class="social-button" src="../images/linkedin.svg" alt="linkedIn logo"></a>
+            <a href="https://www.instagram.com/leahmichalsondesigns/" target="_blank"><img class="social-button" src="../images/instagram.svg" alt="Instagram logo"></a>
+            <!--            <a href="./pages/connect.html"><img class="social-button" src="../images/social-mail.png" alt="mail image"></a>-->
+        </div>
+        <p class="footer-credit">Designed and Coded by Leah M.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="../js/gromm-charts.js"></script>
+    <script src="../image-modal.js" type="text/javascript"></script>
+    <script src="../script.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+</body>
+
+</html>

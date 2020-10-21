@@ -410,6 +410,7 @@ a.project-links {
     color: #fff;
 }
 
+/*
 div.coming-soon {
     display: flex;
     flex-direction: column;
@@ -425,6 +426,7 @@ div.coming-soon {
     font-size: 1rem;
     color: #fff;
 }
+*/
 
 a.project-links:hover {
     background-color: #8879B9;

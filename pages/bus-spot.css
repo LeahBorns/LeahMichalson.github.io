@@ -229,6 +229,71 @@ ul#nav-links.open {
     transform: translateX(0);
 }
 
+/*CASE STUDY IMAGES*/
+div.image-box {
+    width: 90%;
+    margin: 30px auto;
+}
+
+divimage-box img {
+    margin: auto;
+    width: 80%;
+    display: block;
+    padding-top: 16px;
+}
+
+div.image-box2 {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+}
+
+div.image-box3 {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+}
+
+div.image-box2:after {
+    content: "";
+    height: 35px;
+    width: 90px;
+    position: absolute;
+    top: 0;
+    right:0;
+    background-image: url('../images/tape-yellow.png');
+    /*    background-color: rgba(32, 163, 158, .2);*/
+    transform: translateX(-150%) translateY(-40%);
+}
+
+div.image-box2 img {
+    width: 100%;
+    height: auto;
+    margin: 24px auto;
+    display: block;
+    transform: rotate(1deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+div.image-box3 img {
+    width: 100%;
+    height: auto;
+    margin: 24px auto;
+    display: block;
+    transform: rotate(-1deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+div.image-box3:after {
+    content: "";
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right:0;
+    background-image: url('../images/tape-yellow.png');
+    /*    background-color: rgba(32, 163, 158, .2);*/
+    transform: translateX(-150%) translateY(-40%);
+}
 
 /*BUS SPOT HEADER*/
 
