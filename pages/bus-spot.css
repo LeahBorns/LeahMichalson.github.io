@@ -237,7 +237,7 @@ div.image-box {
 
 divimage-box img {
     margin: auto;
-    width: 80%;
+    width: 100%;
     display: block;
     padding-top: 16px;
 }
@@ -261,7 +261,7 @@ div.image-box2:after {
     position: absolute;
     top: 0;
     right:0;
-    background-image: url('../images/tape-yellow.png');
+    background-image: url('../images/tape.png');
     /*    background-color: rgba(32, 163, 158, .2);*/
     transform: translateX(-150%) translateY(-40%);
 }
@@ -285,12 +285,12 @@ div.image-box3 img {
 }
 div.image-box3:after {
     content: "";
-    height: 40px;
+    height: 35px;
     width: 100px;
     position: absolute;
     top: 0;
     right:0;
-    background-image: url('../images/tape-yellow.png');
+    background-image: url('../images/tape.png');
     /*    background-color: rgba(32, 163, 158, .2);*/
     transform: translateX(-150%) translateY(-40%);
 }
@@ -383,6 +383,11 @@ div#statement p {
     margin-top: 16px;
 }
 
+span.problem-number {
+    font-family: 'Merriweather', serif;
+    font-size: 1.563em;
+}
+
 /*USERS ROLES AND SCOPES row with 3 sections*/
 
 section#users-roles-scope {
@@ -395,12 +400,6 @@ section#users-roles-scope {
 div.container {
     width: 85%;
     margin: auto;
-    /*
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    */
 }
 
 div.container h3 {
@@ -440,25 +439,13 @@ div#solution-statement {
     width: 85%;
     margin: auto;
     padding-top: 16px;
-    /*
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    */
 }
 
-
-div#solution-statement img {
-    margin: auto;
-    width: 100%;
-    display: block;
-    padding-top: 16px;
-}
 
 /*THE PROCESS*/
 
 section#process {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding-top: 48px;
 }
@@ -475,34 +462,31 @@ section#process h4 {
 /*COMPETITIVE ANALYSIS*/
 
 div.competitive-analysis {
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
-div.competitive-analysis img {
-    width: 100%;
-    margin: 24px auto;
-    display: block;
-}
 
 /*USER SURVEY*/
 
 div#user-survey {
-    width: 100%;
+    width: 85%;
     margin: auto;
     padding-top: 32px;
 }
 
+/*
 div#user-survey h4 {
     padding-left: 0;
     margin-left: 0;
 }
+*/
 
 /*USER SURVEY CHARTS*/
 
 div.chart-container2 {
-    height: 100%;
-    width: 100%;
+    height: 85%;
+    width: 85%;
     background-color: #fff;
     transform: rotate(-2deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -548,18 +532,11 @@ div.persona-container {
 }
 
 div#personas {
-    width: 100%;
+    width: 85%;
     margin: auto;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-div#personas img {
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 16px 0;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
@@ -575,13 +552,9 @@ section.information-architecture {
     padding: 48px 0;
 }
 
-section.information-architecture h3 {
-    margin-left: 7.5%;
-}
 
 section.information-architecture h4 {
     color: #A1700C;
-    margin-left: 7.5%;
     padding-left: 0;
 }
 
@@ -590,12 +563,6 @@ div.user-stories {
     margin: auto;
 }
 
-div.user-stories img {
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 32px 0;
-}
 
 /*USER FLOW*/
 
@@ -616,22 +583,19 @@ div.list {
     margin: auto;
 }
 div.list ul {
-    font-weight: 700;
+    font-weight: 600;
     margin: auto;
     width: 100%;
+    list-style-position: inside;
 }
 
+/*
 p.screen-details {
     width: 75%;
     margin: auto;
 }
+*/
 
-div.wireframe-sketch img {
-    padding: 24px 0;
-    width: 100%;
-    margin: auto;
-    display: block;
-}
 
 div.digital-wireframes {
     width: 85%;
@@ -646,32 +610,25 @@ div.usability-test-1 {
     margin: auto;
 }
 
-div.usability-test-1 img {
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 32px 0;
-}
-
 
 /*VISUAL DEISGN*/
 
 section.visual-design {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 48px 0;
 }
 
 section.visual-design h4 {
     color: #A1700C;
-    margin-left: 0;
+/*    margin-left: 0;*/
     padding-left: 0;
 }
 
 /*Branding*/
 
 div.branding {
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
@@ -682,12 +639,18 @@ div.color-type {
     margin: auto;
 }
 
+div.color-palette {
+    width: 85%;
+    margin: auto;
+}
+
 div.topography {
-    width: 100%;
+    width: 85%;
+    margin: auto;
 }
 
 div.color-type-image {
-    width: 100%;
+    width: 90%;
     margin: 48px auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     transform: rotate(2deg);
@@ -808,15 +771,10 @@ div.logo-container {
 }
 
 div.logo {
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
-div.logo img {
-    width: 100%;
-    margin: auto;
-    display: block;
-}
 
 /*Iterations*/
 
@@ -826,10 +784,9 @@ div.iterations-container {
     padding-top: 32px;
 }
 
-div.iterations-container img {
-    width: 100%;
+div.iterations {
+    width: 85%;
     margin: auto;
-    display: block;
 }
 
 /*PROTOTYPING AND TESTING*/
@@ -854,25 +811,30 @@ section.prototype-test h4 {
 /*Usability Test*/
 
 div.usability-test-container {
+    width: 100%;
+    margin: auto;
+}
+
+div.usability-test {
     width: 85%;
     margin: auto;
 }
 
 div.usability-test ul {
     padding: 16px;
-    font-weight: 700;
+    font-weight: 600;
     margin: auto;
-    width: 80%;
+    width: 90%;
 }
 
 div.usability-test ul li {
-    margin: 0 0 5px 0;
+    margin: 0 0 15px 0;
 }
 
 
 div.chart-container {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     background-color: #fff;
     transform: rotate(2deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -903,31 +865,19 @@ span.quote {
 }
 
 
-div.usability-test img {
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-
-
 
 /*FINAL PROTOTYPE*/
 
 div.final-prototype-container {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding-bottom: 48px;
-    /*
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    */
+
 }
 
 
 div.final-prototype {
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
@@ -966,13 +916,17 @@ background-color: #8879B9;
 /*CONCLUSION*/
 
 section.conclusion {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 48px 0;
 }
 
+section.conclusion h3 {
+    margin-left: 7.5%;
+}
+
 div.learnings-container {
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
@@ -1030,6 +984,21 @@ img.social-button {
 
 @media only screen and (min-width: 600px) {
 
+    /*        CHARTS*/
+    div.chart-container, div.chart-container2{
+        width: 80%;
+        height: 80%;
+    }
+
+    /*    TAPE*/
+    div.image-box2:after {
+        transform: translateX(-350%) translateY(-40%);
+    }
+
+    div.image-box3:after {
+        transform: translateX(-300%) translateY(-40%);
+    }
+
     /*    NAV*/
     div.content {
         width: 75%;
@@ -1049,12 +1018,6 @@ img.social-button {
         width: 85%;
     }
 
-/*
-    a#prototype-button-header {
-        width: 60%;
-        margin: 32px auto;
-    }
-*/
 
     /*    THE PROBLEM*/
     div.problem-container h3 {
@@ -1080,38 +1043,30 @@ img.social-button {
     }
 
 
-    /*  /*THE PROCESS*/
-    section#process {
+    /*    DISCOVERY AND RESEARCH*/
+
+    /*    COMPETITIVE ANALYSIS*/
+    div.competitive-analysis {
+        width: 75%;
+    }
+
+    /*USER SURVEY*/
+
+    div#user-survey {
         width: 75%;
     }
 
 
-    /*Information architecture*/
-    div#user-survey h4 {
-        padding-left: initial;
-        margin-left: initial;
-    }
-
-
-
     /*    PERSONAS*/
-    /*User Story*/
-    section.information-architecture h3 {
-        margin-left: 12.5%;
+    div#personas {
+        width: 75%;
     }
 
-    section.information-architecture h4 {
-        margin-left: 12.5%;
-    }
-
+    /*    USER STORIES*/
     div.user-stories {
         width: 75%;
     }
 
-    div.user-stories img {
-        width: 100%;
-        margin: auto;
-    }
 
     /*USER FLOWS*/
     div.user-flow {
@@ -1127,11 +1082,16 @@ img.social-button {
         width: 75%;
     }
 
+    div.list {
+        width: 50%;
+    }
+
     /*USABILITY TEST*/
     div.usability-test-1 {
         width: 75%;
     }
 
+/*    CHART TAPE*/
     div.chart-container:before {
         height: 40px;
         width: 120px;
@@ -1143,9 +1103,32 @@ img.social-button {
     }
 
     /*VISUAL DEISGN*/
-    section.visual-design {
+    /*Branding*/
+
+    div.branding {
         width: 75%;
     }
+
+/*    LOGO*/
+    div.logo {
+        width: 75%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-palette {
+        width: 75%;
+    }
+
+    div.topography {
+        width: 75%;
+    }
+
+    div.color-type-image {
+        width: 80%;
+    }
+
+/*    STYLE GUIDE*/
 
     div.color-type-image:before {
         height: 45px;
@@ -1172,6 +1155,12 @@ img.social-button {
         height: 120px;
     }
 
+    /*ITERATIONS*/
+
+    div.iterations {
+        width: 75%;
+    }
+
     /*PROTOTYPING AND TESTING*/
     section.prototype-test h3 {
         margin-left: 12.5%;
@@ -1182,9 +1171,10 @@ img.social-button {
     }
 
     /*Usability Test*/
-    div.usability-test-container {
+    div.usability-test {
         width: 75%;
     }
+
 
     div.usability-test ul {
         width: 85%;
@@ -1193,7 +1183,7 @@ img.social-button {
 
 
     /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
+    div.final-prototype {
         width: 75%;
     }
 
@@ -1207,7 +1197,11 @@ img.social-button {
     }
 
     /*    conclusion*/
-    section.conclusion {
+    section.conclusion h3 {
+        margin-left: 12.5%;
+    }
+
+    div.learnings-container {
         width: 75%;
     }
 
@@ -1221,6 +1215,32 @@ img.social-button {
 }
 
 @media only screen and (min-width: 768px) {
+
+    /*        CHARTS*/
+    div.chart-container, div.chart-container2{
+        width: 75%;
+        height: 75%;
+    }
+
+
+    /*    IMAGE BOX*/
+
+    div.image-box2 {
+        width: 80%;
+    }
+
+    div.image-box3 {
+        width: 80%;
+    }
+
+    /*    TAPE*/
+    div.image-box2:after {
+        transform: translateX(-350%) translateY(-40%);
+    }
+
+    div.image-box3:after {
+        transform: translateX(-350%) translateY(-40%);
+    }
 
     /*    NAV*/
     div.content {
@@ -1271,30 +1291,31 @@ img.social-button {
     }
 
 
-    /*  /*THE PROCESS*/
-    section#process {
+    /*    DISCOVERY AND RESEARCH*/
+
+    /*    COMPETITIVE ANALYSIS*/
+    div.competitive-analysis {
+        width: 60%;
+    }
+
+    /*USER SURVEY*/
+
+    div#user-survey {
         width: 60%;
     }
 
 
     /*    PERSONAS*/
-    /*User Story*/
-    section.information-architecture h3 {
-        margin-left: 20%;
+    div#personas {
+        width: 60%;
     }
 
-    section.information-architecture h4 {
-        margin-left: 20%;
-    }
+    /*User Story*/
 
     div.user-stories {
         width: 60%;
     }
 
-    div.user-stories img {
-        width: 100%;
-        margin: auto;
-    }
 
     /*USER FLOWS*/
     div.user-flow {
@@ -1316,10 +1337,36 @@ img.social-button {
     }
 
     /*VISUAL DEISGN*/
-    section.visual-design {
+    /*Branding*/
+
+    div.branding {
         width: 60%;
     }
 
+    /*    LOGO*/
+    div.logo {
+        width: 60%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-palette {
+        width: 60%;
+    }
+
+    div.topography {
+        width: 60%;
+    }
+
+    div.color-type-image {
+        width: 70%;
+    }
+
+    /*ITERATIONS*/
+
+    div.iterations {
+        width: 60%;
+    }
 
     /*PROTOTYPING AND TESTING*/
     section.prototype-test h3 {
@@ -1331,30 +1378,28 @@ img.social-button {
     }
 
     /*Usability Test*/
-    div.usability-test-container {
+    div.usability-test {
         width: 60%;
     }
 
     div.usability-test ul {
-        width: 75%;
+        width: 85%;
     }
 
 
 
     /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
+    div.final-prototype {
         width: 60%;
     }
 
-/*
-    a#prototype-button-final {
-        width: 60%;
-        margin: 32px auto;
-    }
-*/
 
     /*    conclusion*/
-    section.conclusion {
+    section.conclusion h3 {
+        margin-left: 20%;
+    }
+
+    div.learnings-container {
         width: 60%;
     }
 
@@ -1369,9 +1414,27 @@ img.social-button {
 }
 
 @media only screen and (min-width: 900px) {
+    /*        CHARTS*/
+    div.chart-container, div.chart-container2{
+        width: 65%;
+        height: 65%;
+    }
+
+    /*    IMAGE BOX*/
+
+    div.image-box {
+        width: 70%;
+    }
+
+    div.image-box2 {
+        width: 70%;
+    }
+
+    div.image-box3 {
+        width: 70%;
+    }
 
     /*  NAV*/
-
     div.content {
         width: 75%;
     }
@@ -1445,21 +1508,26 @@ img.social-button {
     }
 
 
-    /*  /*THE PROCESS*/
-    section#process {
+    /*    DISCOVERY AND RESEARCH*/
+
+    /*    COMPETITIVE ANALYSIS*/
+    div.competitive-analysis {
+        width: 55%;
+    }
+
+    /*USER SURVEY*/
+
+    div#user-survey {
         width: 55%;
     }
 
 
     /*    PERSONAS*/
-    /*User Story*/
-    section.information-architecture h3 {
-        margin-left: 22.5%;
+    div#personas {
+        width: 55%;
     }
 
-    section.information-architecture h4 {
-        margin-left: 22.5%;
-    }
+    /*User Story*/
 
     div.user-stories {
         width: 55%;
@@ -1490,7 +1558,34 @@ img.social-button {
     }
 
     /*VISUAL DEISGN*/
-    section.visual-design {
+    /*Branding*/
+
+    div.branding {
+        width: 55%;
+    }
+
+    /*    LOGO*/
+    div.logo {
+        width: 55%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-palette {
+        width: 55%;
+    }
+
+    div.topography {
+        width: 55%;
+    }
+
+    div.color-type-image {
+        width: 65%;
+    }
+
+    /*ITERATIONS*/
+
+    div.iterations {
         width: 55%;
     }
 
@@ -1505,7 +1600,7 @@ img.social-button {
     }
 
     /*Usability Test*/
-    div.usability-test-container {
+    div.usability-test {
         width: 55%;
     }
 
@@ -1516,13 +1611,17 @@ img.social-button {
 
 
     /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
+    div.final-prototype {
         width: 55%;
     }
 
 
     /*    conclusion*/
-    section.conclusion {
+    section.conclusion h3 {
+        margin-left: 22.5%;
+    }
+
+    div.learnings-container {
         width: 55%;
     }
 
@@ -1536,6 +1635,25 @@ img.social-button {
 
 @media only screen and (min-width: 1024px) {
 
+    /*        CHARTS*/
+    div.chart-container, div.chart-container2{
+        width: 50%;
+        height: 50%;
+    }
+
+    /*    IMAGE BOX*/
+
+    div.image-box {
+        width: 60%;
+    }
+
+    div.image-box2 {
+        width: 55%;
+    }
+
+    div.image-box3 {
+        width: 55%;
+    }
 
     /*    THE PROBLEM*/
     div.problem-container h3 {
@@ -1561,21 +1679,24 @@ img.social-button {
     }
 
 
-    /*  /*THE PROCESS*/
-    section#process {
+    /*    DISCOVERY AND RESEARCH*/
+
+    /*    COMPETITIVE ANALYSIS*/
+    div.competitive-analysis {
         width: 45%;
     }
 
+    /*USER SURVEY*/
+
+    div#user-survey {
+        width: 45%;
+    }
 
     /*    PERSONAS*/
+    div#personas {
+        width: 45%;
+    }
     /*User Story*/
-    section.information-architecture h3 {
-        margin-left: 27.5%;
-    }
-
-    section.information-architecture h4 {
-        margin-left: 27.5%;
-    }
 
     div.user-stories {
         width: 45%;
@@ -1602,10 +1723,36 @@ img.social-button {
     }
 
     /*VISUAL DEISGN*/
-    section.visual-design {
+    /*Branding*/
+
+    div.branding {
         width: 45%;
     }
 
+    /*    LOGO*/
+    div.logo {
+        width: 45%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-palette {
+        width: 45%;
+    }
+
+    div.topography {
+        width: 45%;
+    }
+
+    div.color-type-image {
+        width: 55%;
+    }
+
+    /*ITERATIONS*/
+
+    div.iterations {
+        width: 45%;
+    }
 
     /*PROTOTYPING AND TESTING*/
     section.prototype-test h3 {
@@ -1617,27 +1764,27 @@ img.social-button {
     }
 
     /*Usability Test*/
-    div.usability-test-container {
+    div.usability-test {
         width: 45%;
     }
 
-    div.usability-test ul {
-        width: 90%;
-    }
 
 
 
     /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
+    div.final-prototype {
         width: 45%;
     }
 
 
     /*    conclusion*/
-    section.conclusion {
-        width: 45%;
+    section.conclusion h3 {
+        margin-left: 27.5%;
     }
 
+    div.learnings-container {
+        width: 45%;
+    }
 
     /*    FOOTER*/
     div#social-img {
@@ -1647,6 +1794,173 @@ img.social-button {
 }
 
 @media only screen and (min-width: 1200px) {
+
+    /*BUS SPOT HEADER*/
+
+    header {
+        width: 60%;
+    }
+
+
+    div.case-study-title {
+        width: 85%;
+        margin: auto;
+    }
+
+
+
+    /*    IMAGE BOX*/
+
+    div.image-box {
+        width: 45%;
+    }
+
+    div.image-box2 {
+        width: 45%;
+    }
+
+    div.image-box3 {
+        width: 45%;
+    }
+
+/*        CHARTS*/
+    div.chart-container, div.chart-container2{
+        width: 35%;
+        height: 35%;
+    }
+
+    /*    THE PROBLEM*/
+    div.problem-container h3 {
+        margin-left: 32.5%;
+    }
+
+    div#statement p {
+        width: 35%;
+    }
+
+    /*        USERS ROLES AND SCOPE*/
+    div.container {
+        width: 35%;
+    }
+
+    /*    THE SOLUTION*/
+    div#solution-statement {
+        width: 35%;
+    }
+
+    div.solution-container h3 {
+        margin-left: 32.5%;
+    }
+
+
+    /*    DISCOVERY AND RESEARCH*/
+
+    /*    COMPETITIVE ANALYSIS*/
+    div.competitive-analysis {
+        width: 35%;
+    }
+
+    /*USER SURVEY*/
+
+    div#user-survey {
+        width: 35%;
+    }
+
+    /*    PERSONAS*/
+    div#personas {
+        width: 35%;
+    }
+    /*User Story*/
+
+    div.user-stories {
+        width: 35%;
+    }
+
+
+    /*USER FLOWS*/
+    div.user-flow {
+        width: 35%;
+    }
+
+    /*WIREFRAME SKETCHES*/
+    div.wireframe-sketch {
+        width: 35%;
+    }
+
+    div.digital-wireframes {
+        width: 35%;
+    }
+
+    /*USABILITY TEST*/
+    div.usability-test-1 {
+        width: 35%;
+    }
+
+    /*VISUAL DEISGN*/
+    /*Branding*/
+
+    div.branding {
+        width: 35%;
+    }
+
+    /*    LOGO*/
+    div.logo {
+        width: 35%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-palette {
+        width: 35%;
+    }
+
+    div.topography {
+        width: 35%;
+    }
+
+    div.color-type-image {
+        width: 30%;
+    }
+
+    /*ITERATIONS*/
+
+    div.iterations {
+        width: 35%;
+    }
+
+    /*PROTOTYPING AND TESTING*/
+    section.prototype-test h3 {
+        margin-left: 32.5%;
+    }
+
+    section.prototype-test h4 {
+        margin-left: 32.5%;
+    }
+
+    /*Usability Test*/
+    div.usability-test {
+        width: 35%;
+    }
+
+
+    /*    FINAL PROTOTYPE*/
+    div.final-prototype {
+        width: 35%;
+    }
+
+    div.app-gif {
+        width: 45%;
+    }
+
+
+    /*    conclusion*/
+    section.conclusion h3 {
+        margin-left: 32.5%;
+    }
+
+    div.learnings-container {
+        width: 35%;
+    }
 
     div#social-img {
         width: 20%;

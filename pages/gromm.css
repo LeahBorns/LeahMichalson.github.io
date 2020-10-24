@@ -474,8 +474,8 @@ div#user-survey {
 /*USER SURVEY CHARTS*/
 
 div.chart-container2 {
-    height: 100%;
-    width: 100%;
+    height: 85%;
+    width: 85%;
     background-color: #fff;
     transform: rotate(-2deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -831,8 +831,8 @@ div.usability-test ul li {
 
 
 div.chart-container {
-    height: 100%;
-    width: 100%;
+    height: 85%;
+    width: 85%;
     background-color: #fff;
     transform: rotate(2deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -986,6 +986,11 @@ img.social-button {
 
 
 @media only screen and (min-width: 600px) {
+    /*        CHARTS*/
+    div.chart-container, div.chart-container2{
+        width: 80%;
+        height: 80%;
+    }
 
 
 /*    TAPE*/
@@ -1111,6 +1116,8 @@ img.social-button {
         width: 80%;
     }
 
+/*    STYLE GUIDE*/
+
     div.color-type-image:before {
         height: 45px;
         width: 120px;
@@ -1205,6 +1212,11 @@ img.social-button {
 
 @media only screen and (min-width: 768px) {
 
+    /*        CHARTS*/
+    div.chart-container, div.chart-container2{
+        width: 70%;
+        height: 70%;
+    }
 
 /*    IMAGE BOX*/
 
@@ -1388,6 +1400,11 @@ img.social-button {
 
 @media only screen and (min-width: 900px) {
 
+    /*        CHARTS*/
+    div.chart-container, div.chart-container2{
+        width: 60%;
+        height: 60%;
+    }
     /*    IMAGE BOX*/
 
     div.image-box {
@@ -1604,10 +1621,15 @@ img.social-button {
 
 @media only screen and (min-width: 1024px) {
 
+    /*        CHARTS*/
+    div.chart-container, div.chart-container2{
+        width: 50%;
+        height: 50%;
+    }
     /*    IMAGE BOX*/
 
     div.image-box {
-        width: 70%;
+        width: 50%;
     }
 
     div.image-box2 {
@@ -1758,37 +1780,168 @@ img.social-button {
 
 @media only screen and (min-width: 1200px) {
 
+    /*BUS SPOT HEADER*/
+
+    header {
+        width: 60%;
+    }
+
+
+    div.case-study-title {
+        width: 85%;
+        margin: auto;
+    }
+
+
     /*    IMAGE BOX*/
 
     div.image-box {
-        width: 45%;
+        width: 30%;
     }
 
     div.image-box2 {
-        width: 45%;
+        width: 40%;
     }
 
     div.image-box3 {
-        width: 45%;
+        width: 40%;
     }
 
 
 /*    CHARTS*/
     div.chart-container, div.chart-container2{
-        width: 70%;
-        height: 70%;
+        width: 40%;
+        height: 40%;
     }
 
-/*    VISUAL DESIGN*/
-    div.color-type-image {
+    /*    THE PROBLEM*/
+    div.problem-container h3 {
+        margin-left: 32.5%;
+    }
+
+    div#statement p {
+        width: 35%;
+    }
+
+    /*        USERS ROLES AND SCOPE*/
+    div.container {
+        width: 35%;
+    }
+
+    /*    THE SOLUTION*/
+    div#solution-statement {
+        width: 35%;
+    }
+
+    div.solution-container h3 {
+        margin-left: 32.5%;
+    }
+
+
+    /*    DISCOVERY AND RESEARCH*/
+
+    /*    COMPETITIVE ANALYSIS*/
+    div.competitive-analysis {
+        width: 35%;
+    }
+
+    /*USER SURVEY*/
+
+    div#user-survey {
+        width: 35%;
+    }
+
+    /*    PERSONAS*/
+    div#personas {
+        width: 35%;
+    }
+    /*User Story*/
+
+    div.user-stories {
         width: 35%;
     }
 
 
-/*    FINAL PROTOTYPE*/
-    div.app-gif {
-        width: 40%;
+    /*USER FLOWS*/
+    div.user-flow {
+        width: 35%;
     }
+
+    /*WIREFRAME SKETCHES*/
+    div.wireframe-sketch {
+        width: 35%;
+    }
+
+    div.digital-wireframes {
+        width: 35%;
+    }
+
+    /*USABILITY TEST*/
+    div.usability-test-1 {
+        width: 35%;
+    }
+
+/*    VISUAL DESIGN*/
+    div.logo {
+        width: 35%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-palette {
+        width: 35%;
+    }
+
+    div.topography {
+        width: 35%;
+    }
+    div.color-type-image {
+        width: 30%;
+    }
+
+    /*ITERATIONS*/
+
+    div.iterations {
+        width: 35%;
+    }
+
+    /*PROTOTYPING AND TESTING*/
+    section.prototype-test h3 {
+        margin-left: 32.5%;
+    }
+
+    section.prototype-test h4 {
+        margin-left: 32.5%;
+    }
+
+    /*Usability Test*/
+    div.usability-test {
+        width: 35%;
+    }
+
+    /*USABILITY TEST ITERATIONS*/
+    div.usability-test-iterations {
+        width: 35%;
+    }
+
+/*    FINAL PROTOTYPE*/
+    div.final-prototype {
+        width: 35%;
+    }
+
+    div.app-gif {
+        width: 45%;
+    }
+
+    /*    conclusion*/
+    section.conclusion h3 {
+        margin-left: 32.5%;
+    }
+
+    div.learnings-container {
+        width: 35%;
+    }
+
 
     div#social-img {
         width: 20%;
