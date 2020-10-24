@@ -226,7 +226,71 @@ ul#nav-links.open{
     transform: translateX(0);
 }
 
+/*CASE STUDY IMAGES*/
+div.image-box {
+    width: 90%;
+    margin: 30px auto;
+}
 
+divimage-box img {
+    margin: auto;
+    width: 100%;
+    display: block;
+    padding-top: 16px;
+}
+
+div.image-box2 {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+}
+
+div.image-box3 {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+}
+
+div.image-box2:after {
+    content: "";
+    height: 30px;
+    width: 90px;
+    position: absolute;
+    top: 0;
+    right:0;
+    background-image: url('../images/tape-yellow.png');
+    /*    background-color: rgba(32, 163, 158, .2);*/
+    transform: translateX(-150%) translateY(-40%);
+}
+
+div.image-box2 img {
+    width: 100%;
+    height: auto;
+    margin: 24px auto;
+    display: block;
+    transform: rotate(1deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+div.image-box3 img {
+    width: 100%;
+    height: auto;
+    margin: 24px auto;
+    display: block;
+    transform: rotate(-1deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+div.image-box3:after {
+    content: "";
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right:0;
+    background-image: url('../images/tape-yellow.png');
+    /*    background-color: rgba(32, 163, 158, .2);*/
+    transform: translateX(-150%) translateY(-40%);
+}
 
 /*GREENER HEADER*/
 
@@ -373,26 +437,17 @@ div#solution-statement {
     width: 85%;
     margin: auto;
     padding-top: 16px;
-/*
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-*/
 }
+
 div#solution-statement p {
     padding-bottom: 16px;
 }
 
-div#solution-statement img {
-    margin: auto;
-    width: 100%;
-    display: block;
-}
 
 /*THE PROCESS*/
 
 section#process {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding-top: 48px;
 }
@@ -409,27 +464,28 @@ section#process h4 {
 /*MAPPING FLOW AND HMW*/
 
 div.mapping-hmw {
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
-div.mapping-hmw img {
-    width: 100%;
-    margin: 24px auto;
-    display: block;
-}
 
 /*LIGHTNING DEMOS*/
 
 div#lightning-intro {
-    width: 100%;
+    width: 85%;
     margin: auto;
     padding-top: 32px;
+}
+
+div.lightning-demos {
+    width: 85%;
+    margin: auto;
 }
 
 div.ld-facts{
     width: 100%;
     margin: auto;
+    list-style-position: outside;
 }
 div.ld-facts span {
     font-size: 1.25em;
@@ -450,27 +506,11 @@ div.ld-info {
 
 div.ld-info img {
     width: 100%;
+    margin: auto;
     display: block;
     padding: 32px 0;
 }
 
-
-
-/*JOURNEY AND EMPATHY MAPS*/
-
-/*
-div.journey-empathy-map {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div.journey-empathy-map img {
-    width: 100%;
-}
-*/
 
 /*PERSONAS*/
 div.persona-container {
@@ -480,18 +520,11 @@ div.persona-container {
     padding-bottom: 48px;
 }
 div#personas {
-    width: 100%;
+    width: 85%;
     margin: auto;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-div#personas img {
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 16px 0;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
@@ -506,13 +539,9 @@ section.information-architecture {
     padding: 48px 0;
 }
 
-section.information-architecture h3 {
-    margin-left: 7.5%;
-}
 
 section.information-architecture h4 {
     color: #A1700C;
-    margin-left: 7.5%;
     padding-left: 0;
 }
 
@@ -521,12 +550,6 @@ div.user-stories {
     margin: auto;
 }
 
-div.user-stories img {
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 32px 0;
-}
 
 /*WIREFRAME SKETCHES*/
 
@@ -537,43 +560,32 @@ div.wireframe-sketch {
 
 div.list {
     margin: auto;
-    width: 50%;
+    width: 60%;
 }
 
 div.wireframe-sketch ol {
-    font-weight: 700;
+    font-weight: 600;
     margin: auto;
+    width: 100%;
+    list-style-position: inside;
 }
 
 p.screen-details {
-    width: 75%;
+    width: 90%;
     margin: auto;
 }
 
-div.wireframe-sketch img {
-    padding: 24px 0;
-    width: 100%;
-    margin: auto;
-    display: block;
-}
 
 div.digital-wireframes {
     width: 85%;
     margin: auto;
 }
 
-div.digital-wireframes img {
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 32px 0;
-}
-
 
 /*VISUAL DEISGN*/
 
 section.visual-design {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 48px 0;
 }
@@ -587,18 +599,20 @@ section.visual-design h4 {
 div.color-type {
     width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+div.color-palette {
+    width: 85%;
+    margin: auto;
 }
 
 div.topography {
-    width: 100%;
+    width: 85%;
     margin:auto;
 }
 
 div.color-type-image {
-    width: 100%;
+    width: 90%;
     margin: 48px auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     transform: rotate(2deg);
@@ -718,15 +732,10 @@ div.logo-container {
 }
 
 div.logo {
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
-div.logo img {
-    width: 100%;
-    margin: auto;
-    display: block;
-}
 
 /*Iterations*/
 
@@ -734,6 +743,11 @@ div.iterations-container {
     width: 100%;
     margin: auto;
     padding-top: 32px;
+}
+
+div.iterations {
+    width: 85%;
+    margin: auto;
 }
 
 /*PROTOTYPING AND TESTING*/
@@ -758,36 +772,37 @@ section.prototype-test h4 {
 /*Usability Test*/
 
 div.usability-test-container {
+    width: 100%;
+    margin: auto;
+}
+
+div.usability-test {
     width: 85%;
     margin: auto;
 }
 
+
 div.usability-test ul {
     padding: 16px;
-        font-weight: 700;
+        font-weight: 600;
         margin: auto;
-        width: 75%;
+        width: 90%;
 }
 
 div.usability-test ul li {
-    padding-bottom: 8px;
+    margin: 0 0 15px 0;
 }
 
 p.takeaways {
-    width: 75%;
+    width: 90%;
     margin: auto;
-}
-
-div.usability-test ol {
-    padding: 20px;
-    margin-left: 40px;
-    font-size: 1em;
-    line-height: 1.2em;
-    list-style-position: inside;
 }
 
 
 div.chart-container {
+    height: 90%;
+    width: 90%;
+    margin: auto;
     background-color: #fff;
     transform: rotate(2deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -814,54 +829,41 @@ height: 100px;
 /*PREFERENCE TESTING*/
 
 div.preference-test-container {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 32px 0;
 }
 
-div.preference-test-container h4 {
-    margin-left: initial;
-}
-
 div.preference-test-1 {
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
 span.quote {
-    font-weight: 700;
+    font-weight: 600;
     font-style: italic;
     font-size: 1.25em;
 }
 
-div.preference-test-1 img {
-    width: 100%;
-    margin: 32px auto;
-    display: block;
-}
+
 
 div.preference-test-2 {
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
-div.preference-test-2 img {
-    width: 100%;
-    margin: 24px auto;
-    display: block;
-}
 
 /*FINAL PROTOTYPE*/
 
 div.final-prototype-container {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding-bottom: 48px;
 }
 
 
 div.final-prototype {
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
@@ -894,22 +896,31 @@ a#prototype-button-final {
     color: #fff;
 }
 
+a#prototype-button-final:hover{
+    background-color: #8879B9;
+}
+
 /*CONCLUSION*/
 
 section.conclusion {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 48px 0;
 }
 
+section.conclusion h3 {
+    margin-left: 7.5%;
+}
 
 div.learnings-container {
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
 div.learnings-container h4 {
     color: #A1700C;
+    margin-left: 0;
+    padding: 16px 0;
 }
 
 
@@ -958,6 +969,26 @@ img.social-button {
 
 @media only screen and (min-width: 600px) {
 
+    div.image-box {
+        width: 80%;
+    }
+
+    /*        CHARTS*/
+    div.chart-container {
+        width: 80%;
+        height: 80%;
+    }
+
+    /*    TAPE*/
+    div.image-box2:after {
+        transform: translateX(-350%) translateY(-40%);
+    }
+
+    div.image-box3:after {
+        transform: translateX(-300%) translateY(-40%);
+    }
+
+
     /*    NAV*/
     div.content {
         width: 75%;
@@ -1004,20 +1035,33 @@ img.social-button {
         width: 75%;
     }
 
-    /*THE PROCESS*/
+    /*MAPPING FLOW AND HMW*/
 
-    section#process {
+    div.mapping-hmw {
         width: 75%;
     }
 
-/*    IA*/
-    section.information-architecture h3 {
-        margin-left: 12.5%;
+    /*LIGHTNING DEMOS*/
+
+    div#lightning-intro {
+        width: 75%;
     }
 
-    section.information-architecture h4 {
-        margin-left: 12.5%;
+    div.lightning-demos {
+        width: 75%;
+        margin: auto;
     }
+
+    div.ld-facts{
+        width: 90%;
+        margin: auto;
+    }
+
+/*    PERSONAS*/
+    div#personas {
+        width: 75%;
+    }
+
 
 /*    STORYBOARD*/
     div.user-stories {
@@ -1035,10 +1079,29 @@ img.social-button {
         width: 75%;
     }
 
+    div.list {
+        width: 50%;
+    }
+
     /*VISUAL DEISGN*/
 
-    section.visual-design {
+    /*    LOGO*/
+    div.logo {
         width: 75%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-palette {
+        width: 75%;
+    }
+
+    div.topography {
+        width: 75%;
+    }
+
+    div.color-type-image {
+        width: 80%;
     }
 
     div.color-type-image:before {
@@ -1066,6 +1129,12 @@ img.social-button {
         height: 120px;
     }
 
+    /*ITERATIONS*/
+
+    div.iterations {
+        width: 75%;
+    }
+
     /*PROTOTYPING AND TESTING*/
     section.prototype-test h3 {
         margin-left: 12.5%;
@@ -1076,20 +1145,23 @@ img.social-button {
     }
 
 
-    div.usability-test-container {
+    /*Usability Test*/
+    div.usability-test {
         width: 75%;
-        margin: auto;
     }
+
+
 
     /*PREFERENCE TESTING*/
 
-    div.preference-test-container {
+    div.preference-test-1 {
         width: 75%;
     }
 
-    div.preference-test-container h4 {
-        margin-left: 0;
-}
+    div.preference-test-2 {
+        width: 75%;
+    }
+
 
     div.chart-container:before {
         height: 40px;
@@ -1098,7 +1170,7 @@ img.social-button {
 
     /*FINAL PROTOTYPE*/
 
-    div.final-prototype-container {
+    div.final-prototype {
         width: 75%;
     }
 
@@ -1107,9 +1179,17 @@ img.social-button {
         margin: 32px auto;
     }
 
+    a#prototype-button-final:hover{
+        background-color: #8879B9;
+    }
+
     /*CONCLUSION*/
 
-    section.conclusion {
+    section.conclusion h3 {
+        margin-left: 12.5%;
+    }
+
+    div.learnings-container {
         width: 75%;
     }
 
@@ -1123,6 +1203,35 @@ img.social-button {
 }
 
 @media only screen and (min-width: 768px) {
+    /*        CHARTS*/
+    div.chart-container {
+        width: 70%;
+        height: 70%;
+    }
+
+    /*    IMAGE BOX*/
+
+    div.image-box {
+        width: 75%;
+    }
+
+    div.image-box2 {
+        width: 75%;
+    }
+
+    div.image-box3 {
+        width: 75%;
+    }
+
+    /*    TAPE*/
+    div.image-box2:after {
+        transform: translateX(-350%) translateY(-40%);
+    }
+
+    div.image-box3:after {
+        transform: translateX(-350%) translateY(-40%);
+    }
+
     /*    NAV*/
     div.content {
         width: 70%;
@@ -1173,19 +1282,29 @@ img.social-button {
         width: 60%;
     }
 
-    /*THE PROCESS*/
+    /*MAPPING FLOW AND HMW*/
 
-    section#process {
+    div.mapping-hmw {
         width: 60%;
     }
 
-    /*    IA*/
-    section.information-architecture h3 {
-        margin-left: 20%;
+    /*LIGHTNING DEMOS*/
+
+    div#lightning-intro {
+        width: 60%;
     }
 
-    section.information-architecture h4 {
-        margin-left: 20%;
+    div.lightning-demos {
+        width: 60%;
+    }
+
+    div.ld-facts{
+        width: 75%;
+    }
+
+    /*    PERSONAS*/
+    div#personas {
+        width: 60%;
     }
 
     /*    STORYBOARD*/
@@ -1206,7 +1325,28 @@ img.social-button {
 
     /*VISUAL DEISGN*/
 
-    section.visual-design {
+    /*    LOGO*/
+    div.logo {
+        width: 60%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-palette {
+        width: 60%;
+    }
+
+    div.topography {
+        width: 60%;
+    }
+
+    div.color-type-image {
+        width: 70%;
+    }
+
+    /*ITERATIONS*/
+
+    div.iterations {
         width: 60%;
     }
 
@@ -1220,32 +1360,35 @@ img.social-button {
     }
 
 
-    div.usability-test-container {
+    /*Usability Test*/
+    div.usability-test {
         width: 60%;
-        margin: auto;
     }
 
     /*PREFERENCE TESTING*/
 
-    div.preference-test-container h4 {
-        margin-left: 0;
+    div.preference-test-1 {
+        width: 60%;
     }
 
-    div.preference-test-container {
+    div.preference-test-2 {
         width: 60%;
     }
 
 
     /*FINAL PROTOTYPE*/
 
-    div.final-prototype-container {
+    div.final-prototype {
         width: 60%;
     }
 
-
     /*CONCLUSION*/
 
-    section.conclusion {
+    section.conclusion h3 {
+        margin-left: 20%;
+    }
+
+    div.learnings-container {
         width: 60%;
     }
 
@@ -1258,6 +1401,25 @@ img.social-button {
 }
 
 @media only screen and (min-width: 900px) {
+
+    /*        CHARTS*/
+    div.chart-container {
+        width: 60%;
+        height: 60%;
+    }
+    /*    IMAGE BOX*/
+
+    div.image-box {
+        width: 65%;
+    }
+
+    div.image-box2 {
+        width: 70%;
+    }
+
+    div.image-box3 {
+        width: 70%;
+    }
 
     /*  NAV*/
 
@@ -1338,39 +1500,32 @@ img.social-button {
         width: 55%;
     }
 
-    /*THE PROCESS*/
+    /*MAPPING FLOW AND HMW*/
 
-    section#process {
+    div.mapping-hmw {
         width: 55%;
     }
 
-/*    LIGHTNING DEMOS*/
-    div#lightning-demos {
-        width: 100%;
-        margin: auto;
+    /*LIGHTNING DEMOS*/
+
+    div#lightning-intro {
+        width: 55%;
     }
 
-
-    div.ld-info img {
-        width: 60%;
-        margin: auto;
+    div.lightning-demos {
+        width: 55%;
     }
 
     div.ld-facts{
-        width: 80%;
-        margin: auto;
+        width: 65%;
     }
 
-
+    /*    PERSONAS*/
+    div#personas {
+        width: 55%;
+    }
 
     /*    IA*/
-    section.information-architecture h3 {
-        margin-left: 22.5%;
-    }
-
-    section.information-architecture h4 {
-        margin-left: 22.5%;
-    }
 
     /*    STORYBOARD*/
     div.user-stories {
@@ -1390,7 +1545,28 @@ img.social-button {
 
     /*VISUAL DEISGN*/
 
-    section.visual-design {
+    /*    LOGO*/
+    div.logo {
+        width: 55%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-palette {
+        width: 55%;
+    }
+
+    div.topography {
+        width: 55%;
+    }
+
+    div.color-type-image {
+        width: 65%;
+    }
+
+    /*ITERATIONS*/
+
+    div.iterations {
         width: 55%;
     }
 
@@ -1405,32 +1581,35 @@ img.social-button {
     }
 
 
-    div.usability-test-container {
+    /*Usability Test*/
+    div.usability-test {
         width: 55%;
-        margin: auto;
     }
 
     /*PREFERENCE TESTING*/
 
-    div.preference-test-container h4 {
-        margin-left: 0;
-    }
-
-    div.preference-test-container {
+    div.preference-test-1 {
         width: 55%;
     }
 
+    div.preference-test-2 {
+        width: 55%;
+    }
 
     /*FINAL PROTOTYPE*/
 
-    div.final-prototype-container {
+    div.final-prototype {
         width: 55%;
     }
 
 
     /*CONCLUSION*/
 
-    section.conclusion {
+    section.conclusion h3 {
+        margin-left: 22.5%;
+    }
+
+    div.learnings-container {
         width: 55%;
     }
 
@@ -1443,7 +1622,25 @@ img.social-button {
 
 @media only screen and (min-width: 1024px) {
 
-    /*    HEADER*/
+    /*        CHARTS*/
+    div.chart-container {
+        width: 50%;
+        height: 50%;
+    }
+
+    /*    IMAGE BOX*/
+
+    div.image-box {
+        width: 60%;
+    }
+
+    div.image-box2 {
+        width: 55%;
+    }
+
+    div.image-box3 {
+        width: 55%;
+    }
 
     /*    PROBLEM STATEMENT*/
     div.problem-container h3 {
@@ -1469,29 +1666,32 @@ img.social-button {
         width: 45%;
     }
 
-    /*THE PROCESS*/
+    /*MAPPING FLOW AND HMW*/
 
-    section#process {
+    div.mapping-hmw {
         width: 45%;
     }
 
-    /*    LIGHTNING DEMOS*/
+    /*LIGHTNING DEMOS*/
 
-
-    div.ld-info img {
-        width: 75%;
-        margin: auto;
+    div#lightning-intro {
+        width: 45%;
     }
 
+    div.lightning-demos {
+        width: 45%;
+    }
+
+    div.ld-facts{
+        width: 55%;
+    }
+
+    /*    PERSONAS*/
+    div#personas {
+        width: 45%;
+    }
 
     /*    IA*/
-    section.information-architecture h3 {
-        margin-left: 27.5%;
-    }
-
-    section.information-architecture h4 {
-        margin-left: 27.5%;
-    }
 
     /*    STORYBOARD*/
     div.user-stories {
@@ -1511,10 +1711,30 @@ img.social-button {
 
     /*VISUAL DEISGN*/
 
-    section.visual-design {
+    /*    LOGO*/
+    div.logo {
         width: 45%;
     }
 
+    /*COLOR AND TYPE*/
+
+    div.color-palette {
+        width: 45%;
+    }
+
+    div.topography {
+        width: 45%;
+    }
+
+    div.color-type-image {
+        width: 55%;
+    }
+
+    /*ITERATIONS*/
+
+    div.iterations {
+        width: 45%;
+    }
 
     /*PROTOTYPING AND TESTING*/
     section.prototype-test h3 {
@@ -1526,9 +1746,11 @@ img.social-button {
     }
 
 
-    div.usability-test-container {
+    /*Usability Test*/
+    div.usability-test {
         width: 45%;
     }
+
 
     div.usability-test ul {
         width: 85%;
@@ -1539,24 +1761,29 @@ img.social-button {
     }
 
     /*PREFERENCE TESTING*/
-    div.preference-test-container h4 {
-        margin-left: initial;
+
+    div.preference-test-1 {
+        width: 45%;
     }
 
-    div.preference-test-container {
+    div.preference-test-2 {
         width: 45%;
     }
 
     /*FINAL PROTOTYPE*/
 
-    div.final-prototype-container {
+    div.final-prototype {
         width: 45%;
     }
 
 
     /*CONCLUSION*/
 
-    section.conclusion {
+    section.conclusion h3 {
+        margin-left: 27.5%;
+    }
+
+    div.learnings-container {
         width: 45%;
     }
 
@@ -1568,6 +1795,185 @@ img.social-button {
 }
 
 @media only screen and (min-width: 1200px) {
+
+    /*BUS SPOT HEADER*/
+
+    header {
+        width: 60%;
+    }
+
+
+    div.case-study-title {
+        width: 85%;
+        margin: auto;
+    }
+
+
+    /*    IMAGE BOX*/
+
+    div.image-box {
+        width: 48%;
+    }
+
+    div.image-box2 {
+        width: 48%;
+    }
+
+    div.image-box3 {
+        width: 48%;
+    }
+
+    /*        CHARTS*/
+    div.chart-container {
+        width: 35%;
+        height: 35%;
+    }
+
+    /*    PROBLEM STATEMENT*/
+    div.problem-container h3 {
+        margin-left: 32.5%;
+    }
+
+    div#statement {
+        width: 35%;
+    }
+
+    /*USERS ROLES AND SCOPES row with 3 sections*/
+
+    section#users-roles-scope {
+        width: 35%;
+    }
+
+    /*    THE SOLUTION*/
+    div.solution-container h3 {
+        margin-left: 32.5%;
+    }
+
+    div#solution-statement {
+        width: 35%;
+    }
+
+    /*MAPPING FLOW AND HMW*/
+
+    div.mapping-hmw {
+        width: 35%;
+    }
+
+    /*LIGHTNING DEMOS*/
+
+    div#lightning-intro {
+        width: 35%;
+    }
+
+    div.lightning-demos {
+        width: 35%;
+    }
+
+    div.ld-facts{
+        width: 35%;
+    }
+
+    /*    PERSONAS*/
+    div#personas {
+        width: 35%;
+    }
+
+    /*    IA*/
+
+    /*    STORYBOARD*/
+    div.user-stories {
+        width: 35%;
+    }
+
+    /*WIREFRAME SKETCHES*/
+
+    div.wireframe-sketch {
+        width: 35%;
+    }
+
+    /*    DIGITAL WIREFRAMES*/
+    div.digital-wireframes {
+        width: 35%;
+    }
+
+    /*VISUAL DEISGN*/
+
+    /*    LOGO*/
+    div.logo {
+        width: 35%;
+    }
+
+    /*COLOR AND TYPE*/
+
+    div.color-palette {
+        width: 35%;
+    }
+
+    div.topography {
+        width: 35%;
+    }
+
+    div.color-type-image {
+        width: 40%;
+    }
+
+    /*ITERATIONS*/
+
+    div.iterations {
+        width: 35%;
+    }
+
+    /*PROTOTYPING AND TESTING*/
+    section.prototype-test h3 {
+        margin-left: 32.5%;
+    }
+
+    section.prototype-test h4 {
+        margin-left: 32.5%;
+    }
+
+
+    /*Usability Test*/
+    div.usability-test {
+        width: 35%;
+    }
+
+
+    div.usability-test ul {
+        width: 85%;
+    }
+
+    p.takeaways {
+        width: 85%;
+    }
+
+    /*PREFERENCE TESTING*/
+
+    div.preference-test-1 {
+        width: 35%;
+    }
+
+    div.preference-test-2 {
+        width: 35%;
+    }
+
+    /*FINAL PROTOTYPE*/
+
+    div.final-prototype {
+        width: 35%;
+    }
+
+
+    /*CONCLUSION*/
+
+    section.conclusion h3 {
+        margin-left: 32.5%;
+    }
+
+    div.learnings-container {
+        width: 35%;
+    }
+
 
     div#social-img {
         width: 20%;
