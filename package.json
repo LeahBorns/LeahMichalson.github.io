@@ -1,0 +1,27 @@
+{
+  "name": "leahmichalson.github.io",
+  "version": "1.0.0",
+  "description": "Leah M's portfolio",
+  "main": "script.js",
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "lottie-web": "^5.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeahBorns/LeahMichalson.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Leah Michalson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeahBorns/LeahMichalson.github.io/issues"
+  },
+  "homepage": "https://github.com/LeahBorns/LeahMichalson.github.io#readme"
+}
