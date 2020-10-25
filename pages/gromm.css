@@ -520,7 +520,7 @@ div.persona-container {
     padding-bottom: 48px;
 }
 
-div#personas {
+div.personas {
     width: 85%;
     margin: auto;
     display: flex;
@@ -1061,7 +1061,7 @@ img.social-button {
 
 
     /*    PERSONAS*/
-    div#personas {
+    div.personas {
         width: 75%;
     }
 
@@ -1302,7 +1302,7 @@ img.social-button {
 
 
     /*    PERSONAS*/
-    div#personas {
+    div.personas {
         width: 60%;
     }
 
@@ -1521,7 +1521,7 @@ img.social-button {
 
 
     /*    PERSONAS*/
-    div#personas {
+    div.personas {
         width: 55%;
     }
 
@@ -1680,7 +1680,7 @@ img.social-button {
 
 
     /*    PERSONAS*/
-    div#personas {
+    div.personas {
         width: 45%;
     }
 
@@ -1852,7 +1852,7 @@ img.social-button {
     }
 
     /*    PERSONAS*/
-    div#personas {
+    div.personas {
         width: 35%;
     }
     /*User Story*/
