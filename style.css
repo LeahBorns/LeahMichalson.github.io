@@ -22,7 +22,7 @@ main {
     flex: 1;
 }
 
-nav{
+nav {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
     color: #382F5A;
@@ -35,15 +35,17 @@ footer {
     color: #fff;
 }
 
-h1,h2{
-    font-family: 'Merriweather', serif;
+h1,
+h2 {
+    font-family: 'Corben', cursive;
 }
 
-h3,h4 {
-    font-family: 'Merriweather', serif;
+h3,
+h4 {
+    font-family: 'Corben', cursive;
 }
 
-h1{
+h1 {
     font-size: 3.815em;
 }
 
@@ -69,6 +71,7 @@ p {
     font-size: 1em;
     text-align: left;
 }
+
 /*NAV*/
 
 nav {
@@ -77,15 +80,15 @@ nav {
     left: 0;
     right: 0;
     z-index: 10000;
-/*    line-height: 65px;*/
+    /*    line-height: 65px;*/
     height: 90px;
 }
 
 
-nav > .content {
-/*    width: 100%;*/
+nav>.content {
+    /*    width: 100%;*/
     height: 100px;
-/*    margin: auto;*/
+    /*    margin: auto;*/
 
 }
 
@@ -109,17 +112,18 @@ div#nav-logo {
 }
 
 div#nav-logo h3 {
-/*
+    /*
     display: inline-block;
     position: absolute;
 */
-/*
+    /*
     top: 50%;
     transform: translate(10%,-50%);
 */
-    font-size: 1.25em;
+    /* font-size: 1.25em; */
     color: #392F5A;
     padding-left: 8px;
+    padding-top: initial;
 }
 
 div#nav-logo img {
@@ -131,14 +135,14 @@ ul#nav-links {
     position: absolute;
     top: 100px;
     right: 0;
-/*    background-color: #382F5A;*/
+    /*    background-color: #382F5A;*/
     z-index: 3;
     width: 100%;
     transform: translateY(-400px);
     transition: all 300ms ease-in-out;
 }
 
-ul#nav-links li{
+ul#nav-links li {
     display: flex;
     flex-direction: column;
     width: 85%;
@@ -219,8 +223,8 @@ div.overlay {
 
 }
 
-ul#nav-links.open{
-        transform: translateX(0);
+ul#nav-links.open {
+    transform: translateX(0);
 }
 
 /*HEADER*/
@@ -245,7 +249,7 @@ header {
 .triangle {
     width: 90vw;
     height: 90vh;
-/*    background: linear-gradient(to right bottom, #fff 0%, #fff 50%, #F4D06F 25%, #F4D06F 50%);*/
+    /*    background: linear-gradient(to right bottom, #fff 0%, #fff 50%, #F4D06F 25%, #F4D06F 50%);*/
     background-attachment: fixed;
     background-size: cover;
     position: absolute;
@@ -280,7 +284,7 @@ header {
     right: auto;
     z-index: 3;
     width: 100%;
-/*    opacity: 0.9;*/
+    /*    opacity: 0.9;*/
 }
 
 div#header-title {
@@ -298,7 +302,7 @@ h2.welcome {
     color: #382F5A;
     line-height: 1em;
     text-align: left;
-/*    text-shadow: 1px 1px #fafafa;*/
+    /*    text-shadow: 1px 1px #fafafa;*/
 }
 
 p.header-description {
@@ -308,7 +312,7 @@ p.header-description {
     line-height: 2rem;
     color: #382F5A;
     padding-top: 16px;
-/*    text-shadow: 1px 1px #fafafa;*/
+    /*    text-shadow: 1px 1px #fafafa;*/
 }
 
 
@@ -349,14 +353,20 @@ div#bus-spot-app {
 }
 
 div#greener-app {
-  display: flex;
- flex-direction: column;
-  margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 div#gromm-app {
     display: flex;
     flex-direction: column-reverse;
+    margin: auto;
+}
+
+div#personal-projects {
+    display: flex;
+    flex-direction: column;
     margin: auto;
 }
 
@@ -366,7 +376,18 @@ div.project-img {
     margin: auto;
 }
 
-img.project-screenshot{
+div.gromm-img {
+    width: 90%;
+    margin: auto;
+    padding-top: 24px;
+}
+
+div.side-projects-img {
+    width: 80%;
+    margin: auto;
+}
+
+img.project-screenshot {
     width: 100%;
     display: block;
     margin: auto;
@@ -389,8 +410,8 @@ div.project-info p {
 
 
 div.tech-image img {
-padding-top: 16px;
-height: 56px;
+    padding-top: 16px;
+    height: 56px;
 }
 
 
@@ -404,13 +425,13 @@ a.project-links {
     margin: 16px auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
-    background-color:#382F5A;
+    background-color: #382F5A;
     text-decoration: none;
     font-size: 1rem;
     color: #fff;
 }
 
-/*
+
 div.coming-soon {
     display: flex;
     flex-direction: column;
@@ -421,12 +442,12 @@ div.coming-soon {
     margin: 16px auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
-    background-color:gray;
+    background-color: gray;
     text-decoration: none;
     font-size: 1rem;
     color: #fff;
 }
-*/
+
 
 a.project-links:hover {
     background-color: #8879B9;
@@ -479,16 +500,16 @@ img.social-button {
 
 @media only screen and (min-width: 600px) {
 
-/*    NAV*/
+    /*    NAV*/
     div.content {
         width: 75%;
     }
 
-    ul#nav-links li{
+    ul#nav-links li {
         width: 75%;
     }
 
-/*    HEADER*/
+    /*    HEADER*/
     #bm {
         width: 75%;
         top: 32px;
@@ -501,7 +522,7 @@ img.social-button {
     }
 
 
-/*    PROJECTS SECTION*/
+    /*    PROJECTS SECTION*/
     section#project-section {
         width: 75%;
     }
@@ -515,7 +536,7 @@ img.social-button {
     }
 
 
-/*    FOOTER*/
+    /*    FOOTER*/
 
     /*    social images*/
     div#social-img {
@@ -532,7 +553,7 @@ img.social-button {
         width: 70%;
     }
 
-    ul#nav-links li{
+    ul#nav-links li {
         width: 70%;
     }
 
@@ -593,7 +614,7 @@ img.social-button {
 
     }
 
-    ul#nav-links li{
+    ul#nav-links li {
         width: 85%;
         text-align: center;
     }
@@ -614,7 +635,7 @@ img.social-button {
     }
 
 
-/*HEADER*/
+    /*HEADER*/
 
     /*moving section on body*/
     /*    HEADER*/
@@ -635,7 +656,8 @@ img.social-button {
     h2.section-header {
         width: 75%;
     }
-/*Projects*/
+
+    /*Projects*/
 
     div#bus-spot-app {
         width: 100%;
@@ -662,13 +684,21 @@ img.social-button {
         align-items: center;
     }
 
+    div#personal-projects {
+        width: 100%;
+        margin: 96px auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
     div.project-info {
         width: 50%;
         margin: auto;
     }
 
-    div.bs-img{
+    div.bs-img {
         width: 60%;
         margin-left: 32px;
     }
@@ -680,19 +710,24 @@ img.social-button {
 
     div.gromm-img {
         width: 60%;
+        margin-left: 40px;
+        padding-left: 20px;
+    }
+
+    div.side-projects-img {
+        width: 40%;
         margin-left: 32px;
     }
 
 
-
-    img.project-screenshot{
+    img.project-screenshot {
         width: 100%;
         display: flex;
         justify-content: flex-end;
         margin: auto;
     }
 
-/*    footer*/
+    /*    footer*/
     div#social-img {
         width: 30%;
     }
@@ -730,9 +765,13 @@ img.social-button {
         margin: auto;
     }
 
+    div.gromm-img {
+        width: 50%;
+        margin-left: 50px;
+    }
+
     div#social-img {
         width: 20%;
     }
 
 }
-

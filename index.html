@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang='en' >
+<html lang='en'>
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178390206-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-178390206-1');
@@ -16,18 +19,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <title>Leah M's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Corben&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
-    <body data-aos="fade-left">
+<body data-aos="fade-left">
     <!--       nav bar with collapsible button. Overlay that appears is below the projects section-->
 
 
-        <nav class="navbar">
+    <nav class="navbar">
 
         <div class="content">
             <div id="nav-logo"><a href="#"> <img src="images/logo-v2-2.svg" alt="logo"></a>
@@ -46,13 +51,14 @@
     <main>
 
         <header>
-            <div class="triangle" >   </div>
+            <div class="triangle"> </div>
             <div class="section bg-static">
-            <div id="header-title" >
-                <h2 class="welcome">Hi, I'm Leah</h2>
-                <p class="header-description">A UX Designer with front end aptitude seeking ways to use design for positive change.</p><br>
-                <p class="header-description">Welcome to my website.</p>
-            </div>
+                <div id="header-title">
+                    <h2 class="welcome">Hi, I'm Leah</h2>
+                    <p class="header-description">A UX Designer with front end aptitude seeking ways to use design for
+                        positive change.</p><br>
+                    <p class="header-description">Welcome to my website.</p>
+                </div>
                 <div class="bg-move">
                     <div id="bm"></div>
                 </div>
@@ -65,42 +71,6 @@
 
         <section id="project-section">
 
-            <!--                Bus Spot-->
-            <div id="bus-spot-app" data-aos="fade-down">
-                <div class="project-info">
-                    <h3>Bus Spot&trade;</h3>
-                    <div class="tech-image">
-                        <img src="images/adobexd.svg" alt="adobe xd">
-                        <img src="images/figma.svg" alt="figma">
-                    </div>
-                    <p>Bus Spot is a transit scheduling app that makes it easy for riders to visually locate their bus and reduce unexpected runs to the bus stop.
-                    </p>
-                   <a class="project-links" href="./pages/bus-spot.html">View Case Study</a>
-                </div>
-                <div class="project-img bs-img">
-                    <img class="project-screenshot" src="images/bus-spot-project.svg"
-                        alt="bus spot screenshot">
-                </div>
-            </div>
-
-
-            <!--                greener-->
-            <div id="greener-app" data-aos="fade-down" >
-                <div class="project-img greener-img">
-                    <img class="project-screenshot" src="images/greener-project.svg"
-                         alt="bus spot screenshot">
-                </div>
-                <div class="project-info">
-                    <h3>greener&trade;</h3>
-                    <div class="tech-image">
-                        <img src="images/invision.svg" alt="invision">
-                        <img src="images/figma.svg" alt="figma">
-                    </div>
-                    <p>Greener makes sustainable practices fun by earning points and getting rewards for incorporating responsible habits into your life.
-                    </p>
-                   <a class="project-links" href="./pages/greener.html">View Case Study</a>
-                </div>
-            </div>
             <!--                GROMM-->
             <div id="gromm-app" data-aos="fade-down">
                 <div class="project-info">
@@ -109,15 +79,70 @@
                         <img src="images/adobexd.svg" alt="adobe xd">
                         <img src="images/figma.svg" alt="figma">
                     </div>
-                    <p>Gromm is a streamlined platform for Left Coast Bicycles, a mobile bike repair company. It will allow their clients to schedule, get reminders and pay for mobile bike repair all in one place.
+                    <p>Gromm is a streamlined platform for Left Coast Bicycles, a mobile bike repair company. It will
+                        allow their clients to schedule, get reminders and pay for mobile bike repair all in one place.
                     </p>
                     <a class="project-links" href="./pages/gromm.html">View Case Study</a>
                 </div>
                 <div class="project-img gromm-img">
-                    <img class="project-screenshot" src="images/gromm-solution.svg"
-                         alt="gromm screenshot">
+                    <img class="project-screenshot" src="images/gromm-web-case-study.svg" alt="gromm screenshot">
                 </div>
             </div>
+
+            <!--                greener-->
+            <div id="greener-app" data-aos="fade-down">
+                <div class="project-img greener-img">
+                    <img class="project-screenshot" src="images/greener-project.svg" alt="bus spot screenshot">
+                </div>
+                <div class="project-info">
+                    <h3>greener&trade;</h3>
+                    <div class="tech-image">
+                        <img src="images/invision.svg" alt="invision">
+                        <img src="images/figma.svg" alt="figma">
+                    </div>
+                    <p>Greener makes sustainable practices fun by earning points and getting rewards for incorporating
+                        responsible habits into your life.
+                    </p>
+                    <a class="project-links" href="./pages/greener.html">View Case Study</a>
+                </div>
+            </div>
+
+            <!--                Bus Spot-->
+            <div id="bus-spot-app" data-aos="fade-down">
+                <div class="project-info">
+                    <h3>Bus Spot&trade;</h3>
+                    <div class="tech-image">
+                        <img src="images/adobexd.svg" alt="adobe xd">
+                        <img src="images/figma.svg" alt="figma">
+                    </div>
+                    <p>Bus Spot is a transit scheduling app that makes it easy for riders to visually locate their bus
+                        and reduce unexpected runs to the bus stop.
+                    </p>
+                    <a class="project-links" href="./pages/bus-spot.html">View Case Study</a>
+                </div>
+                <div class="project-img bs-img">
+                    <img class="project-screenshot" src="images/bus-spot-project.svg" alt="bus spot screenshot">
+                </div>
+            </div>
+
+            <!--                personal projects-->
+            <div id="personal-projects" data-aos="fade-down">
+                <div class="project-img side-projects-img">
+                    <img class="project-screenshot" src="images/side-project-home.svg" alt="personal projects">
+                </div>
+                <div class="project-info">
+                    <h3>Side Projects</h3>
+                    <div class="tech-image">
+                        <img src="images/adobeillustrator.svg" alt="adobe illustrator">
+                        <img src="images/adobephotoshop.svg" alt="adobe photoshop">
+                    </div>
+                    <p>Somethings I've been working on in my spare time.
+                    </p>
+                    <div class="coming-soon">Coming soon!</div>
+                </div>
+            </div>
+
+
         </section>
         <div class="overlay"></div>
     </main>
@@ -125,15 +150,18 @@
     <footer>
         <h2 class="section-header">Let’s Connect!</h2>
         <div id="social-img">
-            <a href="https://github.com/LeahBorns" target="_blank"><img class="social-button" src="../images/github.svg" alt="github logo"></a>
-            <a href="https://www.linkedin.com/in/leahborns/" target="_blank"><img class="social-button" src="../images/linkedin.svg" alt="linkedIn logo"></a>
-            <a href="https://www.instagram.com/leahmichalsondesigns/" target="_blank"><img class="social-button" src="../images/instagram.svg" alt="Instagram logo"></a>
-<!--            <a href="./pages/connect.html"><img class="social-button" src="../images/social-mail.png" alt="mail image"></a>-->
+            <a href="https://github.com/LeahBorns" target="_blank"><img class="social-button" src="../images/github.svg"
+                    alt="github logo"></a>
+            <a href="https://www.linkedin.com/in/leahborns/" target="_blank"><img class="social-button"
+                    src="../images/linkedin.svg" alt="linkedIn logo"></a>
+            <a href="https://www.instagram.com/leahmichalsondesigns/" target="_blank"><img class="social-button"
+                    src="../images/instagram.svg" alt="Instagram logo"></a>
+            <!--            <a href="./pages/connect.html"><img class="social-button" src="../images/social-mail.png" alt="mail image"></a>-->
         </div>
         <p class="footer-credit">Designed and Coded by Leah M.</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/bodymovin.js"></script>
+    <script src="js/bodymovin.js"></script>
     <script src="js/home-animation.js"></script>
     <script src="script.js" type="text/javascript"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
