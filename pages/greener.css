@@ -228,11 +228,11 @@ ul#nav-links.open{
 
 /*CASE STUDY IMAGES*/
 div.image-box {
-    width: 90%;
+    width: 100%;
     margin: 30px auto;
 }
 
-divimage-box img {
+div.image-box img {
     margin: auto;
     width: 100%;
     display: block;
@@ -240,13 +240,13 @@ divimage-box img {
 }
 
 div.image-box2 {
-    width: 90%;
+    width: 100%;
     margin: 30px auto;
     position: relative;
 }
 
 div.image-box3 {
-    width: 90%;
+    width: 100%;
     margin: 30px auto;
     position: relative;
 }
@@ -292,6 +292,9 @@ div.image-box3:after {
     transform: translateX(-150%) translateY(-40%);
 }
 
+div.persona-box {
+    width: 90%;
+}
 /*GREENER HEADER*/
 
 header {
@@ -446,6 +449,44 @@ div#solution-statement p {
 
 /*THE PROCESS*/
 
+/* ACCORDIAN DETAILS on white background */
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    background-color: #D5D3DC;
+    color: #444;
+    cursor: pointer;
+    width: 85%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 1px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #382F5A;
+    padding: 16px 24px;
+    font-size: 1.25em;
+    font-family: 'Corben', cursive;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #BCB9C8;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 5px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
 section#process {
     width: 100%;
     margin: auto;
@@ -471,15 +512,23 @@ div.mapping-hmw {
 
 /*LIGHTNING DEMOS*/
 
-div#lightning-intro {
+
+div.lightning-demos {
     width: 85%;
     margin: auto;
     padding-top: 32px;
 }
 
-div.lightning-demos {
+div.ld-info {
     width: 85%;
     margin: auto;
+}
+
+div.ld-info img {
+    width: 85%;
+    margin: auto;
+    display: block;
+    padding: 16px 0;
 }
 
 div.ld-facts{
@@ -487,30 +536,19 @@ div.ld-facts{
     margin: auto;
     list-style-position: outside;
 }
+
 div.ld-facts span {
     font-size: 1.25em;
 }
 
 div.ld-facts ul {
    padding-top: 8px;
+   padding-bottom: 24px;
 }
 
 div.ld-facts ul li {
         padding-bottom: 8px;
     }
-
-div.ld-info {
-    width: 80%;
-    margin: auto;
-}
-
-div.ld-info img {
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 32px 0;
-}
-
 
 /*PERSONAS*/
 div.persona-container {
@@ -519,35 +557,55 @@ div.persona-container {
     padding-top: 32px;
     padding-bottom: 48px;
 }
+
 div.personas {
     width: 85%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 16px 0;
 }
 
+/* ACCORDIAN panel on yellow background */
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel-yellow {
+    padding: 0 5px;
+    background-color: #FDF6E1;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
 /*Information architecture*/
+
+/* IA INTRO */
+div.ia-intro {
+    width: 85%;
+    margin: auto;
+    padding: 24px 0;
+}
+
 
 /*STORYBOARD*/
 
 section.information-architecture {
     width: 100%;
-    margin: auto;
+    margin: 48px auto auto auto;
     background-color: #FDF6E1;
+    background-size: cover;
     padding: 48px 0;
 }
 
 
-section.information-architecture h4 {
-    color: #A1700C;
-    padding-left: 0;
+section.information-architecture h3 {
+    width: 85%;
+    margin: auto;
 }
 
 div.user-stories {
     width: 85%;
     margin: auto;
+    padding-top: 24px;
 }
 
 
@@ -556,6 +614,7 @@ div.user-stories {
 div.wireframe-sketch {
     width: 85%;
     margin: auto;
+    padding-top: 24px;
 }
 
 div.list {
@@ -1035,6 +1094,13 @@ img.social-button {
         width: 75%;
     }
 
+
+    /* ACCORDIAN DETAILS */
+
+    .accordion {
+        width: 75%;
+    }
+
     /*MAPPING FLOW AND HMW*/
 
     div.mapping-hmw {
@@ -1216,11 +1282,11 @@ img.social-button {
     }
 
     div.image-box2 {
-        width: 75%;
+        width: 100%;
     }
 
     div.image-box3 {
-        width: 75%;
+        width: 100%;
     }
 
     /*    TAPE*/
@@ -1276,6 +1342,13 @@ img.social-button {
     /*    THE SOLUTION*/
     div.solution-container h3 {
         margin-left: 20%;
+    }
+
+
+    /* ACCORDIAN DETAILS */
+
+    .accordion {
+        width: 60%;
     }
 
     div#solution-statement {
@@ -1413,13 +1486,13 @@ img.social-button {
         width: 65%;
     }
 
-    div.image-box2 {
+    /* div.image-box2 {
         width: 70%;
     }
 
     div.image-box3 {
         width: 70%;
-    }
+    } */
 
     /*  NAV*/
 
@@ -1497,6 +1570,10 @@ img.social-button {
     }
 
     div#solution-statement {
+        width: 55%;
+    }
+
+    .accordion {
         width: 55%;
     }
 
@@ -1634,13 +1711,13 @@ img.social-button {
         width: 60%;
     }
 
-    div.image-box2 {
+    /* div.image-box2 {
         width: 55%;
     }
 
     div.image-box3 {
         width: 55%;
-    }
+    } */
 
     /*    PROBLEM STATEMENT*/
     div.problem-container h3 {
@@ -1665,6 +1742,12 @@ img.social-button {
     div#solution-statement {
         width: 45%;
     }
+
+        /* ACCORDIAN DETAILS */
+
+        .accordion {
+            width: 45%;
+        }
 
     /*MAPPING FLOW AND HMW*/
 
@@ -1815,13 +1898,13 @@ img.social-button {
         width: 48%;
     }
 
-    div.image-box2 {
+    /* div.image-box2 {
         width: 48%;
     }
 
     div.image-box3 {
         width: 48%;
-    }
+    } */
 
     /*        CHARTS*/
     div.chart-container {
@@ -1852,6 +1935,12 @@ img.social-button {
     div#solution-statement {
         width: 35%;
     }
+
+        /* ACCORDIAN DETAILS */
+
+        .accordion {
+            width: 35%;
+        }
 
     /*MAPPING FLOW AND HMW*/
 
