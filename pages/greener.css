@@ -228,26 +228,26 @@ ul#nav-links.open{
 
 /*CASE STUDY IMAGES*/
 div.image-box {
-    width: 100%;
-    margin: 30px auto;
+    width: 90%;
+    margin: auto;
+    padding: 24px 0;
 }
 
 div.image-box img {
     margin: auto;
     width: 100%;
     display: block;
-    padding-top: 16px;
 }
 
 div.image-box2 {
     width: 90%;
-    margin: 30px auto;
+    margin: 32px auto;
     position: relative;
 }
 
 div.image-box3 {
     width: 90%;
-    margin: 30px auto;
+    margin: 32px auto;
     position: relative;
 }
 
@@ -293,7 +293,7 @@ div.image-box3:after {
 }
 
 div.image-box4 {
-    width: 90%;
+    width: 80%;
     margin: 30px auto;
 }
 
@@ -529,6 +529,7 @@ div.mapping-hmw-container {
 div.map-problem {
     width: 85%;
     margin: auto;
+    padding: 24px 0;
 }
 
 /*LIGHTNING DEMOS*/
@@ -537,7 +538,7 @@ div.map-problem {
 div.lightning-demos {
     width: 85%;
     margin: auto;
-    padding-top: 32px;
+    padding: 24px 0;
 }
 
 div.ld-info {
@@ -580,7 +581,7 @@ div.persona-container {
 div.personas {
     width: 85%;
     margin: auto;
-    padding: 16px 0;
+    padding: 24px 0;
 }
 
 /* ACCORDIAN panel on yellow background */
@@ -597,16 +598,6 @@ div.personas {
 
 /*//////////Information architecture\\\\\\\\\\\\*/
 
-/* IA INTRO */
-div.ia-intro {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-
-/*STORYBOARD*/
-
 section.information-architecture {
     width: 100%;
     margin: 48px auto auto auto;
@@ -621,7 +612,22 @@ section.information-architecture h3 {
     margin: auto;
 }
 
-div.user-stories {
+/* IA INTRO */
+div.ia-intro {
+    width: 85%;
+    margin: auto;
+    padding: 24px 0;
+}
+
+
+/*STORYBOARD*/
+
+div.user-stories-container {
+    width: 100%;
+    margin: auto;
+}
+
+div.storyboard {
     width: 85%;
     margin: auto;
     padding-top: 24px;
@@ -629,6 +635,12 @@ div.user-stories {
 
 
 /*WIREFRAME SKETCHES*/
+
+div.wireframe-sketch-container{
+    width: 100%;
+    margin: auto;
+}
+
 
 div.wireframe-sketch {
     width: 85%;
@@ -654,6 +666,12 @@ p.screen-details {
 }
 
 /* Digital wireframe */
+
+div.digital-wireframes-container{
+    width: 100%;
+    margin: auto;
+}
+
 div.digital-wireframes {
     width: 85%;
     margin: auto;
@@ -674,7 +692,7 @@ section.visual-design h3 {
     margin: auto;
 }
 
-div.color-type-container {
+div.color-type-intro {
     width: 85%;
     margin: auto;
     padding: 24px 0;
@@ -683,14 +701,20 @@ div.color-type-container {
 /*COLOR AND TYPE*/
 
 
-div.color-type {
+div.color-type-container {
+width: 100%;
+margin: auto;
+
+}
+
+div.type-and-color {
     width: 85%;
     margin: auto;
     padding-top: 24px;
 }
 
 div.color-type-image {
-    width: 100%;
+    width: 95%;
     margin: 48px auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     transform: rotate(2deg);
@@ -805,11 +829,15 @@ div.typography-group p:nth-child(5) {
 /*LOGOS AND NAME*/
 
 div.logo-container {
+    width: 100%;
+    margin: auto;
+}
+
+div.logo {
     width: 85%;
     margin: auto;
     padding: 24px 0;
 }
-
 
 
 
@@ -837,8 +865,9 @@ div.prototype-test-container {
 
 /*Iterations*/
 
+
 div.iterations {
-    padding-top: 24px;
+    padding: 24px 0;
     width: 85%;
     margin: auto;
 }
@@ -882,6 +911,7 @@ div.chart-container {
     transform: rotate(2deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     margin-top: 48px;
+    margin-bottom: 24px;
     position: relative;
 }
 
@@ -1040,16 +1070,22 @@ img.social-button {
 @media only screen and (min-width: 600px) {
 
     div.image-box {
-        width: 75%;
+        width: 80%;
     }
+
+    div.image-box2 {
+        width: 80%;
+    }
+
+    div.image-box3 {
+        width: 80%;
+    }
+
 
     div.image-box4 {
-        width: 80%;
+        width: 70%;
     }
 
-    div.persona-box {
-        width: 80%;
-    }
 
     /*        CHARTS*/
     div.chart-container {
@@ -1165,7 +1201,7 @@ section.information-architecture h3 {
 
 
 /*    STORYBOARD*/
-    div.user-stories {
+    div.storyboard {
         width: 75%;
     }
 
@@ -1190,19 +1226,23 @@ section.information-architecture h3 {
     width: 75%;
 }
 
-div.color-type-container {
+div.color-type-intro {
     width: 75%;
 }
   
     /*    LOGO*/
-    div.logo-container {
+    div.logo {
         width: 75%;
     }
 
     /*COLOR AND TYPE*/
 
-    div.color-type {
+    div.type-and-color {
         width: 75%;
+    }
+
+    div.color-type-image {
+        width: 80%;
     }
     
         /*    STYLE GUIDE*/
@@ -1315,27 +1355,21 @@ div.color-type-container {
     /*    IMAGE BOX*/
 
     div.image-box {
-        width: 80%;
+        width: 75%;
     }
 
     div.image-box2 {
-        width: 75%;
-    }
-
-    div.image-box3 {
-        width: 75%;
-    }
-
-    div.image-box4 {
         width: 70%;
     }
 
-    div.web-size {
-        width: 100%;
-        margin: auto;
-        padding: 24px 0;
+    div.image-box3 {
+        width: 70%;
     }
- 
+
+    div.image-box4 {
+        width: 60%;
+    }
+
 
     /*    TAPE*/
     div.image-box2:after {
@@ -1447,7 +1481,7 @@ section.information-architecture h3 {
 }
 
     /*    STORYBOARD*/
-    div.user-stories {
+    div.storyboard {
         width: 60%;
     }
 
@@ -1468,22 +1502,24 @@ section.information-architecture h3 {
         width: 60%;
     }
     
-    div.color-type-container {
+    div.color-type-intro {
         width: 60%;
     }
 
     /*    LOGO*/
-    div.logo-container {
+    div.logo {
         width: 60%;
     }
 
     /*COLOR AND TYPE*/
 
-    div.color-type {
+    div.type-and-color {
         width: 60%;
     }
 
-
+    div.color-type-image {
+        width: 70%;
+    }
   
 
     /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
@@ -1552,17 +1588,22 @@ section.information-architecture h3 {
     /*    IMAGE BOX*/
 
     div.image-box {
-        width: 70%;
+        width: 65%;
     }
 
 
     div.image-box2 {
-        width: 68%;
+        width: 65%;
     }
 
     div.image-box3 {
-        width: 68%;
+        width: 65%;
     }
+
+    div.image-box4 {
+        width: 55%;
+    }
+
 
     /*  NAV*/
 
@@ -1676,10 +1717,21 @@ section.information-architecture h3 {
         width: 55%;
     }
 
-    /*    IA*/
+           /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
+
+
+/* IA INTRO */
+div.ia-intro {
+    width: 55%;
+}
+
+section.information-architecture h3 {
+    width: 55%;
+
+}
 
     /*    STORYBOARD*/
-    div.user-stories {
+    div.storyboard {
         width: 55%;
     }
 
@@ -1694,7 +1746,15 @@ section.information-architecture h3 {
         width: 55%;
     }
 
-    /*VISUAL DEISGN*/
+     /* ///////////////////////VISUAL DEISGN///////////////////////////*/
+
+     section.visual-design h3 {
+        width: 55%;
+    }
+    
+    div.color-type-intro {
+        width: 55%;
+    }
 
     /*    LOGO*/
     div.logo {
@@ -1703,11 +1763,7 @@ section.information-architecture h3 {
 
     /*COLOR AND TYPE*/
 
-    div.color-palette {
-        width: 55%;
-    }
-
-    div.topography {
+    div.type-and-color {
         width: 55%;
     }
 
@@ -1715,20 +1771,22 @@ section.information-architecture h3 {
         width: 65%;
     }
 
-    /*ITERATIONS*/
+ 
 
-    div.iterations {
+    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
+ 
+    section.prototype-test h3 {
         width: 55%;
     }
 
-
-    /*PROTOTYPING AND TESTING*/
-    section.prototype-test h3 {
-        margin-left: 22.5%;
+    div.prototype-test-container {
+        width: 55%;
     }
 
-    section.prototype-test h4 {
-        margin-left: 22.5%;
+       /*ITERATIONS*/
+
+       div.iterations {
+        width: 55%;
     }
 
 
@@ -1749,7 +1807,7 @@ section.information-architecture h3 {
 
     /*FINAL PROTOTYPE*/
 
-    div.final-prototype {
+    div.final-prototype-container {
         width: 55%;
     }
 
@@ -1757,7 +1815,7 @@ section.information-architecture h3 {
     /*CONCLUSION*/
 
     section.conclusion h3 {
-        margin-left: 22.5%;
+        width: 55%;
     }
 
     div.learnings-container {
@@ -1785,13 +1843,17 @@ section.information-architecture h3 {
         width: 60%;
     }
 
-    /* div.image-box2 {
+    div.image-box2 {
         width: 55%;
     }
 
     div.image-box3 {
         width: 55%;
-    } */
+    }
+
+    div.image-box4 {
+        width: 50%;
+    }
 
     /*    PROBLEM STATEMENT*/
     div.problem-container h3 {
@@ -1825,6 +1887,10 @@ section.information-architecture h3 {
 
     /*MAPPING FLOW AND HMW*/
 
+    div.discovery-intro {
+        width: 45%;
+    }
+
     div.map-problem {
         width: 45%;
     }
@@ -1839,19 +1905,27 @@ section.information-architecture h3 {
         width: 45%;
     }
 
-    div.ld-facts{
-        width: 55%;
-    }
 
     /*    PERSONAS*/
     div.personas {
         width: 45%;
     }
 
-    /*    IA*/
+            /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
+
+
+/* IA INTRO */
+div.ia-intro {
+    width: 45%;
+}
+
+section.information-architecture h3 {
+    width: 45%;
+
+}
 
     /*    STORYBOARD*/
-    div.user-stories {
+    div.storyboard {
         width: 45%;
     }
 
@@ -1866,7 +1940,15 @@ section.information-architecture h3 {
         width: 45%;
     }
 
-    /*VISUAL DEISGN*/
+        /* ///////////////////////VISUAL DEISGN///////////////////////////*/
+
+        section.visual-design h3 {
+            width: 45%;
+        }
+        
+        div.color-type-intro {
+            width: 45%;
+        }
 
     /*    LOGO*/
     div.logo {
@@ -1875,11 +1957,7 @@ section.information-architecture h3 {
 
     /*COLOR AND TYPE*/
 
-    div.color-palette {
-        width: 45%;
-    }
-
-    div.topography {
+    div.type-and-color {
         width: 45%;
     }
 
@@ -1887,19 +1965,22 @@ section.information-architecture h3 {
         width: 55%;
     }
 
-    /*ITERATIONS*/
+ 
 
-    div.iterations {
+    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
+ 
+    section.prototype-test h3 {
         width: 45%;
     }
 
-    /*PROTOTYPING AND TESTING*/
-    section.prototype-test h3 {
-        margin-left: 27.5%;
+    div.prototype-test-container {
+        width: 45%;
     }
 
-    section.prototype-test h4 {
-        margin-left: 27.5%;
+       /*ITERATIONS*/
+
+       div.iterations {
+        width: 45%;
     }
 
 
@@ -1908,14 +1989,6 @@ section.information-architecture h3 {
         width: 45%;
     }
 
-
-    div.usability-test ul {
-        width: 85%;
-    }
-
-    p.takeaways {
-        width: 85%;
-    }
 
     /*PREFERENCE TESTING*/
 
@@ -1929,7 +2002,7 @@ section.information-architecture h3 {
 
     /*FINAL PROTOTYPE*/
 
-    div.final-prototype {
+    div.final-prototype-container {
         width: 45%;
     }
 
@@ -1937,7 +2010,7 @@ section.information-architecture h3 {
     /*CONCLUSION*/
 
     section.conclusion h3 {
-        margin-left: 27.5%;
+        width: 45%;
     }
 
     div.learnings-container {
@@ -1953,7 +2026,7 @@ section.information-architecture h3 {
 
 @media only screen and (min-width: 1200px) {
 
-    /*BUS SPOT HEADER*/
+    /*Greener HEADER*/
 
     header {
         width: 60%;
@@ -1962,28 +2035,31 @@ section.information-architecture h3 {
 
     div.case-study-title {
         width: 85%;
-        margin: auto;
     }
 
 
     /*    IMAGE BOX*/
 
     div.image-box {
-        width: 48%;
+        width: 45%;
     }
 
-    /* div.image-box2 {
-        width: 48%;
+    div.image-box2 {
+        width: 45%;
     }
 
     div.image-box3 {
-        width: 48%;
-    } */
+        width: 45%;
+    }
+
+    div.image-box4 {
+        width: 40%;
+    }
 
     /*        CHARTS*/
     div.chart-container {
-        width: 35%;
-        height: 35%;
+        width: 40%;
+        height: 40%;
     }
 
     /*    PROBLEM STATEMENT*/
@@ -2018,6 +2094,10 @@ section.information-architecture h3 {
 
     /*MAPPING FLOW AND HMW*/
 
+    div.discovery-intro {
+        width: 35%;
+    }
+
     div.map-problem {
         width: 35%;
     }
@@ -2032,19 +2112,27 @@ section.information-architecture h3 {
         width: 35%;
     }
 
-    div.ld-facts{
-        width: 35%;
-    }
 
     /*    PERSONAS*/
     div.personas {
         width: 35%;
     }
 
-    /*    IA*/
+            /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
+
+
+/* IA INTRO */
+div.ia-intro {
+    width: 35%;
+}
+
+section.information-architecture h3 {
+    width: 35%;
+
+}
 
     /*    STORYBOARD*/
-    div.user-stories {
+    div.storyboard {
         width: 35%;
     }
 
@@ -2059,7 +2147,15 @@ section.information-architecture h3 {
         width: 35%;
     }
 
-    /*VISUAL DEISGN*/
+        /* ///////////////////////VISUAL DEISGN///////////////////////////*/
+
+        section.visual-design h3 {
+            width: 35%;
+        }
+        
+        div.color-type-intro {
+            width: 35%;
+        }
 
     /*    LOGO*/
     div.logo {
@@ -2068,11 +2164,7 @@ section.information-architecture h3 {
 
     /*COLOR AND TYPE*/
 
-    div.color-palette {
-        width: 35%;
-    }
-
-    div.topography {
+    div.type-and-color {
         width: 35%;
     }
 
@@ -2080,35 +2172,29 @@ section.information-architecture h3 {
         width: 40%;
     }
 
+
+
+ /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
+ 
+ section.prototype-test h3 {
+    width: 35%;
+}
+
+div.prototype-test-container {
+    width: 35%;
+}
+
     /*ITERATIONS*/
 
     div.iterations {
         width: 35%;
     }
 
-    /*PROTOTYPING AND TESTING*/
-    section.prototype-test h3 {
-        margin-left: 32.5%;
-    }
-
-    section.prototype-test h4 {
-        margin-left: 32.5%;
-    }
-
-
     /*Usability Test*/
     div.usability-test {
         width: 35%;
     }
 
-
-    div.usability-test ul {
-        width: 85%;
-    }
-
-    p.takeaways {
-        width: 85%;
-    }
 
     /*PREFERENCE TESTING*/
 
@@ -2122,7 +2208,7 @@ section.information-architecture h3 {
 
     /*FINAL PROTOTYPE*/
 
-    div.final-prototype {
+    div.final-prototype-container {
         width: 35%;
     }
 
@@ -2134,9 +2220,8 @@ section.information-architecture h3 {
     /*CONCLUSION*/
 
     section.conclusion h3 {
-        margin-left: 32.5%;
+        width: 35%;
     }
-
     div.learnings-container {
         width: 35%;
     }
