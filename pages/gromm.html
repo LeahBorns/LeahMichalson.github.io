@@ -149,10 +149,10 @@
             <button class="accordion font">
                 Competitive Analysis
             </button>
-            <div class="panel competitive-analysis">
+            <div class="panel competitive-analysis-container">
 
                 <div class="image-box2"><img src="../images/gromm-swot.svg" alt="gromm spot swot"></div>
-                <div>
+                <div class="competitive-analysis">
                     <p>After comparing Velofix, Beeline and Simplybook.me the biggest takeaways were: </p><br>
                     <p><span class="bold">Velofix</span> uses Vonigo, a third party service management api to schedule
                         and manage their mobile bike repair fleet. Through the Velofix platform, you can schedule, get
@@ -176,7 +176,7 @@
                 User Survey
 
             </button>
-            <div class="panel">
+            <div class="user-survey-container panel">
                 <div id="user-survey">
                     <p>Out of <span class="bold">19 participants</span>, I found that some users desired more
                         communication and integrated features, while most users like real-time scheduling. Some
@@ -205,7 +205,7 @@
                     <p>The first is a busy working professional who is always looking for ways to optimize her day. </p>
                 </div>
 
-                <div class="image-box2 persona-box">
+                <div class="image-box2">
                     <img src="../images/gromm-persona-brenda.svg" alt="gromm personas">
                 </div>
                 <div class="personas">
@@ -214,7 +214,7 @@
                         repairs.
                     </p>
                 </div>
-                <div class="image-box3 persona-box">
+                <div class="image-box3">
                     <img src="../images/gromm-persona-grant.svg" alt="gromm personas">
                 </div>
             </div>
@@ -234,65 +234,73 @@
             <button class="accordion">
                 User Stories &#38; User Flows
             </button>
-            <div class="panel panel-yellow user-stories">
+            <div class="panel panel-yellow user-stories-container">
 
-                <p>I found <span class="bold">four high priority</span> and <span class="bold">three medium priority
-                    </span> stories for the user after analyzing the user survey and personas.</p><br>
-                <p>I broke the user flows up into three different parts. The second and third flows get a little more
-                    complicated as they depend on the mechanic's input. To keep everything in scope, I included
-                    additional details on each flow to show where the mechanic is involved and the user stories it helps
-                    answer.</p>
-                <br>
-                <p>The first flow is for scheduling an appointment, which is more straightforward; the client completes
-                    all steps. This flow has solutions for all four high priority user stories.</p>
-                <br>
+                <div class="user-stories">
+                    <p>I found <span class="bold">four high priority</span> and <span class="bold">three medium priority
+                        </span> stories for the user after analyzing the user survey and personas.</p><br>
+                    <p>I broke the user flows up into three different parts. The second and third flows get a little
+                        more
+                        complicated as they depend on the mechanic's input. To keep everything in scope, I included
+                        additional details on each flow to show where the mechanic is involved and the user stories it
+                        helps
+                        answer.</p>
+                    <br>
+                    <p>The first flow is for scheduling an appointment, which is more straightforward; the client
+                        completes
+                        all steps. This flow has solutions for all four high priority user stories.</p>
+                </div>
 
 
-                <div class="image-box2 swot">
+                <div class="image-box2">
                     <img src="../images/gromm-user-flow-1.svg" alt="gromm user flow 1"></div>
+                <div class="user-stories">
+                    <p>The second is for after the appointment is scheduled, specifically right before and after the
+                        client's appointment. This flow answers one high and one medium priority user story.</p>
+                </div>
+                <div class="image-box3"> <img src="../images/gromm-user-flow-2.svg" alt="gromm user flow 2"></div>
+                <div class="user-stories">
+                    <p>Finally the third is after the mechanic has completed the repairs. This flow covers two of the
+                        medium priority user stories.</p>
+                </div>
 
-                <p>The second is for after the appointment is scheduled, specifically right before and after the
-                    client's appointment. This flow answers one high and one medium priority user story.</p>
-
-                <div class="image-box3 swot"> <img src="../images/gromm-user-flow-2.svg" alt="gromm user flow 2"></div>
-
-                <p>Finally the third is after the mechanic has completed the repairs. This flow covers two of the medium
-                    priority user stories.</p>
-
-
-                <div class="image-box2 swot"><img src="../images/gromm-user-flow-3.svg" alt="gromm user flow 3"></div>
+                <div class="image-box2"><img src="../images/gromm-user-flow-3.svg" alt="gromm user flow 3"></div>
             </div>
+
+            
             <!--           WIREFRAMES SKETCHES-->
-            <div class="wireframe-sketch-container">
+          
                 <button class="accordion">
                     Wireframe Sketches to Digital Wireframes
                 </button>
-                <div class="panel panel-yellow wireframe-sketch">
+                <div class="panel panel-yellow wireframe-sketch-container">
+                    <div class="wireframe-sketch">
                     <p>From sketches to digital wireframes, the app required a few small iterations.</p><br>
                     <p>I had initially misunderstood LCB's business model and had laid it out similar to Velofix, which
                         offers various services at many different times.</p><br>
                     <p>I updated the digital wireframes to reflect LCB's schedule system, which includes one or two
                         specific dates and a set of times at 15-minute intervals.</p>
-
+                    </div>
                     <div class="image-box2">
                         <img src="../images/gromm-wireframe-sketches.svg" alt="gromm wireframes">
                     </div>
+                    <div class="wireframe-sketch">
                     <p>Another small adjustment included updating the app header. I couldn't decide if I wanted to
                         design a mobile app or in mobile-first web format.</p><br>
                     <p>I initially decided on an app layout; however, after testing, I found it easier to integrate this
                         platform as part of LCB's website. Iterations from app to web can be found in the <a
                             class="case-study-link" href="#iterations">iteration section</a> of this case study.</p>
-
-                    <div class="image-box web-size">
+                    </div>
+                    <div class="image-box">
                         <img src="../images/gromm-digital-wireframes.svg" alt="gromm wireframes">
                     </div>
                 </div>
-            </div>
+       
         </section>
         <!--        Visual Design Subheader    -->
         <section class="visual-design" data-aos="fade-down">
             <h3>Visual Design</h3>
-            <div class="color-type-container">
+            <div class="color-type-intro">
                 <p>I had initially planned to redesign Left Coast Bicycles logo and stick with the same color palette.
                     Due to time limitations, we decided to focus on the scheduling platform as its own thing and revisit
                     the rebrand at another time. </p><br>
@@ -303,22 +311,22 @@
                 Logo Design &#38; Process
             </button>
             <div class="logo-container panel">
-
+            <div class="logo-process">
                 <p>The owner and I brainstormed a list of words related to bikes, mobility, and repair. We landed on
                     Gromm, which in the bike industry is a young inspired biker who hangs out around bike shops. The
                     name was shorter, and it wasn't taken in the app store or as a website. </p><br>
                 <p>For the logo, I wanted to incorporate a bike part. My initial drawings had both a bike part and some
                     representation of a tool. After a few iterations and playing around with a real bike chain, I
                     created a "G" out of the chain.</p>
-
-                <div class="image-box3 swot"><img src="../images/gromm-branding.svg" alt="gromm logos"></div>
+                </div>
+                <div class="image-box3"><img src="../images/gromm-branding.svg" alt="gromm logos"></div>
             </div>
             <button class="accordion">
                 Color Palette &#38; Topography
             </button>
-            <div class="color-type panel">
+            <div class="color-type-container panel">
 
-
+                <div class="color-type">
                 <p>While exploring rebrand options, the owner of LCB had expressed interest in blues and greens as an
                     alternate color to his current colors, orange and gray. After some bike industry research, I found
                     that orange and gray were commonly used. The blues and greens also provided a more playful look and
@@ -332,7 +340,7 @@
                     didn't fit with the app's look while it was a nice clean font. I ended up going with Proxima Nova, a
                     websafe font that's simple and doesn't draw attention to itself.</p><br>
                 <p>I also followed apple's accessibility guidelines when choosing the font size and weight.</p>
-
+                </div>
 
                 <div class="color-type-image">
                     <div class="colors-group-1">
@@ -369,54 +377,17 @@
 
         </section>
         <!--        Prototype/Testing Subheader              -->
-        <section class="prototype-test" data-aos="fade-down"id="iterations">
+        <section class="prototype-test" data-aos="fade-down" id="iterations">
             <h3>Prototyping &#38; Testing </h3>
-            <div class="prototype-test-container" >
+            <div class="prototype-test-container">
                 <p>Once I finalized my style guide, I started adding color and type to the wireframes. The design went
                     through a couple of iterations after getting feedback from LCB's owner and completing a preference
                     test.</p><br>
                 <p>After the usability test and feedback received, we realized the platform would function better as
                     part of LCB's website. The most recent iterations are a responsive web version.</p>
-                <div class="image-box web-size">
-                    <img src="../images/gromm-hifi-mockups.svg" alt="gromm high fi mockups">
-                </div>
             </div>
-            <button class="accordion" >
-                High-Fi Mockup Iterations
-            </button>
-            <div class="iterations panel-yellow panel" >
-                <p>For the first iteration, I wanted to add a bike part to the scheduling screen's background. I mocked
-                    up a couple of different versions with a cog and sent out a preference test using UsabilityHub. The
-                    results ended up being pretty even, with option 'B' more preferred. Testers liked the white space
-                    and thought it was easier to read.
-                </p>
-
-                <div class="image-box web-size">
-                    <img src="../images/gromm-preference-test.svg" alt="gromm preference test">
-                </div>
-                <p>After the usability test, I updated the scheduling screen to incorporate the link instead of the cog.
-                    I updated the appointment details screen to have bike notes added by the client, and I updated the
-                    onboarding walkthrough with a Gromm character I created.
-                </p>
-
-                <div class="image-box4">
-                    <img src="../images/gromm-v2-iterations.svg" alt="gromm v2 iteration">
-                </div>
-                <p>I went over v2 of Gromm with the owner, and we decided that it would be easier to implement the
-                    scheduling platform as part of his website.
-                </p><br>
-                <p>I reorganized all of the input and feedback from the first two versions to create a responsive web
-                    platform. I redesigned the scheduling screen as a single section that populated the details as you
-                    walked through the scheduling process. The appointment details screen became a dashboard that
-                    grouped the client's consultation and repair appointments. I also added a notifications icon at the
-                    top to remind users of upcoming appointments, updates to their appointment, and when their bike is
-                    complete.
-                </p><br>
-                <p>After testing the web platform, users like navigating Gromm as a web platform more. They also liked
-                    having the consultation and repair as one event, so all repair details are in one place.</p>
-                <div class="image-box4">
-                    <img src="../images/gromm-web-iteration.svg" alt="gromm web iteration">
-                </div>
+            <div class="image-box4">
+                <img src="../images/gromm-hifi-mockups.svg" alt="gromm high fi mockups">
             </div>
             <button class="accordion">
                 Usability Test
@@ -441,7 +412,7 @@
                         <li>Find their final repair summary and pay for their repairs</li>
                     </ul>
                 </div>
-                <div class="chart-container"><canvas id="usabilityTest" height="150"></canvas></div>
+                <div class="chart-container"><canvas id="usabilityTest" height="300"></canvas></div>
                 <div class="usability-test">
                     <p>My biggest takeaways were:</p><br>
                     <ul>
@@ -463,35 +434,77 @@
                 Usability Test Iterations
             </button>
 
-            <div class="usability-test-iterations panel panel-yellow">
+            <div class="usability-test-iterations-container panel panel-yellow">
+                <div class="usability-test-iterations">   
                 <p>After testing and receiving additional feedback from users, designers, and the LCB owner, I revised
                     my designs to be more coherent and simple.</p><br>
                 <p>I removed the skip button from the upper right corner, rearranged the “Sign-Up” and “Create Account”
                     buttons, and added a continue without account option. I also made the onboarding a carousel and
                     added the Gromm mascot to walk everyone through.</p>
-
+                </div> 
                 <div class="image-box">
                     <img src="../images/gromm-testing-iterations-1.svg" alt="gromm skip button iterations">
                 </div>
-
+                <div class="usability-test-iterations"> 
                 <p>I added the Gromm link to the app's background and changed the background to blue with white
                     scheduling blocks. I also added numbers to the Scheduling screen to clarify that each section was a
                     step.</p>
-
+                </div>
                 <div class="image-box">
                     <img src="../images/gromm-testing-iterations-2.svg" alt="gromm skip button iterations">
                 </div>
-
+                <div class="usability-test-iterations"> 
                 <p>I added a segmented tab to the Appointment Details screen with the bike type and any notes the user
                     added during scheduling.</p>
-
+                </div>
                 <div class="image-box">
                     <img src="../images/gromm-testing-iterations-3.svg" alt="gromm skip button iterations">
                 </div>
-
+                <div class="usability-test-iterations"> 
                 <p>Finally, I added a link to the consultation summary to the new event summary and made the past events
-                    look different from upcoming events.</p><br>
-
+                    look different from upcoming events.</p>
+                </div>  
+            </div>
+            <button class="accordion">
+                High-Fi Mockup Iterations
+            </button>
+            <div class="iterations-container panel-yellow panel">
+            <div class="iterations">
+                <p>For the first iteration, I wanted to add a bike part to the scheduling screen's background. I mocked
+                    up a couple of different versions with a cog and sent out a preference test using UsabilityHub. The
+                    results ended up being pretty even, with option 'B' more preferred. Testers liked the white space
+                    and thought it was easier to read.
+                </p>
+            </div>
+                <div class="image-box">
+                    <img src="../images/gromm-preference-test.svg" alt="gromm preference test">
+                </div>
+                <div class="iterations">
+                <p>After the usability test, I updated the scheduling screen to incorporate the link instead of the cog.
+                    I updated the appointment details screen to have bike notes added by the client, and I updated the
+                    onboarding walkthrough with a Gromm character I created.
+                </p>
+            </div>
+                <div class="image-box4">
+                    <img src="../images/gromm-v2-iterations.svg" alt="gromm v2 iteration">
+                </div>
+                <div class="iterations">
+                <p>I went over v2 of Gromm with the owner, and we decided that it would be easier to implement the
+                    scheduling platform as part of his website.
+                </p><br>
+                <p>I reorganized all of the input and feedback from the first two versions to create a responsive web
+                    platform. I redesigned the scheduling screen as a single section that populated the details as you
+                    walked through the scheduling process. The appointment details screen became a dashboard that
+                    grouped the client's consultation and repair appointments. I also added a notifications icon at the
+                    top to remind users of upcoming appointments, updates to their appointment, and when their bike is
+                    complete.
+                </p><br>
+                <p>After testing the web platform, users like navigating Gromm as a web platform more. They also liked
+                    having the consultation and repair as one event, so all repair details are in one place.</p>
+                </div>
+                <div class="image-box">
+                    <img src="../images/gromm-web-iteration-new.svg" alt="gromm web iteration">
+                </div>
             </div>
             <button class="accordion">
                 Final Prototype

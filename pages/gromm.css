@@ -232,14 +232,14 @@ ul#nav-links.open {
 /*CASE STUDY IMAGES*/
 div.image-box {
     width: 90%;
-    margin: 30px auto;
+    margin: auto;
+    padding: 24px 0;
 }
 
 div.image-box img {
     margin: auto;
     width: 100%;
     display: block;
-    padding-top: 16px;
 }
 
 div.image-box2 {
@@ -306,14 +306,6 @@ div.image-box4 img {
     width: 100%;
     display: block;
     padding-top: 16px;
-}
-
-div.persona-box {
-    width: 90%;
-}
-
-div.web-size {
-    width: 90%;
 }
 
 /*GROMM HEADER*/
@@ -532,12 +524,23 @@ div.discovery {
 
 /*COMPETITIVE ANALYSIS*/
 
-div.competitive-analysis {
-    width: 85%;
+div.competitive-analysis-container {
+    width: 100%;
     margin: auto;
 }
 
+div.competitive-analysis {
+    width: 85%;
+    margin: auto;
+    padding: 24px 0;
+}
+
 /*USER SURVEY*/
+
+div.user-survey-container {
+    width: 100%;
+    margin: auto;
+}
 
 div#user-survey {
     width: 85%;
@@ -616,13 +619,6 @@ div.personas {
 
 /*Information architecture*/
 
-/* DEFINE INTRO */
-div.define-intro {
-    width: 85%;
-    margin: auto;
-    padding-top: 32px;
-}
-
 /*User Stories*/
 
 section.information-architecture {
@@ -638,6 +634,17 @@ section.information-architecture h3 {
     margin: auto;
 }
 
+/* DEFINE INTRO */
+div.define-intro {
+    width: 85%;
+    margin: auto;
+    padding: 24px 0;
+}
+
+div.user-stories-container {
+    width: 100%;
+    margin: auto;
+}
 
 div.user-stories {
     width: 85%;
@@ -647,6 +654,11 @@ div.user-stories {
 
 
 /*WIREFRAME SKETCHES*/
+
+div.wireframe-sketch-container {
+    width: 100%;
+    margin: auto;
+}
 
 div.wireframe-sketch {
     width: 85%;
@@ -673,15 +685,19 @@ section.visual-design h3 {
     margin: auto;
 }
 
-div.color-type-container {
+div.color-type-intro {
     width: 85%;
     margin: auto;
     padding-top: 24px;
 }
 
 /*LOGOS AND NAME*/
-
 div.logo-container {
+    width: 100%;
+    margin: auto;
+}
+
+div.logo-process {
     width: 85%;
     margin: auto;
     padding-top: 24px;
@@ -689,6 +705,11 @@ div.logo-container {
 
 
 /*COLOR AND TYPE*/
+
+div.color-type-container {
+    width: 100%;
+    margin: auto;
+}
 
 div.color-type {
     width: 85%;
@@ -698,7 +719,7 @@ div.color-type {
 
 
 div.color-type-image {
-    width: 100%;
+    width: 95%;
     margin: 48px auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     transform: rotate(2deg);
@@ -836,15 +857,19 @@ div.prototype-test-container {
     width: 85%;
     margin: auto;
     padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 /*ITERATIONS*/
 
+div.iterations-container {
+    width: 100%;
+    margin: auto;
+}
+
 div.iterations {
-    padding-top: 24px;
     width: 85%;
     margin: auto;
+    padding-top: 24px;
 }
 
 /*Usability Test*/
@@ -852,7 +877,7 @@ div.iterations {
 div.usability-test-container {
     width: 100%;
     margin: auto;
-    padding-top: 24px;
+    padding: 24px 0;
 }
 
 div.usability-test {
@@ -916,10 +941,16 @@ canvas#usabilityTest {
 
 
 /*USABILITY TEST ITERATIONS*/
+
+div.usability-test-iterations-container{
+    width: 100%;
+    margin: auto;
+}
+
 div.usability-test-iterations {
     width: 85%;
     margin: auto;
-    padding-top: 24px;
+    padding: 24px 0;
 }
 
 
@@ -1036,6 +1067,23 @@ img.social-button {
 
 
 @media only screen and (min-width: 600px) {
+
+    div.image-box {
+        width: 75%;
+    }
+
+    div.image-box2 {
+        width: 80%;
+    }
+
+    div.image-box3 {
+        width: 80%;
+    }
+
+
+    div.image-box4 {
+        width: 80%;
+    }
 
     /*        CHARTS*/
     div.chart-container,
@@ -1181,13 +1229,13 @@ img.social-button {
         width: 75%;
     }
 
-    div.color-type-container {
+    div.color-type-intro {
         width: 75%;
     }
 
     /*LOGOS AND NAME*/
 
-    div.logo-container {
+    div.logo-process {
         width: 75%;
     }
 
@@ -1200,6 +1248,10 @@ img.social-button {
 
 
     /*    STYLE GUIDE*/
+
+    div.color-type-image {
+        width: 80%;
+    }
 
     div.color-type-image:before {
         height: 45px;
@@ -1310,20 +1362,17 @@ img.social-button {
     }
 
     div.image-box2 {
-        width: 100%;
+        width: 70%;
     }
 
     div.image-box3 {
-        width: 100%;
+        width: 70%;
     }
 
     div.image-box4 {
-        width: 100%;
+        width: 70%;
     }
 
-    div.persona-box {
-        width: 80%;
-    }
 
     /*    TAPE*/
     div.image-box2:after {
@@ -1445,13 +1494,13 @@ img.social-button {
         width: 60%;
     }
 
-    div.color-type-container {
+    div.color-type-intro {
         width: 60%;
     }
 
     /*LOGOS AND NAME*/
 
-    div.logo-container {
+    div.logo-process {
         width: 60%;
     }
 
@@ -1461,9 +1510,12 @@ img.social-button {
         width: 60%;
     }
 
-    /* ///////////////////////////////////////////// */
+    div.color-type-image {
+        width: 70%;
+    }
 
-    /*PROTOTYPING AND TESTING*/
+    /* ///////////////////PROTOTYPING AND TESTING////////////////////////// */
+
     section.prototype-test h3 {
         width: 60%;
     }
@@ -1531,11 +1583,20 @@ img.social-button {
     /*    IMAGE BOX*/
 
     div.image-box {
-        width: 60%;
+        width: 55%;
     }
 
-    div.persona-box {
+
+    div.image-box2 {
         width: 65%;
+    }
+
+    div.image-box3 {
+        width: 65%;
+    }
+
+    div.image-box4 {
+        width: 60%;
     }
 
 
@@ -1686,20 +1747,19 @@ img.social-button {
         width: 55%;
     }
 
-    /* //////////////////////////////////////////////////
+    /* /////////////////////////VISUAL DEISGN/////////////////////////
  */
-    /*VISUAL DEISGN*/
     section.visual-design h3 {
         width: 55%;
     }
 
-    div.color-type-container {
+    div.color-type-intro {
         width: 55%;
     }
 
     /*LOGOS AND NAME*/
 
-    div.logo-container {
+    div.logo-process {
         width: 55%;
     }
 
@@ -1709,7 +1769,9 @@ img.social-button {
         width: 55%;
     }
 
-
+    div.color-type-image {
+        width: 65%;
+    }
 
     /*////////////// PROTOTYPING AND TESTING /////////////////*/
     section.prototype-test h3 {
@@ -1776,15 +1838,19 @@ img.social-button {
     /*    IMAGE BOX*/
 
     div.image-box {
+        width: 50%;
+    }
+
+    div.image-box2 {
         width: 55%;
     }
 
-    div.persona-box {
+    div.image-box3 {
         width: 55%;
     }
 
-    div.web-size {
-        width: 85%;
+    div.image-box4 {
+        width: 55%;
     }
 
 
@@ -1872,20 +1938,20 @@ img.social-button {
         width: 45%;
     }
 
-    /* //////////////////////////////////////////////////
+    /* /////////////////////VISUAL DEISGN/////////////////////////////
  */
-    /*VISUAL DEISGN*/
+
     section.visual-design h3 {
         width: 45%;
     }
 
-    div.color-type-container {
+    div.color-type-intro {
         width: 45%;
     }
 
     /*LOGOS AND NAME*/
 
-    div.logo-container {
+    div.logo-process{
         width: 45%;
     }
 
@@ -1895,6 +1961,9 @@ img.social-button {
         width: 45%;
     }
 
+    div.color-type-image {
+        width: 55%;
+    }
 
     /*ITERATIONS*/
 
@@ -1967,30 +2036,34 @@ img.social-button {
 
     div.case-study-image img {
         width: 85%;
-     
+
     }
 
 
     /*    IMAGE BOX*/
 
     div.image-box {
+        width: 35%;
+    }
+
+    div.image-box2 {
         width: 45%;
     }
 
-    div.persona-box {
-        width: 45%
+    div.image-box3 {
+        width: 45%;
     }
 
-    div.web-size {
-        width: 85%;
+    div.image-box4 {
+        width: 45%;
     }
 
 
     /*    CHARTS*/
     div.chart-container,
     div.chart-container2 {
-        width: 40%;
-        height: 40%;
+        width: 35%;
+        height: 35%;
     }
 
     /*    THE PROBLEM*/
@@ -2082,20 +2155,19 @@ img.social-button {
         width: 35%;
     }
 
-    /* //////////////////////////////////////////////////
+    /* ////////////////////VISUAL DEISGN//////////////////////////////
  */
-    /*VISUAL DEISGN*/
     section.visual-design h3 {
         width: 35%;
     }
 
-    div.color-type-container {
+    div.color-type-intro {
         width: 35%;
     }
 
     /*LOGOS AND NAME*/
 
-    div.logo-container {
+    div.logo-process{
         width: 35%;
     }
 
@@ -2104,6 +2176,11 @@ img.social-button {
     div.color-type {
         width: 35%;
     }
+
+    div.color-type-image {
+        width: 40%;
+    }
+
 
 
     /*ITERATIONS*/
