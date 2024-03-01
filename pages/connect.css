@@ -29,9 +29,9 @@ nav{
 }
 
 footer {
-    background-color: #20A39E;
+    background-color: #fff;
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    /* color: #fff; */
 }
 
 h1,h2{
@@ -363,7 +363,7 @@ footer h2.section-header {
 }
 
 p.footer-credit {
-    color: #fff;
+    color: #382F5A;
     margin: 32px auto;
     text-align: center;
 }

@@ -30,9 +30,9 @@ nav {
 }
 
 footer {
-    background-color: #20A39E;
+    background-color: #fff;
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    /* color: #fff; */
 }
 
 h1,
@@ -121,7 +121,7 @@ div#nav-logo h3 {
     transform: translate(10%,-50%);
 */
     /* font-size: 1.25em; */
-    color: #392F5A;
+    color: #382F5A;
     padding-left: 8px;
     padding-top: initial;
 }
