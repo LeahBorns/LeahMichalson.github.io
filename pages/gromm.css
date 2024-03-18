@@ -360,17 +360,19 @@ a.prototype-button-header {
     justify-content: center;
     width: 100%;
     padding: 16px;
-    margin-top: 32px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-    background-color: #382F5A;
+    margin: 16px auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid #5F259F;
     text-decoration: none;
-    font-size: 1rem;
-    color: #fff;
+    font-size: 1em;
+    color: #5F259F;
+    font-weight: 600;
 }
 
 a.prototype-button-header:hover {
-    background-color: #8879B9;
+    background-color: #E6D9EF;
 }
 
 /*PROBLEM STATEMENTn*/
@@ -989,17 +991,19 @@ a.prototype-button-final {
     justify-content: center;
     width: 100%;
     padding: 16px;
-    margin-top: 32px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-    background-color: #382F5A;
+    margin: 16px auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid #5F259F;
     text-decoration: none;
-    font-size: 1rem;
-    color: #fff;
+    font-size: 1em;
+    color: #5F259F;
+    font-weight: 600;
 }
 
 a.prototype-button-final:hover {
-    background-color: #8879B9;
+    background-color: #E6D9EF;
 }
 
 /*CONCLUSION*/
@@ -1331,7 +1335,7 @@ img.social-button {
     }
 
     a.prototype-button-final:hover {
-        background-color: #8879B9;
+        background-color: #E6D9EF;
     }
 
     /*    conclusion*/
