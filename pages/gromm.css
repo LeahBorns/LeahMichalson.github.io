@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     font-size: 16px;
     line-height: 1.5em;
     display: flex;
@@ -24,45 +24,51 @@ main {
 
 nav {
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     color: #382F5A;
 }
 
 footer {
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     /* color: #fff; */
 }
 
-h1,
+hh1,
 h2 {
-    font-family: 'Corben', cursive;
+    font-family: calluna, serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 h3,
 h4 {
-    font-family: 'Corben', cursive;
+    font-family: calluna, serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
-    font-size: 3.815em;
+    font-size: 2.5em;
+    color: #241435;
 }
 
 h2 {
-    font-size: 2.441em;
+    font-size: 2em;
     padding-top: 16px;
     padding-bottom: 8px;
 }
 
 h3 {
-    font-size: 1.563em;
+    font-size: 1.5em;
     padding-top: 16px;
     padding-bottom: 8px;
 }
 
 h4 {
     font-size: 1.25em;
-    padding: 16px 8px;
+    padding-top: 16px;
+    padding-bottom: 8px;
 }
 
 p {
@@ -485,7 +491,7 @@ section#process h3 {
     color: #382F5A;
     padding: 16px 24px;
     font-size: 1.25em;
-    font-family: 'Corben', cursive;
+    font-family: 'Calluna', serif;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -899,7 +905,7 @@ div.usability-facts p {
 div.usability-facts span {
     font-size: 2.441em;
     font-weight: 600;
-    font-family: 'Corben', cursive;
+    font-family: 'Calluna', serif;
 }
 
 div.usability-test ul {
