@@ -25,7 +25,7 @@ main {
 nav {
     background-color: #fff;
     font-family: 'Calluna', serif;
-    color: #382F5A;
+    color: #030106;
 }
 
 footer {
@@ -34,11 +34,12 @@ footer {
     /* color: #fff; */
 }
 
-hh1,
+h1,
 h2 {
     font-family: calluna, serif;
     font-weight: 600;
     font-style: normal;
+    color: #33184D;
 }
 
 h3,
@@ -46,11 +47,11 @@ h4 {
     font-family: calluna, serif;
     font-weight: 400;
     font-style: normal;
+    color: #502183;
 }
 
 h1 {
     font-size: 2.5em;
-    color: #241435;
 }
 
 h2 {
@@ -74,6 +75,7 @@ h4 {
 p {
     font-size: 1em;
     text-align: left;
+    color: #030106;
 }
 
 span.bold {
@@ -134,7 +136,7 @@ div#nav-logo h3 {
 }
 
 div#nav-logo img {
-    width: 56px;
+    width: 48px;
 }
 
 ul#nav-links {
@@ -158,7 +160,7 @@ ul#nav-links li {
 }
 
 ul#nav-links li.active {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: 600;
 }
 
@@ -317,7 +319,7 @@ div.image-box4 img {
 /*GROMM HEADER*/
 
 header {
-    width: 85%;
+    width: 80%;
     margin: 25% auto;
     display: flex;
     flex-direction: column;
@@ -325,32 +327,32 @@ header {
     align-items: center;
 }
 
-h2.case-study-name {
-    color: #20A39E;
-}
-
-h3.section-title {
-    color: #0F0F0F;
-}
-
 div.case-study-image {
     width: 100%;
     margin: 24px auto;
 }
 
-div.case-study-image img {
+/* div.case-study-image img {
     margin: auto;
     width: 100%;
     padding: 16px 0;
-}
+} */
 
 div.case-study-title {
     width: 100%;
     margin: auto;
 }
 
+h2.case-study-name {
+    padding: 16px 0;
+}
+
+h3.section-title {
+    padding: 12px 0;
+}
+
 p.case-study-description {
-    padding-top: 16px;
+    padding: 12px 0;
 }
 
 a.prototype-button-header {
@@ -380,7 +382,7 @@ a.prototype-button-header:hover {
 section#problem {
     width: 100%;
     margin: auto;
-    background-color: #FDF6E1;
+    background-color: #fff;
     padding-top: 48px;
     padding-bottom: 48px;
 }
@@ -409,7 +411,7 @@ div#statement p {
 section#users-roles-scope {
     width: 100%;
     margin: auto;
-    padding-top: 48px;
+    /* padding-top: 48px; */
     padding-bottom: 48px;
 }
 
@@ -441,9 +443,9 @@ div#roles {
 section#solution {
     width: 100%;
     margin: auto;
-    background-color: #FDF6E1;
-    padding-top: 48px;
-    padding-bottom: 32px;
+    background-color: #fff;
+    /* padding-top: 48px; */
+    padding-bottom: 48px;
 }
 
 div.solution-container h3 {
@@ -619,7 +621,7 @@ div.personas {
 /* Style the accordion panel. Note: hidden by default */
 .panel-yellow {
     padding: 0 5px;
-    background-color: #FDF6E1;
+    background-color: #fff;
     display: none;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -632,7 +634,7 @@ div.personas {
 section.information-architecture {
     width: 100%;
     margin: 48px auto auto auto;
-    background-color: #FDF6E1;
+    background-color: #fff;
     background-size: cover;
     padding: 48px 0;
 }
@@ -853,7 +855,7 @@ section.prototype-test {
     width: 100%;
     margin: auto;
     padding: 48px 0;
-    background-color: #FDF6E1;
+    background-color: #fff;
 }
 
 section.prototype-test h3 {
@@ -1130,7 +1132,7 @@ img.social-button {
     }
 
     div.case-study-image {
-        width: 85%;
+        width: 95%;
     }
 
     /*    THE PROBLEM*/
@@ -1405,13 +1407,9 @@ img.social-button {
 
     /*    HEADER*/
     header {
-        width: 60%;
+        width: 70%;
     }
 
-    div.case-study-image {
-        width: 100%;
-        margin: auto;
-    }
 
     /*    THE PROBLEM*/
     div.problem-container h3 {
@@ -1653,42 +1651,49 @@ img.social-button {
 
     /*    HEADER*/
     header {
-        width: 80%;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
+        width: 70%;
     }
 
     div.case-study-image {
-        width: 100%;
-        padding-right: 30px;
-
+        width: 75%;
+        margin-bottom: 32px;
     }
 
-    div.case-study-title {
+    .header-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+    }
+
+    a.prototype-button-header {
+        margin: 8px auto;
+    }
+
+    /* div.case-study-title {
         width: 75%;
         margin: auto auto auto 32px;
-    }
+    } */
 
     /*    THE PROBLEM*/
-    div.problem-container h3 {
+    /* div.problem-container h3 {
         margin-left: 22.5%;
-    }
+    } */
 
     div#statement p {
-        width: 55%;
+        width: 75%;
     }
 
     /*        USERS ROLES AND SCOPE*/
     div.container {
-        width: 55%;
+        width: 75%;
     }
 
 
 
     /*    THE SOLUTION*/
     div#solution-statement {
-        width: 55%;
+        width: 75%;
     }
 
     div.solution-container h3 {

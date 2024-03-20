@@ -39,6 +39,7 @@ h2 {
     font-family: calluna, serif;
     font-weight: 600;
     font-style: normal;
+    color: #33184D;
 }
 
 h3,
@@ -46,11 +47,11 @@ h4 {
     font-family: calluna, serif;
     font-weight: 400;
     font-style: normal;
+    color: #502183;
 }
 
 h1 {
     font-size: 2.5em;
-    color: #241435;
 }
 
 h2 {
@@ -74,6 +75,7 @@ h4 {
 p {
     font-size: 1em;
     text-align: left;
+    color: #030106;
 }
 
 span.bold {
@@ -304,7 +306,7 @@ div.image-box3:after {
 /*BUS SPOT HEADER*/
 
 header {
-    width: 85%;
+    width: 80%;
     margin: 25% auto;
     display: flex;
     flex-direction: column;
@@ -312,32 +314,32 @@ header {
     align-items: center;
 }
 
-h2.case-study-name {
-    color: #20A39E;
-}
-
-h3.section-title {
-    color: #0F0F0F;
-}
-
 div.case-study-image {
-    padding-top: 16px;
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
-div.case-study-image img {
+/* div.case-study-image img {
     margin: auto;
     width: 100%;
-}
+    padding: 16px 0;
+} */
 
 div.case-study-title {
     width: 100%;
     margin: auto;
 }
 
+h2.case-study-name {
+    padding: 16px 0;
+}
+
+h3.section-title {
+    padding: 12px 0;
+}
+
 p.case-study-description {
-    padding-top: 16px;
+    padding: 12px 0;
 }
 
 a#prototype-button-header {
@@ -1023,7 +1025,7 @@ img.social-button {
     }
 
     div.case-study-image {
-        width: 85%;
+        width: 80%;
     }
 
 
@@ -1261,19 +1263,13 @@ img.social-button {
 
     /*    HEADER*/
     header {
-        width: 60%;
+        width: 70%;
     }
 
     div.case-study-image {
-        width: 80%;
+        width: 70%;
     }
 
-/*
-    a#prototype-button-header {
-        width: 60%;
-        margin: 32px auto;
-    }
-*/
 
     /*    THE PROBLEM*/
     div.problem-container h3 {
@@ -1490,6 +1486,17 @@ img.social-button {
 
     div.case-study-image {
         width: 100%;
+    }
+    
+    .header-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+    }
+
+    a.prototype-button-header {
+        margin: 8px auto;
     }
 
     /*    THE PROBLEM*/

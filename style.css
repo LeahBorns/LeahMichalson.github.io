@@ -40,6 +40,7 @@ h2 {
     font-family: calluna, serif;
     font-weight: 600;
     font-style: normal;
+    color: #33184D;
 }
 
 h3,
@@ -47,6 +48,7 @@ h4 {
     font-family: calluna, serif;
     font-weight: 400;
     font-style: normal;
+    color: #502183;
 }
 
 h1 {
@@ -75,6 +77,7 @@ h4 {
 p {
     font-size: 1em;
     text-align: left;
+    color: #030106;
 }
 
 /*NAV*/
