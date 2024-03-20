@@ -56,14 +56,12 @@ h1 {
 
 h2 {
     font-size: 2em;
-    padding-top: 16px;
-    padding-bottom: 8px;
+    padding: 16px 0;
 }
 
 h3 {
     font-size: 1.5em;
-    padding-top: 16px;
-    padding-bottom: 8px;
+    padding: 12px 0;
 }
 
 h4 {
@@ -76,6 +74,7 @@ p {
     font-size: 1em;
     text-align: left;
     color: #030106;
+    padding: 12px 0;
 }
 
 span.bold {
@@ -307,7 +306,7 @@ div.image-box3:after {
 
 header {
     width: 80%;
-    margin: 25% auto;
+    margin: 25% auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -319,28 +318,6 @@ div.case-study-image {
     margin: auto;
 }
 
-/* div.case-study-image img {
-    margin: auto;
-    width: 100%;
-    padding: 16px 0;
-} */
-
-div.case-study-title {
-    width: 100%;
-    margin: auto;
-}
-
-h2.case-study-name {
-    padding: 16px 0;
-}
-
-h3.section-title {
-    padding: 12px 0;
-}
-
-p.case-study-description {
-    padding: 12px 0;
-}
 
 a#prototype-button-header {
     display: flex;
@@ -364,9 +341,32 @@ a#prototype-button-header:hover{
     background-color: #E6D9EF;
 }
 
+/* SECTIONS */
+section#top {
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    padding-top: 48px;
+    padding-bottom: 36px;
+}
+
+section#middle {
+    width: 100%;
+    margin: auto;
+    /* padding-top: 48px; */
+    padding-bottom: 48px;
+}
+
+/* CASE STUDY CONTAINERS */
+
+div.container {
+    width: 85%;
+    margin: auto;
+}
+
 /*PROBLEM STATEMENTn*/
 
-section#problem {
+/* section#problem {
     width: 100%;
     margin: auto;
     background-color: #FDF6E1;
@@ -391,16 +391,16 @@ div#statement {
 div#statement p {
     width: 85%;
     margin-top: 16px;
-}
+} */
 
-span.problem-number {
+/* span.problem-number {
     font-family: 'Calluna', serif;
     font-size: 1.563em;
-}
+} */
 
 /*USERS ROLES AND SCOPES row with 3 sections*/
 
-section#users-roles-scope {
+/* section#users-roles-scope {
     width: 100%;
     margin: auto;
     padding-top: 48px;
@@ -415,7 +415,7 @@ div.container {
 div.container h3 {
     color: #0F0F0F;
     padding-bottom: 16px;
-}
+} */
 
 div#users {
     padding: 16px 0;
@@ -432,7 +432,7 @@ div#roles {
 
 /*THE SOLUTIONn*/
 
-section#solution {
+/* section#solution {
     width: 100%;
     margin: auto;
     background-color: #FDF6E1;
@@ -449,7 +449,7 @@ div#solution-statement {
     width: 85%;
     margin: auto;
     padding-top: 16px;
-}
+} */
 
 
 /*THE PROCESS*/
@@ -1021,7 +1021,7 @@ img.social-button {
     /*    HEADER*/
     header {
         width: 75%;
-        margin: 15% auto;
+        margin: 15% auto 0 auto;
     }
 
     div.case-study-image {
@@ -1453,7 +1453,7 @@ img.social-button {
         position: initial;
         transition: none;
         transform: none;
-        width: 50%;
+        width: 35%;
 
     }
 
@@ -1463,7 +1463,7 @@ img.social-button {
     }
 
     ul#nav-links li a {
-        color: #392F5A;
+        color: #33184D;
         font-size: 1em;
         padding: 32px 0;
     }
@@ -1481,22 +1481,18 @@ img.social-button {
     /*    HEADER*/
     header {
         width: 70%;
-        flex-direction: row;
     }
 
     div.case-study-image {
-        width: 100%;
+        width: 60%;
     }
     
     .header-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
         width: 50%;
     }
 
-    a.prototype-button-header {
-        margin: 8px auto;
+    a#prototype-button-header {
+        margin: 12px auto;
     }
 
     /*    THE PROBLEM*/
@@ -1670,6 +1666,15 @@ img.social-button {
         width: 55%;
     }
 
+    /*    HEADER*/
+    header {
+        width: 65%;
+    }    
+
+    div.case-study-image {
+        width: 55%;
+    }
+
     /*    THE PROBLEM*/
     div.problem-container h3 {
         margin-left: 27.5%;
@@ -1810,20 +1815,6 @@ img.social-button {
 
 @media only screen and (min-width: 1200px) {
 
-    /*BUS SPOT HEADER*/
-
-    header {
-        width: 60%;
-    }
-
-
-    div.case-study-title {
-        width: 85%;
-        margin: auto;
-    }
-
-
-
     /*    IMAGE BOX*/
 
     div.image-box {
@@ -1842,6 +1833,21 @@ img.social-button {
     div.chart-container, div.chart-container2{
         width: 35%;
         height: 35%;
+    }
+
+    /*  NAV*/
+
+    div.content {
+        width: 70%;
+    }
+
+    /*    HEADER*/
+    header {
+        width: 60%;
+    }    
+
+    div.case-study-image {
+        width: 50%;
     }
 
     /*    THE PROBLEM*/
@@ -1980,5 +1986,40 @@ img.social-button {
     div#social-img {
         width: 20%;
     }
-
 }
+@media only screen and (min-width: 1440px) {
+    
+    /*  NAV*/
+ 
+    div.content {
+     width: 60%;
+ }
+ 
+    /*    HEADER*/
+    header {
+        width: 55%;
+        margin: 10% auto 0 auto;
+    }    
+
+    div.case-study-image {
+        width: 45%;
+    }
+ }
+ 
+ @media only screen and (min-width: 1700px) {
+     
+     /* NAV */
+     div.content {
+         width: 50%;
+     }
+
+     /*    HEADER*/
+     header {
+        width: 45%;
+    }    
+
+    div.case-study-image {
+        width: 40%;
+    }
+     
+ }

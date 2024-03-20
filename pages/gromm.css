@@ -56,14 +56,12 @@ h1 {
 
 h2 {
     font-size: 2em;
-    padding-top: 16px;
-    padding-bottom: 8px;
+    padding: 16px 0;
 }
 
 h3 {
     font-size: 1.5em;
-    padding-top: 16px;
-    padding-bottom: 8px;
+    padding: 12px 0;
 }
 
 h4 {
@@ -76,6 +74,7 @@ p {
     font-size: 1em;
     text-align: left;
     color: #030106;
+    padding: 12px 0;
 }
 
 span.bold {
@@ -320,7 +319,7 @@ div.image-box4 img {
 
 header {
     width: 80%;
-    margin: 25% auto;
+    margin: 25% auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -332,28 +331,6 @@ div.case-study-image {
     margin: 24px auto;
 }
 
-/* div.case-study-image img {
-    margin: auto;
-    width: 100%;
-    padding: 16px 0;
-} */
-
-div.case-study-title {
-    width: 100%;
-    margin: auto;
-}
-
-h2.case-study-name {
-    padding: 16px 0;
-}
-
-h3.section-title {
-    padding: 12px 0;
-}
-
-p.case-study-description {
-    padding: 12px 0;
-}
 
 a.prototype-button-header {
     display: flex;
@@ -377,9 +354,8 @@ a.prototype-button-header:hover {
     background-color: #E6D9EF;
 }
 
-/*PROBLEM STATEMENTn*/
-
-section#problem {
+/* SECTIONS */
+section#top {
     width: 100%;
     margin: auto;
     background-color: #fff;
@@ -387,43 +363,21 @@ section#problem {
     padding-bottom: 48px;
 }
 
-div.problem-container h3 {
-    color: #0F0F0F;
-    margin-left: 7.5%;
-}
-
-div#statement {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #4c4045;
-}
-
-div#statement p {
-    width: 85%;
-    margin-top: 16px;
-}
-
-/*USERS ROLES AND SCOPES row with 3 sections*/
-
-section#users-roles-scope {
+section#middle {
     width: 100%;
     margin: auto;
     /* padding-top: 48px; */
     padding-bottom: 48px;
 }
 
+/* CASE STUDY CONTAINERS */
+
 div.container {
     width: 85%;
     margin: auto;
 }
 
-div.container h3 {
-    color: #0F0F0F;
-    padding-bottom: 16px;
-}
+/* USERS AND SCOPE */
 
 div#users {
     padding: 16px 0;
@@ -436,27 +390,6 @@ div#scope {
 
 div#roles {
     padding: 16px 0;
-}
-
-/*THE SOLUTIONn*/
-
-section#solution {
-    width: 100%;
-    margin: auto;
-    background-color: #fff;
-    /* padding-top: 48px; */
-    padding-bottom: 48px;
-}
-
-div.solution-container h3 {
-    color: #0F0F0F;
-    margin-left: 7.5%;
-}
-
-div#solution-statement {
-    width: 85%;
-    margin: auto;
-    padding-top: 16px;
 }
 
 
@@ -1128,7 +1061,7 @@ img.social-button {
     /*    HEADER*/
     header {
         width: 75%;
-        margin: 15% auto;
+        margin: 15% auto 0 auto;
     }
 
     div.case-study-image {
@@ -1624,7 +1557,7 @@ img.social-button {
         position: initial;
         transition: none;
         transform: none;
-        width: 50%;
+        width: 35%;
 
     }
 
@@ -1634,7 +1567,7 @@ img.social-button {
     }
 
     ul#nav-links li a {
-        color: #392F5A;
+        color: #33184D;
         font-size: 1em;
         padding: 32px 0;
     }
@@ -1656,7 +1589,6 @@ img.social-button {
 
     div.case-study-image {
         width: 75%;
-        margin-bottom: 32px;
     }
 
     .header-buttons {
@@ -1670,10 +1602,6 @@ img.social-button {
         margin: 8px auto;
     }
 
-    /* div.case-study-title {
-        width: 75%;
-        margin: auto auto auto 32px;
-    } */
 
     /*    THE PROBLEM*/
     /* div.problem-container h3 {
@@ -1868,6 +1796,11 @@ img.social-button {
         width: 55%;
     }
 
+        /*    HEADER*/
+        header {
+            width: 65%;
+        }
+    
 
     /*    THE PROBLEM*/
     div.problem-container h3 {
@@ -2034,26 +1967,6 @@ img.social-button {
 
 @media only screen and (min-width: 1200px) {
 
-    /*BUS SPOT HEADER*/
-
-    header {
-        width: 70%;
-    }
-
-    div.case-study-title {
-        width: 60%;
-    }
-
-    div.case-study-image {
-        width: 90%;
-        padding: 0;
-    }
-
-    div.case-study-image img {
-        width: 85%;
-
-    }
-
 
     /*    IMAGE BOX*/
 
@@ -2080,6 +1993,19 @@ img.social-button {
         width: 35%;
         height: 35%;
     }
+
+    /*  NAV*/
+
+   div.content {
+    width: 70%;
+}
+
+    /*GROMM HEADER*/
+
+    header {
+        width: 60%;
+    }
+
 
     /*    THE PROBLEM*/
     div.problem-container h3 {
@@ -2252,3 +2178,31 @@ img.social-button {
     }
 
 }
+@media only screen and (min-width: 1440px) {
+    
+    /*  NAV*/
+ 
+    div.content {
+     width: 60%;
+ }
+ 
+  /*    HEADER*/
+  header {
+    width: 55%;
+    margin: 10% auto 0 auto;
+}
+ }
+ 
+ @media only screen and (min-width: 1700px) {
+     
+/* NAV */
+div.content {
+    width: 50%;
+}
+ 
+/*    HEADER*/
+header {
+    width: 45%;
+}
+     
+ }
