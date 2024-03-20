@@ -87,6 +87,7 @@ nav {
     z-index: 10000;
     /*    line-height: 65px;*/
     height: 90px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -116,23 +117,20 @@ div#nav-logo {
     justify-content: flex-start;
 }
 
-div#nav-logo h3 {
-    /*
+/* div#nav-logo h3 {
+    
     display: inline-block;
     position: absolute;
-*/
-    /*
     top: 50%;
     transform: translate(10%,-50%);
-*/
-    /* font-size: 1.25em; */
+    font-size: 1.25em;
     color: #382F5A;
     padding-left: 8px;
     padding-top: initial;
-}
+} */
 
 div#nav-logo img {
-    width: 56px;
+    width: 48px;
 }
 
 ul#nav-links {
@@ -156,20 +154,20 @@ ul#nav-links li {
 }
 
 ul#nav-links li.active {
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: 600;
 }
 
 
 ul#nav-links li a {
     text-decoration: none;
-    font-size: 2.441em;
-    color: #F4D06F;
+    font-size: 1em;
+    color: #241435;
     padding: 32px 0;
 }
 
 ul#nav-links li a:hover {
-    color: #efbc2e;
+    color: #5F259F;
 }
 
 
@@ -199,8 +197,8 @@ span.mobile-btn:hover {
 }
 
 ul#nav-links li.close {
-    color: #F4D06F;
-    font-size: 3rem;
+    color: #241435;
+    font-size: 2rem;
     text-align: right;
     display: block;
     padding-top: 30px;
@@ -217,7 +215,7 @@ div.overlay {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-color: #382F5A;
+    background-color: #fff;
     opacity: 0;
     z-index: -1;
 }
@@ -609,7 +607,7 @@ img.social-button {
     /*  NAV*/
 
     div.content {
-        width: 80%;
+        width: 75%;
     }
 
     /*Nav links*/
@@ -622,7 +620,7 @@ img.social-button {
         position: initial;
         transition: none;
         transform: none;
-        width: 50%;
+        width: 35%;
 
     }
 
@@ -632,7 +630,7 @@ img.social-button {
     }
 
     ul#nav-links li a {
-        color: #392F5A;
+        color: #241435;
         font-size: 1em;
         padding: 32px 0;
     }
@@ -762,6 +760,12 @@ img.social-button {
 
 @media only screen and (min-width: 1200px) {
 
+   /*  NAV*/
+
+   div.content {
+    width: 70%;
+}
+
     #bm {
         width: 100%;
         left: -450px;
@@ -771,6 +775,15 @@ img.social-button {
         width: 30%;
         margin: auto;
     } */
+
+     /*    PROJECTS SECTION*/
+        section#project-section {
+            width: 70%;
+        }
+
+        h2.section-header {
+            width: 70%;
+        }
 
     div.project-info {
         width: 35%;
@@ -789,17 +802,44 @@ img.social-button {
 
 @media only screen and (min-width: 1440px) {
     
+   /*  NAV*/
+
+   div.content {
+    width: 60%;
+}
+
     div#header-title {
             width: 45%;
             margin: auto;
+    }
+
+/*    PROJECTS SECTION*/
+    section#project-section {
+        width: 60%;
+    }
+    h2.section-header {
+        width: 60%;
     }
 }
 
 @media only screen and (min-width: 1700px) {
     
+    /* NAV */
+    div.content {
+        width: 50%;
+    }
+
     div#header-title {
             width: 40%;
             margin: auto;
+    }
+
+    /*    PROJECTS SECTION*/
+    section#project-section {
+        width: 50%;
+    }
+    h2.section-header {
+        width:50%;
     }
     
 }
