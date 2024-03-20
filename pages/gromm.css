@@ -238,7 +238,7 @@ ul#nav-links.open {
 
 /*CASE STUDY IMAGES*/
 div.image-box {
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding: 24px 0;
 }
@@ -370,7 +370,7 @@ section#middle {
     padding-bottom: 48px;
 }
 
-/* CASE STUDY CONTAINERS */
+/* SECTION CONTAINERS */
 
 div.container {
     width: 85%;
@@ -1014,7 +1014,7 @@ img.social-button {
 @media only screen and (min-width: 600px) {
 
     div.image-box {
-        width: 75%;
+        width: 90%;
     }
 
     div.image-box2 {
@@ -1068,27 +1068,10 @@ img.social-button {
         width: 95%;
     }
 
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 12.5%;
-    }
 
-    div#statement p {
-        width: 75%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+    /* SECTION CONTAINERS */
     div.container {
         width: 75%;
-    }
-
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 75%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 12.5%;
     }
 
 
@@ -1302,9 +1285,9 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
+    /* div.image-box {
         width: 65%;
-    }
+    } */
 
     div.image-box2 {
         width: 70%;
@@ -1343,29 +1326,11 @@ img.social-button {
         width: 70%;
     }
 
-
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 20%;
-    }
-
-    div#statement p {
-        width: 60%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+    /* SECTION CONTAINERS */
     div.container {
-        width: 60%;
+        width: 70%;
     }
 
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 60%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 20%;
-    }
 
     /* ////////////////////////////////////////////// */
 
@@ -1524,7 +1489,7 @@ img.social-button {
     /*    IMAGE BOX*/
 
     div.image-box {
-        width: 55%;
+        width: 75%;
     }
 
 
@@ -1583,9 +1548,6 @@ img.social-button {
 
 
     /*    HEADER*/
-    header {
-        width: 70%;
-    }
 
     div.case-study-image {
         width: 75%;
@@ -1603,29 +1565,9 @@ img.social-button {
     }
 
 
-    /*    THE PROBLEM*/
-    /* div.problem-container h3 {
-        margin-left: 22.5%;
-    } */
-
-    div#statement p {
-        width: 75%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+    /* SECTION CONTAINERS */
     div.container {
         width: 75%;
-    }
-
-
-
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 75%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 22.5%;
     }
 
     /* ///////////////////////////////////////////////// */
@@ -1780,9 +1722,9 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
+    /* div.image-box {
         width: 50%;
-    }
+    } */
 
     div.image-box2 {
         width: 55%;
@@ -1796,33 +1738,14 @@ img.social-button {
         width: 55%;
     }
 
-        /*    HEADER*/
-        header {
-            width: 65%;
-        }
+     /*    HEADER*/
+    header {
+        width: 65%;
+    }
     
-
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 27.5%;
-    }
-
-    div#statement p {
-        width: 45%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+    /* SECTION CONTAINERS */
     div.container {
-        width: 45%;
-    }
-
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 45%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 27.5%;
+        width: 65%;
     }
 
     /* /////////////////////////////////////////////////////// */
@@ -1970,9 +1893,9 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
+    /* div.image-box {
         width: 35%;
-    }
+    } */
 
     div.image-box2 {
         width: 45%;
@@ -2003,32 +1926,14 @@ img.social-button {
     /*GROMM HEADER*/
 
     header {
-        width: 60%;
+        width: 55%;
     }
 
-
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 32.5%;
-    }
-
-    div#statement p {
-        width: 35%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+    /* SECTION CONTAINERS */
     div.container {
-        width: 35%;
+        width: 55%;
     }
 
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 35%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 32.5%;
-    }
 
     /* ////////////////////////////////////////////// */
 
@@ -2188,21 +2093,31 @@ img.social-button {
  
   /*    HEADER*/
   header {
-    width: 55%;
+    width: 50%;
     margin: 10% auto 0 auto;
-}
+    }
+
+    /* SECTION CONTAINERS */
+    div.container {
+        width: 50%;
+    }
  }
  
  @media only screen and (min-width: 1700px) {
      
 /* NAV */
-div.content {
-    width: 50%;
-}
+    div.content {
+        width: 50%;
+    }
  
 /*    HEADER*/
-header {
-    width: 45%;
-}
-     
+    header {
+    width: 40%;
+    }
+
+/* SECTION CONTAINERS */
+    div.container {
+        width: 40%;
+    }
+
  }
