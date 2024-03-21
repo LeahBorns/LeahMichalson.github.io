@@ -238,8 +238,9 @@ ul#nav-links.open {
 
 /*CASE STUDY IMAGES*/
 div.image-box {
-    width: 90%;
-    margin: 30px auto;
+    width: 100%;
+    margin: auto;
+    padding: 32px 0;
 }
 
 divimage-box img {
@@ -347,7 +348,7 @@ section#top {
     margin: auto;
     background-color: #fff;
     padding-top: 48px;
-    padding-bottom: 36px;
+    padding-bottom: 48px;
 }
 
 section#middle {
@@ -364,58 +365,7 @@ div.container {
     margin: auto;
 }
 
-/*PROBLEM STATEMENTn*/
-
-/* section#problem {
-    width: 100%;
-    margin: auto;
-    background-color: #FDF6E1;
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
-
-div.problem-container h3 {
-    color: #0F0F0F;
-    margin-left: 7.5%;
-}
-
-div#statement {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #4c4045;
-}
-
-div#statement p {
-    width: 85%;
-    margin-top: 16px;
-} */
-
-/* span.problem-number {
-    font-family: 'Calluna', serif;
-    font-size: 1.563em;
-} */
-
 /*USERS ROLES AND SCOPES row with 3 sections*/
-
-/* section#users-roles-scope {
-    width: 100%;
-    margin: auto;
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
-
-div.container {
-    width: 85%;
-    margin: auto;
-}
-
-div.container h3 {
-    color: #0F0F0F;
-    padding-bottom: 16px;
-} */
 
 div#users {
     padding: 16px 0;
@@ -429,28 +379,6 @@ div#scope {
 div#roles {
     padding: 16px 0;
 }
-
-/*THE SOLUTIONn*/
-
-/* section#solution {
-    width: 100%;
-    margin: auto;
-    background-color: #FDF6E1;
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
-
-div.solution-container h3 {
-    color: #0F0F0F;
-    margin-left: 7.5%;
-}
-
-div#solution-statement {
-    width: 85%;
-    margin: auto;
-    padding-top: 16px;
-} */
-
 
 /*THE PROCESS*/
 
@@ -994,6 +922,11 @@ img.social-button {
 
 @media only screen and (min-width: 600px) {
 
+    /* IMAGES */
+    div.image-box {
+        width: 90%;
+    }
+
     /*        CHARTS*/
     div.chart-container, div.chart-container2{
         width: 80%;
@@ -1028,29 +961,11 @@ img.social-button {
         width: 80%;
     }
 
-
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 12.5%;
-    }
-
-    div#statement p {
-        width: 75%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+ /* SECTION CONTAINERS */
     div.container {
         width: 75%;
     }
 
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 75%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 12.5%;
-    }
 
 
     /*    DISCOVERY AND RESEARCH*/
@@ -1270,30 +1185,10 @@ img.social-button {
         width: 70%;
     }
 
-
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 20%;
-    }
-
-    div#statement p {
-        width: 60%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+ /* SECTION CONTAINERS */
     div.container {
-        width: 60%;
+        width: 70%;
     }
-
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 60%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 20%;
-    }
-
 
     /*    DISCOVERY AND RESEARCH*/
 
@@ -1427,7 +1322,7 @@ img.social-button {
     /*    IMAGE BOX*/
 
     div.image-box {
-        width: 70%;
+        width: 75%;
     }
 
     div.image-box2 {
@@ -1480,7 +1375,7 @@ img.social-button {
 
     /*    HEADER*/
     header {
-        width: 70%;
+        width: 75%;
     }
 
     div.case-study-image {
@@ -1495,29 +1390,11 @@ img.social-button {
         margin: 12px auto;
     }
 
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 22.5%;
-    }
 
-    div#statement p {
-        width: 55%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+  /* SECTION CONTAINERS */
     div.container {
-        width: 55%;
+        width: 75%;
     }
-
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 55%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 22.5%;
-    }
-
 
     /*    DISCOVERY AND RESEARCH*/
 
@@ -1654,9 +1531,9 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
+    /* div.image-box {
         width: 60%;
-    }
+    } */
 
     div.image-box2 {
         width: 55%;
@@ -1675,29 +1552,10 @@ img.social-button {
         width: 55%;
     }
 
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 27.5%;
-    }
-
-    div#statement p {
-        width: 45%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+ /* SECTION CONTAINERS */
     div.container {
-        width: 45%;
+        width: 65%;
     }
-
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 45%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 27.5%;
-    }
-
 
     /*    DISCOVERY AND RESEARCH*/
 
@@ -1817,9 +1675,9 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
+    /* div.image-box {
         width: 45%;
-    }
+    } */
 
     div.image-box2 {
         width: 45%;
@@ -1843,36 +1701,17 @@ img.social-button {
 
     /*    HEADER*/
     header {
-        width: 60%;
+        width: 55%;
     }    
 
     div.case-study-image {
         width: 50%;
     }
 
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 32.5%;
-    }
-
-    div#statement p {
-        width: 35%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+/* SECTION CONTAINERS */
     div.container {
-        width: 35%;
+        width: 55%;
     }
-
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 35%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 32.5%;
-    }
-
 
     /*    DISCOVERY AND RESEARCH*/
 
@@ -1997,12 +1836,17 @@ img.social-button {
  
     /*    HEADER*/
     header {
-        width: 55%;
+        width: 50%;
         margin: 10% auto 0 auto;
     }    
 
     div.case-study-image {
         width: 45%;
+    }
+
+/* SECTION CONTAINERS */
+    div.container {
+        width: 50%;
     }
  }
  
@@ -2015,10 +1859,15 @@ img.social-button {
 
      /*    HEADER*/
      header {
-        width: 45%;
+        width: 40%;
     }    
 
     div.case-study-image {
+        width: 40%;
+    }
+
+    /* SECTION CONTAINERS */
+    div.container {
         width: 40%;
     }
      
