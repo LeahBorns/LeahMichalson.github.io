@@ -237,7 +237,7 @@ ul#nav-links.open {
 
 /*CASE STUDY IMAGES*/
 div.image-box {
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding: 24px 0;
 }
@@ -318,7 +318,7 @@ div.image-box4 img {
 /*GREENER HEADER*/
 
 header {
-    width: 80%;
+    width: 85%;
     margin: 25% auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -377,19 +377,18 @@ a#prototype-button-header:hover {
 }
 
 /* SECTIONS */
-section#top {
+section.top {
     width: 100%;
     margin: auto;
     background-color: #fff;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-section#middle {
+section.middle {
     width: 100%;
     margin: auto;
-    /* padding-top: 48px; */
-    padding-bottom: 48px;
+    padding-bottom: 32px;
 }
 
 /* CASE STUDY CONTAINERS */
@@ -402,17 +401,10 @@ div.container {
 
 /*USERS ROLES AND SCOPES row with 3 sections*/
 
-div#users {
-    padding: 16px 0;
+div#container-middle {
+    padding: 32px 0;
 }
 
-div#scope {
-    padding: 16px 0;
-}
-
-div#roles {
-    padding: 16px 0;
-}
 
 
 /*THE PROCESS*/
@@ -1031,7 +1023,7 @@ img.social-button {
 @media only screen and (min-width: 600px) {
 
     div.image-box {
-        width: 80%;
+        width: 90%;
     }
 
     div.image-box2 {
@@ -1083,30 +1075,11 @@ img.social-button {
         width: 80%;
     }
 
-
-    /*    PROBLEM STATEMENT*/
-    div.problem-container h3 {
-        margin-left: 12.5%;
-    }
-
-    div#statement {
+    /* SECTION CONTAINERS */
+    div.container {
         width: 75%;
     }
 
-    /*USERS ROLES AND SCOPES row with 3 sections*/
-
-    section#users-roles-scope {
-        width: 75%;
-    }
-
-    /*    THE SOLUTION*/
-    div.solution-container h3 {
-        margin-left: 12.5%;
-    }
-
-    div#solution-statement {
-        width: 75%;
-    }
 
 
     /* ACCORDIAN DETAILS */
@@ -1314,9 +1287,9 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
+    /* div.image-box {
         width: 75%;
-    }
+    } */
 
     div.image-box2 {
         width: 70%;
@@ -1358,27 +1331,10 @@ img.social-button {
         width: 70%;
     }
 
-    
-
-    /*    PROBLEM STATEMENT*/
-    div.problem-container h3 {
-        margin-left: 20%;
-    }
-
-    div#statement {
-        width: 60%;
-    }
-
-    /*USERS ROLES AND SCOPES row with 3 sections*/
-
-    section#users-roles-scope {
-        width: 60%;
-    }
-
-    /*    THE SOLUTION*/
-    div.solution-container h3 {
-        margin-left: 20%;
-    }
+    /* SECTION CONTAINERS */
+    div.container {
+        width: 70%;
+    }    
 
 
     /* ACCORDIAN DETAILS */
@@ -1543,7 +1499,7 @@ img.social-button {
     /*    IMAGE BOX*/
 
     div.image-box {
-        width: 65%;
+        width: 75%;
     }
 
 
@@ -1600,11 +1556,10 @@ img.social-button {
         display: none;
     }
 
-
-
     /*    HEADER*/
+
     header {
-        width: 70%;
+        width: 65%;
     }
 
     div.case-study-image {
@@ -1619,30 +1574,12 @@ img.social-button {
         margin: 12px auto;
     }
 
-    /*    PROBLEM STATEMENT*/
-    div.problem-container h3 {
-        margin-left: 22.5%;
+    /* SECTION CONTAIINER */
+    div.container {
+        width: 65%;
     }
 
-    div#statement {
-        width: 55%;
-    }
-
-    /*USERS ROLES AND SCOPES row with 3 sections*/
-
-    section#users-roles-scope {
-        width: 55%;
-    }
-
-    /*    THE SOLUTION*/
-    div.solution-container h3 {
-        margin-left: 22.5%;
-    }
-
-    div#solution-statement {
-        width: 55%;
-    }
-
+/* ACCORDION */
     .accordion {
         width: 55%;
     }
@@ -1798,9 +1735,9 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
+    /* div.image-box {
         width: 60%;
-    }
+    } */
 
     div.image-box2 {
         width: 55%;
@@ -1816,36 +1753,18 @@ img.social-button {
 
     /*    HEADER*/
     header {
-        width: 65%;
+        width: 60%;
     }
 
     div.case-study-image {
         width: 55%;
     }
 
-    /*    PROBLEM STATEMENT*/
-    div.problem-container h3 {
-        margin-left: 27.5%;
+    /* SECTION CONTAINERS */
+    div.container {
+        width: 60%;
     }
 
-    div#statement {
-        width: 45%;
-    }
-
-    /*USERS ROLES AND SCOPES row with 3 sections*/
-
-    section#users-roles-scope {
-        width: 45%;
-    }
-
-    /*    THE SOLUTION*/
-    div.solution-container h3 {
-        margin-left: 27.5%;
-    }
-
-    div#solution-statement {
-        width: 45%;
-    }
 
     /* ACCORDIAN DETAILS */
 
@@ -1996,9 +1915,9 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
+    /* div.image-box {
         width: 45%;
-    }
+    } */
 
     div.image-box2 {
         width: 45%;
@@ -2026,37 +1945,18 @@ img.social-button {
 
     /*    HEADER*/
     header {
-        width: 60%;
+        width: 50%;
     }    
 
     div.case-study-image {
         width: 50%;
     }
    
+    /* SECTION CONTAINERS */
+    div.container {
+        width: 50%;
+        }
 
-    /*    PROBLEM STATEMENT*/
-    div.problem-container h3 {
-        margin-left: 32.5%;
-    }
-
-    div#statement {
-        width: 35%;
-    }
-
-    /*USERS ROLES AND SCOPES row with 3 sections*/
-
-    section#users-roles-scope {
-        width: 35%;
-    }
-
-    /*    THE SOLUTION*/
-    div.solution-container h3 {
-        margin-left: 32.5%;
-    }
-
-    div#solution-statement {
-        width: 35%;
-    }
 
     /* ACCORDIAN DETAILS */
 
@@ -2214,11 +2114,16 @@ img.social-button {
  
     /*    HEADER*/
     header {
-        width: 55%;
+        width: 45%;
         margin: 10% auto 0 auto;
     }    
 
     div.case-study-image {
+        width: 45%;
+    }
+
+    /* SECTION CONTAINERS */
+    div.container {
         width: 45%;
     }
  }
@@ -2232,10 +2137,15 @@ div.content {
 
     /*    HEADER*/
     header {
-        width: 45%;
+        width: 40%;
     }    
 
     div.case-study-image {
+        width: 40%;
+    }
+
+    /* SECTION CONTAINERS */
+    div.container {
         width: 40%;
     }
  }

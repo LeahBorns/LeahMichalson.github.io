@@ -306,7 +306,7 @@ div.image-box3:after {
 /*BUS SPOT HEADER*/
 
 header {
-    width: 80%;
+    width: 85%;
     margin: 25% auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -343,19 +343,18 @@ a#prototype-button-header:hover{
 }
 
 /* SECTIONS */
-section#top {
+section.top {
     width: 100%;
     margin: auto;
     background-color: #fff;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-section#middle {
+section.middle {
     width: 100%;
     margin: auto;
-    /* padding-top: 48px; */
-    padding-bottom: 48px;
+    padding-bottom: 32px;
 }
 
 /* CASE STUDY CONTAINERS */
@@ -367,17 +366,8 @@ div.container {
 
 /*USERS ROLES AND SCOPES row with 3 sections*/
 
-div#users {
-    padding: 16px 0;
-}
-
-div#scope {
-    padding: 16px 0;
-}
-
-
-div#roles {
-    padding: 16px 0;
+div#container-middle {
+    padding: 32px 0;
 }
 
 /*THE PROCESS*/
@@ -1374,8 +1364,9 @@ img.social-button {
 
 
     /*    HEADER*/
+
     header {
-        width: 75%;
+        width: 65%;
     }
 
     div.case-study-image {
@@ -1390,10 +1381,9 @@ img.social-button {
         margin: 12px auto;
     }
 
-
-  /* SECTION CONTAINERS */
+    /* SECTION CONTAIINER */
     div.container {
-        width: 75%;
+        width: 65%;
     }
 
     /*    DISCOVERY AND RESEARCH*/
@@ -1545,7 +1535,7 @@ img.social-button {
 
     /*    HEADER*/
     header {
-        width: 65%;
+        width: 60%;
     }    
 
     div.case-study-image {
@@ -1554,7 +1544,7 @@ img.social-button {
 
  /* SECTION CONTAINERS */
     div.container {
-        width: 65%;
+        width: 60%;
     }
 
     /*    DISCOVERY AND RESEARCH*/
@@ -1701,7 +1691,7 @@ img.social-button {
 
     /*    HEADER*/
     header {
-        width: 55%;
+        width: 50%;
     }    
 
     div.case-study-image {
@@ -1710,7 +1700,7 @@ img.social-button {
 
 /* SECTION CONTAINERS */
     div.container {
-        width: 55%;
+        width: 50%;
     }
 
     /*    DISCOVERY AND RESEARCH*/
@@ -1836,7 +1826,7 @@ img.social-button {
  
     /*    HEADER*/
     header {
-        width: 50%;
+        width: 45%;
         margin: 10% auto 0 auto;
     }    
 
@@ -1846,7 +1836,7 @@ img.social-button {
 
 /* SECTION CONTAINERS */
     div.container {
-        width: 50%;
+        width: 45%;
     }
  }
  

@@ -318,7 +318,7 @@ div.image-box4 img {
 /*GROMM HEADER*/
 
 header {
-    width: 80%;
+    width: 85%;
     margin: 25% auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -355,19 +355,18 @@ a.prototype-button-header:hover {
 }
 
 /* SECTIONS */
-section#top {
+section.top {
     width: 100%;
     margin: auto;
     background-color: #fff;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-section#middle {
+section.middle {
     width: 100%;
     margin: auto;
-    /* padding-top: 48px; */
-    padding-bottom: 48px;
+    padding-bottom: 32px;
 }
 
 /* SECTION CONTAINERS */
@@ -379,17 +378,8 @@ div.container {
 
 /* USERS AND SCOPE */
 
-div#users {
-    padding: 16px 0;
-}
-
-div#scope {
-    padding: 16px 0;
-}
-
-
-div#roles {
-    padding: 16px 0;
+div#container-middle {
+    padding: 32px 0;
 }
 
 
@@ -1549,6 +1539,10 @@ img.social-button {
 
     /*    HEADER*/
 
+    header {
+        width: 65%;
+    }
+
     div.case-study-image {
         width: 75%;
     }
@@ -1564,10 +1558,9 @@ img.social-button {
         margin: 8px auto;
     }
 
-
-    /* SECTION CONTAINERS */
+        /* SECTION CONTAIINER */
     div.container {
-        width: 75%;
+        width: 65%;
     }
 
     /* ///////////////////////////////////////////////// */
@@ -1740,12 +1733,12 @@ img.social-button {
 
      /*    HEADER*/
     header {
-        width: 65%;
+        width: 60%;
     }
     
     /* SECTION CONTAINERS */
     div.container {
-        width: 65%;
+        width: 60%;
     }
 
     /* /////////////////////////////////////////////////////// */
@@ -1926,12 +1919,12 @@ img.social-button {
     /*GROMM HEADER*/
 
     header {
-        width: 55%;
+        width: 50%;
     }
 
     /* SECTION CONTAINERS */
     div.container {
-        width: 55%;
+        width: 50%;
     }
 
 
@@ -2093,13 +2086,13 @@ img.social-button {
  
   /*    HEADER*/
   header {
-    width: 50%;
+    width: 45%;
     margin: 10% auto 0 auto;
     }
 
     /* SECTION CONTAINERS */
     div.container {
-        width: 50%;
+        width: 45%;
     }
  }
  
