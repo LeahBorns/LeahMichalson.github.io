@@ -47,7 +47,6 @@ h4 {
     font-family: calluna, serif;
     font-weight: 400;
     font-style: normal;
-    color: #502183;
 }
 
 h1 {
@@ -62,12 +61,14 @@ h2 {
 h3 {
     font-size: 1.5em;
     padding: 12px 0;
+    color: #502183;
 }
 
 h4 {
     font-size: 1.25em;
     padding-top: 16px;
     padding-bottom: 8px;
+    color: #030106;
 }
 
 p {
@@ -363,6 +364,12 @@ section.middle {
     padding-bottom: 32px;
 }
 
+section.bottom {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 48px;
+}
+
 /* SECTION CONTAINERS */
 
 div.container {
@@ -639,7 +646,7 @@ div.typography-group p:nth-child(5) {
 
 /*PROTOTYPING AND TESTING*/
 
-section.prototype-test {
+/* section.prototype-test {
     width: 100%;
     margin: auto;
     padding: 48px 0;
@@ -649,17 +656,17 @@ section.prototype-test {
 section.prototype-test h3 {
     width: 85%;
     margin: auto;
-}
+} */
 
-div.prototype-test-container {
+/* div.prototype-test-container {
     width: 85%;
     margin: auto;
     padding-top: 24px;
-}
+} */
 
 /*ITERATIONS*/
 
-div.iterations-container {
+/* div.iterations-container {
     width: 100%;
     margin: auto;
 }
@@ -668,11 +675,11 @@ div.iterations {
     width: 85%;
     margin: auto;
     padding-top: 24px;
-}
+} */
 
 /*Usability Test*/
 
-div.usability-test-container {
+/* div.usability-test-container {
     width: 100%;
     margin: auto;
     padding: 24px 0;
@@ -681,7 +688,7 @@ div.usability-test-container {
 div.usability-test {
     width: 85%;
     margin: auto;
-}
+} */
 
 div.usability-facts {
     width: 50%;
@@ -700,13 +707,13 @@ div.usability-facts span {
     font-family: 'Calluna', serif;
 }
 
-div.usability-test ul {
-    width: 80%;
-    padding: 16px;
+div.accordion-container ul {
+    width: 90%;
+    /* padding: 16px; */
     margin: auto;
 }
 
-div.usability-test ul li {
+div.accordion-container ul li {
     margin: 0 0 15px 0;
 }
 
@@ -740,7 +747,7 @@ canvas#usabilityTest {
 
 /*USABILITY TEST ITERATIONS*/
 
-div.usability-test-iterations-container{
+/* div.usability-test-iterations-container{
     width: 100%;
     margin: auto;
 }
@@ -749,17 +756,17 @@ div.usability-test-iterations {
     width: 85%;
     margin: auto;
     padding: 24px 0;
-}
+} */
 
 
 /*FINAL PROTOTYPE*/
 
-div.final-prototype-container {
+/* div.final-prototype-container {
     width: 85%;
     margin: auto;
     padding-top: 24px;
     padding-bottom: 48px;
-}
+} */
 
 div.app-gif {
     padding-top: 24px;
@@ -1852,6 +1859,17 @@ img.social-button {
     div.accordion-container {
         width: 45%;
     }
+
+    /* COLOR IMAGE */
+    div.color-type-image {
+        width: 35%;
+    }
+
+    /* GIF */
+    div.app-gif {
+        width: 90%;
+    }
+
  }
  
  @media only screen and (min-width: 1700px) {
@@ -1895,4 +1913,14 @@ img.social-button {
     div.accordion-container {
         width: 40%;
     }    
+
+        /* COLOR IMAGE */
+    div.color-type-image {
+        width: 25%;
+    }
+
+     /* GIF */
+    div.app-gif {
+        width: 80%;
+    }
  }
