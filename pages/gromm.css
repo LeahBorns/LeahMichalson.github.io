@@ -376,25 +376,9 @@ div#container-middle {
     padding: 32px 0;
 }
 
-
-/*THE PROCESS*/
-
-/* section#process {
-    width: 100%;
-    margin: auto;
-    padding-top: 48px;
-}
-
-section#process h3 {
-    color: #0F0F0F;
-} */
-
-
 /* ACCORDIAN DETAILS on white background */
 
 /* Style the buttons that are used to open and close the accordion panel */
-
-
 
 .accordion {
     background-color: #e0dbe5;
@@ -443,18 +427,6 @@ div.accordion-container {
     padding: 20px 0;
 }
 
-/*USER SURVEY*/
-
-/* div.user-survey-container {
-    width: 100%;
-    margin: auto;
-} */
-
-/* div#user-survey {
-    width: 85%;
-    margin: auto;
-    padding-top: 32px;
-} */
 
 /*USER SURVEY CHARTS*/
 
@@ -492,94 +464,15 @@ canvas#usabilityPieChart {
     height: 100px;
 }
 
-
-/*PERSONAS*/
-
-/* div.persona-container {
-    width: 100%;
-    margin: auto;
-    padding-top: 32px;
-    padding-bottom: 48px;
-}
-
-div.personas {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-} */
-
-/* ACCORDIAN panel on yellow background */
-
-
-/* Style the accordion panel. Note: hidden by default */
-.panel-yellow {
-    padding: 0 5px;
-    background-color: #fff;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-/*Information architecture*/
-
-/*User Stories*/
-
-section.information-architecture {
-    width: 100%;
-    margin: 48px auto auto auto;
-    background-color: #fff;
-    background-size: cover;
-    padding: 48px 0;
-}
-
-section.information-architecture h3 {
-    width: 85%;
-    margin: auto;
-}
-
-/* DEFINE INTRO */
-div.define-intro {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-div.user-stories-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.user-stories {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
-
-/*WIREFRAME SKETCHES*/
-
-div.wireframe-sketch-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.wireframe-sketch {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
 a.case-study-link {
     text-decoration: none;
-    color: #20A39E;
+    color: #5F259F;
 }
 
 
 /*VISUAL DEISGN SECTION*/
 
-section.visual-design {
+/* section.visual-design {
     width: 100%;
     margin: auto;
     padding: 48px 0;
@@ -594,10 +487,10 @@ div.color-type-intro {
     width: 85%;
     margin: auto;
     padding-top: 24px;
-}
+} */
 
 /*LOGOS AND NAME*/
-div.logo-container {
+/* div.logo-container {
     width: 100%;
     margin: auto;
 }
@@ -606,12 +499,12 @@ div.logo-process {
     width: 85%;
     margin: auto;
     padding-top: 24px;
-}
+} */
 
 
 /*COLOR AND TYPE*/
 
-div.color-type-container {
+/* div.color-type-container {
     width: 100%;
     margin: auto;
 }
@@ -620,7 +513,7 @@ div.color-type {
     width: 85%;
     margin: auto;
     padding-top: 24px;
-}
+} */
 
 
 div.color-type-image {
@@ -1977,7 +1870,7 @@ img.social-button {
         width: 25%;
         height: 25%;
     }
-    
+
 /* NAV */
     div.content {
         width: 50%;
