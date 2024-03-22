@@ -47,7 +47,6 @@ h4 {
     font-family: calluna, serif;
     font-weight: 400;
     font-style: normal;
-    color: #502183;
 }
 
 h1 {
@@ -62,12 +61,14 @@ h2 {
 h3 {
     font-size: 1.5em;
     padding: 12px 0;
+    color: #502183;
 }
 
 h4 {
     font-size: 1.25em;
     padding-top: 16px;
     padding-bottom: 8px;
+    color: #030106;
 }
 
 p {
@@ -248,13 +249,7 @@ div.image-box img {
     display: block;
 }
 
-div.image-box2 {
-    width: 90%;
-    margin: 32px auto;
-    position: relative;
-}
-
-div.image-box3 {
+div.image-box2, div.image-box3 {
     width: 90%;
     margin: 32px auto;
     position: relative;
@@ -331,29 +326,6 @@ div.case-study-image {
     margin: auto;
 }
 
-/* div.case-study-image img {
-    margin: auto;
-    width: 100%;
-    padding: 16px 0;
-} */
-
-/* div.case-study-title {
-    width: 100%;
-    margin: auto;
-}
-
-h2.case-study-name {
-    padding: 16px 0;
-}
-
-h3.section-title {
-    padding: 12px 0;
-}
-
-p.case-study-description {
-    padding: 12px 0;
-} */
-
 a#prototype-button-header {
     display: flex;
     flex-direction: column;
@@ -391,6 +363,12 @@ section.middle {
     padding-bottom: 32px;
 }
 
+section.bottom {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 48px;
+}
+
 /* CASE STUDY CONTAINERS */
 
 div.container {
@@ -414,8 +392,8 @@ div#container-middle {
 /* Style the buttons that are used to open and close the accordion panel */
 
 .accordion {
-    background-color: #D5D3DC;
-    color: #444;
+    background-color: #e0dbe5;
+    color: #030106;
     cursor: pointer;
     width: 85%;
     text-align: left;
@@ -426,7 +404,6 @@ div#container-middle {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    color: #382F5A;
     padding: 16px 24px;
     font-size: 1.25em;
     font-family: 'Calluna', serif;
@@ -435,7 +412,7 @@ div#container-middle {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-    background-color: #BCB9C8;
+    background-color: #c3bacd;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -447,7 +424,20 @@ div#container-middle {
     transition: max-height 0.2s ease-out;
 }
 
-section#process {
+/*ACCORDION SECTIONS*/
+
+div.accordion-section {
+    width: 100%;
+    margin: auto;
+}
+
+div.accordion-container {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* section#process {
     width: 100%;
     margin: auto;
     padding: 24px 0;
@@ -466,12 +456,12 @@ div.discovery-intro {
     width: 85%;
     margin: auto;
     padding: 24px 0;
-}
+} */
 
 /*MAPPING FLOW AND HMW*/
 
 
-div.mapping-hmw-container {
+/* div.mapping-hmw-container {
     width: 100%;
     margin: auto;
 }
@@ -480,12 +470,12 @@ div.map-problem {
     width: 85%;
     margin: auto;
     padding: 24px 0;
-}
+} */
 
 /*LIGHTNING DEMOS*/
 
 
-div.lightning-demos {
+/* div.lightning-demos {
     width: 85%;
     margin: auto;
     padding: 24px 0;
@@ -494,36 +484,46 @@ div.lightning-demos {
 div.ld-info {
     width: 85%;
     margin: auto;
-}
+} */
 
-div.ld-info img {
+div.accordion-container img {
     width: 85%;
     margin: auto;
     display: block;
     padding: 16px 0;
 }
 
-div.ld-facts {
+div.accordion-container ul {
+    width: 90%;
+    /* padding: 16px; */
+    margin: auto;
+}
+
+div.accordion-container ul li {
+    margin: 8px 0 15px 0;
+}
+
+/* div.ld-facts {
     width: 100%;
     margin: auto;
     list-style-position: outside;
-}
+} */
 
-div.ld-facts span {
+/* div.ld-facts span {
     font-size: 1.25em;
-}
+} */
 
-div.ld-facts ul {
+/* div.ld-facts ul {
     padding-top: 8px;
     padding-bottom: 24px;
 }
 
 div.ld-facts ul li {
     padding-bottom: 8px;
-}
+} */
 
 /*PERSONAS*/
-div.persona-container {
+/* div.persona-container {
     width: 100%;
     margin: auto;
 }
@@ -532,7 +532,7 @@ div.personas {
     width: 85%;
     margin: auto;
     padding: 24px 0;
-}
+} */
 
 /* ACCORDIAN panel on yellow background */
 
@@ -1026,19 +1026,14 @@ img.social-button {
         width: 90%;
     }
 
-    div.image-box2 {
-        width: 80%;
-    }
-
+    div.image-box2,
     div.image-box3 {
         width: 80%;
     }
 
-
     div.image-box4 {
         width: 70%;
     }
-
 
     /*        CHARTS*/
     div.chart-container {
