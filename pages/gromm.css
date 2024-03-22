@@ -249,13 +249,7 @@ div.image-box img {
     display: block;
 }
 
-div.image-box2 {
-    width: 90%;
-    margin: 30px auto;
-    position: relative;
-}
-
-div.image-box3 {
+div.image-box2, div.image-box3 {
     width: 90%;
     margin: 30px auto;
     position: relative;
@@ -385,7 +379,7 @@ div#container-middle {
 
 /*THE PROCESS*/
 
-section#process {
+/* section#process {
     width: 100%;
     margin: auto;
     padding-top: 48px;
@@ -393,7 +387,7 @@ section#process {
 
 section#process h3 {
     color: #0F0F0F;
-}
+} */
 
 
 /* ACCORDIAN DETAILS on white background */
@@ -403,8 +397,8 @@ section#process h3 {
 
 
 .accordion {
-    background-color: #D5D3DC;
-    color: #444;
+    background-color: #e0dbe5;
+    color: #030106;
     cursor: pointer;
     width: 85%;
     text-align: left;
@@ -415,7 +409,6 @@ section#process h3 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    color: #382F5A;
     padding: 16px 24px;
     font-size: 1.25em;
     font-family: 'Calluna', serif;
@@ -424,21 +417,9 @@ section#process h3 {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-    background-color: #BCB9C8;
+    background-color: #c3bacd;
 }
 
-/* .accordion:after {
-    content: '\002B';
-    font-size: 24px;
-    color: #A1700C;
-    font-weight: bold;
-    float: right;
-    margin-right: 15px;
-  }
-  
-  .active:after {
-    content: "\2212";
-  } */
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
@@ -449,37 +430,31 @@ section#process h3 {
     transition: max-height 0.2s ease-out;
 }
 
-/* DISCOVERY AND RESEARCH INTRO */
-div.discovery {
-    width: 85%;
-    margin: auto;
-}
+/*ACCORDION SECTIONS*/
 
-/*COMPETITIVE ANALYSIS*/
-
-div.competitive-analysis-container {
+div.accordion-section {
     width: 100%;
     margin: auto;
 }
 
-div.competitive-analysis {
+div.accordion-container {
     width: 85%;
     margin: auto;
-    padding: 24px 0;
+    padding: 20px 0;
 }
 
 /*USER SURVEY*/
 
-div.user-survey-container {
+/* div.user-survey-container {
     width: 100%;
     margin: auto;
-}
+} */
 
-div#user-survey {
+/* div#user-survey {
     width: 85%;
     margin: auto;
     padding-top: 32px;
-}
+} */
 
 /*USER SURVEY CHARTS*/
 
@@ -505,16 +480,13 @@ div.chart-container2:before {
     transform: translateX(30%) translateY(10%) rotate(45deg);
 }
 
-
 canvas#usabilityChart1 {
     height: 100px;
 }
 
-
 canvas#usabilityChart2 {
     height: 100px;
 }
-
 
 canvas#usabilityPieChart {
     height: 100px;
@@ -523,7 +495,7 @@ canvas#usabilityPieChart {
 
 /*PERSONAS*/
 
-div.persona-container {
+/* div.persona-container {
     width: 100%;
     margin: auto;
     padding-top: 32px;
@@ -536,7 +508,7 @@ div.personas {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
+} */
 
 /* ACCORDIAN panel on yellow background */
 
@@ -1007,18 +979,12 @@ img.social-button {
         width: 90%;
     }
 
-    div.image-box2 {
-        width: 80%;
-    }
-
-    div.image-box3 {
-        width: 80%;
-    }
-
-
+    div.image-box2,
+    div.image-box3,
     div.image-box4 {
         width: 80%;
     }
+
 
     /*        CHARTS*/
     div.chart-container,
@@ -1071,29 +1037,11 @@ img.social-button {
         width: 75%;
     }
 
-    /* ////////////////////////////////////////////////////// */
-
-    /* DISCOVERY AND RESEARCH INTRO */
-    div.discovery {
-        width: 75%;
-    }
-
-    /*    COMPETITIVE ANALYSIS*/
-    div.competitive-analysis {
-        width: 75%;
-    }
-
-    /*USER SURVEY*/
-
-    div#user-survey {
+    div.accordion-container {
         width: 75%;
     }
 
 
-    /*    PERSONAS*/
-    div.personas {
-        width: 75%;
-    }
 
     /* /////////////////////////////////////////// */
 
@@ -1275,18 +1223,8 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    /* div.image-box {
-        width: 65%;
-    } */
-
-    div.image-box2 {
-        width: 70%;
-    }
-
-    div.image-box3 {
-        width: 70%;
-    }
-
+    div.image-box2,
+    div.image-box3,
     div.image-box4 {
         width: 70%;
     }
@@ -1322,35 +1260,16 @@ img.social-button {
     }
 
 
-    /* ////////////////////////////////////////////// */
-
-    /* DISCOVERY AND RESEARCH INTRO */
-    div.discovery {
-        width: 60%;
-    }
-
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 60%;
+        width: 70%;
     }
 
-    /*    COMPETITIVE ANALYSIS*/
-    div.competitive-analysis {
-        width: 60%;
+    div.accordion-container {
+        width: 70%;
     }
 
-    /*USER SURVEY*/
-
-    div#user-survey {
-        width: 60%;
-    }
-
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 60%;
-    }
 
     /* ///////////////////////////////////////////////////// */
 
@@ -1482,11 +1401,7 @@ img.social-button {
         width: 75%;
     }
 
-
-    div.image-box2 {
-        width: 65%;
-    }
-
+    div.image-box2,
     div.image-box3 {
         width: 65%;
     }
@@ -1563,35 +1478,16 @@ img.social-button {
         width: 65%;
     }
 
-    /* ///////////////////////////////////////////////// */
-
-    /* DISCOVERY AND RESEARCH INTRO */
-    div.discovery {
-        width: 55%;
-    }
-
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 55%;
+        width: 65%;
     }
 
-    /*    COMPETITIVE ANALYSIS*/
-    div.competitive-analysis {
-        width: 55%;
+    div.accordion-container {
+        width: 65%;
     }
 
-    /*USER SURVEY*/
-
-    div#user-survey {
-        width: 55%;
-    }
-
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 55%;
-    }
 
 
     /* ////////////////////////////////////////////// */
@@ -1715,21 +1611,13 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    /* div.image-box {
-        width: 50%;
-    } */
 
-    div.image-box2 {
-        width: 55%;
-    }
-
-    div.image-box3 {
-        width: 55%;
-    }
-
+    div.image-box2,
+    div.image-box3,
     div.image-box4 {
         width: 55%;
     }
+
 
      /*    HEADER*/
     header {
@@ -1741,34 +1629,16 @@ img.social-button {
         width: 60%;
     }
 
-    /* /////////////////////////////////////////////////////// */
-    /* DISCOVERY AND RESEARCH INTRO */
-    div.discovery {
-        width: 45%;
-    }
-
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 45%;
+        width: 60%;
     }
 
-    /*    COMPETITIVE ANALYSIS*/
-    div.competitive-analysis {
-        width: 45%;
+    div.accordion-container {
+        width: 60%;
     }
 
-    /*USER SURVEY*/
-
-    div#user-survey {
-        width: 45%;
-    }
-
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 45%;
-    }
 
     /* //////////////////////////////////////////////// */
 
@@ -1886,22 +1756,11 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    /* div.image-box {
-        width: 35%;
-    } */
-
-    div.image-box2 {
-        width: 45%;
-    }
-
-    div.image-box3 {
-        width: 45%;
-    }
-
+    div.image-box2,
+    div.image-box3,
     div.image-box4 {
         width: 45%;
     }
-
 
     /*    CHARTS*/
     div.chart-container,
@@ -1927,35 +1786,16 @@ img.social-button {
         width: 50%;
     }
 
-
-    /* ////////////////////////////////////////////// */
-
-    /* DISCOVERY AND RESEARCH INTRO */
-    div.discovery {
-        width: 35%;
-    }
-
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 35%;
+        width: 50%;
     }
 
-    /*    COMPETITIVE ANALYSIS*/
-    div.competitive-analysis {
-        width: 35%;
+    div.accordion-container {
+        width: 50%;
     }
 
-    /*USER SURVEY*/
-
-    div#user-survey {
-        width: 35%;
-    }
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 35%;
-    }
 
     /* ///////////////////////////////////////////// */
 
@@ -2077,6 +1917,21 @@ img.social-button {
 
 }
 @media only screen and (min-width: 1440px) {
+   
+    /*    IMAGE BOX*/
+
+    div.image-box2,
+    div.image-box3,
+    div.image-box4 {
+        width: 35%;
+    }
+
+    /*    CHARTS*/
+    div.chart-container,
+    div.chart-container2 {
+        width: 30%;
+        height: 30%;
+    }
     
     /*  NAV*/
  
@@ -2094,10 +1949,35 @@ img.social-button {
     div.container {
         width: 45%;
     }
+
+    /* ACCORDIAN DETAILS */
+
+    .accordion {
+        width: 45%;
+    }
+
+    div.accordion-container {
+        width: 45%;
+    }
  }
  
  @media only screen and (min-width: 1700px) {
-     
+   
+/*    IMAGE BOX*/
+
+    div.image-box2,
+    div.image-box3,
+    div.image-box4 {
+        width: 30%;
+    }
+
+    /*    CHARTS*/
+    div.chart-container,
+    div.chart-container2 {
+        width: 25%;
+        height: 25%;
+    }
+    
 /* NAV */
     div.content {
         width: 50%;
@@ -2113,4 +1993,13 @@ img.social-button {
         width: 40%;
     }
 
+    /* ACCORDIAN DETAILS */
+
+    .accordion {
+        width: 40%;
+    }
+
+    div.accordion-container {
+        width: 40%;
+    }    
  }
