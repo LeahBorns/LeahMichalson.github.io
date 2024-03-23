@@ -437,54 +437,6 @@ div.accordion-container {
     padding: 20px 0;
 }
 
-/* section#process {
-    width: 100%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-section#process h3 {
-    color: #0F0F0F;
-}
-
-section#process h4 {
-    color: #A1700C;
-    padding-left: 0;
-}
-
-div.discovery-intro {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-} */
-
-/*MAPPING FLOW AND HMW*/
-
-
-/* div.mapping-hmw-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.map-problem {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-} */
-
-/*LIGHTNING DEMOS*/
-
-
-/* div.lightning-demos {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-div.ld-info {
-    width: 85%;
-    margin: auto;
-} */
 
 div.accordion-container img {
     width: 85%;
@@ -503,165 +455,16 @@ div.accordion-container ul li {
     margin: 8px 0 15px 0;
 }
 
-/* div.ld-facts {
-    width: 100%;
-    margin: auto;
-    list-style-position: outside;
-} */
 
-/* div.ld-facts span {
-    font-size: 1.25em;
-} */
-
-/* div.ld-facts ul {
-    padding-top: 8px;
-    padding-bottom: 24px;
-}
-
-div.ld-facts ul li {
-    padding-bottom: 8px;
-} */
-
-/*PERSONAS*/
-/* div.persona-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.personas {
+div.accordion-container ol {
     width: 85%;
-    margin: auto;
-    padding: 24px 0;
-} */
-
-/* ACCORDIAN panel on yellow background */
-
-
-/* Style the accordion panel. Note: hidden by default */
-.panel-yellow {
-    padding: 0 5px;
-    background-color: #FDF6E1;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-/*//////////Information architecture\\\\\\\\\\\\*/
-
-section.information-architecture {
-    width: 100%;
-    margin: 48px auto auto auto;
-    background-color: #FDF6E1;
-    background-size: cover;
-    padding: 48px 0;
-}
-
-
-section.information-architecture h3 {
-    width: 85%;
+    /* padding: 16px; */
     margin: auto;
 }
 
-/* IA INTRO */
-div.ia-intro {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-
-/*STORYBOARD*/
-
-div.user-stories-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.storyboard {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
-
-/*WIREFRAME SKETCHES*/
-
-div.wireframe-sketch-container {
-    width: 100%;
-    margin: auto;
-}
-
-
-div.wireframe-sketch {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
-div.list {
-    margin: auto;
-    width: 60%;
-}
-
-div.wireframe-sketch ol {
-    font-weight: 600;
-    margin: auto;
-    width: 100%;
-    list-style-position: inside;
-}
-
-p.screen-details {
-    width: 90%;
-    margin: auto;
-}
-
-/* Digital wireframe */
-
-div.digital-wireframes-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.digital-wireframes {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
 
 
 /*VISUAL DEISGN*/
-
-section.visual-design {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-}
-
-section.visual-design h3 {
-    width: 85%;
-    margin: auto;
-}
-
-div.color-type-intro {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-/*COLOR AND TYPE*/
-
-
-div.color-type-container {
-    width: 100%;
-    margin: auto;
-
-}
-
-div.type-and-color {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
 
 div.color-type-image {
     width: 95%;
@@ -776,83 +579,7 @@ div.typography-group p:nth-child(5) {
     line-height: 1em;
 }
 
-
-/*LOGOS AND NAME*/
-
-div.logo-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.logo {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-
-
-/*PROTOTYPING AND TESTING*/
-
-section.prototype-test {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-    background-color: #FDF6E1;
-}
-
-section.prototype-test h3 {
-    width: 85%;
-    margin: auto;
-}
-
-div.prototype-test-container {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-
-/*Iterations*/
-
-
-div.iterations {
-    padding: 24px 0;
-    width: 85%;
-    margin: auto;
-}
-
 /*Usability Test*/
-
-div.usability-test-container {
-    width: 100%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-div.usability-test {
-    width: 85%;
-    margin: auto;
-}
-
-
-div.usability-test ul {
-    padding: 16px;
-    font-weight: 600;
-    margin: auto;
-    width: 90%;
-}
-
-div.usability-test ul li {
-    margin: 0 0 15px 0;
-}
-
-p.takeaways {
-    width: 85%;
-    margin: auto;
-}
-
 
 div.chart-container {
     height: 90%;
@@ -884,44 +611,18 @@ canvas#myChart {
 
 /*PREFERENCE TESTING*/
 
-div.preference-test-container {
-    width: 100%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-div.preference-test-1 {
-    width: 85%;
-    margin: auto;
-}
-
 span.quote {
     font-weight: 600;
     font-style: italic;
     font-size: 1.25em;
 }
 
-
-div.preference-test-2 {
-    width: 85%;
-    margin: auto;
-}
-
-
 /*FINAL PROTOTYPE*/
-
-div.final-prototype-container {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
 
 div.app-gif {
     padding-top: 32px;
-    width: 50%;
+    width: 40%;
     margin: auto;
-
 }
 
 div.app-gif img {
@@ -950,30 +651,6 @@ a#prototype-button-final {
 
 a#prototype-button-final:hover {
     background-color: #E6D9EF;
-}
-
-/*CONCLUSION*/
-
-section.conclusion {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-}
-
-section.conclusion h3 {
-    width: 85%;
-    margin: auto;
-}
-
-div.learnings-container {
-    width: 85%;
-    margin: auto;
-}
-
-div.learnings-container h4 {
-    color: #A1700C;
-    margin-left: 0;
-    padding: 16px 0;
 }
 
 
@@ -1075,104 +752,21 @@ img.social-button {
         width: 75%;
     }
 
-
-
     /* ACCORDIAN DETAILS */
 
     .accordion {
         width: 75%;
     }
 
-    /*MAPPING FLOW AND HMW*/
-
-
-    div.discovery-intro {
+    div.accordion-container {
         width: 75%;
     }
 
-    div.map-problem {
-        width: 75%;
-    }
-
-    /*LIGHTNING DEMOS*/
-
-    div#lightning-intro {
-        width: 75%;
-    }
-
-    div.lightning-demos {
-        width: 75%;
-    }
-
-    div.ld-facts {
-        width: 90%;
-    }
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 75%;
-    }
-
-    /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
-
-
-    /* IA INTRO */
-    div.ia-intro {
-        width: 75%;
-    }
-
-    section.information-architecture h3 {
-        width: 75%;
-        margin: auto;
-    }
-
-
-    /*    STORYBOARD*/
-    div.storyboard {
-        width: 75%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-
-    div.wireframe-sketch {
-        width: 75%;
-    }
-
-    /*    DIGITAL WIREFRAMES*/
-    div.digital-wireframes {
-        width: 75%;
-    }
-
-    div.list {
-        width: 50%;
-    }
-
-    /* ///////////////////////VISUAL DEISGN///////////////////////////*/
-
-    section.visual-design h3 {
-        width: 75%;
-    }
-
-    div.color-type-intro {
-        width: 75%;
-    }
-
-    /*    LOGO*/
-    div.logo {
-        width: 75%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.type-and-color {
-        width: 75%;
-    }
+    /*    STYLE GUIDE*/
 
     div.color-type-image {
         width: 80%;
     }
-
-    /*    STYLE GUIDE*/
 
     div.color-type-image:before {
         height: 45px;
@@ -1201,38 +795,6 @@ img.social-button {
 
 
 
-    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 75%;
-    }
-
-    div.prototype-test-container {
-        width: 75%;
-    }
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 75%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 75%;
-    }
-
-    /*PREFERENCE TESTING*/
-
-    div.preference-test-1 {
-        width: 75%;
-    }
-
-    div.preference-test-2 {
-        width: 75%;
-    }
-
-
     div.chart-container:before {
         height: 40px;
         width: 120px;
@@ -1240,27 +802,9 @@ img.social-button {
 
     /*FINAL PROTOTYPE*/
 
-    div.final-prototype-container {
-        width: 75%;
-    }
-
     a#prototype-button-final {
         width: 60%;
         margin: 32px auto;
-    }
-
-    a#prototype-button-final:hover {
-        background-color: #E6D9EF;
-    }
-
-    /*CONCLUSION*/
-
-    section.conclusion h3 {
-        width: 75%;
-    }
-
-    div.learnings-container {
-        width: 75%;
     }
 
     /*    FOOTER*/
@@ -1282,14 +826,8 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    /* div.image-box {
-        width: 75%;
-    } */
 
-    div.image-box2 {
-        width: 70%;
-    }
-
+    div.image-box2,  
     div.image-box3 {
         width: 70%;
     }
@@ -1335,143 +873,20 @@ img.social-button {
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 60%;
+        width: 70%;
     }
 
-    div#solution-statement {
-        width: 60%;
-    }
-
-    /*MAPPING FLOW AND HMW*/
-
-    div.discovery-intro {
-        width: 60%;
-    }
-
-    div.map-problem {
-        width: 60%;
-    }
-
-
-    /*LIGHTNING DEMOS*/
-
-    div#lightning-intro {
-        width: 60%;
-    }
-
-    div.lightning-demos {
-        width: 60%;
-    }
-
-    div.ld-facts {
-        width: 75%;
-    }
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 60%;
-    }
-
-    /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
-
-
-    /* IA INTRO */
-    div.ia-intro {
-        width: 60%;
-    }
-
-    section.information-architecture h3 {
-        width: 60%;
-
-    }
-
-    /*    STORYBOARD*/
-    div.storyboard {
-        width: 60%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-
-    div.wireframe-sketch {
-        width: 60%;
-    }
-
-    /*    DIGITAL WIREFRAMES*/
-    div.digital-wireframes {
-        width: 60%;
-    }
-
-    /* ///////////////////////VISUAL DEISGN///////////////////////////*/
-
-    section.visual-design h3 {
-        width: 60%;
-    }
-
-    div.color-type-intro {
-        width: 60%;
-    }
-
-    /*    LOGO*/
-    div.logo {
-        width: 60%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.type-and-color {
-        width: 60%;
+    div.accordion-container {
+        width: 70%;
     }
 
     div.color-type-image {
         width: 70%;
     }
 
-
-    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 60%;
-    }
-
-    div.prototype-test-container {
-        width: 60%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 60%;
-    }
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 60%;
-    }
-
-    /*PREFERENCE TESTING*/
-
-    div.preference-test-1 {
-        width: 60%;
-    }
-
-    div.preference-test-2 {
-        width: 60%;
-    }
-
-
     /*FINAL PROTOTYPE*/
 
     div.final-prototype-container {
-        width: 60%;
-    }
-
-    /*CONCLUSION*/
-
-    section.conclusion h3 {
-        width: 60%;
-    }
-
-    div.learnings-container {
         width: 60%;
     }
 
@@ -1498,10 +913,7 @@ img.social-button {
     }
 
 
-    div.image-box2 {
-        width: 65%;
-    }
-
+    div.image-box2,
     div.image-box3 {
         width: 65%;
     }
@@ -1576,142 +988,17 @@ img.social-button {
 
 /* ACCORDION */
     .accordion {
-        width: 55%;
+        width: 65%;
     }
 
-    /*MAPPING FLOW AND HMW*/
-
-    div.discovery-intro {
-        width: 55%;
-    }
-
-    div.map-problem {
-        width: 55%;
-    }
-
-    /*LIGHTNING DEMOS*/
-
-    div#lightning-intro {
-        width: 55%;
-    }
-
-    div.lightning-demos {
-        width: 55%;
-    }
-
-    div.ld-facts {
-        width: 80%;
-    }
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 55%;
-    }
-
-    /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
-
-
-    /* IA INTRO */
-    div.ia-intro {
-        width: 55%;
-    }
-
-    section.information-architecture h3 {
-        width: 55%;
-
-    }
-
-    /*    STORYBOARD*/
-    div.storyboard {
-        width: 55%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-
-    div.wireframe-sketch {
-        width: 55%;
-    }
-
-    /*    DIGITAL WIREFRAMES*/
-    div.digital-wireframes {
-        width: 55%;
-    }
-
-    /* ///////////////////////VISUAL DEISGN///////////////////////////*/
-
-    section.visual-design h3 {
-        width: 55%;
-    }
-
-    div.color-type-intro {
-        width: 55%;
-    }
-
-    /*    LOGO*/
-    div.logo {
-        width: 55%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.type-and-color {
-        width: 55%;
+    div.accordion-container {
+        width: 65%;
     }
 
     div.color-type-image {
         width: 65%;
     }
 
-
-
-    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 55%;
-    }
-
-    div.prototype-test-container {
-        width: 55%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 55%;
-    }
-
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 55%;
-    }
-
-    /*PREFERENCE TESTING*/
-
-    div.preference-test-1 {
-        width: 55%;
-    }
-
-    div.preference-test-2 {
-        width: 55%;
-    }
-
-    /*FINAL PROTOTYPE*/
-
-    div.final-prototype-container {
-        width: 55%;
-    }
-
-
-    /*CONCLUSION*/
-
-    section.conclusion h3 {
-        width: 55%;
-    }
-
-    div.learnings-container {
-        width: 55%;
-    }
 
     /*    FOOTER*/
 
@@ -1730,14 +1017,7 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    /* div.image-box {
-        width: 60%;
-    } */
-
-    div.image-box2 {
-        width: 55%;
-    }
-
+    div.image-box2,
     div.image-box3 {
         width: 55%;
     }
@@ -1764,139 +1044,16 @@ img.social-button {
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 45%;
+        width: 60%;
     }
 
-    /*MAPPING FLOW AND HMW*/
-
-    div.discovery-intro {
-        width: 45%;
+    div.accordion-container {
+        width: 60%;
     }
 
-    div.map-problem {
-        width: 45%;
-    }
-
-    /*LIGHTNING DEMOS*/
-
-    div#lightning-intro {
-        width: 45%;
-    }
-
-    div.lightning-demos {
-        width: 45%;
-    }
-
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 45%;
-    }
-
-    /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
-
-
-    /* IA INTRO */
-    div.ia-intro {
-        width: 45%;
-    }
-
-    section.information-architecture h3 {
-        width: 45%;
-
-    }
-
-    /*    STORYBOARD*/
-    div.storyboard {
-        width: 45%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-
-    div.wireframe-sketch {
-        width: 45%;
-    }
-
-    /*    DIGITAL WIREFRAMES*/
-    div.digital-wireframes {
-        width: 45%;
-    }
-
-    /* ///////////////////////VISUAL DEISGN///////////////////////////*/
-
-    section.visual-design h3 {
-        width: 45%;
-    }
-
-    div.color-type-intro {
-        width: 45%;
-    }
-
-    /*    LOGO*/
-    div.logo {
-        width: 45%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.type-and-color {
-        width: 45%;
-    }
 
     div.color-type-image {
         width: 55%;
-    }
-
-
-
-    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 45%;
-    }
-
-    div.prototype-test-container {
-        width: 45%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 45%;
-    }
-
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 45%;
-    }
-
-
-    /*PREFERENCE TESTING*/
-
-    div.preference-test-1 {
-        width: 45%;
-    }
-
-    div.preference-test-2 {
-        width: 45%;
-    }
-
-    /*FINAL PROTOTYPE*/
-
-    div.final-prototype-container {
-        width: 45%;
-    }
-
-
-    /*CONCLUSION*/
-
-    section.conclusion h3 {
-        width: 45%;
-    }
-
-    div.learnings-container {
-        width: 45%;
     }
 
     /*    FOOTER*/
@@ -1910,14 +1067,7 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    /* div.image-box {
-        width: 45%;
-    } */
-
-    div.image-box2 {
-        width: 45%;
-    }
-
+    div.image-box2,
     div.image-box3 {
         width: 45%;
     }
@@ -1956,151 +1106,35 @@ img.social-button {
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 35%;
+        width: 50%;
     }
 
-    /*MAPPING FLOW AND HMW*/
-
-    div.discovery-intro {
-        width: 35%;
-    }
-
-    div.map-problem {
-        width: 35%;
-    }
-
-    /*LIGHTNING DEMOS*/
-
-    div#lightning-intro {
-        width: 35%;
-    }
-
-    div.lightning-demos {
-        width: 35%;
-    }
-
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 35%;
-    }
-
-    /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
-
-
-    /* IA INTRO */
-    div.ia-intro {
-        width: 35%;
-    }
-
-    section.information-architecture h3 {
-        width: 35%;
-
-    }
-
-    /*    STORYBOARD*/
-    div.storyboard {
-        width: 35%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-
-    div.wireframe-sketch {
-        width: 35%;
-    }
-
-    /*    DIGITAL WIREFRAMES*/
-    div.digital-wireframes {
-        width: 35%;
-    }
-
-    /* ///////////////////////VISUAL DEISGN///////////////////////////*/
-
-    section.visual-design h3 {
-        width: 35%;
-    }
-
-    div.color-type-intro {
-        width: 35%;
-    }
-
-    /*    LOGO*/
-    div.logo {
-        width: 35%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.type-and-color {
-        width: 35%;
+    div.accordion-container {
+        width: 50%;
     }
 
     div.color-type-image {
         width: 40%;
     }
 
-
-
-    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 35%;
-    }
-
-    div.prototype-test-container {
-        width: 35%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 35%;
-    }
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 35%;
-    }
-
-
-    /*PREFERENCE TESTING*/
-
-    div.preference-test-1 {
-        width: 35%;
-    }
-
-    div.preference-test-2 {
-        width: 35%;
-    }
-
-    /*FINAL PROTOTYPE*/
-
-    div.final-prototype-container {
-        width: 35%;
-    }
-
-    div.app-gif {
-        width: 40%;
-    }
-
-
-    /*CONCLUSION*/
-
-    section.conclusion h3 {
-        width: 35%;
-    }
-
-    div.learnings-container {
-        width: 35%;
-    }
-
-
+/* footer */
     div#social-img {
         width: 20%;
     }
 }
 @media only screen and (min-width: 1440px) {
     
+    /*    IMAGE BOX*/
+
+    div.image-box2,
+    div.image-box3 {
+        width: 40%;
+    }
+
+    div.image-box4 {
+        width: 35%;
+    }
+
     /*  NAV*/
  
     div.content {
@@ -2121,10 +1155,36 @@ img.social-button {
     div.container {
         width: 45%;
     }
+
+
+    /* ACCORDIAN DETAILS */
+
+    .accordion {
+        width: 45%;
+    }
+
+    div.accordion-container {
+        width: 45%;
+    }
+
+    /* COLOR IMAGE */
+    div.color-type-image {
+        width: 35%;
+    }
  }
  
  @media only screen and (min-width: 1700px) {
      
+    /*    IMAGE BOX*/
+    div.image-box2,
+    div.image-box3 {
+        width: 35%;
+    }
+
+    div.image-box4 {
+        width: 30%;
+    }
+
 /* NAV */
 div.content {
     width: 50%;
@@ -2142,5 +1202,20 @@ div.content {
     /* SECTION CONTAINERS */
     div.container {
         width: 40%;
+    }
+
+        /* ACCORDIAN DETAILS */
+
+    .accordion {
+        width: 40%;
+    }
+
+    div.accordion-container {
+        width: 40%;
+    }
+
+    /* COLOR IMAGE */
+    div.color-type-image {
+        width: 25%;
     }
  }

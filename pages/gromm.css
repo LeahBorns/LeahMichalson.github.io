@@ -942,40 +942,6 @@ img.social-button {
     }
 
 
-
-    /* /////////////////////////////////////////// */
-
-    /* DEFINE INTRO */
-    div.define-intro {
-        width: 75%;
-    }
-
-    section.information-architecture h3 {
-        width: 75%;
-        margin: auto;
-    }
-
-
-    /*    USER STORIES*/
-    div.user-stories {
-        width: 75%;
-    }
-
-
-    /*USER FLOWS*/
-    div.user-flow {
-        width: 75%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-    div.wireframe-sketch {
-        width: 75%;
-    }
-
-    div.digital-wireframes {
-        width: 75%;
-    }
-
     /*    CHART TAPE*/
 
     div.chart-container:before {
@@ -988,32 +954,7 @@ img.social-button {
         width: 120px;
     }
 
-    /* //////////////////////////////////////////////////
- */
-    /*VISUAL DEISGN*/
-    section.visual-design h3 {
-        width: 75%;
-    }
-
-    div.color-type-intro {
-        width: 75%;
-    }
-
-    /*LOGOS AND NAME*/
-
-    div.logo-process {
-        width: 75%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.color-type {
-        width: 75%;
-    }
-
-
-
-    /*    STYLE GUIDE*/
+  /*    STYLE GUIDE*/
 
     div.color-type-image {
         width: 80%;
@@ -1044,64 +985,6 @@ img.social-button {
         height: 120px;
     }
 
-
-    /* ////////////////////////////////////////// */
-
-    /*PROTOTYPING AND TESTING*/
-    section.prototype-test h3 {
-        width: 75%;
-    }
-
-    div.prototype-test-container {
-        width: 75%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 75%;
-    }
-
-    /*Usability Test*/
-
-    div.usability-test {
-        width: 75%;
-    }
-
-
-    div.usability-test ul {
-        width: 80%;
-    }
-
-    /*USABILITY TEST ITERATIONS*/
-    div.usability-test-iterations {
-        width: 75%;
-    }
-
-
-
-    /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
-        width: 75%;
-    }
-
-    a.prototype-button-final {
-        width: 60%;
-        margin: 32px auto;
-    }
-
-    a.prototype-button-final:hover {
-        background-color: #E6D9EF;
-    }
-
-    /*    conclusion*/
-    section.conclusion h3 {
-        width: 75%;
-    }
-
-    div.learnings-container {
-        width: 75%;
-    }
 
     /*    FOOTER*/
 
@@ -1171,110 +1054,10 @@ img.social-button {
     }
 
 
-    /* ///////////////////////////////////////////////////// */
-
-    /* DEFINE INTRO */
-    div.define-intro {
-        width: 60%;
-    }
-
-    section.information-architecture h3 {
-        width: 60%;
-    }
-
-    /*    USER STORIES*/
-    div.user-stories {
-        width: 60%;
-    }
-
-
-    /*USER FLOWS*/
-    div.user-flow {
-        width: 60%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-    div.wireframe-sketch {
-        width: 60%;
-    }
-
-    div.digital-wireframes {
-        width: 60%;
-    }
-
-    /* //////////////////////////////////////////////////
- */
-    /*VISUAL DEISGN*/
-    section.visual-design h3 {
-        width: 60%;
-    }
-
-    div.color-type-intro {
-        width: 60%;
-    }
-
-    /*LOGOS AND NAME*/
-
-    div.logo-process {
-        width: 60%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.color-type {
-        width: 60%;
-    }
-
     div.color-type-image {
         width: 70%;
     }
 
-    /* ///////////////////PROTOTYPING AND TESTING////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 60%;
-    }
-
-    div.prototype-test-container {
-        width: 60%;
-    }
-
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 60%;
-    }
-
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 60%;
-    }
-
-    div.usability-test ul {
-        width: 85%;
-    }
-
-    /*USABILITY TEST ITERATIONS*/
-    div.usability-test-iterations {
-        width: 60%;
-    }
-
-    /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
-        width: 60%;
-    }
-
-
-    /*    conclusion*/
-    section.conclusion h3 {
-        width: 60%;
-    }
-
-    div.learnings-container {
-        width: 60%;
-    }
 
     /*    FOOTER*/
 
@@ -1388,110 +1171,10 @@ img.social-button {
         width: 65%;
     }
 
-
-
-    /* ////////////////////////////////////////////// */
-
-    /* DEFINE INTRO */
-    div.define-intro {
-        width: 55%;
-    }
-
-    section.information-architecture h3 {
-        width: 55%;
-    }
-
-    /* USER STORIES */
-    div.user-stories {
-        width: 55%;
-    }
-
-
-    /*USER FLOWS*/
-    div.user-flow {
-        width: 55%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-    div.wireframe-sketch {
-        width: 55%;
-    }
-
-    div.digital-wireframes {
-        width: 55%;
-    }
-
-    /* /////////////////////////VISUAL DEISGN/////////////////////////
- */
-    section.visual-design h3 {
-        width: 55%;
-    }
-
-    div.color-type-intro {
-        width: 55%;
-    }
-
-    /*LOGOS AND NAME*/
-
-    div.logo-process {
-        width: 55%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.color-type {
-        width: 55%;
-    }
-
     div.color-type-image {
         width: 65%;
     }
 
-    /*////////////// PROTOTYPING AND TESTING /////////////////*/
-    section.prototype-test h3 {
-        width: 55%;
-    }
-
-    div.prototype-test-container {
-        width: 55%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 55%;
-    }
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 55%;
-    }
-
-
-    div.usability-test ul {
-        width: 90%;
-    }
-
-    /*USABILITY TEST ITERATIONS*/
-    div.usability-test-iterations {
-        width: 55%;
-    }
-
-    /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
-        width: 55%;
-    }
-
-
-
-    /*    conclusion*/
-    section.conclusion h3 {
-        width: 55%;
-    }
-
-    div.learnings-container {
-        width: 55%;
-    }
 
     /*    FOOTER*/
     div#social-img {
@@ -1539,110 +1222,9 @@ img.social-button {
         width: 60%;
     }
 
-
-    /* //////////////////////////////////////////////// */
-
-    /* DEFINE INTRO */
-    div.define-intro {
-        width: 45%;
-    }
-
-    section.information-architecture h3 {
-        width: 45%;
-    }
-
-    /*User Story*/
-
-    div.user-stories {
-        width: 45%;
-    }
-
-
-    /*USER FLOWS*/
-    div.user-flow {
-        width: 45%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-    div.wireframe-sketch {
-        width: 45%;
-    }
-
-    div.digital-wireframes {
-        width: 45%;
-    }
-
-    /* /////////////////////VISUAL DEISGN/////////////////////////////
- */
-
-    section.visual-design h3 {
-        width: 45%;
-    }
-
-    div.color-type-intro {
-        width: 45%;
-    }
-
-    /*LOGOS AND NAME*/
-
-    div.logo-process{
-        width: 45%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.color-type {
-        width: 45%;
-    }
-
     div.color-type-image {
         width: 55%;
     }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 45%;
-    }
-
-
-
-    /*////////////   PROTOTYPING AND TESTING  ///////////////////*/
-    section.prototype-test h3 {
-        width: 45%;
-    }
-
-    div.prototype-test-container {
-        width: 45%;
-    }
-
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 45%;
-    }
-
-    /*USABILITY TEST ITERATIONS*/
-    div.usability-test-iterations {
-        width: 45%;
-    }
-
-
-    /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
-        width: 45%;
-    }
-
-
-    /*    conclusion*/
-    section.conclusion h3 {
-        width: 45%;
-    }
-
-    div.learnings-container {
-        width: 45%;
-    }
-
 
     /*    FOOTER*/
     div#social-img {
@@ -1697,119 +1279,13 @@ img.social-button {
     }
 
 
-    /* ///////////////////////////////////////////// */
-
-    /* DEFINE INTRO */
-    div.define-intro {
-        width: 35%;
-    }
-
-    section.information-architecture h3 {
-        width: 35%;
-    }
-
-    /*User Story*/
-
-    div.user-stories {
-        width: 35%;
-    }
-
-
-    /*USER FLOWS*/
-    div.user-flow {
-        width: 35%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-    div.wireframe-sketch {
-        width: 35%;
-    }
-
-    div.digital-wireframes {
-        width: 35%;
-    }
-
-    /*USABILITY TEST*/
-    div.usability-test-1 {
-        width: 35%;
-    }
-
-    /* ////////////////////VISUAL DEISGN//////////////////////////////
- */
-    section.visual-design h3 {
-        width: 35%;
-    }
-
-    div.color-type-intro {
-        width: 35%;
-    }
-
-    /*LOGOS AND NAME*/
-
-    div.logo-process{
-        width: 35%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.color-type {
-        width: 35%;
-    }
-
     div.color-type-image {
         width: 40%;
     }
 
-
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 35%;
-    }
-
-    /*////////////// PROTOTYPING AND TESTING ///////////////*/
-    section.prototype-test h3 {
-        width: 35%;
-    }
-
-    div.prototype-test-container {
-        width: 35%;
-    }
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 35%;
-    }
-
-
-    div.usability-test ul {
-        width: 95%;
-    }
-
-    /*USABILITY TEST ITERATIONS*/
-    div.usability-test-iterations {
-        width: 35%;
-    }
-
-    /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
-        width: 35%;
-    }
-
     div.app-gif {
-        width: 100%;
+        width: 90%;
     }
-
-    /*    conclusion*/
-    section.conclusion h3 {
-        width: 35%;
-    }
-
-    div.learnings-container {
-        width: 35%;
-    }
-
 
     div#social-img {
         width: 20%;
@@ -1865,11 +1341,6 @@ img.social-button {
         width: 35%;
     }
 
-    /* GIF */
-    div.app-gif {
-        width: 90%;
-    }
-
  }
  
  @media only screen and (min-width: 1700px) {
@@ -1921,6 +1392,6 @@ img.social-button {
 
      /* GIF */
     div.app-gif {
-        width: 80%;
+        width: 85%;
     }
  }
