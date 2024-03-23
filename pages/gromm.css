@@ -479,49 +479,6 @@ a.case-study-link {
 
 /*VISUAL DEISGN SECTION*/
 
-/* section.visual-design {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-}
-
-section.visual-design h3 {
-    width: 85%;
-    margin: auto;
-}
-
-div.color-type-intro {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-} */
-
-/*LOGOS AND NAME*/
-/* div.logo-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.logo-process {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-} */
-
-
-/*COLOR AND TYPE*/
-
-/* div.color-type-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.color-type {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-} */
-
 
 div.color-type-image {
     width: 95%;
@@ -646,49 +603,6 @@ div.typography-group p:nth-child(5) {
 
 /*PROTOTYPING AND TESTING*/
 
-/* section.prototype-test {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-    background-color: #fff;
-}
-
-section.prototype-test h3 {
-    width: 85%;
-    margin: auto;
-} */
-
-/* div.prototype-test-container {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-} */
-
-/*ITERATIONS*/
-
-/* div.iterations-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.iterations {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-} */
-
-/*Usability Test*/
-
-/* div.usability-test-container {
-    width: 100%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-div.usability-test {
-    width: 85%;
-    margin: auto;
-} */
 
 div.usability-facts {
     width: 50%;
@@ -744,29 +658,7 @@ canvas#usabilityTest {
     height: 100px;
 }
 
-
-/*USABILITY TEST ITERATIONS*/
-
-/* div.usability-test-iterations-container{
-    width: 100%;
-    margin: auto;
-}
-
-div.usability-test-iterations {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-} */
-
-
 /*FINAL PROTOTYPE*/
-
-/* div.final-prototype-container {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-    padding-bottom: 48px;
-} */
 
 div.app-gif {
     padding-top: 24px;
@@ -802,31 +694,6 @@ a.prototype-button-final {
 a.prototype-button-final:hover {
     background-color: #E6D9EF;
 }
-
-/*CONCLUSION*/
-
-section.conclusion {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-}
-
-section.conclusion h3 {
-    width: 85%;
-    margin: auto;
-}
-
-div.learnings-container {
-    width: 85%;
-    margin: auto;
-}
-
-div.learnings-container h4 {
-    margin-left: 0;
-    padding: 16px 0;
-    color: #382F5A;
-}
-
 
 
 /*MAIN FOOTER*/
