@@ -48,36 +48,35 @@ h4 {
     font-family: calluna, serif;
     font-weight: 400;
     font-style: normal;
-    color: #502183;
 }
 
 h1 {
-    font-size: 2.5em;
-    color: #241435;
+    font-size: 2.2em;
 }
 
 h2 {
     font-size: 2em;
-    padding-top: 16px;
-    padding-bottom: 8px;
+    padding: 16px 0;
 }
 
 h3 {
     font-size: 1.5em;
-    padding-top: 16px;
-    padding-bottom: 8px;
+    padding: 12px 0;
+    color: #030106;
 }
 
 h4 {
     font-size: 1.25em;
     padding-top: 16px;
     padding-bottom: 8px;
+    color: #502183;
 }
 
 p {
     font-size: 1em;
     text-align: left;
     color: #030106;
+    padding: 12px 0;
 }
 
 /*NAV*/
@@ -329,7 +328,7 @@ h1.welcome {
 
 /*Projects section*/
 section#project-section {
-    width: 85%;
+    width: 100%;
     margin: auto;
     z-index: -1
 }
@@ -349,67 +348,52 @@ section#project-section::after{
 */
 
 h2.section-header {
-    width: 90%;
+    width: 85%;
     margin: 32px auto;
-    color: #392F5A;
     z-index: 0;
     line-height: 1em;
 }
 
-div#bus-spot-app {
+div.container-reverse {
+    width: 80%;
     display: flex;
     flex-direction: column-reverse;
     margin: auto;
-    margin-top: 48px;
+    padding: 24px 0;
 }
 
-div#greener-app {
+div.container {
+    width: 80%;
     display: flex;
     flex-direction: column;
     margin: auto;
-}
-
-div#gromm-app {
-    display: flex;
-    flex-direction: column-reverse;
-    margin: auto;
-}
-
-div#personal-projects {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    padding: 24px 0;
 }
 
 div.project-img {
-    padding-top: 16px;
-    width: 100%;
+    /* padding: 16px 0; */
+    width: 90%;
     margin: auto;
 }
 
-div.gromm-img {
+/* div.gromm-img {
     width: 90%;
     margin: auto;
     padding-top: 24px;
-}
+} */
 
-div.side-projects-img {
-    width: 80%;
-    margin: auto;
-}
-
-img.project-screenshot {
+/* img.project-screenshot {
     width: 100%;
     display: block;
     margin: auto;
-}
+} */
 
 div.project-info {
     margin: 32px 0;
     width: 100%;
 }
 
-div.project-info h3 {
+/* div.project-info h3 {
     color: #0F0F0F;
 }
 
@@ -417,13 +401,13 @@ div.project-info p {
     vertical-align: top;
     color: #0F0F0F;
     padding: 16px 0;
-}
+} */
 
 
-div.tech-image img {
+/* div.tech-image img {
     padding-top: 16px;
     height: 56px;
-}
+} */
 
 
 a.project-links {
@@ -445,7 +429,7 @@ a.project-links {
 }
 
 
-div.coming-soon {
+/* div.coming-soon {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,7 +443,7 @@ div.coming-soon {
     text-decoration: none;
     font-size: 1rem;
     color: #fff;
-}
+} */
 
 
 a.project-links:hover {
@@ -536,17 +520,17 @@ img.social-button {
 
 
     /*    PROJECTS SECTION*/
-    section#project-section {
-        width: 75%;
-    }
+h2.section-header {
+    width: 75%;
+}
 
-    h2.section-header {
-        width: 75%;
-        margin: 32px auto;
-        color: #392F5A;
-        z-index: 0;
-        line-height: 1em;
-    }
+div.container-reverse {
+    width: 65%;
+}
+
+div.container {
+    width: 65%;
+}
 
 
     /*    FOOTER*/
@@ -560,6 +544,10 @@ img.social-button {
 
 
 @media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
 
     /*    NAV*/
     div.content {
@@ -588,13 +576,23 @@ img.social-button {
 
 
     /*    PROJECTS SECTION*/
-    section#project-section {
+    
+    h2.section-header {
+        width: 70%;
+    }
+
+    div.container-reverse {
+        width: 60%;
+    }
+    
+    div.container {
         width: 60%;
     }
 
-    h2.section-header {
-        width: 60%;
+    div.project-img {
+        width: 80%;
     }
+    
 
     /*    FOOTER*/
 
@@ -662,34 +660,36 @@ img.social-button {
 
 
     /*    PROJECTS SECTION*/
-    section#project-section {
-        width: 75%;
-    }
-
     h2.section-header {
         width: 75%;
     }
+    
+/*Projects*/
 
-    /*Projects*/
-
-    div#bus-spot-app {
-        width: 100%;
-        margin: 56px auto;
+    div.container-reverse {
+        width: 75%;
+        margin: 48px auto;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
 
-    div#greener-app {
-        width: 100%;
-        margin: 96px auto;
+    div.container {
+        width: 75%;
+        margin: 48px auto;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    div#gromm-app {
+    div.project-img {
+        width: 45%;
+        margin: 0;
+        /* padding: 0 24px; */
+    }
+
+    /* div#gromm-app {
         width: 100%;
         margin: 56px auto;
         flex-direction: row;
@@ -703,15 +703,15 @@ img.social-button {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
+    } */
 
 
     div.project-info {
-        width: 50%;
-        margin: auto;
+        width: 45%;
+        margin: 0;
     }
 
-    div.bs-img {
+    /* div.bs-img {
         width: 60%;
         margin-left: 32px;
     }
@@ -730,15 +730,15 @@ img.social-button {
     div.side-projects-img {
         width: 40%;
         margin-left: 32px;
-    }
+    } */
 
 
-    img.project-screenshot {
+    /* img.project-screenshot {
         width: 100%;
         display: flex;
         justify-content: flex-end;
         margin: auto;
-    }
+    } */
 
     /*    footer*/
     div#social-img {
@@ -780,15 +780,33 @@ img.social-button {
     } */
 
      /*    PROJECTS SECTION*/
-        section#project-section {
-            width: 70%;
-        }
-
+       
         h2.section-header {
             width: 70%;
         }
+    
+        div.container-reverse {
+            width: 70%;
+        }
+        
+        div.container {
+            width: 70%;
+        }
 
-    div.project-info {
+        /* div.project-img {
+            width: 45%;
+            margin: 0;
+            /* padding: 0 24px; */
+        
+    
+        div.project-info {
+            width: 45%;
+            margin: 0;
+        }
+
+        
+
+    /* div.project-info {
         width: 35%;
         margin: auto;
     }
@@ -796,7 +814,7 @@ img.social-button {
     div.gromm-img {
         width: 50%;
         margin-left: 50px;
-    }
+    } */
 
     div#social-img {
         width: 20%;
@@ -817,10 +835,16 @@ img.social-button {
     }
 
 /*    PROJECTS SECTION*/
-    section#project-section {
+   
+    h2.section-header {
         width: 60%;
     }
-    h2.section-header {
+
+    div.container-reverse {
+        width: 60%;
+    }
+    
+    div.container {
         width: 60%;
     }
 }
@@ -838,11 +862,19 @@ img.social-button {
     }
 
     /*    PROJECTS SECTION*/
-    section#project-section {
+    /* section#project-section {
         width: 50%;
-    }
+    } */
     h2.section-header {
         width:50%;
+    }
+
+    div.container-reverse {
+        width: 45%;
+    }
+    
+    div.container {
+        width: 45%;
     }
     
 }
