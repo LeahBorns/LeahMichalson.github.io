@@ -614,39 +614,31 @@ footer {
     margin-top: 48px;
 }
 
-footer h2.section-header {
-    color: #fff;
-    width: 85%;
-    margin: auto;
-    text-align: center;
-    padding: 48px 0;
-    line-height: 1em;
-}
 
 p.footer-credit {
-    color: #382F5A;
+    color: #7C7286;
     margin: 32px auto;
     text-align: center;
+    font-size: 0.75em;
 }
 
 div#social-img {
-    width: 70%;
+    width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
 }
 
 div#social-img a {
-    width: 15%;
-    margin: auto;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    display:inline-block;
 }
 
 
 img.social-button {
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 8px;
+    width: 24px;
+    margin: auto;
 }
 
 
