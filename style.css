@@ -23,9 +23,9 @@ main {
 }
 
 nav {
-    background-color: #fff;
+    /* background-color: #fff; */
     font-family: 'Calluna', serif;
-    color: #382F5A;
+    color: #030106;
 
 }
 
@@ -155,16 +155,17 @@ ul#nav-links li {
     text-align: left;
 }
 
-ul#nav-links li.active {
+ul#nav-links a.active {
     text-decoration: none;
     font-weight: 600;
+    color: #241435;
 }
 
 
 ul#nav-links li a {
     text-decoration: none;
-    font-size: 1em;
-    color: #241435;
+    font-size: 1.2em;
+    color: #594B68;
     padding: 32px 0;
 }
 
@@ -172,44 +173,38 @@ ul#nav-links li a:hover {
     color: #5F259F;
 }
 
-
-/*
-li.mobile-hover:hover {
-    background-color: #382F5A;
-    width: 100%;
-    margin: auto 0;
-    padding: 0;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-}
-*/
-
-/*mobile hamburger menu*/
+/*mobile hamburger/close menu*/
 
 span.mobile-btn {
-    display: inline-block;
-    float: right;
-    font-size: 1.5rem;
+    /* display: inline-block;
+    float: right; */
+    font-size: 1.5em;
+    color: #241435;
 }
 
-span.mobile-btn:hover {
+span.mobile-btn:hover,
+span.close:hover,
+ul#nav-links {
     cursor: pointer;
 }
 
-ul#nav-links li.close {
+span.close {
+    display: none;
+    font-size: 1.7em;
     color: #241435;
-    font-size: 2rem;
+}
+
+/* ul#nav-links {
+    color: #241435;
+    font-size: 1.5rem;
     text-align: right;
     display: block;
     padding-top: 30px;
+} */
 
-}
-
-ul#nav-links li.close:hover {
+/* ul#nav-links li.close:hover {
     cursor: pointer;
-}
+} */
 
 div.overlay {
     position: fixed;
@@ -225,7 +220,6 @@ div.overlay {
 .overlay.open {
     z-index: 5;
     opacity: 1;
-
 }
 
 ul#nav-links.open {
@@ -469,7 +463,7 @@ footer {
 } */
 
 p.footer-credit {
-    color: #7C7286;
+    color: #B3A7BF;
     margin: 32px auto;
     text-align: center;
     font-size: 0.75em;
@@ -482,10 +476,10 @@ div#social-img {
 }
 
 div#social-img a {
-    width: 25%;
+    width: 56px;
     margin: 0 auto;
     text-align: center;
-    display:inline-block;
+    display: inline-block;
 }
 
 
@@ -493,7 +487,6 @@ img.social-button {
     width: 24px;
     margin: auto;
 }
-
 
 @media only screen and (min-width: 600px) {
 
@@ -631,18 +624,17 @@ div.container {
     }
 
     ul#nav-links li a {
-        color: #33184D;
         font-size: 1em;
         padding: 32px 0;
     }
 
     /*mobile hamburger menu*/
     span.mobile-btn {
-        display: none;
+        visibility: hidden;
     }
 
-    ul#nav-links li.close {
-        display: none;
+    ul#nav-links span.close {
+        visibility: hidden;
     }
 
 
@@ -743,6 +735,10 @@ div.container {
     /*    footer*/
     div#social-img {
         width: 30%;
+    }
+
+    img.social-button {
+        width: 16px;
     }
 
 }

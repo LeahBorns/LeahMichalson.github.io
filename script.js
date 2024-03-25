@@ -14,6 +14,8 @@ var overlay = document.querySelector('.overlay');
 mobileBtn.addEventListener('click', function () {
     menu.className += ' open';
     overlay.className += ' open';
+    mobileBtn.style.display = "none";
+    closeBtn.style.display = "block";
 });
 
 //closes menu when click on 'x'
@@ -21,6 +23,8 @@ mobileBtn.addEventListener('click', function () {
 closeBtn.addEventListener('click', function () {
     menu.className += 'menu';
     overlay.className = 'overlay';
+    mobileBtn.style.display = "block";
+    closeBtn.style.display = "none";
 });
 
 
