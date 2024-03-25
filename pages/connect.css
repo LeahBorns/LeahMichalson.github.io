@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     font-size: 16px;
     line-height: 1.5em;
     display: flex;
@@ -24,36 +24,43 @@ main {
 
 nav{
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     color: #382F5A;
 }
 
 footer {
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     /* color: #fff; */
 }
 
-h1,h2{
-    font-family: 'Corben', cursive;
+h1,
+h2 {
+    font-family: calluna, serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
-h3,h4 {
-    font-family: 'Corben', cursive;
+h3,
+h4 {
+    font-family: calluna, serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-h1{
-    font-size: 3.815em;
+h1 {
+    font-size: 2.5em;
+    color: #241435;
 }
 
 h2 {
-    font-size: 2.441em;
+    font-size: 2em;
     padding-top: 16px;
     padding-bottom: 8px;
 }
 
 h3 {
-    font-size: 1.563em;
+    font-size: 1.5em;
     padding-top: 16px;
     padding-bottom: 8px;
 }
@@ -279,7 +286,7 @@ div#form {
 form {
     margin: auto;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
 }
 
 
@@ -288,7 +295,7 @@ form input[type=text] {
     height: 50px;
     border-radius: 5px;
     padding: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     margin: 16px auto;
     border: 2px solid #D8D8D8;
 }
@@ -298,7 +305,7 @@ form input[type=email] {
     height: 50px;
     border-radius: 5px;
     padding: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     margin: auto;
     border: 2px solid #D8D8D8;
 }
@@ -314,7 +321,7 @@ form textarea {
 }
 
 form textarea[placeholder] {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
 }
 
 div.g-recaptcha {
@@ -353,39 +360,29 @@ footer {
     margin-top: 48px;
 }
 
-footer h2.section-header {
-    color: #fff;
-    width: 85%;
-    margin: auto;
-    text-align: center;
-    padding: 48px 0;
-    line-height: 1em;
-}
-
 p.footer-credit {
-    color: #382F5A;
+    color: #7C7286;
     margin: 32px auto;
     text-align: center;
+    font-size: 0.75em;
 }
 
 div#social-img {
-    width: 70%;
+    width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
 }
 
 div#social-img a {
-    width: 15%;
-    margin: auto;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    display:inline-block;
 }
 
-
 img.social-button {
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 8px;
+    width: 24px;
+    margin: auto;
 }
 
 @media only screen and (min-width: 600px) {

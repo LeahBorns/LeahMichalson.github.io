@@ -19,9 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <title>Leah M's Portfolio</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Corben&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/veh8ezl.css">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -35,29 +33,32 @@
     <nav class="navbar">
 
         <div class="content">
-            <div id="nav-logo"><a href="#"> <img src="images/logo-v2-2.svg" alt="logo"></a>
+            <div id="nav-logo"><a href="#"> <img src="images/lm-logo.svg" alt="logo"></a>
                 <!-- <h3>Leah Michalson</h3> -->
             </div>
             <ul id="nav-links">
-                <li class="close">&times;</li>
-                <li class="active mobile-hover"><a href="#project-section" class="jumper">Projects</a></li>
+                <!-- <li class="close">&times;</li> -->
+                <li class="mobile-hover"><a href="#project-section" class="jumper active">Projects</a></li>
 
                 <li class="mobile-hover"><a href="./pages/about.html" class="jumper">About</a></li>
+                <li class="mobile-hover"><a href="../images/leah-michalson-design-resume.pdf" target="_blank">Resume</a></li>
                 <!-- <li class="mobile-hover"><a href="./pages/connect.html" class="jumper">Connect</a></li> -->
             </ul>
-            <span class="mobile-btn">☰</span>
+            <div>
+                <span class="mobile-btn">☰</span>
+                <span class="close">&times;</span>
+            </div>
+            
         </div>
     </nav>
     <main>
 
         <header>
-            <div class="triangle"> </div>
+            <!-- <div class="triangle"> </div> -->
             <div class="section bg-static">
                 <div id="header-title">
-                    <h2 class="welcome">Hi, I'm Leah</h2>
-                    <p class="header-description">A UX Designer with front end aptitude seeking ways to use design for
-                        positive change.</p><br>
-                    <p class="header-description">Welcome to my website.</p>
+                    <h1 class="welcome">Hi, I'm Leah - a <span class="header-highlight">product designer</span> with front end aptitude seeking ways to use design for
+                        positive change.</h1>
                 </div>
                 <div class="bg-move">
                     <div id="bm"></div>
@@ -67,39 +68,51 @@
 
         </header>
 
-        <h2 class="section-header">Check these out</h2>
+        
 
         <section id="project-section">
-
+            <h2 class="section-header">My projects</h2>
+            <!--Hinge health projects-->
+            <div class="container" data-aos="fade-down">
+                <div class="project-img">
+                    <img class="project-screenshot" src="images/hinge-health-project.svg" alt="bus spot screenshot">
+                </div>
+                <div class="project-info">
+                    <h3>Hinge Health Projects</h3>
+                    <p>I collaborated with the product and care teams to revamp Hinge Health's internal tools and workflows, enabling PTs, health coaches, and nurse practitioners to offer top-quality care. 
+                    </p>
+                    <a class="project-links" href="https://leahmichalson.myportfolio.com/" target="_blank">View Case Studies</a>
+                </div>
+            </div>
             <!--                GROMM-->
-            <div id="gromm-app" data-aos="fade-down">
+            <div class="container-reverse" data-aos="fade-down">
                 <div class="project-info">
                     <h3>Gromm&trade;</h3>
-                    <div class="tech-image">
+                    <!-- <div class="tech-image">
                         <img src="images/adobexd.svg" alt="adobe xd">
                         <img src="images/figma.svg" alt="figma">
-                    </div>
+                    </div> -->
                     <p>Gromm is a streamlined platform for Left Coast Bicycles, a mobile bike repair company. It will
                         allow their clients to schedule, get reminders and pay for mobile bike repair all in one place.
                     </p>
                     <a class="project-links" href="./pages/gromm.html">View Case Study</a>
                 </div>
-                <div class="project-img gromm-img">
-                    <img class="project-screenshot" src="images/gromm-web-case-study.svg" alt="gromm screenshot">
+                <div class="project-img">
+                    <img class="project-screenshot" src="images/gromm-project.svg" alt="gromm screenshot">
                 </div>
             </div>
 
             <!--                greener-->
-            <div id="greener-app" data-aos="fade-down">
-                <div class="project-img greener-img">
-                    <img class="project-screenshot" src="images/greener-project.svg" alt="bus spot screenshot">
+            <div class="container" data-aos="fade-down">
+                <div class="project-img">
+                    <img class="project-screenshot" src="images/greener-project-2.svg" alt="bus spot screenshot">
                 </div>
                 <div class="project-info">
                     <h3>greener&trade;</h3>
-                    <div class="tech-image">
+                    <!-- <div class="tech-image">
                         <img src="images/invision.svg" alt="invision">
                         <img src="images/figma.svg" alt="figma">
-                    </div>
+                    </div> -->
                     <p>Greener makes sustainable practices fun by earning points and getting rewards for incorporating
                         responsible habits into your life.
                     </p>
@@ -108,55 +121,31 @@
             </div>
 
             <!--                Bus Spot-->
-            <div id="bus-spot-app" data-aos="fade-down">
+            <div class="container-reverse" data-aos="fade-down">
                 <div class="project-info">
                     <h3>Bus Spot&trade;</h3>
-                    <div class="tech-image">
+                    <!-- <div class="tech-image">
                         <img src="images/adobexd.svg" alt="adobe xd">
                         <img src="images/figma.svg" alt="figma">
-                    </div>
+                    </div> -->
                     <p>Bus Spot is a transit scheduling app that makes it easy for riders to visually locate their bus
                         and reduce unexpected runs to the bus stop.
                     </p>
                     <a class="project-links" href="./pages/bus-spot.html">View Case Study</a>
                 </div>
-                <div class="project-img bs-img">
-                    <img class="project-screenshot" src="images/bus-spot-project.svg" alt="bus spot screenshot">
+                <div class="project-img">
+                    <img class="project-screenshot" src="images/bus-spot-project-2.svg" alt="bus spot screenshot">
                 </div>
             </div>
-
-            <!--                personal projects-->
-            <!-- <div id="personal-projects" data-aos="fade-down">
-                <div class="project-img side-projects-img">
-                    <img class="project-screenshot" src="images/side-project-home.svg" alt="personal projects">
-                </div>
-                <div class="project-info">
-                    <h3>Side Projects</h3>
-                    <div class="tech-image">
-                        <img src="images/adobeillustrator.svg" alt="adobe illustrator">
-                        <img src="images/adobephotoshop.svg" alt="adobe photoshop">
-                    </div>
-                    <p>Some things I've been working on in my spare time.
-                    </p>
-                    <div class="coming-soon">Coming soon!</div>
-                </div>
-            </div> -->
-
-
         </section>
         <div class="overlay"></div>
     </main>
 
     <footer>
-        <!-- <h2 class="section-header">Let's Connect!</h2> -->
         <div id="social-img">
-            <a href="https://github.com/LeahBorns" target="_blank"><img class="social-button" src="../images/github.svg"
-                    alt="github logo"></a>
             <a href="https://www.linkedin.com/in/leahmichalson/" target="_blank"><img class="social-button"
-                    src="../images/linkedin.svg" alt="linkedIn logo"></a>
-            <a href="https://www.instagram.com/leahmichalsondesigns/" target="_blank"><img class="social-button"
-                    src="../images/instagram.svg" alt="Instagram logo"></a>
-            <!--            <a href="./pages/connect.html"><img class="social-button" src="../images/social-mail.png" alt="mail image"></a>-->
+                    src="../images/linkedIn-icon.svg" alt="linkedIn logo"></a>
+            <a href="mailto:its.me@leahmichalson.com"><img class="social-button" src="../images/mail-icon.svg" alt="email image"></a>
         </div>
         <p class="footer-credit">Designed and Coded by Leah M.</p>
     </footer>

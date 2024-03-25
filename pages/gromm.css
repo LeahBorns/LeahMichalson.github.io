@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     font-size: 16px;
     line-height: 1.5em;
     display: flex;
@@ -23,51 +23,58 @@ main {
 }
 
 nav {
-    background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    color: #382F5A;
+    font-family: 'Calluna', serif;
+    color: #030106;
 }
 
 footer {
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     /* color: #fff; */
 }
 
 h1,
 h2 {
-    font-family: 'Corben', cursive;
+    font-family: calluna, serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #33184D;
 }
 
 h3,
 h4 {
-    font-family: 'Corben', cursive;
+    font-family: calluna, serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
-    font-size: 3.815em;
+    font-size: 2.5em;
 }
 
 h2 {
-    font-size: 2.441em;
-    padding-top: 16px;
-    padding-bottom: 8px;
+    font-size: 2em;
+    padding: 16px 0;
 }
 
 h3 {
-    font-size: 1.563em;
-    padding-top: 16px;
-    padding-bottom: 8px;
+    font-size: 1.5em;
+    padding: 12px 0;
+    color: #030106;
 }
 
 h4 {
     font-size: 1.25em;
-    padding: 16px 8px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    color: #502183;
 }
 
 p {
     font-size: 1em;
     text-align: left;
+    color: #030106;
+    padding: 12px 0;
 }
 
 span.bold {
@@ -81,16 +88,18 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 10000;
     /*    line-height: 65px;*/
     height: 90px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 
 nav>.content {
     /*    width: 100%;*/
-    height: 90px;
+    height: 100px;
     /*    margin: auto;*/
+
 }
 
 div.content {
@@ -103,7 +112,6 @@ div.content {
 }
 
 /*Nav logo and name*/
-
 div#nav-logo {
     margin: auto 0;
     width: 70%;
@@ -113,22 +121,20 @@ div#nav-logo {
     justify-content: flex-start;
 }
 
-div#nav-logo h3 {
-    /*
+/* div#nav-logo h3 {
+    
     display: inline-block;
     position: absolute;
-    */
-    /*
     top: 50%;
     transform: translate(10%,-50%);
-    */
-    color: #392F5A;
+    font-size: 1.25em;
+    color: #382F5A;
     padding-left: 8px;
     padding-top: initial;
-}
+} */
 
 div#nav-logo img {
-    width: 56px;
+    width: 48px;
 }
 
 ul#nav-links {
@@ -151,78 +157,71 @@ ul#nav-links li {
     text-align: left;
 }
 
-ul#nav-links li.active {
-    text-decoration: underline;
+ul#nav-links a.active {
+    text-decoration: none;
     font-weight: 600;
+    color: #241435;
 }
 
 
 ul#nav-links li a {
     text-decoration: none;
-    font-size: 2.441em;
-    color: #F4D06F;
+    font-size: 1.2em;
+    color: #594B68;
     padding: 32px 0;
-
 }
 
 ul#nav-links li a:hover {
-    color: #efbc2e;
+    color: #5F259F;
 }
 
-
-/*
-li.mobile-hover:hover {
-background-color: #382F5A;
-width: 100%;
-margin: auto 0;
-padding: 0;
-border-top-right-radius: 50px;
-border-bottom-right-radius: 50px;
-border-bottom-left-radius: 50px;
-border-top-left-radius: 50px;
-}
-*/
-
-/*mobile hamburger menu*/
+/*mobile hamburger/close menu*/
 
 span.mobile-btn {
-    display: inline-block;
-    float: right;
-    font-size: 1.5rem;
+    /* display: inline-block;
+    float: right; */
+    font-size: 1.5em;
+    color: #241435;
 }
 
-span.mobile-btn:hover {
+span.mobile-btn:hover,
+span.close:hover,
+ul#nav-links {
     cursor: pointer;
 }
 
-ul#nav-links li.close {
-    color: #F4D06F;
-    font-size: 3rem;
+span.close {
+    display: none;
+    font-size: 1.7em;
+    color: #241435;
+}
+
+/* ul#nav-links {
+    color: #241435;
+    font-size: 1.5rem;
     text-align: right;
     display: block;
     padding-top: 30px;
+} */
 
-}
-
-ul#nav-links li.close:hover {
+/* ul#nav-links li.close:hover {
     cursor: pointer;
-}
+} */
 
 div.overlay {
     position: fixed;
-    top: 100px;
+    top: 90px;
     left: 0;
     height: 100vh;
     width: 100%;
-    background-color: #382F5A;
+    background-color: #fff;
     opacity: 0;
     z-index: -1;
 }
 
 .overlay.open {
-    z-index: 3;
+    z-index: 5;
     opacity: 1;
-
 }
 
 ul#nav-links.open {
@@ -231,7 +230,7 @@ ul#nav-links.open {
 
 /*CASE STUDY IMAGES*/
 div.image-box {
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding: 24px 0;
 }
@@ -242,13 +241,7 @@ div.image-box img {
     display: block;
 }
 
-div.image-box2 {
-    width: 90%;
-    margin: 30px auto;
-    position: relative;
-}
-
-div.image-box3 {
+div.image-box2, div.image-box3 {
     width: 90%;
     margin: 30px auto;
     position: relative;
@@ -312,19 +305,11 @@ div.image-box4 img {
 
 header {
     width: 85%;
-    margin: 25% auto;
+    margin: 25% auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-h2.case-study-name {
-    color: #20A39E;
-}
-
-h3.section-title {
-    color: #0F0F0F;
 }
 
 div.case-study-image {
@@ -332,20 +317,6 @@ div.case-study-image {
     margin: 24px auto;
 }
 
-div.case-study-image img {
-    margin: auto;
-    width: 100%;
-    padding: 16px 0;
-}
-
-div.case-study-title {
-    width: 100%;
-    margin: auto;
-}
-
-p.case-study-description {
-    padding-top: 16px;
-}
 
 a.prototype-button-header {
     display: flex;
@@ -354,124 +325,62 @@ a.prototype-button-header {
     justify-content: center;
     width: 100%;
     padding: 16px;
-    margin-top: 32px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-    background-color: #382F5A;
+    margin: 16px auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid #5F259F;
     text-decoration: none;
-    font-size: 1rem;
-    color: #fff;
+    font-size: 1em;
+    color: #5F259F;
+    font-weight: 600;
 }
 
 a.prototype-button-header:hover {
-    background-color: #8879B9;
+    background-color: #E6D9EF;
 }
 
-/*PROBLEM STATEMENTn*/
-
-section#problem {
+/* SECTIONS */
+section.top {
     width: 100%;
     margin: auto;
-    background-color: #FDF6E1;
-    padding-top: 48px;
+    background-color: #fff;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+section.middle {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 32px;
+}
+
+section.bottom {
+    width: 100%;
+    margin: auto;
     padding-bottom: 48px;
 }
 
-div.problem-container h3 {
-    color: #0F0F0F;
-    margin-left: 7.5%;
-}
-
-div#statement {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #4c4045;
-}
-
-div#statement p {
-    width: 85%;
-    margin-top: 16px;
-}
-
-/*USERS ROLES AND SCOPES row with 3 sections*/
-
-section#users-roles-scope {
-    width: 100%;
-    margin: auto;
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
+/* SECTION CONTAINERS */
 
 div.container {
     width: 85%;
     margin: auto;
 }
 
-div.container h3 {
-    color: #0F0F0F;
-    padding-bottom: 16px;
+/* USERS AND SCOPE */
+
+div#container-middle {
+    padding: 32px 0;
 }
-
-div#users {
-    padding: 16px 0;
-}
-
-div#scope {
-    padding: 16px 0;
-}
-
-
-div#roles {
-    padding: 16px 0;
-}
-
-/*THE SOLUTIONn*/
-
-section#solution {
-    width: 100%;
-    margin: auto;
-    background-color: #FDF6E1;
-    padding-top: 48px;
-    padding-bottom: 32px;
-}
-
-div.solution-container h3 {
-    color: #0F0F0F;
-    margin-left: 7.5%;
-}
-
-div#solution-statement {
-    width: 85%;
-    margin: auto;
-    padding-top: 16px;
-}
-
-
-/*THE PROCESS*/
-
-section#process {
-    width: 100%;
-    margin: auto;
-    padding-top: 48px;
-}
-
-section#process h3 {
-    color: #0F0F0F;
-}
-
 
 /* ACCORDIAN DETAILS on white background */
 
 /* Style the buttons that are used to open and close the accordion panel */
 
-
-
 .accordion {
-    background-color: #D5D3DC;
-    color: #444;
+    background-color: #e0dbe5;
+    color: #030106;
     cursor: pointer;
     width: 85%;
     text-align: left;
@@ -482,30 +391,17 @@ section#process h3 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    color: #382F5A;
     padding: 16px 24px;
     font-size: 1.25em;
-    font-family: 'Corben', cursive;
+    font-family: 'Calluna', serif;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-    background-color: #BCB9C8;
+    background-color: #c3bacd;
 }
 
-/* .accordion:after {
-    content: '\002B';
-    font-size: 24px;
-    color: #A1700C;
-    font-weight: bold;
-    float: right;
-    margin-right: 15px;
-  }
-  
-  .active:after {
-    content: "\2212";
-  } */
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
@@ -516,37 +412,19 @@ section#process h3 {
     transition: max-height 0.2s ease-out;
 }
 
-/* DISCOVERY AND RESEARCH INTRO */
-div.discovery {
-    width: 85%;
-    margin: auto;
-}
+/*ACCORDION SECTIONS*/
 
-/*COMPETITIVE ANALYSIS*/
-
-div.competitive-analysis-container {
+div.accordion-section {
     width: 100%;
     margin: auto;
 }
 
-div.competitive-analysis {
+div.accordion-container {
     width: 85%;
     margin: auto;
-    padding: 24px 0;
+    padding: 20px 0;
 }
 
-/*USER SURVEY*/
-
-div.user-survey-container {
-    width: 100%;
-    margin: auto;
-}
-
-div#user-survey {
-    width: 85%;
-    margin: auto;
-    padding-top: 32px;
-}
 
 /*USER SURVEY CHARTS*/
 
@@ -572,150 +450,25 @@ div.chart-container2:before {
     transform: translateX(30%) translateY(10%) rotate(45deg);
 }
 
-
 canvas#usabilityChart1 {
     height: 100px;
 }
-
 
 canvas#usabilityChart2 {
     height: 100px;
 }
 
-
 canvas#usabilityPieChart {
     height: 100px;
 }
 
-
-/*PERSONAS*/
-
-div.persona-container {
-    width: 100%;
-    margin: auto;
-    padding-top: 32px;
-    padding-bottom: 48px;
-}
-
-div.personas {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-/* ACCORDIAN panel on yellow background */
-
-
-/* Style the accordion panel. Note: hidden by default */
-.panel-yellow {
-    padding: 0 5px;
-    background-color: #FDF6E1;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-/*Information architecture*/
-
-/*User Stories*/
-
-section.information-architecture {
-    width: 100%;
-    margin: 48px auto auto auto;
-    background-color: #FDF6E1;
-    background-size: cover;
-    padding: 48px 0;
-}
-
-section.information-architecture h3 {
-    width: 85%;
-    margin: auto;
-}
-
-/* DEFINE INTRO */
-div.define-intro {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-div.user-stories-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.user-stories {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
-
-/*WIREFRAME SKETCHES*/
-
-div.wireframe-sketch-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.wireframe-sketch {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
 a.case-study-link {
     text-decoration: none;
-    color: #20A39E;
+    color: #5F259F;
 }
 
 
 /*VISUAL DEISGN SECTION*/
-
-section.visual-design {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-}
-
-section.visual-design h3 {
-    width: 85%;
-    margin: auto;
-}
-
-div.color-type-intro {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
-/*LOGOS AND NAME*/
-div.logo-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.logo-process {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
-
-/*COLOR AND TYPE*/
-
-div.color-type-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.color-type {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
 
 
 div.color-type-image {
@@ -841,49 +594,6 @@ div.typography-group p:nth-child(5) {
 
 /*PROTOTYPING AND TESTING*/
 
-section.prototype-test {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-    background-color: #FDF6E1;
-}
-
-section.prototype-test h3 {
-    width: 85%;
-    margin: auto;
-}
-
-div.prototype-test-container {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
-/*ITERATIONS*/
-
-div.iterations-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.iterations {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
-/*Usability Test*/
-
-div.usability-test-container {
-    width: 100%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-div.usability-test {
-    width: 85%;
-    margin: auto;
-}
 
 div.usability-facts {
     width: 50%;
@@ -899,16 +609,16 @@ div.usability-facts p {
 div.usability-facts span {
     font-size: 2.441em;
     font-weight: 600;
-    font-family: 'Corben', cursive;
+    font-family: 'Calluna', serif;
 }
 
-div.usability-test ul {
-    width: 80%;
-    padding: 16px;
+div.accordion-container ul {
+    width: 90%;
+    /* padding: 16px; */
     margin: auto;
 }
 
-div.usability-test ul li {
+div.accordion-container ul li {
     margin: 0 0 15px 0;
 }
 
@@ -939,29 +649,7 @@ canvas#usabilityTest {
     height: 100px;
 }
 
-
-/*USABILITY TEST ITERATIONS*/
-
-div.usability-test-iterations-container{
-    width: 100%;
-    margin: auto;
-}
-
-div.usability-test-iterations {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-
 /*FINAL PROTOTYPE*/
-
-div.final-prototype-container {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-    padding-bottom: 48px;
-}
 
 div.app-gif {
     padding-top: 24px;
@@ -983,43 +671,20 @@ a.prototype-button-final {
     justify-content: center;
     width: 100%;
     padding: 16px;
-    margin-top: 32px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-    background-color: #382F5A;
+    margin: 16px auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid #5F259F;
     text-decoration: none;
-    font-size: 1rem;
-    color: #fff;
+    font-size: 1em;
+    color: #5F259F;
+    font-weight: 600;
 }
 
 a.prototype-button-final:hover {
-    background-color: #8879B9;
+    background-color: #E6D9EF;
 }
-
-/*CONCLUSION*/
-
-section.conclusion {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-}
-
-section.conclusion h3 {
-    width: 85%;
-    margin: auto;
-}
-
-div.learnings-container {
-    width: 85%;
-    margin: auto;
-}
-
-div.learnings-container h4 {
-    margin-left: 0;
-    padding: 16px 0;
-    color: #382F5A;
-}
-
 
 
 /*MAIN FOOTER*/
@@ -1030,60 +695,45 @@ footer {
     margin-top: 48px;
 }
 
-footer h2.section-header {
-    color: #fff;
-    width: 85%;
-    margin: auto;
-    text-align: center;
-    padding: 48px 0;
-    line-height: 1em;
-}
-
 p.footer-credit {
-    color: #382F5A;
+    color: #7C7286;
     margin: 32px auto;
     text-align: center;
+    font-size: 0.75em;
 }
 
 div#social-img {
-    width: 70%;
+    width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
 }
 
 div#social-img a {
-    width: 15%;
-    margin: auto;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    display:inline-block;
 }
 
 
 img.social-button {
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 8px;
+    width: 24px;
+    margin: auto;
 }
 
 
 @media only screen and (min-width: 600px) {
 
     div.image-box {
-        width: 75%;
+        width: 90%;
     }
 
-    div.image-box2 {
-        width: 80%;
-    }
-
-    div.image-box3 {
-        width: 80%;
-    }
-
-
+    div.image-box2,
+    div.image-box3,
     div.image-box4 {
         width: 80%;
     }
+
 
     /*        CHARTS*/
     div.chart-container,
@@ -1116,34 +766,17 @@ img.social-button {
     /*    HEADER*/
     header {
         width: 75%;
-        margin: 15% auto;
+        margin: 15% auto 0 auto;
     }
 
     div.case-study-image {
-        width: 85%;
+        width: 95%;
     }
 
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 12.5%;
-    }
 
-    div#statement p {
-        width: 75%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+    /* SECTION CONTAINERS */
     div.container {
         width: 75%;
-    }
-
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 75%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 12.5%;
     }
 
 
@@ -1153,62 +786,10 @@ img.social-button {
         width: 75%;
     }
 
-    /* ////////////////////////////////////////////////////// */
-
-    /* DISCOVERY AND RESEARCH INTRO */
-    div.discovery {
+    div.accordion-container {
         width: 75%;
     }
 
-    /*    COMPETITIVE ANALYSIS*/
-    div.competitive-analysis {
-        width: 75%;
-    }
-
-    /*USER SURVEY*/
-
-    div#user-survey {
-        width: 75%;
-    }
-
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 75%;
-    }
-
-    /* /////////////////////////////////////////// */
-
-    /* DEFINE INTRO */
-    div.define-intro {
-        width: 75%;
-    }
-
-    section.information-architecture h3 {
-        width: 75%;
-        margin: auto;
-    }
-
-
-    /*    USER STORIES*/
-    div.user-stories {
-        width: 75%;
-    }
-
-
-    /*USER FLOWS*/
-    div.user-flow {
-        width: 75%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-    div.wireframe-sketch {
-        width: 75%;
-    }
-
-    div.digital-wireframes {
-        width: 75%;
-    }
 
     /*    CHART TAPE*/
 
@@ -1222,32 +803,7 @@ img.social-button {
         width: 120px;
     }
 
-    /* //////////////////////////////////////////////////
- */
-    /*VISUAL DEISGN*/
-    section.visual-design h3 {
-        width: 75%;
-    }
-
-    div.color-type-intro {
-        width: 75%;
-    }
-
-    /*LOGOS AND NAME*/
-
-    div.logo-process {
-        width: 75%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.color-type {
-        width: 75%;
-    }
-
-
-
-    /*    STYLE GUIDE*/
+  /*    STYLE GUIDE*/
 
     div.color-type-image {
         width: 80%;
@@ -1279,64 +835,6 @@ img.social-button {
     }
 
 
-    /* ////////////////////////////////////////// */
-
-    /*PROTOTYPING AND TESTING*/
-    section.prototype-test h3 {
-        width: 75%;
-    }
-
-    div.prototype-test-container {
-        width: 75%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 75%;
-    }
-
-    /*Usability Test*/
-
-    div.usability-test {
-        width: 75%;
-    }
-
-
-    div.usability-test ul {
-        width: 80%;
-    }
-
-    /*USABILITY TEST ITERATIONS*/
-    div.usability-test-iterations {
-        width: 75%;
-    }
-
-
-
-    /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
-        width: 75%;
-    }
-
-    a.prototype-button-final {
-        width: 60%;
-        margin: 32px auto;
-    }
-
-    a.prototype-button-final:hover {
-        background-color: #8879B9;
-    }
-
-    /*    conclusion*/
-    section.conclusion h3 {
-        width: 75%;
-    }
-
-    div.learnings-container {
-        width: 75%;
-    }
-
     /*    FOOTER*/
 
     /*    social images*/
@@ -1357,18 +855,8 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
-        width: 65%;
-    }
-
-    div.image-box2 {
-        width: 70%;
-    }
-
-    div.image-box3 {
-        width: 70%;
-    }
-
+    div.image-box2,
+    div.image-box3,
     div.image-box4 {
         width: 70%;
     }
@@ -1395,171 +883,30 @@ img.social-button {
 
     /*    HEADER*/
     header {
-        width: 60%;
+        width: 70%;
     }
 
-    div.case-study-image {
-        width: 100%;
-        margin: auto;
-    }
-
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 20%;
-    }
-
-    div#statement p {
-        width: 60%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+    /* SECTION CONTAINERS */
     div.container {
-        width: 60%;
+        width: 70%;
     }
 
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 60%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 20%;
-    }
-
-    /* ////////////////////////////////////////////// */
-
-    /* DISCOVERY AND RESEARCH INTRO */
-    div.discovery {
-        width: 60%;
-    }
 
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 60%;
+        width: 70%;
     }
 
-    /*    COMPETITIVE ANALYSIS*/
-    div.competitive-analysis {
-        width: 60%;
+    div.accordion-container {
+        width: 70%;
     }
 
-    /*USER SURVEY*/
-
-    div#user-survey {
-        width: 60%;
-    }
-
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 60%;
-    }
-
-    /* ///////////////////////////////////////////////////// */
-
-    /* DEFINE INTRO */
-    div.define-intro {
-        width: 60%;
-    }
-
-    section.information-architecture h3 {
-        width: 60%;
-    }
-
-    /*    USER STORIES*/
-    div.user-stories {
-        width: 60%;
-    }
-
-
-    /*USER FLOWS*/
-    div.user-flow {
-        width: 60%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-    div.wireframe-sketch {
-        width: 60%;
-    }
-
-    div.digital-wireframes {
-        width: 60%;
-    }
-
-    /* //////////////////////////////////////////////////
- */
-    /*VISUAL DEISGN*/
-    section.visual-design h3 {
-        width: 60%;
-    }
-
-    div.color-type-intro {
-        width: 60%;
-    }
-
-    /*LOGOS AND NAME*/
-
-    div.logo-process {
-        width: 60%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.color-type {
-        width: 60%;
-    }
 
     div.color-type-image {
         width: 70%;
     }
 
-    /* ///////////////////PROTOTYPING AND TESTING////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 60%;
-    }
-
-    div.prototype-test-container {
-        width: 60%;
-    }
-
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 60%;
-    }
-
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 60%;
-    }
-
-    div.usability-test ul {
-        width: 85%;
-    }
-
-    /*USABILITY TEST ITERATIONS*/
-    div.usability-test-iterations {
-        width: 60%;
-    }
-
-    /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
-        width: 60%;
-    }
-
-
-    /*    conclusion*/
-    section.conclusion h3 {
-        width: 60%;
-    }
-
-    div.learnings-container {
-        width: 60%;
-    }
 
     /*    FOOTER*/
 
@@ -1583,14 +930,10 @@ img.social-button {
     /*    IMAGE BOX*/
 
     div.image-box {
-        width: 55%;
+        width: 75%;
     }
 
-
-    div.image-box2 {
-        width: 65%;
-    }
-
+    div.image-box2,
     div.image-box3 {
         width: 65%;
     }
@@ -1616,7 +959,7 @@ img.social-button {
         position: initial;
         transition: none;
         transform: none;
-        width: 50%;
+        width: 35%;
 
     }
 
@@ -1626,202 +969,69 @@ img.social-button {
     }
 
     ul#nav-links li a {
-        color: #392F5A;
+        color: #33184D;
         font-size: 1em;
         padding: 32px 0;
     }
 
     /*mobile hamburger menu*/
     span.mobile-btn {
-        display: none;
+        visibility: hidden;
     }
 
-    ul#nav-links li.close {
-        display: none;
+    ul#nav-links span.close {
+        visibility: hidden;
     }
 
 
     /*    HEADER*/
+
     header {
-        width: 80%;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
+        width: 65%;
     }
 
     div.case-study-image {
-        width: 100%;
-        padding-right: 30px;
-
-    }
-
-    div.case-study-title {
         width: 75%;
-        margin: auto auto auto 32px;
     }
 
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 22.5%;
+    .header-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
     }
 
-    div#statement p {
-        width: 55%;
+    a.prototype-button-header {
+        margin: 8px auto;
     }
 
-    /*        USERS ROLES AND SCOPE*/
+        /* SECTION CONTAIINER */
     div.container {
-        width: 55%;
-    }
-
-
-
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 55%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 22.5%;
-    }
-
-    /* ///////////////////////////////////////////////// */
-
-    /* DISCOVERY AND RESEARCH INTRO */
-    div.discovery {
-        width: 55%;
+        width: 65%;
     }
 
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 55%;
+        width: 65%;
     }
 
-    /*    COMPETITIVE ANALYSIS*/
-    div.competitive-analysis {
-        width: 55%;
-    }
-
-    /*USER SURVEY*/
-
-    div#user-survey {
-        width: 55%;
-    }
-
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 55%;
-    }
-
-
-    /* ////////////////////////////////////////////// */
-
-    /* DEFINE INTRO */
-    div.define-intro {
-        width: 55%;
-    }
-
-    section.information-architecture h3 {
-        width: 55%;
-    }
-
-    /* USER STORIES */
-    div.user-stories {
-        width: 55%;
-    }
-
-
-    /*USER FLOWS*/
-    div.user-flow {
-        width: 55%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-    div.wireframe-sketch {
-        width: 55%;
-    }
-
-    div.digital-wireframes {
-        width: 55%;
-    }
-
-    /* /////////////////////////VISUAL DEISGN/////////////////////////
- */
-    section.visual-design h3 {
-        width: 55%;
-    }
-
-    div.color-type-intro {
-        width: 55%;
-    }
-
-    /*LOGOS AND NAME*/
-
-    div.logo-process {
-        width: 55%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.color-type {
-        width: 55%;
+    div.accordion-container {
+        width: 65%;
     }
 
     div.color-type-image {
         width: 65%;
     }
 
-    /*////////////// PROTOTYPING AND TESTING /////////////////*/
-    section.prototype-test h3 {
-        width: 55%;
-    }
-
-    div.prototype-test-container {
-        width: 55%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 55%;
-    }
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 55%;
-    }
-
-
-    div.usability-test ul {
-        width: 90%;
-    }
-
-    /*USABILITY TEST ITERATIONS*/
-    div.usability-test-iterations {
-        width: 55%;
-    }
-
-    /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
-        width: 55%;
-    }
-
-
-
-    /*    conclusion*/
-    section.conclusion h3 {
-        width: 55%;
-    }
-
-    div.learnings-container {
-        width: 55%;
-    }
 
     /*    FOOTER*/
     div#social-img {
         width: 30%;
+    }
+
+    img.social-button {
+        width: 16px;
     }
 
 }
@@ -1837,178 +1047,37 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
-        width: 50%;
-    }
 
-    div.image-box2 {
-        width: 55%;
-    }
-
-    div.image-box3 {
-        width: 55%;
-    }
-
+    div.image-box2,
+    div.image-box3,
     div.image-box4 {
         width: 55%;
     }
 
 
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 27.5%;
+     /*    HEADER*/
+    header {
+        width: 60%;
     }
-
-    div#statement p {
-        width: 45%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+    
+    /* SECTION CONTAINERS */
     div.container {
-        width: 45%;
-    }
-
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 45%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 27.5%;
-    }
-
-    /* /////////////////////////////////////////////////////// */
-    /* DISCOVERY AND RESEARCH INTRO */
-    div.discovery {
-        width: 45%;
+        width: 60%;
     }
 
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 45%;
+        width: 60%;
     }
 
-    /*    COMPETITIVE ANALYSIS*/
-    div.competitive-analysis {
-        width: 45%;
-    }
-
-    /*USER SURVEY*/
-
-    div#user-survey {
-        width: 45%;
-    }
-
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 45%;
-    }
-
-    /* //////////////////////////////////////////////// */
-
-    /* DEFINE INTRO */
-    div.define-intro {
-        width: 45%;
-    }
-
-    section.information-architecture h3 {
-        width: 45%;
-    }
-
-    /*User Story*/
-
-    div.user-stories {
-        width: 45%;
-    }
-
-
-    /*USER FLOWS*/
-    div.user-flow {
-        width: 45%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-    div.wireframe-sketch {
-        width: 45%;
-    }
-
-    div.digital-wireframes {
-        width: 45%;
-    }
-
-    /* /////////////////////VISUAL DEISGN/////////////////////////////
- */
-
-    section.visual-design h3 {
-        width: 45%;
-    }
-
-    div.color-type-intro {
-        width: 45%;
-    }
-
-    /*LOGOS AND NAME*/
-
-    div.logo-process{
-        width: 45%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.color-type {
-        width: 45%;
+    div.accordion-container {
+        width: 60%;
     }
 
     div.color-type-image {
         width: 55%;
     }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 45%;
-    }
-
-
-
-    /*////////////   PROTOTYPING AND TESTING  ///////////////////*/
-    section.prototype-test h3 {
-        width: 45%;
-    }
-
-    div.prototype-test-container {
-        width: 45%;
-    }
-
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 45%;
-    }
-
-    /*USABILITY TEST ITERATIONS*/
-    div.usability-test-iterations {
-        width: 45%;
-    }
-
-
-    /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
-        width: 45%;
-    }
-
-
-    /*    conclusion*/
-    section.conclusion h3 {
-        width: 45%;
-    }
-
-    div.learnings-container {
-        width: 45%;
-    }
-
 
     /*    FOOTER*/
     div#social-img {
@@ -2019,45 +1088,14 @@ img.social-button {
 
 @media only screen and (min-width: 1200px) {
 
-    /*BUS SPOT HEADER*/
-
-    header {
-        width: 70%;
-    }
-
-    div.case-study-title {
-        width: 60%;
-    }
-
-    div.case-study-image {
-        width: 90%;
-        padding: 0;
-    }
-
-    div.case-study-image img {
-        width: 85%;
-
-    }
-
 
     /*    IMAGE BOX*/
 
-    div.image-box {
-        width: 35%;
-    }
-
-    div.image-box2 {
-        width: 45%;
-    }
-
-    div.image-box3 {
-        width: 45%;
-    }
-
+    div.image-box2,
+    div.image-box3,
     div.image-box4 {
         width: 45%;
     }
-
 
     /*    CHARTS*/
     div.chart-container,
@@ -2066,174 +1104,147 @@ img.social-button {
         height: 35%;
     }
 
-    /*    THE PROBLEM*/
-    div.problem-container h3 {
-        margin-left: 32.5%;
+    /*  NAV*/
+
+   div.content {
+    width: 70%;
+}
+
+    /*GROMM HEADER*/
+
+    header {
+        width: 50%;
     }
 
-    div#statement p {
-        width: 35%;
-    }
-
-    /*        USERS ROLES AND SCOPE*/
+    /* SECTION CONTAINERS */
     div.container {
-        width: 35%;
-    }
-
-    /*    THE SOLUTION*/
-    div#solution-statement {
-        width: 35%;
-    }
-
-    div.solution-container h3 {
-        margin-left: 32.5%;
-    }
-
-    /* ////////////////////////////////////////////// */
-
-    /* DISCOVERY AND RESEARCH INTRO */
-    div.discovery {
-        width: 35%;
+        width: 50%;
     }
 
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 35%;
+        width: 50%;
     }
 
-    /*    COMPETITIVE ANALYSIS*/
-    div.competitive-analysis {
-        width: 35%;
+    div.accordion-container {
+        width: 50%;
     }
 
-    /*USER SURVEY*/
-
-    div#user-survey {
-        width: 35%;
-    }
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 35%;
-    }
-
-    /* ///////////////////////////////////////////// */
-
-    /* DEFINE INTRO */
-    div.define-intro {
-        width: 35%;
-    }
-
-    section.information-architecture h3 {
-        width: 35%;
-    }
-
-    /*User Story*/
-
-    div.user-stories {
-        width: 35%;
-    }
-
-
-    /*USER FLOWS*/
-    div.user-flow {
-        width: 35%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-    div.wireframe-sketch {
-        width: 35%;
-    }
-
-    div.digital-wireframes {
-        width: 35%;
-    }
-
-    /*USABILITY TEST*/
-    div.usability-test-1 {
-        width: 35%;
-    }
-
-    /* ////////////////////VISUAL DEISGN//////////////////////////////
- */
-    section.visual-design h3 {
-        width: 35%;
-    }
-
-    div.color-type-intro {
-        width: 35%;
-    }
-
-    /*LOGOS AND NAME*/
-
-    div.logo-process{
-        width: 35%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.color-type {
-        width: 35%;
-    }
 
     div.color-type-image {
         width: 40%;
     }
 
-
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 35%;
-    }
-
-    /*////////////// PROTOTYPING AND TESTING ///////////////*/
-    section.prototype-test h3 {
-        width: 35%;
-    }
-
-    div.prototype-test-container {
-        width: 35%;
-    }
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 35%;
-    }
-
-
-    div.usability-test ul {
-        width: 95%;
-    }
-
-    /*USABILITY TEST ITERATIONS*/
-    div.usability-test-iterations {
-        width: 35%;
-    }
-
-    /*    FINAL PROTOTYPE*/
-    div.final-prototype-container {
-        width: 35%;
-    }
-
     div.app-gif {
-        width: 100%;
+        width: 90%;
     }
-
-    /*    conclusion*/
-    section.conclusion h3 {
-        width: 35%;
-    }
-
-    div.learnings-container {
-        width: 35%;
-    }
-
 
     div#social-img {
         width: 20%;
     }
 
 }
+@media only screen and (min-width: 1440px) {
+   
+    /*    IMAGE BOX*/
+
+    div.image-box2,
+    div.image-box3,
+    div.image-box4 {
+        width: 35%;
+    }
+
+    /*    CHARTS*/
+    div.chart-container,
+    div.chart-container2 {
+        width: 30%;
+        height: 30%;
+    }
+    
+    /*  NAV*/
+ 
+    div.content {
+     width: 60%;
+ }
+ 
+  /*    HEADER*/
+  header {
+    width: 45%;
+    margin: 10% auto 0 auto;
+    }
+
+    /* SECTION CONTAINERS */
+    div.container {
+        width: 45%;
+    }
+
+    /* ACCORDIAN DETAILS */
+
+    .accordion {
+        width: 45%;
+    }
+
+    div.accordion-container {
+        width: 45%;
+    }
+
+    /* COLOR IMAGE */
+    div.color-type-image {
+        width: 35%;
+    }
+
+ }
+ 
+ @media only screen and (min-width: 1700px) {
+   
+/*    IMAGE BOX*/
+
+    div.image-box2,
+    div.image-box3,
+    div.image-box4 {
+        width: 30%;
+    }
+
+    /*    CHARTS*/
+    div.chart-container,
+    div.chart-container2 {
+        width: 25%;
+        height: 25%;
+    }
+
+/* NAV */
+    div.content {
+        width: 50%;
+    }
+ 
+/*    HEADER*/
+    header {
+    width: 40%;
+    }
+
+/* SECTION CONTAINERS */
+    div.container {
+        width: 40%;
+    }
+
+    /* ACCORDIAN DETAILS */
+
+    .accordion {
+        width: 40%;
+    }
+
+    div.accordion-container {
+        width: 40%;
+    }    
+
+        /* COLOR IMAGE */
+    div.color-type-image {
+        width: 25%;
+    }
+
+     /* GIF */
+    div.app-gif {
+        width: 85%;
+    }
+ }

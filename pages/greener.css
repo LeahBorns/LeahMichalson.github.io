@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     font-size: 16px;
     line-height: 1.5em;
     display: flex;
@@ -23,52 +23,58 @@ main {
 }
 
 nav {
-    background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     color: #382F5A;
 }
 
 footer {
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Calluna', serif;
     /* color: #fff; */
 }
 
 h1,
 h2 {
-    font-family: 'Corben', cursive;
+    font-family: calluna, serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #33184D;
 }
 
 h3,
 h4 {
-    font-family: 'Corben', cursive;
+    font-family: calluna, serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
-    font-size: 3.815em;
+    font-size: 2.5em;
 }
 
 h2 {
-    font-size: 2.441em;
-    padding-top: 16px;
-    padding-bottom: 8px;
+    font-size: 2em;
+    padding: 16px 0;
 }
 
 h3 {
-    font-size: 1.563em;
-    padding-top: 16px;
-    padding-bottom: 8px;
+    font-size: 1.5em;
+    padding: 12px 0;
+    color: #030106;
 }
 
 h4 {
     font-size: 1.25em;
     padding-top: 16px;
     padding-bottom: 8px;
+    color: #502183;
 }
 
 p {
     font-size: 1em;
     text-align: left;
+    color: #030106;
+    padding: 12px 0;
 }
 
 span.bold {
@@ -82,16 +88,18 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 10000;
     /*    line-height: 65px;*/
     height: 90px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 
 nav>.content {
     /*    width: 100%;*/
-    height: 90px;
+    height: 100px;
     /*    margin: auto;*/
+
 }
 
 div.content {
@@ -113,22 +121,20 @@ div#nav-logo {
     justify-content: flex-start;
 }
 
-div#nav-logo h3 {
-    /*
+/* div#nav-logo h3 {
+    
     display: inline-block;
     position: absolute;
-    */
-    /*
     top: 50%;
     transform: translate(10%,-50%);
-    */
-    color: #392F5A;
+    font-size: 1.25em;
+    color: #382F5A;
     padding-left: 8px;
     padding-top: initial;
-}
+} */
 
 div#nav-logo img {
-    width: 56px;
+    width: 48px;
 }
 
 ul#nav-links {
@@ -151,78 +157,71 @@ ul#nav-links li {
     text-align: left;
 }
 
-ul#nav-links li.active {
-    text-decoration: underline;
+ul#nav-links a.active {
+    text-decoration: none;
     font-weight: 600;
+    color: #241435;
 }
 
 
 ul#nav-links li a {
     text-decoration: none;
-    font-size: 2.441em;
-    color: #F4D06F;
+    font-size: 1.2em;
+    color: #594B68;
     padding: 32px 0;
-
 }
 
 ul#nav-links li a:hover {
-    color: #efbc2e;
+    color: #5F259F;
 }
 
-
-/*
-li.mobile-hover:hover {
-background-color: #382F5A;
-width: 100%;
-margin: auto 0;
-padding: 0;
-border-top-right-radius: 50px;
-border-bottom-right-radius: 50px;
-border-bottom-left-radius: 50px;
-border-top-left-radius: 50px;
-}
-*/
-
-/*mobile hamburger menu*/
+/*mobile hamburger/close menu*/
 
 span.mobile-btn {
-    display: inline-block;
-    float: right;
-    font-size: 1.5rem;
+    /* display: inline-block;
+    float: right; */
+    font-size: 1.5em;
+    color: #241435;
 }
 
-span.mobile-btn:hover {
+span.mobile-btn:hover,
+span.close:hover,
+ul#nav-links {
     cursor: pointer;
 }
 
-ul#nav-links li.close {
-    color: #F4D06F;
-    font-size: 3rem;
+span.close {
+    display: none;
+    font-size: 1.7em;
+    color: #241435;
+}
+
+/* ul#nav-links {
+    color: #241435;
+    font-size: 1.5rem;
     text-align: right;
     display: block;
     padding-top: 30px;
+} */
 
-}
-
-ul#nav-links li.close:hover {
+/* ul#nav-links li.close:hover {
     cursor: pointer;
-}
+} */
 
 div.overlay {
     position: fixed;
-    top: 100px;
+    top: 90px;
     left: 0;
     height: 100vh;
     width: 100%;
-    background-color: #382F5A;
+    background-color: #fff;
     opacity: 0;
     z-index: -1;
 }
 
 .overlay.open {
-    z-index: 3;
+    z-index: 5;
     opacity: 1;
-
 }
 
 ul#nav-links.open {
@@ -231,7 +230,7 @@ ul#nav-links.open {
 
 /*CASE STUDY IMAGES*/
 div.image-box {
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding: 24px 0;
 }
@@ -242,13 +241,7 @@ div.image-box img {
     display: block;
 }
 
-div.image-box2 {
-    width: 90%;
-    margin: 32px auto;
-    position: relative;
-}
-
-div.image-box3 {
+div.image-box2, div.image-box3 {
     width: 90%;
     margin: 32px auto;
     position: relative;
@@ -313,43 +306,16 @@ div.image-box4 img {
 
 header {
     width: 85%;
-    margin: 25% auto;
+    margin: 25% auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-h2.case-study-name {
-    color: #20A39E;
-}
-
-h3.section-title {
-    color: #0F0F0F;
 }
 
 div.case-study-image {
-    padding-top: 16px;
-    width: 100%;
+    width: 85%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-div.case-study-image img {
-    margin: auto;
-    width: 100%;
-}
-
-div.case-study-title {
-    width: 100%;
-    margin: auto;
-}
-
-p.case-study-description {
-    padding-top: 16px;
 }
 
 a#prototype-button-header {
@@ -359,106 +325,56 @@ a#prototype-button-header {
     justify-content: center;
     width: 100%;
     padding: 16px;
-    margin-top: 32px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-    background-color: #382F5A;
+    margin: 16px auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid #5F259F;
     text-decoration: none;
-    font-size: 1rem;
-    color: #fff;
+    font-size: 1em;
+    color: #5F259F;
+    font-weight: 600;
 }
 
-/*PROBLEM STATEMENTn*/
+a#prototype-button-header:hover {
+    background-color: #E6D9EF;
+}
 
-section#problem {
+/* SECTIONS */
+section.top {
     width: 100%;
     margin: auto;
-    background-color: #FDF6E1;
-    padding-top: 48px;
+    background-color: #fff;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+section.middle {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 32px;
+}
+
+section.bottom {
+    width: 100%;
+    margin: auto;
     padding-bottom: 48px;
 }
 
-div.problem-container h3 {
-    color: #0F0F0F;
-    margin-left: 7.5%;
-}
+/* CASE STUDY CONTAINERS */
 
-div#statement {
+div.container {
     width: 85%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #4c4045;
 }
 
-div#statement p {
-    width: 100%;
-    margin-top: 16px;
-}
 
 /*USERS ROLES AND SCOPES row with 3 sections*/
 
-section#users-roles-scope {
-    width: 85%;
-    margin: auto;
-    padding-top: 48px;
-    padding-bottom: 48px;
+div#container-middle {
+    padding: 32px 0;
 }
 
-div.container {
-    width: 100%;
-    margin: auto;
-    /*
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-*/
-}
-
-div.container h3 {
-    color: #0F0F0F;
-    padding-bottom: 16px;
-}
-
-div#users {
-    padding: 16px 0;
-}
-
-div#scope {
-    padding: 16px 0;
-}
-
-
-div#roles {
-    padding: 16px 0;
-}
-
-/*THE SOLUTIONn*/
-
-section#solution {
-    width: 100%;
-    margin: auto;
-    background-color: #FDF6E1;
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
-
-div.solution-container h3 {
-    color: #0F0F0F;
-    margin-left: 7.5%;
-}
-
-div#solution-statement {
-    width: 85%;
-    margin: auto;
-    padding-top: 16px;
-}
-
-div#solution-statement p {
-    padding-bottom: 16px;
-}
 
 
 /*THE PROCESS*/
@@ -468,8 +384,8 @@ div#solution-statement p {
 /* Style the buttons that are used to open and close the accordion panel */
 
 .accordion {
-    background-color: #D5D3DC;
-    color: #444;
+    background-color: #e0dbe5;
+    color: #030106;
     cursor: pointer;
     width: 85%;
     text-align: left;
@@ -480,16 +396,15 @@ div#solution-statement p {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    color: #382F5A;
     padding: 16px 24px;
     font-size: 1.25em;
-    font-family: 'Corben', cursive;
+    font-family: 'Calluna', serif;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-    background-color: #BCB9C8;
+    background-color: #c3bacd;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -501,221 +416,47 @@ div#solution-statement p {
     transition: max-height 0.2s ease-out;
 }
 
-section#process {
-    width: 100%;
-    margin: auto;
-    padding: 24px 0;
-}
+/*ACCORDION SECTIONS*/
 
-section#process h3 {
-    color: #0F0F0F;
-}
-
-section#process h4 {
-    color: #A1700C;
-    padding-left: 0;
-}
-
-div.discovery-intro {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-/*MAPPING FLOW AND HMW*/
-
-
-div.mapping-hmw-container {
+div.accordion-section {
     width: 100%;
     margin: auto;
 }
 
-div.map-problem {
+div.accordion-container {
     width: 85%;
     margin: auto;
-    padding: 24px 0;
+    padding: 20px 0;
 }
 
-/*LIGHTNING DEMOS*/
 
-
-div.lightning-demos {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-div.ld-info {
-    width: 85%;
-    margin: auto;
-}
-
-div.ld-info img {
+div.accordion-container img {
     width: 85%;
     margin: auto;
     display: block;
     padding: 16px 0;
 }
 
-div.ld-facts {
-    width: 100%;
-    margin: auto;
-    list-style-position: outside;
-}
-
-div.ld-facts span {
-    font-size: 1.25em;
-}
-
-div.ld-facts ul {
-    padding-top: 8px;
-    padding-bottom: 24px;
-}
-
-div.ld-facts ul li {
-    padding-bottom: 8px;
-}
-
-/*PERSONAS*/
-div.persona-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.personas {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-/* ACCORDIAN panel on yellow background */
-
-
-/* Style the accordion panel. Note: hidden by default */
-.panel-yellow {
-    padding: 0 5px;
-    background-color: #FDF6E1;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-/*//////////Information architecture\\\\\\\\\\\\*/
-
-section.information-architecture {
-    width: 100%;
-    margin: 48px auto auto auto;
-    background-color: #FDF6E1;
-    background-size: cover;
-    padding: 48px 0;
-}
-
-
-section.information-architecture h3 {
-    width: 85%;
-    margin: auto;
-}
-
-/* IA INTRO */
-div.ia-intro {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-
-/*STORYBOARD*/
-
-div.user-stories-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.storyboard {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
-
-/*WIREFRAME SKETCHES*/
-
-div.wireframe-sketch-container {
-    width: 100%;
-    margin: auto;
-}
-
-
-div.wireframe-sketch {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
-
-div.list {
-    margin: auto;
-    width: 60%;
-}
-
-div.wireframe-sketch ol {
-    font-weight: 600;
-    margin: auto;
-    width: 100%;
-    list-style-position: inside;
-}
-
-p.screen-details {
+div.accordion-container ul {
     width: 90%;
+    /* padding: 16px; */
     margin: auto;
 }
 
-/* Digital wireframe */
-
-div.digital-wireframes-container {
-    width: 100%;
-    margin: auto;
+div.accordion-container ul li {
+    margin: 8px 0 15px 0;
 }
 
-div.digital-wireframes {
+
+div.accordion-container ol {
     width: 85%;
+    /* padding: 16px; */
     margin: auto;
-    padding-top: 24px;
 }
+
 
 
 /*VISUAL DEISGN*/
-
-section.visual-design {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-}
-
-section.visual-design h3 {
-    width: 85%;
-    margin: auto;
-}
-
-div.color-type-intro {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-/*COLOR AND TYPE*/
-
-
-div.color-type-container {
-    width: 100%;
-    margin: auto;
-
-}
-
-div.type-and-color {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-}
 
 div.color-type-image {
     width: 95%;
@@ -830,83 +571,7 @@ div.typography-group p:nth-child(5) {
     line-height: 1em;
 }
 
-
-/*LOGOS AND NAME*/
-
-div.logo-container {
-    width: 100%;
-    margin: auto;
-}
-
-div.logo {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-
-
-/*PROTOTYPING AND TESTING*/
-
-section.prototype-test {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-    background-color: #FDF6E1;
-}
-
-section.prototype-test h3 {
-    width: 85%;
-    margin: auto;
-}
-
-div.prototype-test-container {
-    width: 85%;
-    margin: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-
-/*Iterations*/
-
-
-div.iterations {
-    padding: 24px 0;
-    width: 85%;
-    margin: auto;
-}
-
 /*Usability Test*/
-
-div.usability-test-container {
-    width: 100%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-div.usability-test {
-    width: 85%;
-    margin: auto;
-}
-
-
-div.usability-test ul {
-    padding: 16px;
-    font-weight: 600;
-    margin: auto;
-    width: 90%;
-}
-
-div.usability-test ul li {
-    margin: 0 0 15px 0;
-}
-
-p.takeaways {
-    width: 85%;
-    margin: auto;
-}
-
 
 div.chart-container {
     height: 90%;
@@ -938,44 +603,18 @@ canvas#myChart {
 
 /*PREFERENCE TESTING*/
 
-div.preference-test-container {
-    width: 100%;
-    margin: auto;
-    padding: 24px 0;
-}
-
-div.preference-test-1 {
-    width: 85%;
-    margin: auto;
-}
-
 span.quote {
     font-weight: 600;
     font-style: italic;
     font-size: 1.25em;
 }
 
-
-div.preference-test-2 {
-    width: 85%;
-    margin: auto;
-}
-
-
 /*FINAL PROTOTYPE*/
-
-div.final-prototype-container {
-    width: 85%;
-    margin: auto;
-    padding: 24px 0;
-}
-
 
 div.app-gif {
     padding-top: 32px;
-    width: 50%;
+    width: 40%;
     margin: auto;
-
 }
 
 div.app-gif img {
@@ -991,41 +630,19 @@ a#prototype-button-final {
     justify-content: center;
     width: 100%;
     padding: 16px;
-    margin-top: 32px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-    background-color: #382F5A;
+    margin: 16px auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid #5F259F;
     text-decoration: none;
-    font-size: 1rem;
-    color: #fff;
+    font-size: 1em;
+    color: #5F259F;
+    font-weight: 600;
 }
 
 a#prototype-button-final:hover {
-    background-color: #8879B9;
-}
-
-/*CONCLUSION*/
-
-section.conclusion {
-    width: 100%;
-    margin: auto;
-    padding: 48px 0;
-}
-
-section.conclusion h3 {
-    width: 85%;
-    margin: auto;
-}
-
-div.learnings-container {
-    width: 85%;
-    margin: auto;
-}
-
-div.learnings-container h4 {
-    color: #A1700C;
-    margin-left: 0;
-    padding: 16px 0;
+    background-color: #E6D9EF;
 }
 
 
@@ -1037,60 +654,46 @@ footer {
     margin-top: 48px;
 }
 
-footer h2.section-header {
-    color: #fff;
-    width: 85%;
-    margin: auto;
-    text-align: center;
-    padding: 48px 0;
-    line-height: 1em;
-}
-
 p.footer-credit {
-    color: #382F5A;
+    color: #7C7286;
     margin: 32px auto;
     text-align: center;
+    font-size: 0.75em;
 }
 
 div#social-img {
-    width: 70%;
+    width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
 }
 
 div#social-img a {
-    width: 15%;
-    margin: auto;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    display:inline-block;
 }
 
 
 img.social-button {
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 8px;
+    width: 24px;
+    margin: auto;
 }
 
 @media only screen and (min-width: 600px) {
 
     div.image-box {
-        width: 80%;
+        width: 90%;
     }
 
-    div.image-box2 {
-        width: 80%;
-    }
-
+    div.image-box2,
     div.image-box3 {
         width: 80%;
     }
 
-
     div.image-box4 {
         width: 70%;
     }
-
 
     /*        CHARTS*/
     div.chart-container {
@@ -1120,40 +723,17 @@ img.social-button {
     /*    GREENER HEADER*/
     header {
         width: 75%;
-        margin: 15% auto;
+        margin: 15% auto 0 auto;
     }
 
-    /*
-    a#prototype-button-header {
-        width: 60%;
-        margin: 32px auto;
-    }
-*/
-
-    /*    PROBLEM STATEMENT*/
-    div.problem-container h3 {
-        margin-left: 12.5%;
+    div.case-study-image {
+        width: 80%;
     }
 
-    div#statement {
+    /* SECTION CONTAINERS */
+    div.container {
         width: 75%;
     }
-
-    /*USERS ROLES AND SCOPES row with 3 sections*/
-
-    section#users-roles-scope {
-        width: 75%;
-    }
-
-    /*    THE SOLUTION*/
-    div.solution-container h3 {
-        margin-left: 12.5%;
-    }
-
-    div#solution-statement {
-        width: 75%;
-    }
-
 
     /* ACCORDIAN DETAILS */
 
@@ -1161,96 +741,15 @@ img.social-button {
         width: 75%;
     }
 
-    /*MAPPING FLOW AND HMW*/
-
-
-    div.discovery-intro {
+    div.accordion-container {
         width: 75%;
     }
 
-    div.map-problem {
-        width: 75%;
-    }
-
-    /*LIGHTNING DEMOS*/
-
-    div#lightning-intro {
-        width: 75%;
-    }
-
-    div.lightning-demos {
-        width: 75%;
-    }
-
-    div.ld-facts {
-        width: 90%;
-    }
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 75%;
-    }
-
-    /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
-
-
-    /* IA INTRO */
-    div.ia-intro {
-        width: 75%;
-    }
-
-    section.information-architecture h3 {
-        width: 75%;
-        margin: auto;
-    }
-
-
-    /*    STORYBOARD*/
-    div.storyboard {
-        width: 75%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-
-    div.wireframe-sketch {
-        width: 75%;
-    }
-
-    /*    DIGITAL WIREFRAMES*/
-    div.digital-wireframes {
-        width: 75%;
-    }
-
-    div.list {
-        width: 50%;
-    }
-
-    /* ///////////////////////VISUAL DEISGN///////////////////////////*/
-
-    section.visual-design h3 {
-        width: 75%;
-    }
-
-    div.color-type-intro {
-        width: 75%;
-    }
-
-    /*    LOGO*/
-    div.logo {
-        width: 75%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.type-and-color {
-        width: 75%;
-    }
+    /*    STYLE GUIDE*/
 
     div.color-type-image {
         width: 80%;
     }
-
-    /*    STYLE GUIDE*/
 
     div.color-type-image:before {
         height: 45px;
@@ -1279,38 +778,6 @@ img.social-button {
 
 
 
-    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 75%;
-    }
-
-    div.prototype-test-container {
-        width: 75%;
-    }
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 75%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 75%;
-    }
-
-    /*PREFERENCE TESTING*/
-
-    div.preference-test-1 {
-        width: 75%;
-    }
-
-    div.preference-test-2 {
-        width: 75%;
-    }
-
-
     div.chart-container:before {
         height: 40px;
         width: 120px;
@@ -1318,27 +785,9 @@ img.social-button {
 
     /*FINAL PROTOTYPE*/
 
-    div.final-prototype-container {
-        width: 75%;
-    }
-
     a#prototype-button-final {
         width: 60%;
         margin: 32px auto;
-    }
-
-    a#prototype-button-final:hover {
-        background-color: #8879B9;
-    }
-
-    /*CONCLUSION*/
-
-    section.conclusion h3 {
-        width: 75%;
-    }
-
-    div.learnings-container {
-        width: 75%;
     }
 
     /*    FOOTER*/
@@ -1360,14 +809,8 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
-        width: 75%;
-    }
 
-    div.image-box2 {
-        width: 70%;
-    }
-
+    div.image-box2,  
     div.image-box3 {
         width: 70%;
     }
@@ -1397,182 +840,36 @@ img.social-button {
 
     /*    GREENER HEADER*/
     header {
-        width: 60%;
+        width: 70%;
     }
-
 
     div.case-study-image {
-        width: 80%;
+        width: 70%;
     }
 
-    /*
-    a#prototype-button-header {
-        width: 60%;
-        margin: 32px auto;
-    }
-*/
-
-    /*    PROBLEM STATEMENT*/
-    div.problem-container h3 {
-        margin-left: 20%;
-    }
-
-    div#statement {
-        width: 60%;
-    }
-
-    /*USERS ROLES AND SCOPES row with 3 sections*/
-
-    section#users-roles-scope {
-        width: 60%;
-    }
-
-    /*    THE SOLUTION*/
-    div.solution-container h3 {
-        margin-left: 20%;
-    }
+    /* SECTION CONTAINERS */
+    div.container {
+        width: 70%;
+    }    
 
 
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 60%;
+        width: 70%;
     }
 
-    div#solution-statement {
-        width: 60%;
-    }
-
-    /*MAPPING FLOW AND HMW*/
-
-    div.discovery-intro {
-        width: 60%;
-    }
-
-    div.map-problem {
-        width: 60%;
-    }
-
-
-    /*LIGHTNING DEMOS*/
-
-    div#lightning-intro {
-        width: 60%;
-    }
-
-    div.lightning-demos {
-        width: 60%;
-    }
-
-    div.ld-facts {
-        width: 75%;
-    }
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 60%;
-    }
-
-    /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
-
-
-    /* IA INTRO */
-    div.ia-intro {
-        width: 60%;
-    }
-
-    section.information-architecture h3 {
-        width: 60%;
-
-    }
-
-    /*    STORYBOARD*/
-    div.storyboard {
-        width: 60%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-
-    div.wireframe-sketch {
-        width: 60%;
-    }
-
-    /*    DIGITAL WIREFRAMES*/
-    div.digital-wireframes {
-        width: 60%;
-    }
-
-    /* ///////////////////////VISUAL DEISGN///////////////////////////*/
-
-    section.visual-design h3 {
-        width: 60%;
-    }
-
-    div.color-type-intro {
-        width: 60%;
-    }
-
-    /*    LOGO*/
-    div.logo {
-        width: 60%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.type-and-color {
-        width: 60%;
+    div.accordion-container {
+        width: 70%;
     }
 
     div.color-type-image {
         width: 70%;
     }
 
-
-    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 60%;
-    }
-
-    div.prototype-test-container {
-        width: 60%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 60%;
-    }
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 60%;
-    }
-
-    /*PREFERENCE TESTING*/
-
-    div.preference-test-1 {
-        width: 60%;
-    }
-
-    div.preference-test-2 {
-        width: 60%;
-    }
-
-
     /*FINAL PROTOTYPE*/
 
     div.final-prototype-container {
-        width: 60%;
-    }
-
-    /*CONCLUSION*/
-
-    section.conclusion h3 {
-        width: 60%;
-    }
-
-    div.learnings-container {
         width: 60%;
     }
 
@@ -1595,14 +892,11 @@ img.social-button {
     /*    IMAGE BOX*/
 
     div.image-box {
-        width: 65%;
+        width: 75%;
     }
 
 
-    div.image-box2 {
-        width: 65%;
-    }
-
+    div.image-box2,
     div.image-box3 {
         width: 65%;
     }
@@ -1628,7 +922,7 @@ img.social-button {
         position: initial;
         transition: none;
         transform: none;
-        width: 50%;
+        width: 35%;
 
     }
 
@@ -1638,140 +932,50 @@ img.social-button {
     }
 
     ul#nav-links li a {
-        color: #392F5A;
+        color: #33184D;
         font-size: 1em;
         padding: 32px 0;
     }
 
     /*mobile hamburger menu*/
     span.mobile-btn {
-        display: none;
+        visibility: hidden;
     }
 
-    ul#nav-links li.close {
-        display: none;
+    ul#nav-links span.close {
+        visibility: hidden;
     }
-
-
 
     /*    HEADER*/
+
     header {
-        width: 70%;
-        margin: 15% auto 5% auto;
-        flex-direction: row;
+        width: 65%;
     }
 
     div.case-study-image {
-        width: 100%;
+        width: 60%;
     }
 
-
-
-    /*    PROBLEM STATEMENT*/
-    div.problem-container h3 {
-        margin-left: 22.5%;
+    .header-buttons {
+        width: 50%;
     }
 
-    div#statement {
-        width: 55%;
+    a#prototype-button-header {
+        margin: 12px auto;
     }
 
-    /*USERS ROLES AND SCOPES row with 3 sections*/
-
-    section#users-roles-scope {
-        width: 55%;
+    /* SECTION CONTAIINER */
+    div.container {
+        width: 65%;
     }
 
-    /*    THE SOLUTION*/
-    div.solution-container h3 {
-        margin-left: 22.5%;
-    }
-
-    div#solution-statement {
-        width: 55%;
-    }
-
+/* ACCORDION */
     .accordion {
-        width: 55%;
+        width: 65%;
     }
 
-    /*MAPPING FLOW AND HMW*/
-
-    div.discovery-intro {
-        width: 55%;
-    }
-
-    div.map-problem {
-        width: 55%;
-    }
-
-    /*LIGHTNING DEMOS*/
-
-    div#lightning-intro {
-        width: 55%;
-    }
-
-    div.lightning-demos {
-        width: 55%;
-    }
-
-    div.ld-facts {
-        width: 80%;
-    }
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 55%;
-    }
-
-    /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
-
-
-    /* IA INTRO */
-    div.ia-intro {
-        width: 55%;
-    }
-
-    section.information-architecture h3 {
-        width: 55%;
-
-    }
-
-    /*    STORYBOARD*/
-    div.storyboard {
-        width: 55%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-
-    div.wireframe-sketch {
-        width: 55%;
-    }
-
-    /*    DIGITAL WIREFRAMES*/
-    div.digital-wireframes {
-        width: 55%;
-    }
-
-    /* ///////////////////////VISUAL DEISGN///////////////////////////*/
-
-    section.visual-design h3 {
-        width: 55%;
-    }
-
-    div.color-type-intro {
-        width: 55%;
-    }
-
-    /*    LOGO*/
-    div.logo {
-        width: 55%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.type-and-color {
-        width: 55%;
+    div.accordion-container {
+        width: 65%;
     }
 
     div.color-type-image {
@@ -1779,60 +983,14 @@ img.social-button {
     }
 
 
-
-    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 55%;
-    }
-
-    div.prototype-test-container {
-        width: 55%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 55%;
-    }
-
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 55%;
-    }
-
-    /*PREFERENCE TESTING*/
-
-    div.preference-test-1 {
-        width: 55%;
-    }
-
-    div.preference-test-2 {
-        width: 55%;
-    }
-
-    /*FINAL PROTOTYPE*/
-
-    div.final-prototype-container {
-        width: 55%;
-    }
-
-
-    /*CONCLUSION*/
-
-    section.conclusion h3 {
-        width: 55%;
-    }
-
-    div.learnings-container {
-        width: 55%;
-    }
-
     /*    FOOTER*/
 
     div#social-img {
         width: 30%;
+    }
+
+    img.social-button {
+        width: 16px;
     }
 }
 
@@ -1846,14 +1004,7 @@ img.social-button {
 
     /*    IMAGE BOX*/
 
-    div.image-box {
-        width: 60%;
-    }
-
-    div.image-box2 {
-        width: 55%;
-    }
-
+    div.image-box2,
     div.image-box3 {
         width: 55%;
     }
@@ -1862,166 +1013,34 @@ img.social-button {
         width: 50%;
     }
 
-    /*    PROBLEM STATEMENT*/
-    div.problem-container h3 {
-        margin-left: 27.5%;
+    /*    HEADER*/
+    header {
+        width: 60%;
     }
 
-    div#statement {
-        width: 45%;
+    div.case-study-image {
+        width: 55%;
     }
 
-    /*USERS ROLES AND SCOPES row with 3 sections*/
-
-    section#users-roles-scope {
-        width: 45%;
+    /* SECTION CONTAINERS */
+    div.container {
+        width: 60%;
     }
 
-    /*    THE SOLUTION*/
-    div.solution-container h3 {
-        margin-left: 27.5%;
-    }
-
-    div#solution-statement {
-        width: 45%;
-    }
 
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 45%;
+        width: 60%;
     }
 
-    /*MAPPING FLOW AND HMW*/
-
-    div.discovery-intro {
-        width: 45%;
+    div.accordion-container {
+        width: 60%;
     }
 
-    div.map-problem {
-        width: 45%;
-    }
-
-    /*LIGHTNING DEMOS*/
-
-    div#lightning-intro {
-        width: 45%;
-    }
-
-    div.lightning-demos {
-        width: 45%;
-    }
-
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 45%;
-    }
-
-    /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
-
-
-    /* IA INTRO */
-    div.ia-intro {
-        width: 45%;
-    }
-
-    section.information-architecture h3 {
-        width: 45%;
-
-    }
-
-    /*    STORYBOARD*/
-    div.storyboard {
-        width: 45%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-
-    div.wireframe-sketch {
-        width: 45%;
-    }
-
-    /*    DIGITAL WIREFRAMES*/
-    div.digital-wireframes {
-        width: 45%;
-    }
-
-    /* ///////////////////////VISUAL DEISGN///////////////////////////*/
-
-    section.visual-design h3 {
-        width: 45%;
-    }
-
-    div.color-type-intro {
-        width: 45%;
-    }
-
-    /*    LOGO*/
-    div.logo {
-        width: 45%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.type-and-color {
-        width: 45%;
-    }
 
     div.color-type-image {
         width: 55%;
-    }
-
-
-
-    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 45%;
-    }
-
-    div.prototype-test-container {
-        width: 45%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 45%;
-    }
-
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 45%;
-    }
-
-
-    /*PREFERENCE TESTING*/
-
-    div.preference-test-1 {
-        width: 45%;
-    }
-
-    div.preference-test-2 {
-        width: 45%;
-    }
-
-    /*FINAL PROTOTYPE*/
-
-    div.final-prototype-container {
-        width: 45%;
-    }
-
-
-    /*CONCLUSION*/
-
-    section.conclusion h3 {
-        width: 45%;
-    }
-
-    div.learnings-container {
-        width: 45%;
     }
 
     /*    FOOTER*/
@@ -2033,28 +1052,9 @@ img.social-button {
 
 @media only screen and (min-width: 1200px) {
 
-    /*Greener HEADER*/
-
-    header {
-        width: 60%;
-    }
-
-
-    div.case-study-title {
-        width: 85%;
-    }
-
-
     /*    IMAGE BOX*/
 
-    div.image-box {
-        width: 45%;
-    }
-
-    div.image-box2 {
-        width: 45%;
-    }
-
+    div.image-box2,
     div.image-box3 {
         width: 45%;
     }
@@ -2069,174 +1069,140 @@ img.social-button {
         height: 40%;
     }
 
-    /*    PROBLEM STATEMENT*/
-    div.problem-container h3 {
-        margin-left: 32.5%;
-    }
+    /*  NAV*/
 
-    div#statement {
-        width: 35%;
-    }
+   div.content {
+    width: 70%;
+   }
 
-    /*USERS ROLES AND SCOPES row with 3 sections*/
+    /*    HEADER*/
+    header {
+        width: 50%;
+    }    
 
-    section#users-roles-scope {
-        width: 35%;
+    div.case-study-image {
+        width: 50%;
     }
+   
+    /* SECTION CONTAINERS */
+    div.container {
+        width: 50%;
+        }
 
-    /*    THE SOLUTION*/
-    div.solution-container h3 {
-        margin-left: 32.5%;
-    }
-
-    div#solution-statement {
-        width: 35%;
-    }
 
     /* ACCORDIAN DETAILS */
 
     .accordion {
-        width: 35%;
+        width: 50%;
     }
 
-    /*MAPPING FLOW AND HMW*/
-
-    div.discovery-intro {
-        width: 35%;
-    }
-
-    div.map-problem {
-        width: 35%;
-    }
-
-    /*LIGHTNING DEMOS*/
-
-    div#lightning-intro {
-        width: 35%;
-    }
-
-    div.lightning-demos {
-        width: 35%;
-    }
-
-
-    /*    PERSONAS*/
-    div.personas {
-        width: 35%;
-    }
-
-    /* ///////////////////INFORMATION ARCHITECTURE//////////////////////// */
-
-
-    /* IA INTRO */
-    div.ia-intro {
-        width: 35%;
-    }
-
-    section.information-architecture h3 {
-        width: 35%;
-
-    }
-
-    /*    STORYBOARD*/
-    div.storyboard {
-        width: 35%;
-    }
-
-    /*WIREFRAME SKETCHES*/
-
-    div.wireframe-sketch {
-        width: 35%;
-    }
-
-    /*    DIGITAL WIREFRAMES*/
-    div.digital-wireframes {
-        width: 35%;
-    }
-
-    /* ///////////////////////VISUAL DEISGN///////////////////////////*/
-
-    section.visual-design h3 {
-        width: 35%;
-    }
-
-    div.color-type-intro {
-        width: 35%;
-    }
-
-    /*    LOGO*/
-    div.logo {
-        width: 35%;
-    }
-
-    /*COLOR AND TYPE*/
-
-    div.type-and-color {
-        width: 35%;
+    div.accordion-container {
+        width: 50%;
     }
 
     div.color-type-image {
         width: 40%;
     }
 
-
-
-    /* /////////////////////////PROTOTYPING AND TESTING/////////////////////////// */
-
-    section.prototype-test h3 {
-        width: 35%;
-    }
-
-    div.prototype-test-container {
-        width: 35%;
-    }
-
-    /*ITERATIONS*/
-
-    div.iterations {
-        width: 35%;
-    }
-
-    /*Usability Test*/
-    div.usability-test {
-        width: 35%;
-    }
-
-
-    /*PREFERENCE TESTING*/
-
-    div.preference-test-1 {
-        width: 35%;
-    }
-
-    div.preference-test-2 {
-        width: 35%;
-    }
-
-    /*FINAL PROTOTYPE*/
-
-    div.final-prototype-container {
-        width: 35%;
-    }
-
-    div.app-gif {
-        width: 40%;
-    }
-
-
-    /*CONCLUSION*/
-
-    section.conclusion h3 {
-        width: 35%;
-    }
-
-    div.learnings-container {
-        width: 35%;
-    }
-
-
+/* footer */
     div#social-img {
         width: 20%;
     }
-
 }
+@media only screen and (min-width: 1440px) {
+    
+    /*    IMAGE BOX*/
+
+    div.image-box2,
+    div.image-box3 {
+        width: 40%;
+    }
+
+    div.image-box4 {
+        width: 35%;
+    }
+
+    /*  NAV*/
+ 
+    div.content {
+     width: 60%;
+ }
+ 
+    /*    HEADER*/
+    header {
+        width: 45%;
+        margin: 10% auto 0 auto;
+    }    
+
+    div.case-study-image {
+        width: 45%;
+    }
+
+    /* SECTION CONTAINERS */
+    div.container {
+        width: 45%;
+    }
+
+
+    /* ACCORDIAN DETAILS */
+
+    .accordion {
+        width: 45%;
+    }
+
+    div.accordion-container {
+        width: 45%;
+    }
+
+    /* COLOR IMAGE */
+    div.color-type-image {
+        width: 35%;
+    }
+ }
+ 
+ @media only screen and (min-width: 1700px) {
+     
+    /*    IMAGE BOX*/
+    div.image-box2,
+    div.image-box3 {
+        width: 35%;
+    }
+
+    div.image-box4 {
+        width: 30%;
+    }
+
+/* NAV */
+div.content {
+    width: 50%;
+}
+
+    /*    HEADER*/
+    header {
+        width: 40%;
+    }    
+
+    div.case-study-image {
+        width: 40%;
+    }
+
+    /* SECTION CONTAINERS */
+    div.container {
+        width: 40%;
+    }
+
+        /* ACCORDIAN DETAILS */
+
+    .accordion {
+        width: 40%;
+    }
+
+    div.accordion-container {
+        width: 40%;
+    }
+
+    /* COLOR IMAGE */
+    div.color-type-image {
+        width: 25%;
+    }
+ }
