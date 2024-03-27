@@ -71,11 +71,13 @@ h4 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.1em;
+    line-height: 1.65em;
     text-align: left;
     color: #030106;
     padding: 12px 0;
 }
+
 
 span.bold {
     font-weight: 700;
@@ -331,7 +333,7 @@ a.prototype-button-header {
     background-color: #fff;
     border: 2px solid #5F259F;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #5F259F;
     font-weight: 600;
 }
@@ -619,6 +621,8 @@ div.accordion-container ul {
 }
 
 div.accordion-container ul li {
+    font-size: 1.1em;
+    line-height: 1.65em;
     margin: 0 0 15px 0;
 }
 
@@ -677,7 +681,7 @@ a.prototype-button-final {
     background-color: #fff;
     border: 2px solid #5F259F;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #5F259F;
     font-weight: 600;
 }
@@ -970,7 +974,7 @@ img.social-button {
 
     ul#nav-links li a {
         color: #33184D;
-        font-size: 1em;
+        font-size: 1.1em;
         padding: 32px 0;
     }
 
